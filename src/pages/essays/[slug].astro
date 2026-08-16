@@ -1,0 +1,152 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const essays = await getCollection('essays');
+  return essays.map((essay) => ({
+    params: { slug: essay.slug },
+    props: { essay },
+  }));
+}
+
+const { essay } = Astro.props;
+const { Content, headings } = await essay.render();
+
+// Filter headings for TOC (h2 only)
+const tocHeadings = headings.filter((h) => h.depth === 2);
+---
+
+<Layout 
+  title={`${essay.data.title} | Cognitive Brand Lab`}
+  description={essay.data.description}
+  type="article"
+  publishDate={essay.data.pubDate.toISOString()}
+  currentPath={`/essays/${essay.slug}`}
+>
+  <!-- Reading Progress Bar -->
+  <div class="fixed top-[65px] left-0 w-full h-[2px] bg-surface-container z-40">
+    <div class="h-full bg-primary origin-left scale-x-0 transition-transform duration-100" id="progress-bar"></div>
+  </div>
+
+  <main class="flex-grow flex flex-col items-center w-full">
+    <!-- Article Header -->
+    <article class="w-full max-w-max-width mx-auto px-4 md:px-margin pt-12 md:pt-stack-xl pb-stack-lg border-b border-outline-variant">
+      <div class="max-w-4xl mx-auto text-center md:text-left">
+        <div class="flex flex-wrap items-center justify-center md:justify-start gap-4 mb-6 font-mono text-[12px] text-secondary uppercase tracking-widest">
+          <span class="bg-surface-container text-primary font-bold px-2.5 py-1 border border-outline-variant">
+            {essay.data.module} — {essay.data.moduleName}
+          </span>
+          <span class="w-1 h-1 rounded-full bg-outline"></span>
+          <span>{essay.data.pubDate.toISOString().slice(0, 10)}</span>
+          <span class="w-1 h-1 rounded-full bg-outline"></span>
+          <span class="flex items-center gap-1">
+            <span class="material-symbols-outlined text-[14px]">schedule</span> 
+            {essay.data.readingTime}
+          </span>
+        </div>
+
+        <h1 class="font-display-lg text-[28px] sm:text-[36px] md:text-display-lg text-primary mb-6 max-w-4xl tracking-tight leading-[1.2]">
+          {essay.data.title}
+        </h1>
+
+        <p class="font-body-lg text-[16px] md:text-body-lg text-secondary max-w-3xl leading-relaxed">
+          {essay.data.description}
+        </p>
+      </div>
+    </article>
+
+    <!-- Two-Column Layout -->
+    <div class="w-full max-w-max-width mx-auto px-4 md:px-margin py-stack-lg grid grid-cols-1 md:grid-cols-12 gap-gutter relative">
+      <!-- Left Column: Sticky TOC -->
+      <aside class="hidden md:block md:col-span-3">
+        <div class="sticky top-[100px] pr-6">
+          <h3 class="font-mono text-[11px] text-secondary uppercase mb-4 tracking-widest font-bold">
+            目录导航 (CONTENTS)
+          </h3>
+          <nav class="flex flex-col gap-3 border-l border-outline-variant pl-4 text-[13px]" id="toc-nav">
+            {tocHeadings.map((heading) => (
+              <a 
+                href={`#${heading.slug}`} 
+                class="toc-link text-secondary hover:text-primary transition-colors border-l-2 border-transparent -ml-[17px] pl-4 block py-0.5 leading-snug"
+              >
+                {heading.text}
+              </a>
+            ))}
+          </nav>
+        </div>
+      </aside>
+
+      <!-- Right Column: Main Content -->
+      <div class="col-span-1 md:col-span-9 max-w-[780px] prose prose-editorial prose-headings:font-display-lg prose-a:text-primary hover:prose-a:text-accent-blue prose-img:rounded">
+        <Content />
+      </div>
+    </div>
+
+    <!-- End of Article Author Card -->
+    <div class="w-full bg-surface-container-low border-t border-outline-variant mt-stack-xl">
+      <div class="max-w-max-width mx-auto px-4 md:px-margin py-stack-lg flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
+        <!-- Author Bio -->
+        <div class="flex items-center gap-6">
+          <div class="w-16 h-16 bg-[#E5E5E0] border border-outline flex flex-col items-center justify-center text-primary font-mono text-center flex-shrink-0">
+            <span class="font-bold text-[18px]">RAN</span>
+          </div>
+          <div>
+            <h4 class="font-headline-sm text-[18px] font-bold text-primary mb-1">Ran</h4>
+            <p class="font-mono text-[12px] text-secondary mb-2">Lead Architect, Cognitive Brand Lab</p>
+            <a class="font-mono text-[11px] text-primary uppercase tracking-widest hover:underline flex items-center gap-1" href="/about">
+              关于作者与实验室体系 <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Back to Archive -->
+        <div>
+          <a href="/essays" class="font-label-caps text-label-caps text-primary border border-primary px-4 py-2 hover:bg-primary hover:text-white transition-colors">
+            ← 返回实战内参索引库
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Reading Progress Bar
+      const progressBar = document.getElementById('progress-bar');
+      const mainContent = document.querySelector('.prose-editorial');
+
+      if (progressBar && mainContent) {
+        window.addEventListener('scroll', () => {
+          const rect = mainContent.getBoundingClientRect();
+          const scrollTop = window.scrollY || document.documentElement.scrollTop;
+          const contentTop = mainContent.offsetTop;
+          const contentHeight = mainContent.offsetHeight;
+          const viewportHeight = window.innerHeight;
+
+          let progress = 0;
+          if (scrollTop > contentTop - 100) {
+            progress = (scrollTop - contentTop + 100) / (contentHeight - viewportHeight + 200);
+            progress = Math.min(Math.max(progress, 0), 1);
+          }
+          progressBar.style.transform = `scaleX(${progress})`;
+        });
+      }
+
+      // Smooth scroll for TOC links
+      const tocLinks = document.querySelectorAll('.toc-link');
+      tocLinks.forEach((link) => {
+        link.addEventListener('click', (e) => {
+          e.preventDefault();
+          const targetId = link.getAttribute('href')?.substring(1);
+          if (targetId) {
+            const targetEl = document.getElementById(targetId);
+            if (targetEl) {
+              targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+          }
+        });
+      });
+    });
+  </script>
+</Layout>
