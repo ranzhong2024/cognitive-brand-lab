@@ -1,0 +1,9 @@
+# Cognitive Brand Lab
+> The science of brand architecture and cross-border commercial strategy. Powered by RAN BRAND OS™.
+
+- [Home](https://cognitivebrandlab.org/): Cognitive Brand Lab Manifesto and RAN BRAND OS™ architecture.
+- [About & Origin](https://cognitivebrandlab.org/about): Principal Investigator Ran's cross-disciplinary background (Yeshiva University Digital Marketing Master's, CBAP, PMP, Google Data Analytics).
+- [Essays Archive](https://cognitivebrandlab.org/essays): Empirical research briefs on Byron Sharp's How Brands Grow, Jobs-to-be-Done (JTBD) behavioral psychology, and BCG pricing waterfall models.
+- [M01 Brand Foundations](https://cognitivebrandlab.org/modules/m1-brand-foundations): Keller CBBE, Kapferer Brand Prism, Distinctive Brand Assets.
+- [M02 Behavioral Science](https://cognitivebrandlab.org/modules/m2-behavioral-science): Kahneman System 1/2, Prospect Theory, Loss Aversion, JTBD.
+- [M03 Strategic Pricing](https://cognitivebrandlab.org/modules/m3-strategic-pricing): BCG Pricing Prism, Conjoint WTP Analysis, Price Waterfall optimization.

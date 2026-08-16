@@ -1,0 +1,5 @@
+# Robots.txt for Cognitive Brand Lab
+User-agent: *
+Allow: /
+
+Sitemap: https://cognitivebrandlab.org/sitemap-index.xml
