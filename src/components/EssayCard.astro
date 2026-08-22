@@ -1,0 +1,91 @@
+---
+interface Props {
+  essay: {
+    slug: string;
+    data: {
+      title: string;
+      description: string;
+      module: string;
+      moduleName: string;
+      pubDate: Date;
+      readingTime: string;
+      tags?: string[];
+      featured?: boolean;
+      author?: string;
+    };
+  };
+}
+
+const { essay } = Astro.props;
+
+// Module Color Mapping
+const moduleColors: Record<string, { badge: string; border: string; accent: string; coverBg: string }> = {
+  M1: { badge: 'text-cyan-400 bg-cyan-950/60 border-cyan-800/60', border: 'hover:border-cyan-500/60', accent: '#00F2FE', coverBg: 'from-cyan-950/40 to-[#111622]' },
+  M2: { badge: 'text-indigo-400 bg-indigo-950/60 border-indigo-800/60', border: 'hover:border-indigo-500/60', accent: '#818CF8', coverBg: 'from-indigo-950/40 to-[#111622]' },
+  M3: { badge: 'text-emerald-400 bg-emerald-950/60 border-emerald-800/60', border: 'hover:border-emerald-500/60', accent: '#10B981', coverBg: 'from-emerald-950/40 to-[#111622]' },
+  M4: { badge: 'text-amber-400 bg-amber-950/60 border-amber-800/60', border: 'hover:border-amber-500/60', accent: '#F59E0B', coverBg: 'from-amber-950/40 to-[#111622]' },
+  M5: { badge: 'text-rose-400 bg-rose-950/60 border-rose-800/60', border: 'hover:border-rose-500/60', accent: '#F43F5E', coverBg: 'from-rose-950/40 to-[#111622]' },
+  M6: { badge: 'text-purple-400 bg-purple-950/60 border-purple-800/60', border: 'hover:border-purple-500/60', accent: '#A855F7', coverBg: 'from-purple-950/40 to-[#111622]' },
+};
+
+const style = moduleColors[essay.data.module] || moduleColors.M1;
+const formattedDate = essay.data.pubDate ? new Date(essay.data.pubDate).toISOString().slice(0, 10) : '2026-08';
+---
+
+<article 
+  class={`essay-card bg-[#111622] border border-[#232B3E] ${style.border} rounded-2xl flex flex-col justify-between overflow-hidden transition-all duration-300 group hover:shadow-[0_0_35px_rgba(0,242,254,0.08)] hover:-translate-y-1 relative`}
+  data-module={essay.data.module}
+  data-title={essay.data.title.toLowerCase()}
+  data-desc={essay.data.description.toLowerCase()}
+>
+  <!-- Card Header Visual Canvas -->
+  <div class={`h-36 sm:h-40 bg-gradient-to-br ${style.coverBg} border-b border-[#232B3E] p-5 flex flex-col justify-between relative overflow-hidden`}>
+    <div class="absolute -right-6 -bottom-6 w-24 h-24 rounded-full bg-white/5 blur-2xl pointer-events-none"></div>
+    <div class="absolute top-2.5 right-3 font-mono text-[9px] text-slate-600 select-none">BrandOS™ MONOGRAPH</div>
+
+    <!-- Top Badge Row -->
+    <div class="flex items-center justify-between z-10">
+      <span class={`font-mono text-[11px] font-extrabold uppercase tracking-wider px-2.5 py-0.5 rounded border ${style.badge}`}>
+        {essay.data.module} • {essay.data.moduleName}
+      </span>
+      <span class="font-mono text-[11px] text-slate-400 flex items-center gap-1">
+        <span>⏱</span>
+        <span>{essay.data.readingTime}</span>
+      </span>
+    </div>
+
+    <!-- Monogram Watermark Icon in Cover -->
+    <div class="flex items-end justify-between z-10">
+      <div class="font-mono text-[10px] text-slate-400">
+        AUTHOR: <strong class="text-slate-200">{essay.data.author || "Ran (然)"}</strong>
+      </div>
+      <div class="font-mono text-[10px] text-slate-500">
+        {formattedDate}
+      </div>
+    </div>
+  </div>
+
+  <!-- Card Body -->
+  <div class="p-5 sm:p-6 flex flex-col flex-grow justify-between">
+    <div>
+      <h3 class="font-sans font-bold text-[18px] sm:text-[20px] text-slate-100 mb-2.5 group-hover:text-cyan-400 transition-colors leading-snug line-clamp-2 min-h-[56px]">
+        <a href={`/essays/${essay.slug}`}>
+          {essay.data.title}
+        </a>
+      </h3>
+
+      <p class="font-sans text-[13.5px] text-slate-400 leading-relaxed line-clamp-3 mb-4 min-h-[64px]">
+        {essay.data.description}
+      </p>
+    </div>
+
+    <!-- Bottom Read Action -->
+    <a 
+      href={`/essays/${essay.slug}`}
+      class="pt-3.5 border-t border-[#232B3E] flex items-center justify-between font-mono text-[12px] font-bold text-slate-300 group-hover:text-cyan-400 transition-colors mt-auto"
+    >
+      <span>阅读全文</span>
+      <span class="group-hover:translate-x-1.5 transition-transform text-[14px]">→</span>
+    </a>
+  </div>
+</article>
