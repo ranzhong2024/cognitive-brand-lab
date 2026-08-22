@@ -1,6 +1,8 @@
 ---
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import MobileDrawer from '../components/MobileDrawer.astro';
+import AeoKnowledgeGraph from '../components/AeoKnowledgeGraph.astro';
 import '../styles/global.css';
 
 interface Props {
@@ -10,15 +12,17 @@ interface Props {
   type?: 'website' | 'article';
   publishDate?: string;
   currentPath?: string;
+  customSchema?: Record<string, any>;
 }
 
 const {
-  title = 'Cognitive Brand Lab | 认知品牌科学实验室 • RAN BRAND OS™',
-  description = '品牌不是个 Logo，不是一个类目——而是客户心智里不可替代的一块地盘。重塑中国出海的增长逻辑，以全球顶尖品牌科学，驱动认知与商业的双重复利。',
-  image = '/images/hero.jpg',
+  title = '品牌科学实验室™ | BRANDOS LAB™ • 全球高溢价品牌操作系统',
+  description = '广告费是每天归零的消耗，而品牌心智是年年复利的资产。专为中国出海企业打造的、从 0 到 1 科学构建全球高溢价品牌的工程化操作系统。',
+  image = '/images/brandos-flywheel.jpg',
   type = 'website',
   publishDate,
   currentPath = Astro.url.pathname,
+  customSchema,
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site || 'https://cognitivebrandlab.org');
@@ -28,15 +32,16 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site || 'https://cognitiv
 <html lang="zh-CN" class="scroll-smooth">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="canonical" href={canonicalURL} />
 
-    <!-- SEO Meta Tags -->
+    <!-- SEO & AEO Meta Tags -->
     <title>{title}</title>
     <meta name="title" content={title} />
     <meta name="description" content={description} />
-    <meta name="author" content="Ran (Cognitive Brand Lab)" />
+    <meta name="author" content="Ran (品牌科学实验室™ / BRANDOS LAB™)" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content={type} />
@@ -44,6 +49,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site || 'https://cognitiv
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:image" content={image} />
+    <meta property="og:site_name" content="品牌科学实验室™ / BRANDOS LAB™" />
     {publishDate && <meta property="article:published_time" content={publishDate} />}
 
     <!-- Twitter -->
@@ -53,39 +59,42 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site || 'https://cognitiv
     <meta property="twitter:description" content={description} />
     <meta property="twitter:image" content={image} />
 
-    <!-- Elite Editorial Fonts: Plus Jakarta Sans + Instrument Serif + JetBrains Mono -->
+    <!-- KaTeX CSS for LaTeX Formulas -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+
+    <!-- Modern Typography: Plus Jakarta Sans + JetBrains Mono -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..700&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..700&display=swap" rel="stylesheet" />
 
-    <!-- AEO / JSON-LD Structured Data -->
-    <script type="application/ld+json" set:html={JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": type === 'article' ? "ScholarlyArticle" : "ResearchOrganization",
-      "name": "Cognitive Brand Lab",
-      "url": canonicalURL.toString(),
-      "description": description,
-      "founder": {
-        "@type": "Person",
-        "name": "Ran",
-        "jobTitle": "Brand & Business Architect",
-        "url": "https://www.linkedin.com/in/zhongran/"
-      },
-      "knowsAbout": [
-        "Brand Equity",
-        "Cognitive Behavioral Science",
-        "Strategic Pricing",
-        "Marketing Science",
-        "Incrementality Testing"
-      ]
-    })} />
+    <!-- AEO / Semantic Knowledge Graph Injection -->
+    <AeoKnowledgeGraph 
+      type={type} 
+      title={title} 
+      description={description} 
+      publishDate={publishDate} 
+      customSchema={customSchema}
+    />
   </head>
-  <body class="bg-surface text-on-surface font-body antialiased min-h-screen flex flex-col selection:bg-primary selection:text-white">
+  <body class="bg-[#09090B] text-[#F8FAFC] font-sans antialiased min-h-screen flex flex-col selection:bg-[#00F2FE] selection:text-[#030712]">
     <Header currentPath={currentPath} />
-    <main class="flex-grow">
+    <MobileDrawer />
+    <main id="main-content" class="flex-grow">
       <slot />
     </main>
     <Footer />
+
+    <!-- Anti-copy and Anti-theft Script -->
+    <script is:inline>
+      document.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+      });
+
+      document.addEventListener('keydown', function(e) {
+        if ((e.ctrlKey || e.metaKey) && (e.key === 'c' || e.key === 'u' || e.key === 's' || e.key === 'p' || e.key === 'a')) {
+          e.preventDefault();
+        }
+      });
+    </script>
   </body>
 </html>

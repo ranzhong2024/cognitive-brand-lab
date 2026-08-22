@@ -1,0 +1,82 @@
+---
+interface Props {
+  module: {
+    id: string;
+    tag: string;
+    title: string;
+    subtitle: string;
+    playbook: string;
+    metric: string;
+    caseStudy: string;
+    link: string;
+    accentColor: string;
+  };
+}
+
+const { module } = Astro.props;
+---
+
+<div class="bg-[#111622] border border-[#232B3E] hover:border-cyan-500/60 p-6 sm:p-7 rounded-xl flex flex-col justify-between h-full transition-all duration-300 group hover:shadow-[0_0_30px_rgba(0,242,254,0.08)] relative">
+  <!-- Corner Tech Accents -->
+  <div class="absolute top-2.5 right-2.5 font-mono text-[9px] text-slate-600 select-none">+</div>
+  <div class="absolute bottom-2.5 left-2.5 font-mono text-[9px] text-slate-600 select-none">+</div>
+
+  <div class="flex flex-col flex-grow">
+    <!-- Tier 1: Top Header (Exact 32px height) -->
+    <div class="h-8 flex justify-between items-center mb-4 pb-3 border-b border-[#232B3E]">
+      <div class="flex items-center gap-2.5">
+        <span class="font-mono text-[12px] font-extrabold text-[#09090B] bg-cyan-400 px-2.5 py-0.5 rounded">
+          {module.id}
+        </span>
+        <span class="font-mono text-[11px] text-cyan-400 font-bold uppercase tracking-widest truncate">
+          {module.tag}
+        </span>
+      </div>
+      <span class="font-mono text-[10px] text-slate-500 uppercase font-semibold shrink-0">BrandOS™ PROTOCOL</span>
+    </div>
+
+    <!-- Tier 2: Title & Subtitle Block (Exact 102px height for strict baseline alignment) -->
+    <div class="h-[102px] mb-4 flex flex-col justify-start">
+      <h3 class="font-sans font-bold text-[21px] sm:text-[22px] text-slate-100 mb-1.5 group-hover:text-cyan-400 transition-colors leading-tight truncate">
+        {module.title}
+      </h3>
+      <p class="font-sans text-slate-400 text-[13px] sm:text-[13.5px] leading-relaxed line-clamp-2">
+        {module.subtitle}
+      </p>
+    </div>
+
+    <!-- Tier 3: ⚡ 破局打法 (Exact 126px height for strict baseline alignment) -->
+    <div class="h-[126px] bg-[#09090B]/90 border border-[#232B3E] p-3.5 sm:p-4 rounded-lg mb-3.5 flex flex-col justify-start">
+      <div class="text-cyan-400 font-mono font-bold text-[11px] uppercase tracking-wider mb-1.5 flex items-center gap-1.5 shrink-0">
+        <span>⚡ 破局打法</span>
+      </div>
+      <div class="text-slate-300 font-sans text-[12.5px] sm:text-[13px] leading-relaxed line-clamp-3">
+        {module.playbook}
+      </div>
+    </div>
+
+    <!-- Tier 4: 🎯 核心战果 (Exact 46px height for strict baseline alignment) -->
+    <div class="h-[46px] bg-[#09090B]/60 border border-emerald-950/80 px-3.5 py-2.5 rounded-lg mb-3.5 flex items-center justify-between">
+      <span class="text-slate-400 text-[11px] font-mono uppercase font-bold shrink-0">🎯 核心战果:</span>
+      <span class="font-mono text-[11.5px] sm:text-[12px] font-bold text-right text-emerald-300 truncate ml-2">
+        {module.metric}
+      </span>
+    </div>
+
+    <!-- Tier 5: 🏛️ 实证标杆 (Exact 72px height for strict baseline alignment) -->
+    <div class="h-[72px] border-l-2 border-cyan-500/70 pl-3 py-2 mb-5 flex items-center bg-cyan-950/10 rounded-r">
+      <div class="text-[12px] sm:text-[12.5px] font-sans text-slate-300 leading-snug line-clamp-2">
+        <strong class="text-cyan-300 font-semibold">实证标杆：</strong>{module.caseStudy}
+      </div>
+    </div>
+  </div>
+
+  <!-- Tier 6: Bottom CTA Link (Pinned at bottom, exact 44px height) -->
+  <a 
+    href={module.link}
+    class="h-[44px] pt-3.5 border-t border-[#232B3E] flex items-center justify-between font-mono text-[12px] font-bold text-slate-200 group-hover:text-cyan-400 transition-colors mt-auto"
+  >
+    <span>进入 {module.id} 深度工程解析</span>
+    <span class="group-hover:translate-x-1.5 transition-transform text-[14px]">→</span>
+  </a>
+</div>

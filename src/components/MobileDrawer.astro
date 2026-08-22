@@ -1,0 +1,110 @@
+---
+---
+
+<!-- Mobile Drawer Overlay -->
+<div id="mobile-drawer-backdrop" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-[90] opacity-0 pointer-events-none transition-opacity duration-300"></div>
+
+<!-- Mobile Drawer Container -->
+<div id="mobile-drawer" class="fixed top-0 right-0 bottom-0 w-[85%] max-w-[360px] bg-[#09090B] border-l border-[#232B3E] z-[100] transform translate-x-full transition-transform duration-300 ease-out flex flex-col justify-between p-6 shadow-2xl overflow-y-auto">
+  <div>
+    <!-- Top Header in Drawer -->
+    <div class="flex justify-between items-center pb-6 border-b border-[#232B3E] mb-6">
+      <div class="flex items-center gap-3">
+        <div class="w-8 h-8 rounded border border-cyan-500/40 bg-cyan-950/30 flex items-center justify-center font-mono text-[14px] font-black text-cyan-400">
+          B
+        </div>
+        <div>
+          <div class="font-bold text-slate-100 text-[15px]">品牌科学实验室™</div>
+          <div class="font-mono text-[9px] text-cyan-400 font-semibold tracking-wider">BRANDOS LAB™</div>
+        </div>
+      </div>
+      <button id="close-drawer-btn" class="w-11 h-11 rounded-full bg-[#111622] border border-[#232B3E] text-slate-300 hover:text-white flex items-center justify-center text-[18px]">
+        ✕
+      </button>
+    </div>
+
+    <!-- Main Navigation Links -->
+    <nav class="space-y-4 mb-8">
+      <a href="/#brandos-matrix" class="drawer-link flex items-center justify-between p-3 rounded-lg bg-[#111622] border border-[#232B3E] text-slate-200 font-bold text-[15px]">
+        <span>⚡ BrandOS 操作系统</span>
+        <span class="text-cyan-400 font-mono text-[12px]">M1–M6 →</span>
+      </a>
+      <a href="/essays" class="drawer-link flex items-center justify-between p-3 rounded-lg bg-[#111622] border border-[#232B3E] text-slate-200 font-bold text-[15px]">
+        <span>📑 品牌笔记 (BRAND NOTES)</span>
+        <span class="text-cyan-400 font-mono text-[12px]">专著库 →</span>
+      </a>
+      <a href="/about" class="drawer-link flex items-center justify-between p-3 rounded-lg bg-[#111622] border border-[#232B3E] text-slate-200 font-bold text-[15px]">
+        <span>👤 关于实验室 (ABOUT)</span>
+        <span class="text-cyan-400 font-mono text-[12px]">RANBOK →</span>
+      </a>
+    </nav>
+
+    <!-- M1-M6 Fast Links -->
+    <div class="mb-8">
+      <div class="font-mono text-[11px] font-bold text-slate-500 uppercase tracking-widest mb-3">
+        BrandOS™ 模块速查
+      </div>
+      <div class="grid grid-cols-2 gap-2 text-[12px] font-mono">
+        <a href="/modules/m1-brand-foundations" class="p-2 rounded bg-[#111622]/60 border border-[#232B3E] text-slate-300 hover:text-cyan-400">
+          M1 勘测心智
+        </a>
+        <a href="/modules/m2-behavioral-science" class="p-2 rounded bg-[#111622]/60 border border-[#232B3E] text-slate-300 hover:text-indigo-400">
+          M2 立住人设
+        </a>
+        <a href="/modules/m3-strategic-pricing" class="p-2 rounded bg-[#111622]/60 border border-[#232B3E] text-slate-300 hover:text-emerald-400">
+          M3 价值定价
+        </a>
+        <a href="/modules/m4-algorithmic-resonance" class="p-2 rounded bg-[#111622]/60 border border-[#232B3E] text-slate-300 hover:text-amber-400">
+          M4 算法共振
+        </a>
+        <a href="/modules/m5-conversion-engineering" class="p-2 rounded bg-[#111622]/60 border border-[#232B3E] text-slate-300 hover:text-rose-400">
+          M5 极速转化
+        </a>
+        <a href="/modules/m6-compounding-retention" class="p-2 rounded bg-[#111622]/60 border border-[#232B3E] text-slate-300 hover:text-purple-400">
+          M6 复利留存
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Direct Connect -->
+  <div class="pt-6 border-t border-[#232B3E]">
+    <a href="mailto:ranzhongus@icloud.com" class="w-full py-3 bg-slate-100 hover:bg-cyan-400 text-[#09090B] font-mono font-extrabold text-[12px] uppercase tracking-wider rounded flex items-center justify-center gap-2 transition-colors">
+      <span>马上咨询 (直连创始人) ✉</span>
+    </a>
+    <div class="mt-4 font-mono text-[10px] text-slate-600 text-center">
+      © 2026 品牌科学实验室™ • ALL RIGHTS RESERVED
+    </div>
+  </div>
+</div>
+
+<script>
+  function setupDrawer() {
+    const openBtn = document.getElementById('open-drawer-btn');
+    const closeBtn = document.getElementById('close-drawer-btn');
+    const drawer = document.getElementById('mobile-drawer');
+    const backdrop = document.getElementById('mobile-drawer-backdrop');
+    const links = document.querySelectorAll('.drawer-link');
+
+    function open() {
+      drawer?.classList.remove('translate-x-full');
+      backdrop?.classList.remove('opacity-0', 'pointer-events-none');
+      backdrop?.classList.add('opacity-100');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function close() {
+      drawer?.classList.add('translate-x-full');
+      backdrop?.classList.add('opacity-0', 'pointer-events-none');
+      backdrop?.classList.remove('opacity-100');
+      document.body.style.overflow = '';
+    }
+
+    openBtn?.addEventListener('click', open);
+    closeBtn?.addEventListener('click', close);
+    backdrop?.addEventListener('click', close);
+    links.forEach(l => l.addEventListener('click', close));
+  }
+
+  document.addEventListener('DOMContentLoaded', setupDrawer);
+</script>
