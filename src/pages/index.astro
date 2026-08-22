@@ -1,0 +1,442 @@
+---
+import Layout from '../layouts/Layout.astro';
+import BrandOSExplorer from '../components/BrandOSExplorer.astro';
+import AntithesisMatrix from '../components/AntithesisMatrix.astro';
+import ModuleCard from '../components/ModuleCard.astro';
+import EssayCard from '../components/EssayCard.astro';
+
+// AEO 复合 JSON-LD (FAQPage + HowTo 部署路线图)
+const homeCustomSchema = {
+  "@type": "FAQPage",
+  "@id": "https://cognitivebrandlab.org/#faq-brandos",
+  "name": "BrandOS™ 全球品牌操作系统核心高意图常见问答",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "什么是 BrandOS™？它与传统出海营销（买量套利与代工铺货）有什么本质区别？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "BrandOS™ 是专为中国出海企业打造的、从 0 到 1 科学构建全球高溢价品牌的工程化操作系统。传统出海营销依赖低价成本加成与平台买量套利，极易在获客成本上升时陷入亏损。BrandOS™ 将品牌建设拆解为 6 个因果咬合的工程模块（M1 勘测心智、M2 立住人设、M3 价值定价、M4 算法共振、M5 极速转化、M6 复利留存），引入 CBAP 商业分析、阶段门禁治理、昂贵信号理论与因果增量核算，让品牌建设像精密工程一样确定性复利。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "为什么 BrandOS™ 坚持将实收综合口袋毛利率（Blended Pocket Margin）红线锁死在 65%+？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "出海品牌若毛利率低于 65%，在面对 Meta/Google 等平台竞价成本通胀以及海外履约成本时将毫无抗风险能力。BrandOS™ 基于 BCG 三棱镜与前景理论，通过 M2 昂贵信号拉高用户支付意愿 (WTP)，运用 Good-Better-Best 3 档阶梯矩阵（主推款 Hero SKU 锁定 68%~72% 毛利，捕获 70% 销量），并严控价格瀑布漏损（≤15%），确保全店实收口袋毛利率严格 ≥65%，为研发创新与品牌复利提供坚不可摧的现金流燃料。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "什么是昂贵信号理论（Costly Signaling Theory）？出海新品牌如何破除海外消费者的防备心？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "昂贵信号理论源于诺贝尔经济学奖得主 Michael Spence。在信息不对称的市场中，口头吹嘘（Cheap Talk）对消费者毫无说服力。唯有假冒者一旦模仿就会破产的高成本、不可伪造硬核投入，才能实现分离均衡。BrandOS™ M2 模块要求品牌质押：① 物理工程质押；② 国际权威认证（如 UL 9540A、TÜV、SGS 报告）；③ 商业售后兜底（如 10 年免费换新）；④ 极限工况实测（如 -40℃ 破冰启动），并在独立站设立 Proof Center，彻底打破海外买家对中国新品牌的防备心。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "为什么广告后台面板的高 ROAS（如 4.0+）往往是虚假繁荣？什么是因果增量（Causal Incrementality / iROAS）？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "广告后台汇报的 ROAS 采用相关性归因，经常将本就会自然购买的老客与品牌词搜索用户算作广告功劳。BrandOS™ M6 模块引入 Donald Rubin 潜在因果推断模型，采用 Holdout Geo-Lift 区域停投对比实验测算真正的因果净增量：iROAS = (实验组实际销售额 - 反事实预测销售额) / 增量广告支出。若 iROAS < 1.0，即使后台 ROAS 达 4.0+ 也属于严重亏损。BrandOS™ 要求真实因果增量 iROAS ≥ 1.20，全店营销效率比 MER 达到 3.5~5.0。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "在现代 AI 推荐算法时代（Meta ASC / TikTok / Google PMax），为什么说‘素材即定向’（AL-CAT）优于人工受众细分？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "现代广告平台采用深度学习推荐模型（如 Meta DLRM），具备对数十亿用户的实时高维意图识别能力。人工叠加兴趣标签只会割裂拍卖池流动性。BrandOS™ M4 模块践行 AL-CAT 理论：70%~80% 预算采用 Broad 宽投 / 1-CBO 架构，把前 3 秒具备强认知冲突的 Lo-Fi 实拍素材作为高维探针让算法自动找人；同时通过创作者主页白标授权（Whitelisting）以红人身份投流，借熟人社交信用降低 35% CPA。"
+      }
+    }
+  ]
+};
+
+// M1-M6 模块真实案例数据源 (接地气与强痛点升级版)
+const modules = [
+  {
+    id: "M1",
+    tag: "DEMAND RADAR",
+    title: "勘测心智",
+    subtitle: "别盲目测款。用 AI 逆向挖出海外差评断层，找到大牌看不见的细分蓝海",
+    playbook: "彻底告别盲目测款和粗暴铺货。通过抓取海外 Reddit 与 Amazon 数万条差评，用 AI 深度聚类出买家最痛却没人解决的 5W1H 刚需场景，开辟巨头看不见的场景蓝海。",
+    metric: "开辟 $300M+ 蓝海 • 痛点解决率 100%",
+    caseStudy: "EcoFlow 正浩：逆向挖掘 2.5 万条差评锁定暴风雪应急，众筹 $1211 万破纪录，年营收跃升至 $10 亿+",
+    link: "/modules/m1-brand-foundations",
+    accentColor: "cyan"
+  },
+  {
+    id: "M2",
+    tag: "UNFAKEABLE TRUST",
+    title: "立住人设",
+    subtitle: "口头吹嘘没人信。用极端实测与权威质保做硬核人质，彻底打破海外买家防备心",
+    playbook: "打字写“品质优良”一文不值。用假冒者模仿即破产的高成本投入（国际权威认证、10 年包换、极限破坏性实测），在独立站建立不可动摇的公信力护城河。",
+    metric: "享 50%-100% 溢价 • 品牌信任度 +300%",
+    caseStudy: "Patagonia 黑五反向营销营收逆势 +30% ($5.4亿)；Dyson 5,127次打样打造全透明气旋指纹",
+    link: "/modules/m2-behavioral-science",
+    accentColor: "indigo"
+  },
+  {
+    id: "M3",
+    tag: "VALUE PRICING",
+    title: "价值定价",
+    subtitle: "告别降价亏本。设计 3 档阶梯定价，产品比同行贵 30% 仍被抢购，死守 65%+ 战略毛利",
+    playbook: "定价不是算生产成本，而是提取买家心理账户。构建 Good-Better-Best 3 档阶梯利润沙盘，用主力旗舰款吃透 70%+ 销量，严控漏损，留足研发与获客弹药。",
+    metric: "实收口袋净利润 23.5% • AOV 跃升 +48%",
+    caseStudy: "YETI 酷冷：防熊认证支撑 $300+ 溢价，GBB 阶梯 + 饮具木马锁死 65%+ 毛利与 23.5% 实收净利",
+    link: "/modules/m3-strategic-pricing",
+    accentColor: "emerald"
+  },
+  {
+    id: "M4",
+    tag: "ALGO RESONANCE",
+    title: "算法共振",
+    subtitle: "别再死切标签。借海外真实红人主页白标投流，3 秒 Hook 击穿防线，获客成本大降 39%",
+    playbook: "彻底放开受众定向（Broad 宽投），让千亿推荐算法自动寻人；签约欧美垂直创作者并获取其主页白标授权（Whitelisting），借真实熟人信用击碎用户防备心。",
+    metric: "前 3 秒停留 43.8% • 获客成本 (CPA) -39.2%",
+    caseStudy: "HexClad 借米其林名厨 Ramsay 个人主页白标投流，获客成本大降 39.2%，跃升 $10 亿独角兽",
+    link: "/modules/m4-algorithmic-resonance",
+    accentColor: "amber"
+  },
+  {
+    id: "M5",
+    tag: "RAPID CONVERSION",
+    title: "极速转化",
+    subtitle: "消除结账顾虑。0.85 秒秒开 + 结账按钮旁密织 4 大信任证据，结账跳出率暴降 61.9%",
+    playbook: "打造 0.85s 物理级闪电加载；首屏 3 秒清晰传达价值；在结账按钮 100 像素内密织质保与安全近地证据网，配合 Shop Pay 指纹 3 秒收单，彻底消除结账焦虑。",
+    metric: "结账流失骤降 -61.9% • 移动端转化 +34.8%",
+    caseStudy: "Gymshark & Ridge：100px 近地证据网 + Shop Pay 指纹 3 秒收单，结账流失降 61.9%，CVR 提升 34.8%",
+    link: "/modules/m5-conversion-engineering",
+    accentColor: "rose"
+  },
+  {
+    id: "M6",
+    tag: "COMPOUND RETENTION",
+    title: "复利留存",
+    subtitle: "不做一次性买卖。6 大自适应自动化邮件唤醒老客，自然订阅占 79% 营收，停投广告订单不断",
+    playbook: "部署 6 大生命周期自适应行为流在关键节点精准唤醒老客；常态化执行区域停投对比实验（Holdout Geo-Lift），剥离老客自然回流水分，算清每一分真净利。",
+    metric: "客户 3 年 LTV 增长 1.85x • 全店 MER 4.20x",
+    caseStudy: "Chewy 宠物电商：Autoship 自动订阅贡献 79.2% 营收 ($11.1B)，6 大自适应流贡献 56.3% 留存收入",
+    link: "/modules/m6-compounding-retention",
+    accentColor: "purple"
+  }
+];
+
+import { getCollection } from 'astro:content';
+
+// 从 content collection 动态获取所有已发布专著并按时间倒序排列
+const allEssays = await getCollection('essays');
+allEssays.sort((a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime());
+
+const featuredEssay = allEssays.find(e => e.data.featured) || allEssays[0];
+const recentEssays = allEssays.filter(e => e.slug !== featuredEssay?.slug).slice(0, 2);
+---
+
+<Layout 
+  title="品牌科学实验室™ | BRANDOS LAB™ • 全球高溢价品牌操作系统"
+  description="广告费是每天归零的消耗，而品牌心智是年年复利的资产。专为中国出海企业打造的、从 0 到 1 科学构建全球高溢价品牌的工程化操作系统。"
+  customSchema={homeCustomSchema}
+>
+  <!-- Background Grid -->
+  <div class="fixed inset-0 pointer-events-none bg-lab-grid opacity-40 z-0"></div>
+
+  <!-- SECTION 1: HERO MANIFESTO (3-Second Golden Triangle) -->
+  <section class="relative z-10 max-w-6xl mx-auto px-5 md:px-8 pt-20 sm:pt-28 pb-24 text-center flex flex-col items-center">
+    <!-- Live Status Beacon -->
+    <div class="inline-flex items-center gap-2.5 px-4 py-1.5 bg-[#111622]/90 border border-[#232B3E] rounded-full text-slate-200 font-mono text-[11px] uppercase tracking-[0.2em] mb-8 backdrop-blur-md shadow-inner">
+      <span class="relative flex h-2 w-2">
+        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
+        <span class="relative inline-flex rounded-full h-2 w-2 bg-[#00F2FE]"></span>
+      </span>
+      <span class="font-extrabold text-slate-100">BRANDOS LAB™</span>
+      <span class="text-slate-600">/</span>
+      <span class="text-cyan-400 font-bold">BrandOS™ by Ran</span>
+    </div>
+
+    <!-- H1 Headline with Powerful Typographic Contrast -->
+    <h1 class="font-sans text-[30px] sm:text-[46px] md:text-[60px] text-slate-100 mb-8 tracking-[-0.03em] leading-[1.18] max-w-5xl">
+      <span class="block text-slate-400 font-medium text-[22px] sm:text-[34px] md:text-[42px] mb-2 tracking-normal">
+        品牌不是注册一个商标，更不是一个好看的 Logo ——
+      </span>
+      <span class="font-black text-slate-100">
+        它是用户在最需要时，<br class="hidden sm:inline" />
+        <span class="relative inline-block mt-1">
+          <span class="bg-gradient-to-r from-[#00F2FE] via-[#38BDF8] to-[#818CF8] bg-clip-text text-transparent font-black">
+            心里第一个跳出来、并在搜索框直接敲下的名字。
+          </span>
+          <span class="inline-block w-2.5 sm:w-3.5 h-6 sm:h-10 bg-[#00F2FE] align-middle ml-1.5 animate-pulse rounded-xs"></span>
+        </span>
+      </span>
+    </h1>
+
+    <!-- Cognitive Tension & Platform Protection Fee Manifesto Box -->
+    <div class="max-w-4xl w-full mb-12 bg-[#111622]/90 border border-[#232B3E] hover:border-cyan-500/40 p-6 sm:p-8 rounded-2xl backdrop-blur-md text-center shadow-[0_10px_30px_rgba(0,0,0,0.5)] transition-all duration-300 relative overflow-hidden group">
+      <!-- Ambient Backlight -->
+      <div class="absolute -top-24 left-1/2 -translate-x-1/2 w-96 h-32 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+      <!-- Tier 1: The Cruel Reality Hook -->
+      <div class="font-mono text-rose-400 font-extrabold text-[14px] sm:text-[16px] tracking-wide mb-3 flex items-center justify-center gap-2 uppercase">
+        <span class="w-2 h-2 rounded-full bg-rose-500 animate-ping inline-block"></span>
+        <span>不开广告 0 订单，开了广告 0 利润 ——</span>
+      </div>
+
+      <!-- Tier 2: The Provocative Awakening Question (Strict Single Line on Desktop) -->
+      <h2 class="text-[18px] sm:text-[24px] md:text-[29px] font-sans font-black text-slate-100 mb-4 tracking-tight leading-snug">
+        为什么谷歌、亚马逊给中国跨境卖家收的<span class="text-rose-400 bg-rose-950/80 border border-rose-500/50 px-2 py-0.5 rounded mx-1 shadow-[0_0_20px_rgba(244,63,94,0.3)] inline-block">“保护费”</span>越来越多？
+      </h2>
+
+      <!-- Tier 3: The Systemic Diagnosis & Solution -->
+      <p class="text-slate-300 text-[15px] sm:text-[17px] font-normal leading-[1.8] max-w-3xl mx-auto border-t border-[#232B3E] pt-4 mt-2 font-sans">
+        因为你只有供应链在发货，<strong class="text-slate-100 font-semibold underline decoration-rose-500/60 decoration-2 underline-offset-4">没有自己的品牌</strong>；
+        只有临时买流量，<strong class="text-cyan-400 font-bold bg-cyan-950/60 border border-cyan-500/40 px-2.5 py-0.5 rounded ml-1 inline-block mt-1 sm:mt-0 shadow-[0_0_15px_rgba(0,242,254,0.2)]">没有可以持续积累的属于自己的品牌系统</strong>。
+      </p>
+    </div>
+
+    <!-- Dual Action CTAs -->
+    <div class="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 w-full justify-center">
+      <a 
+        href="#brandos-matrix"
+        class="w-full sm:w-auto bg-slate-100 text-[#09090B] hover:bg-[#00F2FE] hover:shadow-[0_0_30px_rgba(0,242,254,0.4)] px-8 py-4 font-mono text-[13px] font-extrabold tracking-[0.15em] transition-all duration-200 uppercase rounded flex items-center justify-center gap-3 group"
+      >
+        <span>探索 BrandOS™ 品牌操作系统建设</span>
+        <span class="group-hover:translate-y-0.5 transition-transform text-[16px]">↓</span>
+      </a>
+      <a 
+        href="/essays" 
+        class="w-full sm:w-auto bg-[#111622]/80 hover:bg-[#182030] border border-[#232B3E] hover:border-cyan-400 text-slate-200 px-8 py-4 font-mono text-[13px] font-bold tracking-[0.15em] transition-all duration-200 uppercase rounded flex items-center justify-center gap-2 backdrop-blur"
+      >
+        <span>查阅品牌笔记专著库 ↗</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- SECTION 2: THE INTERACTIVE BRANDOS EXPLORER (M1-M6 Real-World Cases) -->
+  <BrandOSExplorer />
+
+  <!-- SECTION 3: THE ANTITHESIS (流量绞杀 vs. 认知复利) -->
+  <AntithesisMatrix />
+
+  <!-- SECTION 4: BrandOS™ 6-MODULE CARDS OVERVIEW -->
+  <section class="max-w-6xl mx-auto px-5 md:px-8 py-24 sm:py-28 relative z-10">
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 border-b border-[#232B3E] pb-8">
+      <div>
+        <span class="font-mono text-[12px] font-bold text-cyan-400 uppercase tracking-[0.25em] block mb-2">
+          SECTION 03 // FULL PROTOCOL INDEX
+        </span>
+        <h2 class="font-sans font-extrabold text-[32px] sm:text-[44px] text-slate-100 leading-tight">
+          BrandOS™ 6 大工程阶段全景速查
+        </h2>
+      </div>
+      <p class="text-slate-300 text-[14px] sm:text-[15px] mt-4 md:mt-0 font-sans max-w-md">
+        从需求勘测、信任质押、战略定价到算法共振、极速转化与因果留存的闭环自增强飞轮。
+      </p>
+    </div>
+
+    <!-- M1–M6 Grid Cards with Perfectly Aligned Heights -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 items-stretch">
+      {modules.map((item) => (
+        <ModuleCard module={item} />
+      ))}
+    </div>
+  </section>
+
+  <!-- SECTION 5: PEER-REVIEWED PROOF CENTER -->
+  <section class="border-t border-[#232B3E] bg-[#0A0D14] py-24 sm:py-28 relative z-10">
+    <div class="max-w-6xl mx-auto px-5 md:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="font-mono text-[12px] font-bold text-indigo-400 uppercase tracking-[0.25em] block mb-2">
+          SECTION 04 // PEER-REVIEWED FOUNDATIONS
+        </span>
+        <h2 class="font-sans font-extrabold text-[30px] sm:text-[42px] text-slate-100">
+          不可伪造的跨学科实证网络
+        </h2>
+        <p class="text-slate-400 text-[15px] sm:text-[16px] mt-3 font-sans">
+          BrandOS™ 拒绝营销玄学，每一个模块均深深扎根于经受住诺贝尔奖与严谨同行评议的实证理论。
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+        <!-- Mentor 1: Michael Spence -->
+        <div class="bg-[#111622] border border-[#232B3E] p-6 rounded-xl relative overflow-hidden flex flex-col justify-between">
+          <div>
+            <div class="font-mono text-[11px] text-indigo-400 uppercase tracking-widest mb-3 font-bold">NOBEL LAUREATE • 2001</div>
+            <h3 class="font-sans text-[20px] font-bold text-slate-100 mb-2">Michael Spence (迈克尔·斯宾塞)</h3>
+            <p class="text-slate-300 text-[14px] leading-relaxed mb-4 italic font-serif">
+              “在信息严重不对称的全球市场中，廉价的言论毫无价值。唯有假冒者一旦模仿就会破产的高昂投入（Costly Signals），挑剔的买家才会真正产生确信。”
+            </p>
+          </div>
+          <div class="font-mono text-[12px] text-slate-400 pt-3 border-t border-[#232B3E] mt-auto">
+            支撑模块：<strong class="text-cyan-400">M2 立住人设 (昂贵信号理论与分离均衡机制)</strong>
+          </div>
+        </div>
+
+        <!-- Mentor 2: Byron Sharp -->
+        <div class="bg-[#111622] border border-[#232B3E] p-6 rounded-xl relative overflow-hidden flex flex-col justify-between">
+          <div>
+            <div class="font-mono text-[11px] text-cyan-400 uppercase tracking-widest mb-3 font-bold">EHRENBERG-BASS INSTITUTE</div>
+            <h3 class="font-sans text-[20px] font-bold text-slate-100 mb-2">Byron Sharp (拜伦·夏普)</h3>
+            <p class="text-slate-300 text-[14px] leading-relaxed mb-4 italic font-serif">
+              “消费者不会爱上你的创业情怀。占领特定生活情境的品类进入点 (CEPs)，降低心智提取能耗，才是实现品牌规模化增长的唯一科学正道。”
+            </p>
+          </div>
+          <div class="font-mono text-[12px] text-slate-400 pt-3 border-t border-[#232B3E] mt-auto">
+            支撑模块：<strong class="text-cyan-400">M1 勘测心智 (心智显著性与品类进入点网格)</strong>
+          </div>
+        </div>
+
+        <!-- Mentor 3: Donald Rubin -->
+        <div class="bg-[#111622] border border-[#232B3E] p-6 rounded-xl relative overflow-hidden flex flex-col justify-between">
+          <div>
+            <div class="font-mono text-[11px] text-emerald-400 uppercase tracking-widest mb-3 font-bold">HARVARD UNIVERSITY</div>
+            <h3 class="font-sans text-[20px] font-bold text-slate-100 mb-2">Donald Rubin (唐纳德·鲁宾)</h3>
+            <p class="text-slate-300 text-[14px] leading-relaxed mb-4 italic font-serif">
+              “停投广告后依然能自发完成的交易，属于老客自然回流；停投后立刻消失的订单，才代表广告创造的真实因果增量 (iROAS)。”
+            </p>
+          </div>
+          <div class="font-mono text-[12px] text-slate-400 pt-3 border-t border-[#232B3E] mt-auto">
+            支撑模块：<strong class="text-cyan-400">M6 复利留存 (潜在因果模型与反事实实验)</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5: HIGH-IMPACT CALL TO ACTION (战略跃迁与直联 Ran) -->
+  <section class="max-w-6xl mx-auto px-5 md:px-8 py-20 sm:py-24 relative z-10">
+    <div class="bg-gradient-to-b from-[#111622] to-[#0A0D14] border-2 border-cyan-500/50 rounded-3xl p-8 sm:p-14 text-center relative overflow-hidden shadow-[0_0_50px_rgba(0,242,254,0.12)]">
+      <!-- Ambient Backlight -->
+      <div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[500px] h-[200px] bg-cyan-500/15 rounded-full blur-3xl pointer-events-none"></div>
+
+      <!-- Top Badge -->
+      <div class="inline-flex items-center gap-2 px-3.5 py-1 bg-cyan-950/80 border border-cyan-500/40 rounded-full font-mono text-[11px] font-bold text-cyan-400 uppercase tracking-[0.2em] mb-6">
+        <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse"></span>
+        STRATEGIC EVOLUTION // 开启品牌之路
+      </div>
+
+      <!-- Main Headline -->
+      <h2 class="font-sans font-black text-[28px] sm:text-[40px] md:text-[46px] text-slate-100 mb-6 tracking-tight leading-[1.25] max-w-3xl mx-auto">
+        与其在价格战里继续内卷，<br class="hidden sm:inline" />
+        <span class="bg-gradient-to-r from-[#00F2FE] via-[#38BDF8] to-[#818CF8] bg-clip-text text-transparent">
+          不如从今天开启你的品牌之路。
+        </span>
+      </h2>
+
+      <!-- Subtitle -->
+      <p class="font-sans text-slate-300 text-[15px] sm:text-[17px] max-w-2xl mx-auto leading-relaxed mb-10">
+        告别每天归零的买量焦虑。装载 BrandOS™ 操作系统，把中国制造的供应链实力，转化为海外用户指名购买的确定性高溢价。
+      </p>
+
+      <!-- Single Action Button (Direct Email Link to Ran) -->
+      <div class="flex justify-center">
+        <a 
+          href="mailto:ranzhongus@icloud.com?subject=BrandOS%20%E5%93%81%E7%89%8C%E7%B3%BB%E7%BB%9F%E5%92%A8%E8%AF%A2&body=%E6%82%A8%E5%A5%BD%20Ran%EF%BC%8C%E6%88%91%E6%AD%A3%E5%9C%A8%E5%81%9A%E5%87%BA%E6%B5%B7%E4%B8%9A%E5%8A%A1%EF%BC%8C%E5%B8%8C%E6%9C%9B%E6%8E%A2%E8%AE%A8%E5%A6%82%E4%BD%95%E4%B8%BA%E6%88%91%E4%BB%AC%E7%9A%84%E4%BA%A7%E5%93%81%E6%90%AD%E5%BB%BA%20BrandOS%20%E5%93%81%E7%89%8C%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E3%80%82"
+          class="inline-flex items-center gap-3 bg-slate-100 hover:bg-[#00F2FE] text-[#09090B] px-8 sm:px-10 py-4 sm:py-4.5 rounded-xl font-mono text-[14px] sm:text-[15px] font-extrabold uppercase tracking-wider transition-all duration-300 hover:shadow-[0_0_35px_rgba(0,242,254,0.45)] hover:scale-[1.02] group"
+        >
+          <svg class="w-4 h-4 text-[#09090B]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+          </svg>
+          <span>马上咨询</span>
+          <span class="group-hover:translate-x-1 transition-transform">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 6: BRAND NOTES (品牌笔记精选 · 杂志级非对称布局) -->
+  <section class="max-w-6xl mx-auto px-5 md:px-8 py-24 sm:py-28 relative z-10 border-t border-[#232B3E]">
+    <!-- Section Header -->
+    <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-10 border-b border-[#232B3E] pb-6 gap-4">
+      <div>
+        <div class="inline-flex items-center gap-2 px-3 py-0.5 bg-cyan-950/60 border border-cyan-800/60 rounded-full font-mono text-[11px] font-bold text-cyan-400 uppercase tracking-[0.2em] mb-3">
+          <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse"></span>
+          CONTINUOUS RESEARCH // 品牌笔记专著库
+        </div>
+        <h2 class="font-sans font-extrabold text-[28px] sm:text-[40px] text-slate-100 leading-tight">
+          品牌笔记与实证专著
+        </h2>
+      </div>
+      <a href="/essays" class="text-slate-200 hover:text-cyan-400 font-mono text-[13px] font-bold uppercase tracking-wider flex items-center gap-1.5 transition-colors self-start sm:self-auto">
+        <span>全部品牌笔记 ({allEssays.length}+ 篇)</span>
+        <span>→</span>
+      </a>
+    </div>
+
+    <!-- Quick Module Navigation Bar -->
+    <div class="flex flex-wrap items-center gap-2 mb-10 pb-5 border-b border-[#232B3E]">
+      <span class="font-mono text-[11px] text-slate-500 uppercase mr-1 font-semibold">模块索引:</span>
+      <a href="/essays#M1" class="px-3 py-1 bg-[#111622] hover:bg-cyan-950/40 border border-[#232B3E] hover:border-cyan-500/50 rounded-lg text-slate-300 hover:text-cyan-400 font-mono text-[11px] font-bold transition-all">M1 勘测心智</a>
+      <a href="/essays#M2" class="px-3 py-1 bg-[#111622] hover:bg-indigo-950/40 border border-[#232B3E] hover:border-indigo-500/50 rounded-lg text-slate-300 hover:text-indigo-400 font-mono text-[11px] font-bold transition-all">M2 立住人设</a>
+      <a href="/essays#M3" class="px-3 py-1 bg-[#111622] hover:bg-emerald-950/40 border border-[#232B3E] hover:border-emerald-500/50 rounded-lg text-slate-300 hover:text-emerald-400 font-mono text-[11px] font-bold transition-all">M3 价值定价</a>
+      <a href="/essays#M4" class="px-3 py-1 bg-[#111622] hover:bg-amber-950/40 border border-[#232B3E] hover:border-amber-500/50 rounded-lg text-slate-300 hover:text-amber-400 font-mono text-[11px] font-bold transition-all">M4 算法共振</a>
+      <a href="/essays#M5" class="px-3 py-1 bg-[#111622] hover:bg-rose-950/40 border border-[#232B3E] hover:border-rose-500/50 rounded-lg text-slate-300 hover:text-rose-400 font-mono text-[11px] font-bold transition-all">M5 极速转化</a>
+      <a href="/essays#M6" class="px-3 py-1 bg-[#111622] hover:bg-purple-950/40 border border-[#232B3E] hover:border-purple-500/50 rounded-lg text-slate-300 hover:text-purple-400 font-mono text-[11px] font-bold transition-all">M6 复利留存</a>
+    </div>
+
+    <!-- Asymmetric Editorial Showcase Grid -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+      {featuredEssay && (
+        <!-- Left: Large Featured Flagship Card (7 Columns) -->
+        <article class="lg:col-span-7 bg-[#111622] border border-cyan-500/50 hover:border-cyan-400 rounded-2xl p-6 sm:p-8 flex flex-col justify-between transition-all duration-300 group hover:shadow-[0_0_40px_rgba(0,242,254,0.1)] relative overflow-hidden">
+          <div class="absolute top-0 right-0 bg-cyan-400 text-[#09090B] font-mono text-[9px] font-black px-3 py-1 uppercase tracking-widest">
+            FEATURED MONOGRAPH
+          </div>
+
+          <div>
+            <!-- Visual Hero Banner in Card -->
+            <div class="w-full aspect-[16/9] rounded-xl overflow-hidden mb-6 border border-[#232B3E] bg-[#09090B] relative group-hover:border-cyan-500/40 transition-colors">
+              <img 
+                src="/images/brand-notes-banner.jpg" 
+                alt={featuredEssay.data.title}
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-[#111622] via-transparent to-transparent opacity-80"></div>
+            </div>
+
+            <!-- Metadata Row -->
+            <div class="flex items-center gap-3 mb-4">
+              <span class="font-mono text-[11px] font-extrabold uppercase tracking-wider text-cyan-400 bg-cyan-950/60 border border-cyan-800/60 px-3 py-0.5 rounded">
+                {featuredEssay.data.module} • {featuredEssay.data.moduleName}
+              </span>
+              <span class="font-mono text-[11px] text-slate-400">
+                ⏱ {featuredEssay.data.readingTime}
+              </span>
+              <span class="font-mono text-[11px] text-slate-500">
+                • {featuredEssay.data.author || "Ran (然)"}
+              </span>
+            </div>
+
+            <!-- Title -->
+            <h3 class="font-sans font-bold text-[22px] sm:text-[26px] text-slate-100 mb-3 group-hover:text-cyan-400 transition-colors leading-snug">
+              <a href={`/essays/${featuredEssay.slug}`}>
+                {featuredEssay.data.title}
+              </a>
+            </h3>
+
+            <!-- Excerpt -->
+            <p class="font-sans text-[14.5px] text-slate-300 leading-relaxed mb-6">
+              {featuredEssay.data.description}
+            </p>
+          </div>
+
+          <!-- Action Button -->
+          <a 
+            href={`/essays/${featuredEssay.slug}`}
+            class="pt-4 border-t border-[#232B3E] flex items-center justify-between font-mono text-[13px] font-bold text-slate-100 group-hover:text-cyan-400 transition-colors mt-auto"
+          >
+            <span>阅读全文 →</span>
+            <span class="group-hover:translate-x-2 transition-transform text-[16px]">→</span>
+          </a>
+        </article>
+      )}
+
+      <!-- Right: Compact Recent Monographs (5 Columns) -->
+      <div class="lg:col-span-5 flex flex-col gap-6 justify-between">
+        {recentEssays.map((essay) => (
+          <EssayCard essay={essay} />
+        ))}
+      </div>
+    </div>
+  </section>
+</Layout>
