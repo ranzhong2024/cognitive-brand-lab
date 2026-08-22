@@ -1,9 +1,12 @@
-# Cognitive Brand Lab
-> The science of brand architecture and cross-border commercial strategy. Powered by RAN BRAND OS™.
+# Cognitive Brand Lab (品牌科学实验室™)
+> The science of brand architecture and cross-border commercial strategy. Powered by BrandOS™ by Ran.
 
-- [Home](https://cognitivebrandlab.org/): Cognitive Brand Lab Manifesto and RAN BRAND OS™ architecture.
-- [About & Origin](https://cognitivebrandlab.org/about): Principal Investigator Ran's cross-disciplinary background (Yeshiva University Digital Marketing Master's, CBAP, PMP, Google Data Analytics).
-- [Essays Archive](https://cognitivebrandlab.org/essays): Empirical research briefs on Byron Sharp's How Brands Grow, Jobs-to-be-Done (JTBD) behavioral psychology, and BCG pricing waterfall models.
-- [M01 Brand Foundations](https://cognitivebrandlab.org/modules/m1-brand-foundations): Keller CBBE, Kapferer Brand Prism, Distinctive Brand Assets.
-- [M02 Behavioral Science](https://cognitivebrandlab.org/modules/m2-behavioral-science): Kahneman System 1/2, Prospect Theory, Loss Aversion, JTBD.
-- [M03 Strategic Pricing](https://cognitivebrandlab.org/modules/m3-strategic-pricing): BCG Pricing Prism, Conjoint WTP Analysis, Price Waterfall optimization.
+- [Home](https://cognitivebrandlab.org/): Cognitive Brand Lab Manifesto and BrandOS™ architecture.
+- [About & Origin](https://cognitivebrandlab.org/about): Principal Investigator Ran's cross-disciplinary background (Digital Marketing Master's, CBAP, Google Data Analytics & Digital Marketing).
+- [Essays Archive](https://cognitivebrandlab.org/essays): Empirical research monographs on Byron Sharp's How Brands Grow, Michael Spence Costly Signaling, and BCG/Simon pricing models.
+- [M1 Demand Radar](https://cognitivebrandlab.org/modules/m1-brand-foundations): Byron Sharp CEPs, Clayton Christensen JTBD, VOC NLP text mining.
+- [M2 Unfakeable Trust](https://cognitivebrandlab.org/modules/m2-behavioral-science): Spence Costly Signaling, Separating Equilibrium, Distinctive Brand Assets.
+- [M3 Value Pricing](https://cognitivebrandlab.org/modules/m3-strategic-pricing): Good-Better-Best (GBB) Tiering, Price Waterfall Leakage Audit, 65%+ Gross Margin.
+- [M4 Algo Resonance](https://cognitivebrandlab.org/modules/m4-algorithmic-resonance): Meta DLRM, Creator Whitelisting, Broad 1-CBO Media Buying.
+- [M5 Rapid Conversion](https://cognitivebrandlab.org/modules/m5-conversion-engineering): MECLABS Heuristics, 100px Near-Ground Evidence Chain, Core Web Vitals.
+- [M6 Compound Retention](https://cognitivebrandlab.org/modules/m6-compounding-retention): Rubin Causal Inference, Geo-Lift Holdout iROAS, 6 Adaptive Lifecycle Flows.

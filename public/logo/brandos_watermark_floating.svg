@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" role="img" aria-label="BRANDOS LAB Watermark">
+  <rect x="7" y="6" width="6.5" height="36" rx="1.5" fill="#FAFAFA"/>
+  <rect x="9.5" y="11" width="1.5" height="26" rx="0.75" fill="#09090B" opacity="0.35"/>
+  <path d="M 17 6 H 32 C 37 6 40.5 9.5 40.5 14.5 C 40.5 19.5 37 23 32 23 H 17 V 6 Z M 23.5 11.5 V 17.5 H 31 C 33 17.5 34.5 16.2 34.5 14.5 C 34.5 12.8 33 11.5 31 11.5 H 23.5 Z" fill="#FAFAFA"/>
+  <path d="M 17 25.5 H 33.5 C 39.5 25.5 43.5 29.5 43.5 34.25 C 43.5 39 39.5 42 33.5 42 H 17 V 25.5 Z M 23.5 30.8 V 36.8 H 32.5 C 35 36.8 37 35.7 37 34.25 C 37 32.8 35 30.8 32.5 30.8 H 23.5 Z" fill="#FAFAFA"/>
+  <circle cx="27" cy="24.25" r="2" fill="#00F2FE"/>
+</svg>
