@@ -7,48 +7,96 @@ export function getStaticPaths() {
     {
       params: { slug: 'm1-brand-foundations' },
       props: {
-        id: 'M01',
-        title: '品牌基石与身份构建 (Brand Foundations & Identity)',
-        description: '怎么让海外用户一眼认出你，建立不可动摇的信任基石？从无名白牌跨越到高感知溢价品牌的系统工程。',
+        id: 'M1',
+        title: 'M1 勘测心智：锁定真实生活场景与心智入口 (Demand Radar & Mental Sensing)',
+        description: '怎么让海外用户在产生需求的一瞬间，第一个想起你？基于 Byron Sharp CEPs 场景网格与 Clayton Christensen JTBD 任务雇佣理论。',
         systemContext: 'Layer 01 • 基础层 (Foundation Layer)',
-        nextModule: { slug: 'm2-behavioral-science', name: 'M02: 认知心理与行为转化' },
+        nextModule: { slug: 'm2-behavioral-science', name: 'M2: 立住人设与信用质押' },
         prevModule: null,
         sections: [
-          { number: '01', title: 'Keller CBBE 品牌心智金字塔', desc: '从品牌显著度（Salience）到品牌共鸣（Resonance）的 4 阶心智跃迁法则。' },
-          { number: '02', title: 'Kapferer 品牌六维棱镜', desc: '物理特征、品牌个性、文化根基、关系模型、用户画像与自我认同的 6 维一致性。' },
-          { number: '03', title: '独特品牌资产 (DBAs) 构建', desc: '视觉、声音、字符与几何图形资产的独立可识别性与心智垄断。' },
+          { number: '01', title: 'Byron Sharp CEPs 场景网格构建', desc: '5W1H 购买触发情境扫描，构建多维度心智检索通路与物理可得性。' },
+          { number: '02', title: 'Clayton Christensen JTBD 进展力学', desc: '推进力、拉动力、焦虑阻力与习惯惯性的四力平衡分析。' },
+          { number: '03', title: 'AEO 机器语义与主题簇确权', desc: '在 ChatGPT / Perplexity / Google SGE 知识图谱中建立第一信源索引。' },
         ],
       },
     },
     {
       params: { slug: 'm2-behavioral-science' },
       props: {
-        id: 'M02',
-        title: '认知心理与行为转化科学 (Cognitive & Behavioral Science)',
-        description: '破译海外用户的决策神经，用行为经济学让转化率自然翻倍。拒绝死磕刷单与低效的推流促销。',
+        id: 'M2',
+        title: 'M2 立住人设：打造不可伪造的硬核信任与品牌指纹 (Unfakeable Trust & DBAs)',
+        description: '破译海外高净值买家的信任神经，用 Michael Spence 昂贵信号与 Byron Sharp 独特品牌资产构建信任护城河。',
         systemContext: 'Layer 01 • 基础层 (Foundation Layer)',
-        nextModule: { slug: 'm3-strategic-pricing', name: 'M03: 战略定位与定价科学' },
-        prevModule: { slug: 'm1-brand-foundations', name: 'M01: 品牌基石与身份' },
+        nextModule: { slug: 'm3-strategic-pricing', name: 'M3: 价值定价与毛利工程' },
+        prevModule: { slug: 'm1-brand-foundations', name: 'M1: 勘测心智与需求雷达' },
         sections: [
-          { number: '01', title: 'Kahneman 双系统决策模型 (System 1 & 2)', desc: '如何利用 System 1（直觉系统）的无摩擦启发式认知降低决策阻力。' },
-          { number: '02', title: '前景理论与损失规避 (Prospect Theory)', desc: '痛苦不对称性：如何用安全感保障与损失框架撬动犹豫不决的买家。' },
-          { number: '03', title: 'JTBD 待办任务与生活进展 (Progress over Features)', desc: '撕开海外用户伪善面具，从售卖参数转向提供生活进展与情感慰藉。' },
+          { number: '01', title: 'Michael Spence 昂贵信号单次穿越', desc: '为什么口头宣传是零价值的？如何用高成本不可伪造投入实现分离均衡。' },
+          { number: '02', title: 'Byron Sharp DBA 独特品牌资产网格', desc: '专属构型轮廓、色彩编码与声纹指纹的心智检索垄断。' },
+          { number: '03', title: 'Rory Sutherland 仰巴脚效应 (Pratfall Effect)', desc: '主动暴露适用边界与劝退非目标客群，反向倍增核心承诺的可信度。' },
         ],
       },
     },
     {
       params: { slug: 'm3-strategic-pricing' },
       props: {
-        id: 'M03',
-        title: '战略定位与定价科学 (Strategic Positioning & Pricing)',
-        description: '怎么把货卖得比对手贵 30%，还能捕获全部利润？拒绝亏本赚吆喝的恶性价格战。',
+        id: 'M3',
+        title: 'M3 价值定价：依据心理账户与 WTP 锁死 65%+ 战略毛利 (Strategic Value Pricing)',
+        description: '怎么把商品卖得比对手贵 30%，还能捕获全部利润？拒绝亏本赚吆喝的恶性价格战。',
         systemContext: 'Layer 02 • 战略层 (Strategy Layer)',
-        nextModule: null,
-        prevModule: { slug: 'm2-behavioral-science', name: 'M02: 认知心理与行为转化' },
+        nextModule: { slug: 'm4-algorithmic-resonance', name: 'M4: 算法共振与创作者套利' },
+        prevModule: { slug: 'm2-behavioral-science', name: 'M2: 立住人设与信用质押' },
         sections: [
-          { number: '01', title: '认知锚定与参考点重塑 (Cognitive Anchoring)', desc: '在价格呈现之前建立初始价值感知的心理机制与品类重新定义。' },
-          { number: '02', title: 'BCG 定价三棱镜与竞争定界', desc: '底线成本、WTP 天花板与竞争定位三角平衡模型。' },
-          { number: '03', title: '价格瀑布模型与 Good-Better-Best 阶梯', desc: '堵住渠道佣金与 PPC 广告漏损黑洞，设计高利润产品组合。' },
+          { number: '01', title: 'Hermann Simon 定价微积分与利润杠杆', desc: '1% 价格改善带来 11.1% 营业利润增长的微观机制。' },
+          { number: '02', title: 'McKinsey 价格瀑布漏损审计', desc: '堵住渠道佣金、运费逆向折损与 PPC 广告补贴黑洞。' },
+          { number: '03', title: 'Good-Better-Best 3 档阶梯利润沙盘', desc: '通过阶梯产品矩阵提取消费者剩余，主推款毛利锁定在 65%+。' },
+        ],
+      },
+    },
+    {
+      params: { slug: 'm4-algorithmic-resonance' },
+      props: {
+        id: 'M4',
+        title: 'M4 算法共振：素材即定向探针与创作者信誉套利 (Algorithmic Resonance)',
+        description: '为什么人工受众细分正在杀死利润？深度解构 Meta DLRM 算法拍卖动力学、说服知识模型 (PKM) 与红人白标授权。',
+        systemContext: 'Layer 03 • 规模层 (Scale Layer)',
+        nextModule: { slug: 'm5-conversion-engineering', name: 'M5: 极速转化与主权基建' },
+        prevModule: { slug: 'm3-strategic-pricing', name: 'M3: 价值定价与毛利工程' },
+        sections: [
+          { number: '01', title: 'Meta DLRM 现代推荐拍卖与 AL-CAT', desc: '素材即定向：用高维语义探针让千亿参数算法自动找人。' },
+          { number: '02', title: '说服知识模型 (PKM) 与准社会关系 (PSI)', desc: '为什么官方账号自夸被秒划走？借创作者信任资产击碎用户防御。' },
+          { number: '03', title: 'Broad 1-CBO 极简账户与 3 秒 Hook 模式库', desc: '认知冲突、极限酷刑测试与前后对比模式，实现 CPA 规模化降低。' },
+        ],
+      },
+    },
+    {
+      params: { slug: 'm5-conversion-engineering' },
+      props: {
+        id: 'M5',
+        title: 'M5 极速转化：极速转化科学与 100px 近地证据链 (Rapid Conversion Science)',
+        description: '让人脑 3 秒秒懂，让 AI 问答引擎主动首推。基于 MECLABS 启发式方程、System 1 直觉流畅性与 Core Web Vitals。',
+        systemContext: 'Layer 03 • 转化层 (Conversion Layer)',
+        nextModule: { slug: 'm6-compounding-retention', name: 'M6: 复利留存与因果度量' },
+        prevModule: { slug: 'm4-algorithmic-resonance', name: 'M4: 算法共振与创作者套利' },
+        sections: [
+          { number: '01', title: 'MECLABS 转化启发式方程深度拆解', desc: '动机 4m + 价值 3v + 激励 2(i-f) - 焦虑 2a 的全链路落地。' },
+          { number: '02', title: '100px 近地证据链与 3 秒首屏黄金三角', desc: '在结账 CTA 上下 100 像素内密织质保、时效、退换与安全支付防伪网。' },
+          { number: '03', title: 'Google Core Web Vitals 物理性能底线', desc: 'LCP < 1.0s, INP < 100ms, CLS = 0 与 Schema.org JSON-LD 结构化数据。' },
+        ],
+      },
+    },
+    {
+      params: { slug: 'm6-compounding-retention' },
+      props: {
+        id: 'M6',
+        title: 'M6 复利留存：复利留存与因果增量度量 (Compounding Retention & Causal Lab)',
+        description: '自适应行为流做管家，因果实验算清真利润。基于 Reforge 留存微笑曲线、沃顿商学院 BG/NBD 客户模型与 Rubin 因果推断。',
+        systemContext: 'Layer 04 • 复利层 (Compounding Layer)',
+        nextModule: null,
+        prevModule: { slug: 'm5-conversion-engineering', name: 'M5: 极速转化与主权基建' },
+        sections: [
+          { number: '01', title: 'Donald Rubin 潜在因果推断与 Geo-Lift Holdout', desc: '通过停投实验剔除自然截流假归因，测算真实的 iROAS 净现金流。' },
+          { number: '02', title: '沃顿商学院 Peter Fader BG/NBD 概率模型', desc: '后验存活概率 P(Alive) 精准分层与自适应生命周期动作。' },
+          { number: '03', title: '6 大核心自适应流与发信域名物理信誉', desc: 'Flow-First 架构贡献 50%~70% CRM 利润，严格遵循 SPF/DKIM/DMARC 治理。' },
         ],
       },
     },
@@ -59,114 +107,112 @@ const { id, title, description, systemContext, nextModule, prevModule, sections 
 const essays = await getCollection('essays', (e) => e.data.module === id);
 ---
 
-<Layout 
-  title={`${id}: ${title} | Cognitive Brand Lab • RAN BRAND OS™`}
-  description={description}
-  currentPath={`/modules/${Astro.params.slug}`}
->
-  <main class="flex-grow w-full max-w-max-width mx-auto px-4 md:px-margin mt-8 md:mt-stack-lg mb-stack-xl">
-    <!-- Module Header -->
-    <header class="mb-stack-lg border-b-2 border-outline-variant pb-stack-md">
-      <div class="flex items-center gap-2 font-mono text-[12px] text-secondary mb-3 tracking-widest uppercase">
-        <a href="/#brand-os" class="hover:underline">BRAND OS Map</a>
-        <span>/</span>
-        <span class="text-primary font-bold">{id}</span>
+<Layout title={`${title} | 品牌科学实验室 (BRANDOS LAB)`} description={description}>
+  <div class="max-w-6xl mx-auto px-6 py-20">
+    <!-- Breadcrumb -->
+    <div class="flex items-center gap-2 font-mono text-[11px] text-slate-500 uppercase tracking-widest mb-8">
+      <a href="/" class="hover:text-cyan-400 transition-colors">BRANDOS LAB</a>
+      <span>/</span>
+      <a href="/#brandos-matrix" class="hover:text-cyan-400 transition-colors">ENGINE</a>
+      <span>/</span>
+      <span class="text-cyan-400">{id}</span>
+    </div>
+
+    <!-- Header Block -->
+    <div class="border-b border-[#232B3E] pb-10 mb-12">
+      <div class="inline-block font-mono text-[10px] font-bold text-cyan-400 bg-cyan-950/40 border border-cyan-800/40 px-2.5 py-1 rounded mb-4">
+        {systemContext}
       </div>
-      <h1 class="font-display-lg text-[28px] sm:text-[36px] md:text-display-lg text-on-surface mb-stack-md max-w-4xl tracking-tight">
+      <h1 class="font-serif text-[32px] sm:text-[46px] font-bold text-slate-100 mb-4 leading-tight">
         {title}
       </h1>
-      <p class="font-body-lg text-[16px] md:text-body-lg text-secondary max-w-3xl leading-relaxed">
+      <p class="font-sans text-slate-400 text-[16px] max-w-3xl leading-relaxed">
         {description}
       </p>
-    </header>
+    </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
-      <!-- System Context Sidebar -->
-      <aside class="md:col-span-3 mb-stack-lg md:mb-0">
-        <div class="sticky top-[100px] border-t border-outline-variant pt-4">
-          <h3 class="font-mono text-[11px] text-secondary uppercase mb-3 font-bold tracking-widest">
-            SYSTEM CONTEXT / 系统层级
-          </h3>
-          <p class="font-caption text-caption text-secondary mb-4">
-            {systemContext}
-          </p>
-          <div class="flex flex-col space-y-3 border-l-2 border-surface-container pl-4 text-[13px] font-mono">
-            {prevModule && (
-              <a href={`/modules/${prevModule.slug}`} class="text-secondary hover:text-primary transition-colors flex items-center gap-1">
-                <span>↑ {prevModule.name}</span>
-              </a>
-            )}
-            <div class="font-bold text-primary">
-              → 当前模块: {id}
+    <!-- Key Sections Grid -->
+    <div class="mb-16">
+      <h2 class="font-mono text-[12px] font-bold text-slate-400 uppercase tracking-[0.2em] mb-6">
+        模块工程支柱 (ENGINEERING PILLARS)
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {sections.map((sec) => (
+          <div class="bg-[#111622] border border-[#232B3E] p-6 rounded-lg">
+            <div class="font-mono text-[11px] font-bold text-cyan-400 mb-2">
+              SECTION::{sec.number}
             </div>
-            {nextModule && (
-              <a href={`/modules/${nextModule.slug}`} class="text-secondary hover:text-primary transition-colors flex items-center gap-1">
-                <span>↓ {nextModule.name}</span>
-              </a>
-            )}
+            <h3 class="font-serif text-[18px] font-bold text-slate-100 mb-2">
+              {sec.title}
+            </h3>
+            <p class="font-sans text-[13px] text-slate-400 leading-relaxed">
+              {sec.desc}
+            </p>
           </div>
-        </div>
-      </aside>
-
-      <!-- Main Content Area -->
-      <div class="md:col-span-9 flex flex-col gap-stack-lg">
-        <!-- Module Sub-sections -->
-        <section>
-          <h2 class="font-headline-sm text-[22px] font-bold text-on-surface mb-stack-md border-b border-outline-variant pb-2">
-            核心理论架构与推演步骤 (Module Architecture)
-          </h2>
-          <div class="flex flex-col space-y-6">
-            {sections.map((sec) => (
-              <div class="flex flex-col md:flex-row md:items-start group border-b border-outline-variant pb-6">
-                <div class="font-display-lg text-[32px] md:text-[40px] text-outline md:w-20 leading-none mb-2 md:mb-0 group-hover:text-primary transition-colors font-bold">
-                  {sec.number}
-                </div>
-                <div class="flex-grow md:pl-gutter md:border-l border-outline-variant">
-                  <h3 class="font-headline-sm text-[18px] font-bold text-on-surface mb-1">
-                    {sec.title}
-                  </h3>
-                  <p class="font-body-md text-[14px] text-secondary leading-relaxed">
-                    {sec.desc}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        <!-- Published Articles in this Module -->
-        <section>
-          <div class="flex justify-between items-end mb-stack-md border-b border-outline-variant pb-2">
-            <h2 class="font-headline-sm text-[22px] font-bold text-on-surface">
-              该模块实战文献 (Research Papers)
-            </h2>
-            <span class="font-mono text-[12px] text-secondary">{essays.length} 篇文献</span>
-          </div>
-
-          <div class="flex flex-col divide-y divide-outline-variant">
-            {essays.map((essay) => (
-              <article class="py-5 group hover:bg-surface-container-low transition-colors px-4 -mx-4 rounded">
-                <div class="flex flex-col md:flex-row md:justify-between md:items-baseline mb-2">
-                  <a href={`/essays/${essay.slug}`} class="block">
-                    <h3 class="font-headline-sm text-[17px] font-bold text-on-surface group-hover:text-primary transition-colors flex items-center">
-                      {essay.data.title}
-                      <span class="material-symbols-outlined text-[18px] ml-1.5 opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
-                    </h3>
-                  </a>
-                  <div class="font-mono text-[12px] text-secondary mt-1 md:mt-0 flex items-center gap-3">
-                    <span>{essay.data.pubDate.toISOString().slice(0, 7)}</span>
-                    <span>•</span>
-                    <span>{essay.data.readingTime}</span>
-                  </div>
-                </div>
-                <p class="text-[14px] text-secondary leading-relaxed line-clamp-2">
-                  {essay.data.description}
-                </p>
-              </article>
-            ))}
-          </div>
-        </section>
+        ))}
       </div>
     </div>
-  </main>
+
+    <!-- Related Flagship Essays -->
+    <div class="mb-16 border-t border-[#232B3E] pt-12">
+      <div class="flex justify-between items-end mb-8">
+        <div>
+          <h2 class="font-mono text-[12px] font-bold text-cyan-400 uppercase tracking-[0.2em] mb-1">
+            模块相关研报专著
+          </h2>
+          <p class="font-serif text-[24px] text-slate-100">
+            {id} 深度理论与实战案例单行本
+          </p>
+        </div>
+      </div>
+
+      {essays.length > 0 ? (\
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {essays.map((essay) => (\
+            <div class="bg-[#111622] border border-[#232B3E] hover:border-cyan-500/50 p-6 rounded-lg flex flex-col justify-between group">
+              <div>
+                <div class="flex justify-between items-center mb-2 font-mono text-[10px] text-slate-500">
+                  <span class="text-cyan-400 font-bold uppercase">{essay.data.moduleName}</span>
+                  <span>⏱ {essay.data.readingTime}</span>
+                </div>
+                <h3 class="font-serif text-[18px] font-bold text-slate-100 mb-2 group-hover:text-cyan-400 transition-colors">
+                  <a href={`/essays/${essay.slug}`}>
+                    {essay.data.title}
+                  </a>
+                </h3>
+                <p class="font-sans text-[13px] text-slate-400 line-clamp-2 mb-4">
+                  {essay.data.description}
+                </p>
+              </div>
+              <a href={`/essays/${essay.slug}`} class="font-mono text-[11px] font-bold text-cyan-400 hover:underline flex items-center gap-1">
+                <span>阅读全文</span>
+                <span>→</span>
+              </a>
+            </div>
+          ))}
+        </div>
+      ) : (\
+        <div class="bg-[#111622] border border-[#232B3E] p-8 rounded-lg text-center font-mono text-[12px] text-slate-500">
+          更多 {id} 专属研报正在由实验室研究员同行评审中，即将发布...
+        </div>
+      )}
+    </div>
+
+    <!-- Navigation Footer -->
+    <div class="border-t border-[#232B3E] pt-8 flex justify-between items-center font-mono text-[11px] text-slate-400">
+      {prevModule ? (\
+        <a href={`/modules/${prevModule.slug}`} class="hover:text-cyan-400 transition-colors flex items-center gap-2">
+          <span>←</span>
+          <span>{prevModule.name}</span>
+        </a>
+      ) : <div />}
+
+      {nextModule ? (\
+        <a href={`/modules/${nextModule.slug}`} class="hover:text-cyan-400 transition-colors flex items-center gap-2">
+          <span>{nextModule.name}</span>
+          <span>→</span>
+        </a>
+      ) : <div />}
+    </div>
+  </div>
 </Layout>
