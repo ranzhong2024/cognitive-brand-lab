@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%" style="background:#09090B; border-radius:16px; border:1px solid #232B3E;">
+  <rect width="100%" height="100%" fill="#09090B"/>
+  <text x="400" y="225" fill="rgba(255, 255, 255, 0.03)" font-family="sans-serif" font-size="32" font-weight="900" text-anchor="middle" transform="rotate(-12 400 225)" letter-spacing="4">BRANDOS LAB™ // 品牌科学实验室™</text>
+  <text x="780" y="438" fill="rgba(0, 242, 254, 0.35)" font-family="monospace" font-size="10" font-weight="bold" text-anchor="end">BRANDOS LAB™ 品牌科学实验室 • 实证研究版权所有</text>
+  <text x="400" y="42" fill="#FAFAFA" font-family="sans-serif" font-size="17" font-weight="900" text-anchor="middle">素材即定向 (AL-CAT) 与创作者白标投流架构</text>
+  <g transform="translate(60, 85)">
+    <rect width="200" height="295" rx="10" fill="#111622" stroke="#3B82F6"/>
+    <text x="100" y="30" fill="#60A5FA" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle">1. Broad 宽投受众</text>
+  </g>
+</svg>
