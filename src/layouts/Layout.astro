@@ -25,7 +25,7 @@ const {
   customSchema,
 } = Astro.props;
 
-const canonicalURL = new URL(Astro.url.pathname, Astro.site || 'https://cognitivebrandlab.org');
+const canonicalURL = new URL(Astro.url.pathname, Astro.site || 'https://ranbrandos.com');
 ---
 
 <!DOCTYPE html>
@@ -59,42 +59,36 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site || 'https://cognitiv
     <meta property="twitter:description" content={description} />
     <meta property="twitter:image" content={image} />
 
-    <!-- KaTeX CSS for LaTeX Formulas -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
-
-    <!-- Modern Typography: Plus Jakarta Sans + JetBrains Mono -->
+    <!-- DNS Prefetch & Preconnect for Performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet" />
 
-    <!-- AEO / Semantic Knowledge Graph Injection -->
-    <AeoKnowledgeGraph 
-      type={type} 
-      title={title} 
-      description={description} 
-      publishDate={publishDate} 
-      customSchema={customSchema}
-    />
+    <!-- Global AEO Knowledge Graph Schema -->
+    <AeoKnowledgeGraph />
+
+    <!-- Page Specific Custom Schema -->
+    {customSchema && (
+      <script type="application/ld+json" set:html={JSON.stringify(customSchema)} />
+    )}
   </head>
-  <body class="bg-[#09090B] text-[#F8FAFC] font-sans antialiased min-h-screen flex flex-col selection:bg-[#00F2FE] selection:text-[#030712]">
+
+  <body class="bg-[#09090B] text-slate-100 font-sans antialiased min-h-screen flex flex-col selection:bg-cyan-500/20 selection:text-cyan-300 relative overflow-x-hidden">
+    <!-- Background Technical Grid Overlay -->
+    <div class="fixed inset-0 bg-[linear-gradient(to_right,#1f29370a_1px,transparent_1px),linear-gradient(to_bottom,#1f29370a_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none z-0"></div>
+
+    <!-- Header Navigation -->
     <Header currentPath={currentPath} />
-    <MobileDrawer />
-    <main id="main-content" class="flex-grow">
+
+    <!-- Mobile Drawer -->
+    <MobileDrawer currentPath={currentPath} />
+
+    <!-- Main Content Slot -->
+    <main class="flex-grow z-10">
       <slot />
     </main>
+
+    <!-- Footer -->
     <Footer />
-
-    <!-- Anti-copy and Anti-theft Script -->
-    <script is:inline>
-      document.addEventListener('contextmenu', function(e) {
-        e.preventDefault();
-      });
-
-      document.addEventListener('keydown', function(e) {
-        if ((e.ctrlKey || e.metaKey) && (e.key === 'c' || e.key === 'u' || e.key === 's' || e.key === 'p' || e.key === 'a')) {
-          e.preventDefault();
-        }
-      });
-    </script>
   </body>
 </html>
