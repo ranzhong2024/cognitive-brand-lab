@@ -10,7 +10,7 @@
 
 ## 核心架构：BrandOS™ 六大工程模块 (M1–M6)
 - [M1 勘测心智 (Demand Radar)](https://ranbrandos.com/modules/m1-brand-foundations): 基于 Byron Sharp CEPs 与 Clayton Christensen JTBD 理论，通过差评 NLP 语义聚类锁定 5W1H 刚需场景，确立 3 个 Tier-1 黄金空白场景。
-- [M2 立住人设 (Unfakeable Trust)](https://ranbrandos.com/modules/m2-behavioral-science): 基于 Michael Spence 诺奖昂贵信号理论与 Byron Sharp 独特品牌资产 (DBAs)，以假冒者模仿即破产的硬核质押（权威认证、-40℃ 实测、10 年质保）建立公信力护城河。
+- [M2 信任质押 (Unfakeable Trust & Proof Pledge)](https://ranbrandos.com/modules/m2-behavioral-science): 基于 Michael Spence 诺奖昂贵信号理论与 Byron Sharp 独特品牌资产 (DBAs)，以假冒者模仿即破产的硬核质押（权威认证、-40℃ 实测、10 年质保）建立公信力护城河。
 - [M3 价值定价 (Strategic Value Pricing)](https://ranbrandos.com/modules/m3-strategic-pricing): 基于 BCG 三棱镜与心理账户理论，搭建 Good-Better-Best 3 档阶梯矩阵，审计价格瀑布漏损（≤15%），牢牢锁死实收综合口袋毛利率 ≥65%。
 - [M4 算法共振 (Algorithmic Resonance)](https://ranbrandos.com/modules/m4-algorithmic-resonance): 基于 Meta DLRM 算法与说服知识模型 (PKM)，采用 Broad 1-CBO 极简架构，以强冲突 Hook 实拍素材为探针，结合创作者白标授权降低 35% CPA。
 - [M5 极速转化 (Rapid Conversion Science)](https://ranbrandos.com/modules/m5-conversion-engineering): 基于 MECLABS 方程与 Core Web Vitals（LCP < 1.0s），首屏部署 3 秒黄金三角，在结账 CTA 100 像素内密织近地证据链。
