@@ -9,7 +9,7 @@ essays.sort((a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDa
 const modulesList = [
   { id: 'ALL', name: '全部专著', count: essays.length },
   { id: 'M1', name: 'M1 勘测心智', count: essays.filter(e => e.data.module === 'M1').length },
-  { id: 'M2', name: 'M2 立住人设', count: essays.filter(e => e.data.module === 'M2').length },
+  { id: 'M2', name: 'M2 信任质押', count: essays.filter(e => e.data.module === 'M2').length },
   { id: 'M3', name: 'M3 价值定价', count: essays.filter(e => e.data.module === 'M3').length },
   { id: 'M4', name: 'M4 算法共振', count: essays.filter(e => e.data.module === 'M4').length },
   { id: 'M5', name: 'M5 极速转化', count: essays.filter(e => e.data.module === 'M5').length },
