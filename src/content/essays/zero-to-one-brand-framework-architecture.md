@@ -35,23 +35,7 @@ author: "Ran (然)"
 
 在拆解具体大纲之前，我们必须先用跨学科的第一性原理，把品牌的底层机械结构看透。
 
-```
-                     [ 品牌资产生成的底层科学 ]
-  [信息经济学: Spence 昂贵信号]          [认知心理学: 联想记忆网络模型 (AMM)]
-             │                                      │
-             ▼                                      ▼
-┌──────────────────────────┐          ┌──────────────────────────┐
-│  沉没成本抵押 (Sunk Cost)  │          │  心智节点激发 (Activation) │
-│ - 假冒者不敢模仿的不可逆质押 │          │ - 检索线索瞬间唤醒品牌记忆   │
-└──────────────────────────┘          └──────────────────────────┘
-             │                                      │
-             └──────────────────┬───────────────────┘
-                                ▼
-             ┌─────────────────────────────────────┐
-             │      Byron Sharp 增长双引擎法则     │
-             │   Mental Availability × Physical    │
-             └─────────────────────────────────────┘
-```
+![品牌资产生成的底层科学：斯彭斯昂贵信号 × 联想记忆网络 × 拜伦·夏普增长双引擎](/images/essays/brand_primitives_dual_engine.jpg)
 
 ### 1. 诺奖斯彭斯昂贵信号理论 (Spence's Costly Signaling Theory)
 2001年诺贝尔经济学奖得主迈克尔·斯彭斯（Michael Spence）指出：**在买卖双方信息不对称的市场中，唯有“具备高昂沉没成本且仿冒者一旦模仿就会破产”的信号，才能建立真正的信任（分离均衡 Separating Equilibrium）。**  
@@ -73,38 +57,7 @@ $$\text{Brand Growth} = \text{Mental Availability (心智好想起)} \times \tex
 
 一套完整、可落地的品牌框架必须自底向上穿透五大层级：
 
-```mermaid
-graph TD
-    subgraph Layer1["Layer 1: 战略基石与原语定位 (Strategy & Primitives)"]
-        L1_1["黄金圈/原语使命 (Why-How-What)"] --> L1_2["品类进入点 (CEPs) & JTBD 需求捕获"]
-        L1_2 --> L1_3["昂贵信号价值主张 (Spence Costly Signaling)"]
-    end
-
-    subgraph Layer2["Layer 2: 品牌身份与人格系统 (Identity & Persona)"]
-        L2_1["Kapferer 品牌身份六角棱镜"] --> L2_2["荣格 12 品牌原型 (Archetypes)"]
-        L2_2 --> L2_3["独特品牌资产 (DBAs: 视觉/听觉/触觉)"]
-    end
-
-    subgraph Layer3["Layer 3: 心智阶梯与共鸣架构 (CBBE Resonance)"]
-        L3_1["显著度 (Salience / Mental Availability)"] --> L3_2["功能性能 (Performance) + 象征意象 (Imagery)"]
-        L3_2 --> L3_3["理性判断 (Judgments) + 感性共情 (Feelings)"]
-        L3_3 --> L3_4["终极品牌共鸣 (Resonance & Tribalism)"]
-    end
-
-    subgraph Layer4["Layer 4: 增长渗透与 GTM 机制 (Growth & Distribution)"]
-        L4_1["双重危机法则 (Double Jeopardy Law)"] --> L4_2["轻度买家破圈 (Light Buyers Acquisition)"]
-        L4_2 --> L4_3["心智可得性 × 物理可得性 (Mental × Physical Availability)"]
-    end
-
-    subgraph Layer5["Layer 5: 品牌治理与资产度量衡 (Governance & Equity)"]
-        L5_1["品牌架构模型 (Branded House vs House of Brands)"] --> L5_2["品牌资产健康度指标 (SOS, SOV, NPS, BHI)"]
-    end
-
-    Layer1 --> Layer2
-    Layer2 --> Layer3
-    Layer3 --> Layer4
-    Layer4 --> Layer5
-```
+![从 0 到 1 全要素品牌框架五层架构全景图](/images/essays/five_layer_brand_framework_stack.jpg)
 
 ---
 
@@ -138,6 +91,9 @@ graph TD
 ### 第二层：品牌身份与人格系统 (Identity & Persona)
 
 #### 2.1 Kapferer 品牌身份六角棱镜 (Brand Identity Prism)
+
+![Kapferer 品牌身份六角棱镜模型](/images/essays/kapferer_brand_identity_prism.jpg)
+
 - **专有名词解析**：由让-诺埃尔·卡普费雷（Jean-Noël Kapferer）提出，包含六个互为镜像的切面：
   1. **Physique (外在物理特征)**：产品的材质、包装轮廓、触觉与标志性视觉；
   2. **Personality (人格特质)**：用拟人化性格描述品牌（如幽默、沉稳、激进）；
@@ -183,19 +139,7 @@ graph TD
   3. **理性判断与感性感觉 (Brand Judgments & Feelings)**：用户评估你的专业度、可靠度，并在内心产生共鸣感（*What about you?*）；
   4. **终极品牌共鸣 (Brand Resonance)**：用户形成高度行为忠诚、社群归属感与自发维护布道（*What about you and me?*）。
 
-```
-                ┌─────────────────────────┐
-                │   4. 品牌共鸣 (Resonance) │
-                ├────────────┬────────────┤
-                │ 理性判断    │ 感性共鸣    │
-                │(Judgments) │ (Feelings) │
-                ├────────────┼────────────┤
-                │ 功能性能    │ 象征意象    │
-                │(Performance│  (Imagery)  │
-                ├────────────┴────────────┤
-                │   1. 品牌显著度 (Salience) │
-                └─────────────────────────┘
-```
+![凯勒 CBBE 品牌资产金字塔模型](/images/essays/keller_cbbe_equity_pyramid.jpg)
 
 #### 3.2 品类同质点 vs 差异点 (POPs vs PODs)
 - **专有名词解析**：
@@ -211,6 +155,9 @@ graph TD
 ### 第四层：增长破圈与双重可得性分发 (GTM & Growth)
 
 #### 4.1 埃伦伯格-巴斯增长双引擎 (Mental Availability × Physical Availability)
+
+![埃伦伯格-巴斯增长双引擎与双重危机法则](/images/essays/byron_sharp_growth_flywheel.jpg)
+
 - **专有名词解析**：
   - **心智可得性 (Mental Availability)**：让品牌在尽可能多的 CEP 场景下容易被联想起来；
   - **物理可得性 (Physical Availability)**：让品牌在所有潜在渠道中触手可及，将购买阻抗降至接近于零。
