@@ -1,3 +1,21 @@
-import type { CollectionEntry } from 'astro:content';
+import { defineCollection, z } from 'astro:content';
+import { glob } from 'astro/loaders';
 
-export const prerender = true;
+const essaysCollection = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/essays' }),
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    module: z.enum(['M1', 'M2', 'M3', 'M4', 'M5', 'M6']),
+    moduleName: z.string(),
+    pubDate: z.coerce.date(),
+    readingTime: z.string().default('12 min read'),
+    tags: z.array(z.string()).default([]),
+    featured: z.boolean().default(false),
+    author: z.string().default('Ran'),
+  }),
+});
+
+export const collections = {
+  essays: essaysCollection,
+};

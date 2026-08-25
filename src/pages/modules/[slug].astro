@@ -104,7 +104,8 @@ export function getStaticPaths() {
 }
 
 const { id, title, description, systemContext, nextModule, prevModule, sections } = Astro.props;
-const essays = await getCollection('essays', (e) => e.data.module === id);
+const allEssays = await getCollection('essays');
+const essays = allEssays.filter((e: any) => e.data.module === id);
 ---
 
 <Layout title={`${title} | 品牌科学实验室 (BRANDOS LAB)`} description={description}>
@@ -137,7 +138,7 @@ const essays = await getCollection('essays', (e) => e.data.module === id);
         模块工程支柱 (ENGINEERING PILLARS)
       </h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {sections.map((sec) => (
+        {sections.map((sec: any) => (
           <div class="bg-[#111622] border border-[#232B3E] p-6 rounded-lg">
             <div class="font-mono text-[11px] font-bold text-cyan-400 mb-2">
               SECTION {sec.number}
@@ -168,28 +169,31 @@ const essays = await getCollection('essays', (e) => e.data.module === id);
 
       {essays.length > 0 ? (
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {essays.map((essay) => (
-            <div class="bg-[#111622] border border-[#232B3E] hover:border-cyan-500/50 p-6 rounded-lg flex flex-col justify-between group">
-              <div>
-                <div class="flex justify-between items-center mb-2 font-mono text-[10px] text-slate-500">
-                  <span class="text-cyan-400 font-bold uppercase">{essay.data.moduleName}</span>
-                  <span>⏱ {essay.data.readingTime}</span>
+          {essays.map((essay: any) => {
+            const targetId = essay.id || essay.slug;
+            return (
+              <div class="bg-[#111622] border border-[#232B3E] hover:border-cyan-500/50 p-6 rounded-lg flex flex-col justify-between group">
+                <div>
+                  <div class="flex justify-between items-center mb-2 font-mono text-[10px] text-slate-500">
+                    <span class="text-cyan-400 font-bold uppercase">{essay.data.moduleName}</span>
+                    <span>⏱ {essay.data.readingTime}</span>
+                  </div>
+                  <h3 class="font-serif text-[18px] font-bold text-slate-100 mb-2 group-hover:text-cyan-400 transition-colors">
+                    <a href={`/essays/${targetId}`}>
+                      {essay.data.title}
+                    </a>
+                  </h3>
+                  <p class="font-sans text-[13px] text-slate-400 line-clamp-2 mb-4">
+                    {essay.data.description}
+                  </p>
                 </div>
-                <h3 class="font-serif text-[18px] font-bold text-slate-100 mb-2 group-hover:text-cyan-400 transition-colors">
-                  <a href={`/essays/${essay.id}`}>
-                    {essay.data.title}
-                  </a>
-                </h3>
-                <p class="font-sans text-[13px] text-slate-400 line-clamp-2 mb-4">
-                  {essay.data.description}
-                </p>
+                <a href={`/essays/${targetId}`} class="font-mono text-[11px] font-bold text-cyan-400 hover:underline flex items-center gap-1">
+                  <span>阅读全文</span>
+                  <span>→</span>
+                </a>
               </div>
-              <a href={`/essays/${essay.id}`} class="font-mono text-[11px] font-bold text-cyan-400 hover:underline flex items-center gap-1">
-                <span>阅读全文</span>
-                <span>→</span>
-              </a>
-            </div>
-          ))}
+            );
+          })}
         </div>
       ) : (
         <div class="bg-[#111622] border border-[#232B3E] p-8 rounded-lg text-center font-mono text-[12px] text-slate-500">
