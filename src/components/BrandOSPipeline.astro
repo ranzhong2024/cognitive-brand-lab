@@ -1,0 +1,336 @@
+---
+/**
+ * BrandOSPipeline.astro
+ * BrandOS™ 6 步品牌落地全景 (Realistic Scene Simulation & Subconscious Marketing Flow)
+ * 真实买家场景演化：痛点爆发 ➔ 信任破冰 ➔ 痛快选购 ➔ 达人种草 ➔ 极速收单 ➔ 终身复购
+ */
+
+const pipelineSteps = [
+  {
+    step: "01",
+    id: "M1",
+    stageTag: "第 1 步 • 痛点爆发",
+    title: "痛点爆发",
+    subtitle: "海外用户遇到生活麻烦，大脑紧急寻找解药",
+    sceneHeader: "01 痛点爆发 • 激活大脑检索网络",
+    sceneCaption: "暴风雪断电极寒时刻：买家极度恐慌，激活大脑心智第一反应 (EcoFlow CEPs)",
+    english: "Demand Radar & Mental Sensing",
+    colorName: "cyan",
+    accentColor: "#00F2FE",
+    badgeClass: "text-cyan-400 bg-cyan-950/70 border-cyan-800/60",
+    nodeBorder: "border-cyan-400 shadow-[0_0_20px_rgba(0,242,254,0.3)]",
+    cardBorder: "hover:border-cyan-500/60",
+    
+    // Touch Point Architecture
+    buyerPain: "“突发零下 20℃ 暴风雪断电，市面上同类产品太多了，哪款能救命？”",
+    touchPoint: "在买家最绝望的生活痛点瞬间精准出现，把产品定义为该场景下的唯一救命解药，彻底跳出大词杀价泥潭。",
+    coreInsight: "做大做强的品牌，从来不靠空泛的品类词，而是成为特定生活场景里的“第一反应”。",
+    
+    caseTitle: "EcoFlow 正浩：跳出露营红海，重锚暴风雪应急",
+    caseDesc: "逆向挖掘 2.5 万条海外差评，放弃周末露营小电宝杀价，锁定 2021 德州暴风雪“全屋极寒应急备电”。众筹狂揽 $12.11M，客单价跃升至 $3,599，年营收突破 10 亿美元。",
+    deliverable: "品类进入点 (CEPs) 场景网格",
+    keyMetric: "场景检索唤醒率 100% • 蓝海客单 $3,599",
+    image: "/images/scenes/scene-01-pain-search.jpg",
+    imageAlt: "01 痛点爆发 • 客户在 Amazon 搜索全屋应急备电设备",
+    link: "/modules/m1-brand-foundations"
+  },
+  {
+    step: "02",
+    id: "M2",
+    stageTag: "第 2 步 • 信任破冰",
+    title: "信任破冰",
+    subtitle: "看到硬核实测与权威质保，打消防备心",
+    sceneHeader: "02 信任破冰 • 权威质押击碎防备心",
+    sceneCaption: "查看独立站 Proof Center：SGS 报告 + -40℃ 实测 + 10年质保，彻底打消防备心",
+    english: "Unfakeable Trust & Proof Pledge",
+    colorName: "indigo",
+    accentColor: "#818CF8",
+    badgeClass: "text-indigo-400 bg-indigo-950/70 border-indigo-800/60",
+    nodeBorder: "border-indigo-400 shadow-[0_0_20px_rgba(129,140,248,0.3)]",
+    cardBorder: "hover:border-indigo-500/60",
+    
+    // Touch Point Architecture
+    buyerPain: "“跨洋陌生的新网站，会不会是皮包作坊？扣款不发货怎么办？”",
+    touchPoint: "在网站显眼处押下假冒者一旦模仿就会破产的硬核沉没成本（SGS 权威报告、-40℃ 极限实测、10 年包换），用不可伪造的投名状击碎买家防线。",
+    coreInsight: "口头自夸是零成本的廉价废话；唯有同行不敢抄、抄不起的巨大投入，才能换来 50%~100% 的定价溢价。",
+    
+    caseTitle: "Patagonia 反向营销 & Dyson 气旋指纹",
+    caseDesc: "Patagonia 承诺终身免费维修并在黑五登报号召“别买这件夹克”，营收逆势暴涨 +30% ($5.4亿)；Dyson 耗费 5,127 次失败打样打造全透明气旋指纹，彻底垄断高端吸尘心智。",
+    deliverable: "不可伪造信任证据库 (Proof Center)",
+    keyMetric: "支撑 50%~100% 品牌溢价 • 信任度 +300%",
+    image: "/images/scenes/scene-02-trust-proof.jpg",
+    imageAlt: "02 信任破冰 • 买家在电脑前查看权威实验室认证与 10 年质保",
+    link: "/modules/m2-behavioral-science"
+  },
+  {
+    step: "03",
+    id: "M3",
+    stageTag: "第 3 步 • 痛快选购",
+    title: "痛快选购",
+    subtitle: "看到清晰的 3 档阶梯定价，觉得买到就是赚到",
+    sceneHeader: "03 痛快选购 • 三档阶梯锚定主力款",
+    sceneCaption: "Good-Better-Best 3 档阶梯：买家毫不犹豫勾选 $399 主力款，守死 65%+ 毛利",
+    english: "Strategic Value Pricing",
+    colorName: "emerald",
+    accentColor: "#10B981",
+    badgeClass: "text-emerald-400 bg-emerald-950/70 border-emerald-800/60",
+    nodeBorder: "border-emerald-400 shadow-[0_0_20px_rgba(16,185,129,0.3)]",
+    cardBorder: "hover:border-emerald-500/60",
+    
+    // Touch Point Architecture
+    buyerPain: "“为什么同行卖 $50，你敢卖 $80，买家还觉得物超所值？”",
+    touchPoint: "搭建 Good-Better-Best 3 档产品阶梯，用顶级旗舰款树立天花板，用主力款吃透 70% 销量，严格审计运费、佣金与广告各种漏损（≤15%）。",
+    coreInsight: "定价是提取买家的心理账户与支付意愿，而不是可怜兮兮地在生产成本上加几块钱。毛利充足才有资金做研发和品牌。",
+    
+    caseTitle: "YETI 酷冷：$300+ 溢价与饮具特洛伊木马",
+    caseDesc: "用专业防熊认证锚定 $300+ 顶级保温箱树立权威，再用 $35 高频保温杯木马横扫大众。牢牢锁死 65%+ 战略毛利与 23.5% 实收净利，AOV 跃升 48%。",
+    deliverable: "价格瀑布审计与 GBB 阶梯沙盘",
+    keyMetric: "实收口袋毛利 ≥65% • AOV 跃升 +48%",
+    image: "/images/scenes/scene-03-pricing-selection.jpg",
+    imageAlt: "03 痛快选购 • 买家在手机上选择 Good-Better-Best 3 档阶梯中的主力款",
+    link: "/modules/m3-strategic-pricing"
+  },
+  {
+    step: "04",
+    id: "M4",
+    stageTag: "第 4 步 • 达人种草",
+    title: "达人种草",
+    subtitle: "刷社交媒体被真实名厨/达人实拍 Hook 击穿",
+    sceneHeader: "04 达人种草 • 真实冲突击穿心智防线",
+    sceneCaption: "刷手机被米其林名厨 Ramsay 认证主页实拍测试击穿：前 3 秒停留 43.8%，CPA 降 39%",
+    english: "Algorithmic Resonance",
+    colorName: "amber",
+    accentColor: "#F59E0B",
+    badgeClass: "text-amber-400 bg-amber-950/70 border-amber-800/60",
+    nodeBorder: "border-amber-400 shadow-[0_0_20px_rgba(245,158,11,0.3)]",
+    cardBorder: "hover:border-amber-500/60",
+    
+    // Touch Point Architecture
+    buyerPain: "“品牌官方账号发的硬广，看着就像推销，刷到 1 秒就划走。”",
+    touchPoint: "放开受众定向（Broad 宽投），让千亿推荐算法自动寻人；签约欧美垂直创作者并获取其主页白标授权（Whitelisting），借真实熟人信用直接突破买家心理防线。",
+    coreInsight: "素材就是最好的定向探针。用真实达人的生活化冲突场景做种草，远比官方号自夸更具说服力。",
+    
+    caseTitle: "HexClad 借米其林名厨 Ramsay 个人主页投流",
+    caseDesc: "不再用品牌冷号发推销，直接获得名厨 Ramsay 认证主页投流授权，前 3 秒停留率高达 43.8%，获客成本 (CPA) 骤降 39.2%，跻身 10 亿美元独角兽。",
+    deliverable: "Broad 1-CBO 极简账户 + 达人白标库",
+    keyMetric: "前 3 秒停留 43.8% • 获客成本 (CPA) -39.2%",
+    image: "/images/scenes/scene-04-creator-social.jpg",
+    imageAlt: "04 达人种草 • 用户在沙发上刷社交媒体观看名厨白标实拍视频",
+    link: "/modules/m4-algorithmic-resonance"
+  },
+  {
+    step: "05",
+    id: "M5",
+    stageTag: "第 5 步 • 极速收单",
+    title: "极速转化",
+    subtitle: "结账按钮旁看到 4 大定心丸，0 顾虑 1 键指纹付款",
+    sceneHeader: "05 极速收单 • 100px证据网与指纹秒付",
+    sceneCaption: "结账柜台 100px 密织 4 大保障：海外仓直发/10年质保/免费退，Apple Pay 指纹秒付",
+    english: "Rapid Conversion Science",
+    colorName: "rose",
+    accentColor: "#F43F5E",
+    badgeClass: "text-rose-400 bg-rose-950/70 border-rose-800/60",
+    nodeBorder: "border-rose-400 shadow-[0_0_20px_rgba(244,63,94,0.3)]",
+    cardBorder: "hover:border-rose-500/60",
+    
+    // Touch Point Architecture
+    buyerPain: "“加购到最后一步突然犹豫：退货麻烦吗？运输慢不慢？会不会被盗刷？”",
+    touchPoint: "打造 0.85s 物理级加载；在结账按钮 100 像素内密织“质保期、物流时效、30天免费退换、安全支付”4 大定心丸，配合 Apple Pay / Shop Pay 1 键指纹收单。",
+    coreInsight: "买家在付款临门一脚时的顾虑最大。把所有安全承诺钉在结账按钮旁边，转化率瞬间提升一大截。",
+    
+    caseTitle: "Gymshark & Ridge 100px 近地证据网收单",
+    caseDesc: "在结账柜台 100 像素内消除一切支付疑虑与操作摩擦，结账流失率骤降 61.9%，移动端转化率 (CVR) 提升 34.8%，让每一分广告意愿无损兑现为真金白银。",
+    deliverable: "100px 近地证据网 + 1 键指纹收单",
+    keyMetric: "结账流失骤降 -61.9% • 移动端 CVR +34.8%",
+    image: "/images/scenes/scene-05-checkout-pay.jpg",
+    imageAlt: "05 极速收单 • 买家使用 Apple Pay 1 键指纹无顾虑完成付款",
+    link: "/modules/m5-conversion-engineering"
+  },
+  {
+    step: "06",
+    id: "M6",
+    stageTag: "第 6 步 • 终身复购",
+    title: "终身复购",
+    subtitle: "收到货体验超预期，定期收到专属自适应关怀，开启自动订阅",
+    sceneHeader: "06 终身复购 • 自适应订阅与品牌主权",
+    sceneCaption: "开箱超预期与智能补给：开启 Autoship 自动订阅，老客回流占 79.2% 营收",
+    english: "Compounding Retention",
+    colorName: "purple",
+    accentColor: "#A855F7",
+    badgeClass: "text-purple-400 bg-purple-950/70 border-purple-800/60",
+    nodeBorder: "border-purple-400 shadow-[0_0_20px_rgba(168,85,247,0.3)]",
+    cardBorder: "hover:border-purple-500/60",
+    
+    // Touch Point Architecture
+    buyerPain: "“买完一次就再也不来了，除非我再花昂贵广告费把他买回来。”",
+    touchPoint: "部署 6 大生命周期自动化邮件在关键节点精准关怀老客；定期执行区域停投对照实验（Holdout Geo-Lift），剥离自然回购水分，算清每一分真净利。",
+    coreInsight: "靠每天买量是给海外平台打工。让老客自发回购贡献 50%+ 利润，才是可以跨越周期的真正品牌资产。",
+    
+    caseTitle: "Chewy 自动订阅与 6 大自适应留存流",
+    caseDesc: "Autoship 自动订阅贡献 79.2% 营收 ($11.1B)，6 大自适应流贡献 56.3% 留存收入，客户 3 年 LTV 增长 1.85 倍，全店营销效率比 (MER) 稳定在 4.20x。",
+    deliverable: "自适应 CRM 行为流 + Geo-Lift 因果实验",
+    keyMetric: "订阅与老客回流占 79% 营收 • 全店 MER 4.20x",
+    image: "/images/scenes/scene-06-unboxing-retention.jpg",
+    imageAlt: "06 终身复购 • 用户开箱高端产品并查看自适应订阅确认邮件",
+    link: "/modules/m6-compounding-retention"
+  }
+];
+---
+
+<section class="max-w-6xl mx-auto px-5 md:px-8 py-20 sm:py-28 relative z-10" id="brandos-pipeline">
+  <!-- Section Header -->
+  <div class="max-w-3xl mb-16 sm:mb-20">
+    <div class="inline-flex items-center gap-2 px-3.5 py-1 bg-cyan-950/60 border border-cyan-800/60 rounded-full font-mono text-[11px] font-bold text-cyan-400 uppercase tracking-[0.2em] mb-4">
+      <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse"></span>
+      PRACTICAL PLAYBOOK // 6 步品牌落地全景
+    </div>
+    <h2 class="font-sans font-black text-[28px] sm:text-[42px] text-slate-100 leading-tight mb-4">
+      从 0 到 1 打造高溢价品牌的 6 个关键动作
+    </h2>
+    <p class="text-slate-300 text-[15px] sm:text-[16px] font-sans leading-relaxed">
+      做品牌不是画个好看的 Logo，而是一套<strong class="text-cyan-400 font-semibold">步步打消海外买家疑虑、层层建立信任</strong>的系统流水线。每一个环节解决一个核心卡点，最终让用户不比价、主动买、持续复购。
+    </p>
+  </div>
+
+  <!-- Vertical Visual Flow Container with Guide Spine -->
+  <div class="relative flex flex-col gap-10 sm:gap-14">
+    <!-- Continuous Vertical Visual Guide Spine (Desktop Left) -->
+    <div class="hidden lg:block absolute left-[27px] top-6 bottom-6 w-[2px] bg-gradient-to-b from-cyan-400 via-indigo-400 via-emerald-400 via-amber-400 via-rose-400 to-purple-500 pointer-events-none opacity-30"></div>
+
+    {pipelineSteps.map((step) => (
+      <div>
+        <div class="relative flex flex-col lg:flex-row items-start gap-6 lg:gap-10 group">
+          
+          <!-- Left: Glowing Number Node Badge (Visual Anchor) -->
+          <div class="flex items-center lg:flex-col items-center flex-shrink-0 z-10">
+            <div class={`w-14 h-14 rounded-2xl bg-[#09090B] border-2 flex items-center justify-center font-mono font-black text-[16px] text-slate-100 transition-all duration-300 ${step.nodeBorder}`}>
+              {step.step}
+            </div>
+            <span class="ml-3 lg:ml-0 lg:mt-2 font-mono text-[11px] text-slate-500 font-bold tracking-widest uppercase">
+              {step.id}
+            </span>
+          </div>
+
+          <!-- Right: 2-Column Split Card (Text Left, Realistic Scene Right) -->
+          <div class={`flex-grow bg-[#111622]/90 border border-[#232B3E] ${step.cardBorder} rounded-3xl p-6 sm:p-8 backdrop-blur-md shadow-xl transition-all duration-300 flex flex-col lg:flex-row gap-8 items-stretch justify-between`}>
+            
+            <!-- Text Column (50% Width) -->
+            <div class="w-full lg:w-[50%] flex flex-col justify-between">
+              <div>
+                <!-- Step Layer Badge -->
+                <div class="flex items-center gap-2.5 mb-3">
+                  <span class={`font-mono text-[11px] font-extrabold uppercase px-2.5 py-0.5 rounded border tracking-wider ${step.badgeClass}`}>
+                    {step.stageTag}
+                  </span>
+                  <span class="font-mono text-[11px] text-slate-500 uppercase tracking-widest hidden sm:inline">
+                    {step.english}
+                  </span>
+                </div>
+
+                <!-- Main Title -->
+                <h3 class="font-sans font-black text-[22px] sm:text-[26px] text-slate-100 mb-2 leading-snug">
+                  {step.id} {step.title}
+                </h3>
+                
+                <h4 class="font-sans font-bold text-[14px] sm:text-[15px] text-slate-300 mb-4 leading-snug">
+                  {step.subtitle}
+                </h4>
+
+                <!-- Buyer Touch Point Box -->
+                <div class="space-y-2.5 mb-5 font-sans">
+                  <!-- Buyer Pain Point -->
+                  <div class="bg-[#09090B] p-3 rounded-xl border border-rose-900/40 text-slate-300 text-[13px] leading-relaxed">
+                    <span class="text-rose-400 font-bold font-mono text-[11px] block mb-1">🤔 海外买家内心疑虑：</span>
+                    <span class="italic text-slate-300">{step.buyerPain}</span>
+                  </div>
+
+                  <!-- Seller Action & Insight -->
+                  <div class="bg-[#09090B] p-3.5 rounded-xl border border-cyan-900/40 text-slate-300 text-[13px] leading-relaxed">
+                    <span class="text-cyan-400 font-bold font-mono text-[11px] block mb-1">💡 品牌破局关键触点：</span>
+                    <p class="text-slate-300 mb-1.5">{step.touchPoint}</p>
+                    <p class="text-slate-400 text-[12px] border-t border-[#232B3E] pt-1.5 mt-1.5"><strong class="text-slate-200">底层真相：</strong>{step.coreInsight}</p>
+                  </div>
+                </div>
+
+                <!-- Real-World Benchmark Case -->
+                <div class="bg-[#09090B] border border-[#232B3E] rounded-xl p-3.5 mb-5">
+                  <div class="flex items-center gap-2 mb-1">
+                    <span class="font-mono text-[10px] font-extrabold px-1.5 py-0.5 rounded bg-[#111622] text-emerald-400 border border-emerald-800/40 uppercase">
+                      真实标杆
+                    </span>
+                    <span class="font-sans font-bold text-[12.5px] text-slate-200">
+                      {step.caseTitle}
+                    </span>
+                  </div>
+                  <p class="font-sans text-[12px] text-slate-400 leading-relaxed">
+                    {step.caseDesc}
+                  </p>
+                </div>
+
+                <!-- High-Value Deliverable & Metric Pills -->
+                <div class="flex flex-wrap gap-2 mb-5">
+                  <div class="bg-[#09090B] border border-[#232B3E] px-3 py-1.5 rounded-lg flex items-center gap-1.5">
+                    <span class="text-slate-500 font-mono text-[11px]">交付物:</span>
+                    <span class="text-slate-200 font-sans text-[11.5px] font-medium">{step.deliverable}</span>
+                  </div>
+                  <div class="bg-[#09090B] border border-[#232B3E] px-3 py-1.5 rounded-lg flex items-center gap-1.5">
+                    <span class="text-slate-500 font-mono text-[11px]">量化战果:</span>
+                    <span class="text-cyan-400 font-mono text-[11.5px] font-bold">{step.keyMetric}</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Deep Dive Link -->
+              <a 
+                href={step.link} 
+                class="pt-3.5 border-t border-[#232B3E] inline-flex items-center gap-2 font-mono text-[12px] font-bold text-slate-400 hover:text-cyan-400 transition-colors group-hover:text-slate-200"
+              >
+                <span>查看 {step.id} 详细实操落地指南</span>
+                <span class="text-cyan-400 transition-transform group-hover:translate-x-1.5">→</span>
+              </a>
+            </div>
+
+            <!-- Realistic Scene Column (50% Width - High-Definition Visual Narrative) -->
+            <div class="w-full lg:w-[50%] flex flex-col justify-between rounded-2xl overflow-hidden border border-[#232B3E] bg-[#09090B] relative shadow-2xl group/img">
+              
+              <!-- Crisp Top Header Banner Overlay (大字标题顶部栏) -->
+              <div class="bg-[#0D111A]/95 border-b border-[#232B3E] px-4 py-3 flex items-center justify-between z-10 backdrop-blur-md">
+                <div class="flex items-center gap-2">
+                  <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+                  <span class="font-sans font-extrabold text-[13.5px] sm:text-[14.5px] text-slate-100 tracking-tight">
+                    {step.sceneHeader}
+                  </span>
+                </div>
+                <span class="font-mono text-[10px] font-bold text-slate-400 uppercase tracking-widest bg-[#182030] px-2 py-0.5 rounded border border-[#232B3E]">
+                  REAL SCENE
+                </span>
+              </div>
+
+              <!-- High-Resolution Photorealistic Image -->
+              <div class="relative flex-grow overflow-hidden aspect-[16/10] sm:aspect-[16/9] lg:aspect-auto">
+                <img 
+                  src={step.image} 
+                  alt={step.imageAlt}
+                  class="w-full h-full object-cover group-hover/img:scale-105 transition-transform duration-700 brightness-95 group-hover/img:brightness-100"
+                  loading="lazy"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-[#09090B] via-transparent to-transparent opacity-80 pointer-events-none"></div>
+              </div>
+
+              <!-- Bottom Subconscious Marketing Explanation Caption -->
+              <div class="bg-[#09090B]/95 border-t border-[#232B3E] p-3 sm:p-3.5 z-10 backdrop-blur-md">
+                <p class="font-sans text-[12px] text-slate-300 leading-relaxed flex items-start gap-2">
+                  <span class="text-cyan-400 font-bold flex-shrink-0">💡 潜意识营销：</span>
+                  <span>{step.sceneCaption}</span>
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    ))}
+  </div>
+</section>
