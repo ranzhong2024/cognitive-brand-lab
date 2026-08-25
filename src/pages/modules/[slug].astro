@@ -105,7 +105,7 @@ export function getStaticPaths() {
 
 const { id, title, description, systemContext, nextModule, prevModule, sections } = Astro.props;
 const allEssays = await getCollection('essays');
-const essays = allEssays.filter((e: any) => e.data.module === id);
+const essays = allEssays.filter((e) => e.data.module === id);
 ---
 
 <Layout title={`${title} | 品牌科学实验室 (BRANDOS LAB)`} description={description}>
@@ -138,7 +138,7 @@ const essays = allEssays.filter((e: any) => e.data.module === id);
         模块工程支柱 (ENGINEERING PILLARS)
       </h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {sections.map((sec: any) => (
+        {sections.map((sec) => (
           <div class="bg-[#111622] border border-[#232B3E] p-6 rounded-lg">
             <div class="font-mono text-[11px] font-bold text-cyan-400 mb-2">
               SECTION {sec.number}
@@ -169,7 +169,7 @@ const essays = allEssays.filter((e: any) => e.data.module === id);
 
       {essays.length > 0 ? (
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {essays.map((essay: any) => {
+          {essays.map((essay) => {
             const targetId = essay.id || essay.slug;
             return (
               <div class="bg-[#111622] border border-[#232B3E] hover:border-cyan-500/50 p-6 rounded-lg flex flex-col justify-between group">
