@@ -19,3 +19,9 @@ const essays = defineCollection({
 export const collections = {
   essays,
 };
+
+export default {
+  collections: {
+    essays,
+  },
+};

@@ -140,9 +140,7 @@ const essays = allEssays.filter((e) => e.data.module === id);
         模块工程支柱 (ENGINEERING PILLARS)
       </h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {sections.map((sec) => (
-          <ModuleSectionCard number={sec.number} title={sec.title} desc={sec.desc} />
-        ))}
+        {sections.map((sec) => <ModuleSectionCard number={sec.number} title={sec.title} desc={sec.desc} />)}
       </div>
     </div>
 
@@ -161,9 +159,7 @@ const essays = allEssays.filter((e) => e.data.module === id);
 
       {essays.length > 0 ? (
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {essays.map((essay) => (
-            <EssayCard essay={essay} />
-          ))}
+          {essays.map((essay) => <EssayCard essay={essay} />)}
         </div>
       ) : (
         <div class="bg-slate-900 border border-slate-800 p-8 rounded-lg text-center font-mono text-xs text-slate-500">
