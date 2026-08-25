@@ -140,7 +140,7 @@ const essays = await getCollection('essays', (e) => e.data.module === id);
         {sections.map((sec) => (
           <div class="bg-[#111622] border border-[#232B3E] p-6 rounded-lg">
             <div class="font-mono text-[11px] font-bold text-cyan-400 mb-2">
-              SECTION::{sec.number}
+              SECTION {sec.number}
             </div>
             <h3 class="font-serif text-[18px] font-bold text-slate-100 mb-2">
               {sec.title}
@@ -166,9 +166,9 @@ const essays = await getCollection('essays', (e) => e.data.module === id);
         </div>
       </div>
 
-      {essays.length > 0 ? (\
+      {essays.length > 0 ? (
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {essays.map((essay) => (\
+          {essays.map((essay) => (
             <div class="bg-[#111622] border border-[#232B3E] hover:border-cyan-500/50 p-6 rounded-lg flex flex-col justify-between group">
               <div>
                 <div class="flex justify-between items-center mb-2 font-mono text-[10px] text-slate-500">
@@ -176,7 +176,7 @@ const essays = await getCollection('essays', (e) => e.data.module === id);
                   <span>⏱ {essay.data.readingTime}</span>
                 </div>
                 <h3 class="font-serif text-[18px] font-bold text-slate-100 mb-2 group-hover:text-cyan-400 transition-colors">
-                  <a href={`/essays/${essay.slug}`}>
+                  <a href={`/essays/${essay.id}`}>
                     {essay.data.title}
                   </a>
                 </h3>
@@ -184,14 +184,14 @@ const essays = await getCollection('essays', (e) => e.data.module === id);
                   {essay.data.description}
                 </p>
               </div>
-              <a href={`/essays/${essay.slug}`} class="font-mono text-[11px] font-bold text-cyan-400 hover:underline flex items-center gap-1">
+              <a href={`/essays/${essay.id}`} class="font-mono text-[11px] font-bold text-cyan-400 hover:underline flex items-center gap-1">
                 <span>阅读全文</span>
                 <span>→</span>
               </a>
             </div>
           ))}
         </div>
-      ) : (\
+      ) : (
         <div class="bg-[#111622] border border-[#232B3E] p-8 rounded-lg text-center font-mono text-[12px] text-slate-500">
           更多 {id} 专属研报正在由实验室研究员同行评审中，即将发布...
         </div>
@@ -200,14 +200,14 @@ const essays = await getCollection('essays', (e) => e.data.module === id);
 
     <!-- Navigation Footer -->
     <div class="border-t border-[#232B3E] pt-8 flex justify-between items-center font-mono text-[11px] text-slate-400">
-      {prevModule ? (\
+      {prevModule ? (
         <a href={`/modules/${prevModule.slug}`} class="hover:text-cyan-400 transition-colors flex items-center gap-2">
           <span>←</span>
           <span>{prevModule.name}</span>
         </a>
       ) : <div />}
 
-      {nextModule ? (\
+      {nextModule ? (
         <a href={`/modules/${nextModule.slug}`} class="hover:text-cyan-400 transition-colors flex items-center gap-2">
           <span>{nextModule.name}</span>
           <span>→</span>

@@ -1,21 +1,22 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import { getCollection } from 'astro:content';
+import { getCollection, render } from 'astro:content';
 
 export async function getStaticPaths() {
   const essays = await getCollection('essays');
   return essays.map((essay) => ({
-    params: { slug: essay.slug },
+    params: { slug: essay.id },
     props: { essay },
   }));
 }
 
 const { essay } = Astro.props;
-const { Content, headings } = await essay.render();
+const { Content, headings } = await render(essay);
+const essaySlug = essay.id;
 
 // Related essays from other modules
 const allEssays = await getCollection('essays');
-const relatedEssays = allEssays.filter((e) => e.slug !== essay.slug).slice(0, 2);
+const relatedEssays = allEssays.filter((e) => e.id !== essay.id).slice(0, 2);
 
 // Module Color Mapping
 const moduleColors: Record<string, { badge: string; border: string; accent: string }> = {
@@ -36,24 +37,24 @@ const articleSchema = {
   "@graph": [
     {
       "@type": "BlogPosting",
-      "@id": `https://cognitivebrandlab.org/essays/${essay.slug}#article`,
+      "@id": `https://ranbrandos.com/essays/${essay.id}#article`,
       "headline": essay.data.title,
       "description": essay.data.description,
       "datePublished": publishDateIso,
       "dateModified": publishDateIso,
-      "mainEntityOfPage": `https://cognitivebrandlab.org/essays/${essay.slug}`,
+      "mainEntityOfPage": `https://ranbrandos.com/essays/${essay.id}`,
       "author": {
         "@type": "Person",
         "name": "Ran (然)",
         "jobTitle": "Lead Brand Architect & Founder",
-        "url": "https://cognitivebrandlab.org/about"
+        "url": "https://ranbrandos.com/about"
       },
       "publisher": {
         "@type": "Organization",
         "name": "品牌科学实验室™ (BRANDOS LAB™)",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://cognitivebrandlab.org/logo/brandos_official_logo.jpg"
+          "url": "https://ranbrandos.com/logo/brandos_official_logo.jpg"
         }
       },
       "keywords": [essay.data.module, essay.data.moduleName, "出海品牌", "BrandOS", "品牌科学", ...(essay.data.tags || [])]
@@ -100,99 +101,103 @@ const articleSchema = {
         </span>
       </div>
 
-      <h1 class="font-sans font-black text-[28px] sm:text-[40px] md:text-[46px] text-slate-100 leading-[1.2] mb-6 tracking-tight">
+      <h1 class="font-serif text-[30px] sm:text-[44px] font-bold text-slate-100 leading-tight mb-6">
         {essay.data.title}
       </h1>
 
-      <!-- Clean Human-Friendly Summary Box -->
-      <div class="bg-[#111622] border-l-4 border-cyan-400 p-5 sm:p-6 rounded-r-2xl border-y border-r border-[#232B3E] shadow-xl">
-        <div class="font-mono text-[11.5px] text-cyan-400 font-bold uppercase tracking-wider mb-2 flex items-center gap-2">
-          <span>💡 本篇核心导读</span>
-        </div>
-        <p class="font-sans text-[15px] sm:text-[16px] text-slate-200 leading-[1.8]">
-          {essay.data.description}
-        </p>
-      </div>
+      <p class="font-sans text-slate-300 text-[16px] sm:text-[18px] leading-relaxed max-w-4xl border-l-2 border-cyan-500/50 pl-4 py-1 italic bg-cyan-950/10 rounded-r">
+        {essay.data.description}
+      </p>
     </header>
 
-    <!-- Main Content Layout (Desktop 2-Column with Sticky TOC + Golden Prose Reading Width) -->
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
-      
-      <!-- Left Column: Table of Contents (Sticky on Desktop) -->
-      {headings && headings.length > 0 && (
-        <aside class="hidden lg:block lg:col-span-3 sticky top-24">
-          <div class="bg-[#111622] border border-[#232B3E] p-5 rounded-2xl max-h-[calc(100vh-120px)] overflow-y-auto shadow-lg">
-            <div class="font-mono text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-3 pb-2 border-b border-[#232B3E] flex items-center justify-between">
-              <span>📑 专著目录</span>
-              <span class="text-[10px] text-cyan-400">TOC</span>
+    <!-- Main Content Layout with Sticky TOC Sidebar -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+      <!-- Left Sticky Sidebar: Headings TOC & Engine Anchor -->
+      <aside class="hidden lg:block lg:col-span-4 sticky top-28 space-y-6">
+        <!-- Module Context Card -->
+        <div class="bg-[#111622] border border-[#232B3E] p-5 rounded-2xl">
+          <div class="font-mono text-[10px] text-slate-500 uppercase tracking-widest mb-2">所属系统模块</div>
+          <div class="flex items-center justify-between mb-3">
+            <span class="font-mono text-[14px] font-bold text-cyan-400">{essay.data.module} 操作系统</span>
+            <a href={`/modules/${essay.data.module.toLowerCase()}-brand-foundations`} class="font-mono text-[11px] text-slate-400 hover:text-cyan-400">查看框架 →</a>
+          </div>
+          <p class="font-sans text-[12.5px] text-slate-400 leading-normal">
+            {essay.data.moduleName}：解构全球高溢价品牌资产沉淀与认知护城河。
+          </p>
+        </div>
+
+        <!-- Table of Contents -->
+        {headings.length > 0 && (
+          <div class="bg-[#111622] border border-[#232B3E] p-5 rounded-2xl max-h-[60vh] overflow-y-auto">
+            <div class="font-mono text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-4 flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>
+              文章目录结构 (TOC)
             </div>
-            <nav class="space-y-1.5 font-sans text-[13px]">
-              {headings.map((h) => (
+            <nav class="space-y-2 font-sans text-[13px]">
+              {headings.filter(h => h.depth <= 3).map(h => (
                 <a 
-                  href={`#${h.slug}`}
-                  class={`block py-1 hover:text-cyan-400 transition-colors text-slate-400 leading-snug ${h.depth === 3 ? 'pl-3 text-[12px]' : 'font-medium text-slate-300'}`}
+                  href={`#${h.slug}`} 
+                  class={`block text-slate-400 hover:text-cyan-400 transition-colors leading-snug ${h.depth === 3 ? 'pl-3 text-[12px] text-slate-500' : 'font-medium'}`}
                 >
                   {h.text}
                 </a>
               ))}
             </nav>
           </div>
-        </aside>
-      )}
+        )}
+      </aside>
 
-      <!-- Right Column: Golden Reading Width Prose -->
-      <main class={`${headings && headings.length > 0 ? 'lg:col-span-9' : 'lg:col-span-12'} max-w-[76ch] mx-auto w-full`}>
-        <div class="prose-custom">
+      <!-- Right Main Prose Column -->
+      <main class="lg:col-span-8 max-w-none">
+        <!-- Markdown Prose Container -->
+        <article class="prose prose-invert prose-cyan max-w-none prose-headings:font-serif prose-headings:font-bold prose-h2:text-[24px] prose-h2:sm:text-[28px] prose-h2:border-b prose-h2:border-[#232B3E] prose-h2:pb-3 prose-h2:mt-12 prose-h3:text-[19px] prose-h3:text-cyan-300 prose-p:text-slate-300 prose-p:text-[15px] prose-p:leading-relaxed prose-blockquote:border-l-cyan-400 prose-blockquote:bg-[#111622] prose-blockquote:p-4 prose-blockquote:rounded-r-lg prose-blockquote:text-slate-300 prose-code:font-mono prose-code:text-cyan-300 prose-code:bg-cyan-950/40 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-pre:bg-[#09090B] prose-pre:border prose-pre:border-[#232B3E] prose-pre:rounded-xl prose-img:rounded-2xl prose-img:border prose-img:border-[#232B3E] prose-img:shadow-2xl prose-table:border prose-table:border-[#232B3E] prose-th:bg-[#111622] prose-th:p-3 prose-td:p-3 prose-td:border-t prose-td:border-[#232B3E]">
           <Content />
-        </div>
+        </article>
 
-        <!-- Author Dossier Card -->
-        <div class="mt-16 pt-8 border-t border-[#232B3E] bg-[#111622] p-6 sm:p-8 rounded-2xl flex flex-col sm:flex-row items-center gap-6 shadow-xl border border-[#232B3E]">
-          <div class="w-16 h-16 rounded-2xl bg-[#09090B] border-2 border-cyan-400 flex items-center justify-center font-mono font-black text-[22px] text-cyan-400 flex-shrink-0 shadow-[0_0_20px_rgba(0,242,254,0.2)]">
-            R
-          </div>
-          <div>
-            <div class="flex items-center gap-3 mb-1.5">
-              <h4 class="font-bold text-[18px] text-slate-100">Ran (然)</h4>
-              <span class="font-mono text-[11px] text-cyan-400 font-semibold bg-cyan-950/60 px-2 py-0.5 rounded border border-cyan-800/40">
-                BrandOS™ 首席架构师
+        <!-- Tags Row -->
+        {essay.data.tags && essay.data.tags.length > 0 && (
+          <div class="mt-14 pt-8 border-t border-[#232B3E] flex flex-wrap items-center gap-2">
+            <span class="font-mono text-[11px] text-slate-500 mr-2">TAGS:</span>
+            {essay.data.tags.map((tag: string) => (
+              <span class="font-mono text-[11px] bg-[#111622] border border-[#232B3E] text-slate-400 px-3 py-1 rounded-full">
+                #{tag}
               </span>
-            </div>
-            <p class="text-[13.5px] text-slate-400 leading-relaxed font-sans">
-              品牌科学实验室™ 发起人。北美数字营销硕士，IIBA CBAP 国际注册商业分析师，谷歌数字营销与数据分析认证。专注将商业分析、认知心理学与因果推断深度工程化，为中国出海企业铸造全球高溢价品牌。
-            </p>
+            ))}
           </div>
-        </div>
+        )}
 
-        <!-- Bottom Consultation Box -->
-        <div class="mt-8 bg-gradient-to-br from-cyan-950/40 via-[#111622] to-[#111622] border border-cyan-500/40 p-8 rounded-2xl flex flex-col sm:flex-row justify-between items-center gap-6 shadow-2xl">
+        <!-- Author / Citation Sign-off Card -->
+        <div class="mt-12 p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-[#111622] to-[#09090B] border border-cyan-500/20 flex flex-col sm:flex-row items-center gap-6">
+          <div class="w-16 h-16 rounded-full bg-cyan-950 border border-cyan-400 flex items-center justify-center font-serif text-2xl font-bold text-cyan-400 shrink-0 shadow-[0_0_20px_rgba(0,242,254,0.2)]">
+            然
+          </div>
           <div>
-            <h3 class="font-sans font-bold text-[20px] text-slate-100 mb-2">
-              想为你的出海品牌装载这套 BrandOS™ 操作系统？
-            </h3>
-            <p class="font-sans text-[13.5px] text-slate-300">
-              拒绝传统买量内卷与低价代工，直接与发起人 Ran 探讨如何重构你的出海品牌资产与高溢价定价权。
+            <div class="font-mono text-[11px] text-cyan-400 font-bold uppercase tracking-wider mb-1">
+              单行本专著责任作者 (PRINCIPAL INVESTIGATOR)
+            </div>
+            <div class="font-serif text-[18px] font-bold text-slate-100 mb-1">
+              Ran (然) • 品牌科学实验室架构师
+            </div>
+            <p class="font-sans text-[13px] text-slate-400 leading-relaxed mb-3">
+              专注于出海品牌底层心智勘测、定价毛利工程与因果留存体系。拒绝口号营销，用行为经济学与实证科学为企业沉淀不可动摇的心智资产。
             </p>
+            <a href="/about" class="font-mono text-[11px] font-bold text-cyan-400 hover:underline flex items-center gap-1">
+              <span>阅读研究员完整背景与投资分析哲学</span>
+              <span>→</span>
+            </a>
           </div>
-          <a 
-            href="mailto:ranzhongus@icloud.com"
-            class="px-6 py-3.5 bg-cyan-400 hover:bg-cyan-300 text-[#09090B] font-mono font-black text-[13px] uppercase tracking-wider rounded-xl whitespace-nowrap shadow-lg shadow-cyan-400/20 transition-all flex items-center gap-2"
-          >
-            <span>马上咨询</span>
-            <span>✉</span>
-          </a>
         </div>
 
-        <!-- Related Essays Navigation -->
-        {relatedEssays && relatedEssays.length > 0 && (
-          <div class="mt-14 pt-8 border-t border-[#232B3E]">
+        <!-- Related Essays -->
+        {relatedEssays.length > 0 && (
+          <div class="mt-16 pt-10 border-t border-[#232B3E]">
             <h4 class="font-mono text-[12px] font-bold text-slate-400 uppercase tracking-widest mb-6">
               📚 延伸研读 (RECOMMENDED ESSAYS)
             </h4>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {relatedEssays.map((rel) => (
                 <a 
-                  href={`/essays/${rel.slug}`}
+                  href={`/essays/${rel.id}`}
                   class="bg-[#111622] border border-[#232B3E] hover:border-cyan-400 p-5 rounded-xl transition-all group block"
                 >
                   <div class="font-mono text-[10px] text-cyan-400 font-bold uppercase mb-1">
@@ -210,7 +215,7 @@ const articleSchema = {
         <!-- Back to Archive -->
         <div class="mt-12 text-center">
           <a 
-            href="/essays"
+            href="/essays" 
             class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#111622] border border-[#232B3E] hover:border-cyan-400 text-slate-300 hover:text-white font-mono text-[12px] font-bold uppercase transition-colors"
           >
             <span>← 返回全部品牌笔记</span>

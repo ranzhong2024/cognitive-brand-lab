@@ -1,7 +1,8 @@
 ---
 interface Props {
   essay: {
-    slug: string;
+    id: string;
+    slug?: string;
     data: {
       title: string;
       description: string;
@@ -17,6 +18,7 @@ interface Props {
 }
 
 const { essay } = Astro.props;
+const slug = essay.id || (essay as any).slug;
 
 // Module Color Mapping
 const moduleColors: Record<string, { badge: string; border: string; accent: string; coverBg: string }> = {
@@ -69,7 +71,7 @@ const formattedDate = essay.data.pubDate ? new Date(essay.data.pubDate).toISOStr
   <div class="p-5 sm:p-6 flex flex-col flex-grow justify-between">
     <div>
       <h3 class="font-sans font-bold text-[18px] sm:text-[20px] text-slate-100 mb-2.5 group-hover:text-cyan-400 transition-colors leading-snug line-clamp-2 min-h-[56px]">
-        <a href={`/essays/${essay.slug}`}>
+        <a href={`/essays/${slug}`}>
           {essay.data.title}
         </a>
       </h3>
@@ -81,7 +83,7 @@ const formattedDate = essay.data.pubDate ? new Date(essay.data.pubDate).toISOStr
 
     <!-- Bottom Read Action -->
     <a 
-      href={`/essays/${essay.slug}`}
+      href={`/essays/${slug}`}
       class="pt-3.5 border-t border-[#232B3E] flex items-center justify-between font-mono text-[12px] font-bold text-slate-300 group-hover:text-cyan-400 transition-colors mt-auto"
     >
       <span>阅读全文</span>
