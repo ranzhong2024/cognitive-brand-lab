@@ -16,16 +16,8 @@
 - [M5 极速转化 (Rapid Conversion Science)](https://ranbrandos.com/modules/m5-conversion-engineering): 基于 MECLABS 方程与 Core Web Vitals（LCP < 1.0s），首屏部署 3 秒黄金三角，在结账 CTA 100 像素内密织近地证据链。
 - [M6 复利留存 (Compounding Retention)](https://ranbrandos.com/modules/m6-compounding-retention): 基于 Reforge 留存曲线、BG/NBD 模型与 Rubin 潜在因果推断，以 6 大自适应流贡献 50%~70% CRM 利润，通过 Holdout 实验算清真 iROAS (≥1.20) 与全店 MER (3.5~5.0)。
 
-## 品牌笔记与实证专著库 (Brand Notes Flagship Monographs)
-- [0 到 1 打造高溢价出海品牌：从第一性原理到 BrandOS 六层架构](https://ranbrandos.com/essays/zero-to-one-brand-framework-architecture)
-- [BrandOS 品牌操作系统：从买量代工到永久认知资产的进化范式](https://ranbrandos.com/essays/brand-os-foundational-manifesto)
-- [重估拜伦·夏普：心智可得性与物理可得性的第一性原理](https://ranbrandos.com/essays/deconstruct-byron-sharp)
-- [颠覆功能内卷：Clayton Christensen JTBD 任务雇佣理论与用户进展力学](https://ranbrandos.com/essays/jtbd-progress-over-features)
-- [为什么口头宣传是零价值的？Michael Spence 昂贵信号与不可伪造的独特品牌资产](https://ranbrandos.com/essays/costly-signaling-and-distinctive-assets)
-- [定价即生死：Hermann Simon 利润微积分与 Good-Better-Best 阶梯沙盘](https://ranbrandos.com/essays/pricing-waterfall-and-wtp)
-- [为什么你的投放总是越跑越贵？素材即定向探针与创作者信誉套利](https://ranbrandos.com/essays/algorithmic-resonance-and-creator-whitelisting)
-- [告别玄学 CRO：MECLABS 转化启发式方程与 100px 近地证据链](https://ranbrandos.com/essays/conversion-science-and-100px-evidence-chain)
-- [停止被平台假归因欺骗：复利留存工程与 Donald Rubin 因果增量度量](https://ranbrandos.com/essays/compounding-retention-and-causal-incrementality)
+## 旗舰实证专著 (Featured Monograph)
+- [从0到1搭建品牌框架的底层科学：别再把“做个好看的Logo”当成做品牌了](https://ranbrandos.com/essays/zero-to-one-brand-framework-architecture): 深度拆解凯勒 CBBE 金字塔、拜伦·夏普双重可得性法则、斯彭斯昂贵信号理论与 Kapferer 品牌六角棱镜，附 5 层品牌全要素落地沙盘与实战标杆图解。
 
 ## 页面索引与导航
 - [首页 (Home)](https://ranbrandos.com/): 实验室宣言、对立矩阵、BrandOS™ 交互控制台

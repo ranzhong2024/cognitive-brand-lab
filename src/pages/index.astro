@@ -2,13 +2,13 @@
 import Layout from '../layouts/Layout.astro';
 import BrandOSExplorer from '../components/BrandOSExplorer.astro';
 import AntithesisMatrix from '../components/AntithesisMatrix.astro';
-import ModuleCard from '../components/ModuleCard.astro';
 import EssayCard from '../components/EssayCard.astro';
+import { getCollection } from 'astro:content';
 
 // AEO 复合 JSON-LD (FAQPage + HowTo 部署路线图)
 const homeCustomSchema = {
   "@type": "FAQPage",
-  "@id": "https://cognitivebrandlab.org/#faq-brandos",
+  "@id": "https://ranbrandos.com/#faq-brandos",
   "name": "BrandOS™ 全球品牌操作系统核心高意图常见问答",
   "mainEntity": [
     {
@@ -54,84 +54,12 @@ const homeCustomSchema = {
   ]
 };
 
-// M1-M6 模块真实案例数据源 (接地气与强痛点升级版)
-const modules = [
-  {
-    id: "M1",
-    tag: "DEMAND RADAR",
-    title: "勘测心智",
-    subtitle: "别盲目测款。用 AI 逆向挖出海外差评断层，找到大牌看不见的细分蓝海",
-    playbook: "彻底告别盲目测款和粗暴铺货。通过抓取海外 Reddit 与 Amazon 数万条差评，用 AI 深度聚类出买家最痛却没人解决的 5W1H 刚需场景，开辟巨头看不见的场景蓝海。",
-    metric: "开辟 $300M+ 蓝海 • 痛点解决率 100%",
-    caseStudy: "EcoFlow 正浩：逆向挖掘 2.5 万条差评锁定暴风雪应急，众筹 $1211 万破纪录，年营收跃升至 $10 亿+",
-    link: "/modules/m1-brand-foundations",
-    accentColor: "cyan"
-  },
-  {
-    id: "M2",
-    tag: "UNFAKEABLE TRUST",
-    title: "立住人设",
-    subtitle: "口头吹嘘没人信。用极端实测与权威质保做硬核人质，彻底打破海外买家防备心",
-    playbook: "打字写“品质优良”一文不值。用假冒者模仿即破产的高成本投入（国际权威认证、10 年包换、极限破坏性实测），在独立站建立不可动摇的公信力护城河。",
-    metric: "享 50%-100% 溢价 • 品牌信任度 +300%",
-    caseStudy: "Patagonia 黑五反向营销营收逆势 +30% ($5.4亿)；Dyson 5,127次打样打造全透明气旋指纹",
-    link: "/modules/m2-behavioral-science",
-    accentColor: "indigo"
-  },
-  {
-    id: "M3",
-    tag: "VALUE PRICING",
-    title: "价值定价",
-    subtitle: "告别降价亏本。设计 3 档阶梯定价，产品比同行贵 30% 仍被抢购，死守 65%+ 战略毛利",
-    playbook: "定价不是算生产成本，而是提取买家心理账户。构建 Good-Better-Best 3 档阶梯利润沙盘，用主力旗舰款吃透 70%+ 销量，严控漏损，留足研发与获客弹药。",
-    metric: "实收口袋净利润 23.5% • AOV 跃升 +48%",
-    caseStudy: "YETI 酷冷：防熊认证支撑 $300+ 溢价，GBB 阶梯 + 饮具木马锁死 65%+ 毛利与 23.5% 实收净利",
-    link: "/modules/m3-strategic-pricing",
-    accentColor: "emerald"
-  },
-  {
-    id: "M4",
-    tag: "ALGO RESONANCE",
-    title: "算法共振",
-    subtitle: "别再死切标签。借海外真实红人主页白标投流，3 秒 Hook 击穿防线，获客成本大降 39%",
-    playbook: "彻底放开受众定向（Broad 宽投），让千亿推荐算法自动寻人；签约欧美垂直创作者并获取其主页白标授权（Whitelisting），借真实熟人信用击碎用户防备心。",
-    metric: "前 3 秒停留 43.8% • 获客成本 (CPA) -39.2%",
-    caseStudy: "HexClad 借米其林名厨 Ramsay 个人主页白标投流，获客成本大降 39.2%，跃升 $10 亿独角兽",
-    link: "/modules/m4-algorithmic-resonance",
-    accentColor: "amber"
-  },
-  {
-    id: "M5",
-    tag: "RAPID CONVERSION",
-    title: "极速转化",
-    subtitle: "消除结账顾虑。0.85 秒秒开 + 结账按钮旁密织 4 大信任证据，结账跳出率暴降 61.9%",
-    playbook: "打造 0.85s 物理级闪电加载；首屏 3 秒清晰传达价值；在结账按钮 100 像素内密织质保与安全近地证据网，配合 Shop Pay 指纹 3 秒收单，彻底消除结账焦虑。",
-    metric: "结账流失骤降 -61.9% • 移动端转化 +34.8%",
-    caseStudy: "Gymshark & Ridge：100px 近地证据网 + Shop Pay 指纹 3 秒收单，结账流失降 61.9%，CVR 提升 34.8%",
-    link: "/modules/m5-conversion-engineering",
-    accentColor: "rose"
-  },
-  {
-    id: "M6",
-    tag: "COMPOUND RETENTION",
-    title: "复利留存",
-    subtitle: "不做一次性买卖。6 大自适应自动化邮件唤醒老客，自然订阅占 79% 营收，停投广告订单不断",
-    playbook: "部署 6 大生命周期自适应行为流在关键节点精准唤醒老客；常态化执行区域停投对比实验（Holdout Geo-Lift），剥离老客自然回流水分，算清每一分真净利。",
-    metric: "客户 3 年 LTV 增长 1.85x • 全店 MER 4.20x",
-    caseStudy: "Chewy 宠物电商：Autoship 自动订阅贡献 79.2% 营收 ($11.1B)，6 大自适应流贡献 56.3% 留存收入",
-    link: "/modules/m6-compounding-retention",
-    accentColor: "purple"
-  }
-];
-
-import { getCollection } from 'astro:content';
-
-// 从 content collection 动态获取所有已发布专著并按时间倒序排列
+// 从 content collection 动态获取所有已发布专著
 const allEssays = await getCollection('essays');
 allEssays.sort((a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime());
 
 const featuredEssay = allEssays.find(e => e.data.featured) || allEssays[0];
-const recentEssays = allEssays.filter(e => e.slug !== featuredEssay?.slug).slice(0, 2);
+const recentEssays = allEssays.filter(e => e.id !== featuredEssay?.id);
 ---
 
 <Layout 
@@ -218,36 +146,12 @@ const recentEssays = allEssays.filter(e => e.slug !== featuredEssay?.slug).slice
   <!-- SECTION 3: THE ANTITHESIS (流量绞杀 vs. 认知复利) -->
   <AntithesisMatrix />
 
-  <!-- SECTION 4: BrandOS™ 6-MODULE CARDS OVERVIEW -->
-  <section class="max-w-6xl mx-auto px-5 md:px-8 py-24 sm:py-28 relative z-10">
-    <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 border-b border-[#232B3E] pb-8">
-      <div>
-        <span class="font-mono text-[12px] font-bold text-cyan-400 uppercase tracking-[0.25em] block mb-2">
-          SECTION 03 // FULL PROTOCOL INDEX
-        </span>
-        <h2 class="font-sans font-extrabold text-[32px] sm:text-[44px] text-slate-100 leading-tight">
-          BrandOS™ 6 大工程阶段全景速查
-        </h2>
-      </div>
-      <p class="text-slate-300 text-[14px] sm:text-[15px] mt-4 md:mt-0 font-sans max-w-md">
-        从需求勘测、信任质押、战略定价到算法共振、极速转化与因果留存的闭环自增强飞轮。
-      </p>
-    </div>
-
-    <!-- M1–M6 Grid Cards with Perfectly Aligned Heights -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 items-stretch">
-      {modules.map((item) => (
-        <ModuleCard module={item} />
-      ))}
-    </div>
-  </section>
-
-  <!-- SECTION 5: PEER-REVIEWED PROOF CENTER -->
+  <!-- SECTION 4: PEER-REVIEWED PROOF CENTER -->
   <section class="border-t border-[#232B3E] bg-[#0A0D14] py-24 sm:py-28 relative z-10">
     <div class="max-w-6xl mx-auto px-5 md:px-8">
       <div class="text-center max-w-3xl mx-auto mb-16">
         <span class="font-mono text-[12px] font-bold text-indigo-400 uppercase tracking-[0.25em] block mb-2">
-          SECTION 04 // PEER-REVIEWED FOUNDATIONS
+          SECTION 03 // PEER-REVIEWED FOUNDATIONS
         </span>
         <h2 class="font-sans font-extrabold text-[30px] sm:text-[42px] text-slate-100">
           不可伪造的跨学科实证网络
@@ -344,7 +248,7 @@ const recentEssays = allEssays.filter(e => e.slug !== featuredEssay?.slug).slice
     </div>
   </section>
 
-  <!-- SECTION 6: BRAND NOTES (品牌笔记精选 · 杂志级非对称布局) -->
+  <!-- SECTION 6: BRAND NOTES (品牌笔记精选) -->
   <section class="max-w-6xl mx-auto px-5 md:px-8 py-24 sm:py-28 relative z-10 border-t border-[#232B3E]">
     <!-- Section Header -->
     <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-10 border-b border-[#232B3E] pb-6 gap-4">
@@ -358,85 +262,69 @@ const recentEssays = allEssays.filter(e => e.slug !== featuredEssay?.slug).slice
         </h2>
       </div>
       <a href="/essays" class="text-slate-200 hover:text-cyan-400 font-mono text-[13px] font-bold uppercase tracking-wider flex items-center gap-1.5 transition-colors self-start sm:self-auto">
-        <span>全部品牌笔记 ({allEssays.length}+ 篇)</span>
+        <span>全部品牌笔记 ({allEssays.length} 篇)</span>
         <span>→</span>
       </a>
     </div>
 
-    <!-- Quick Module Navigation Bar -->
-    <div class="flex flex-wrap items-center gap-2 mb-10 pb-5 border-b border-[#232B3E]">
-      <span class="font-mono text-[11px] text-slate-500 uppercase mr-1 font-semibold">模块索引:</span>
-      <a href="/essays#M1" class="px-3 py-1 bg-[#111622] hover:bg-cyan-950/40 border border-[#232B3E] hover:border-cyan-500/50 rounded-lg text-slate-300 hover:text-cyan-400 font-mono text-[11px] font-bold transition-all">M1 勘测心智</a>
-      <a href="/essays#M2" class="px-3 py-1 bg-[#111622] hover:bg-indigo-950/40 border border-[#232B3E] hover:border-indigo-500/50 rounded-lg text-slate-300 hover:text-indigo-400 font-mono text-[11px] font-bold transition-all">M2 立住人设</a>
-      <a href="/essays#M3" class="px-3 py-1 bg-[#111622] hover:bg-emerald-950/40 border border-[#232B3E] hover:border-emerald-500/50 rounded-lg text-slate-300 hover:text-emerald-400 font-mono text-[11px] font-bold transition-all">M3 价值定价</a>
-      <a href="/essays#M4" class="px-3 py-1 bg-[#111622] hover:bg-amber-950/40 border border-[#232B3E] hover:border-amber-500/50 rounded-lg text-slate-300 hover:text-amber-400 font-mono text-[11px] font-bold transition-all">M4 算法共振</a>
-      <a href="/essays#M5" class="px-3 py-1 bg-[#111622] hover:bg-rose-950/40 border border-[#232B3E] hover:border-rose-500/50 rounded-lg text-slate-300 hover:text-rose-400 font-mono text-[11px] font-bold transition-all">M5 极速转化</a>
-      <a href="/essays#M6" class="px-3 py-1 bg-[#111622] hover:bg-purple-950/40 border border-[#232B3E] hover:border-purple-500/50 rounded-lg text-slate-300 hover:text-purple-400 font-mono text-[11px] font-bold transition-all">M6 复利留存</a>
-    </div>
-
-    <!-- Asymmetric Editorial Showcase Grid -->
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+    <!-- Editorial Showcase Grid -->
+    <div class="grid grid-cols-1 gap-8 items-stretch">
       {featuredEssay && (
-        <!-- Left: Large Featured Flagship Card (7 Columns) -->
-        <article class="lg:col-span-7 bg-[#111622] border border-cyan-500/50 hover:border-cyan-400 rounded-2xl p-6 sm:p-8 flex flex-col justify-between transition-all duration-300 group hover:shadow-[0_0_40px_rgba(0,242,254,0.1)] relative overflow-hidden">
+        <article class="bg-[#111622] border border-cyan-500/50 hover:border-cyan-400 rounded-2xl p-6 sm:p-10 flex flex-col md:flex-row gap-8 justify-between transition-all duration-300 group hover:shadow-[0_0_40px_rgba(0,242,254,0.1)] relative overflow-hidden">
           <div class="absolute top-0 right-0 bg-cyan-400 text-[#09090B] font-mono text-[9px] font-black px-3 py-1 uppercase tracking-widest">
             FEATURED MONOGRAPH
           </div>
 
-          <div>
-            <!-- Visual Hero Banner in Card -->
-            <div class="w-full aspect-[16/9] rounded-xl overflow-hidden mb-6 border border-[#232B3E] bg-[#09090B] relative group-hover:border-cyan-500/40 transition-colors">
-              <img 
-                src="/images/brand-notes-banner.jpg" 
-                alt={featuredEssay.data.title}
-                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-              />
-              <div class="absolute inset-0 bg-gradient-to-t from-[#111622] via-transparent to-transparent opacity-80"></div>
-            </div>
-
-            <!-- Metadata Row -->
-            <div class="flex items-center gap-3 mb-4">
-              <span class="font-mono text-[11px] font-extrabold uppercase tracking-wider text-cyan-400 bg-cyan-950/60 border border-cyan-800/60 px-3 py-0.5 rounded">
-                {featuredEssay.data.module} • {featuredEssay.data.moduleName}
-              </span>
-              <span class="font-mono text-[11px] text-slate-400">
-                ⏱ {featuredEssay.data.readingTime}
-              </span>
-              <span class="font-mono text-[11px] text-slate-500">
-                • {featuredEssay.data.author || "Ran (然)"}
-              </span>
-            </div>
-
-            <!-- Title -->
-            <h3 class="font-sans font-bold text-[22px] sm:text-[26px] text-slate-100 mb-3 group-hover:text-cyan-400 transition-colors leading-snug">
-              <a href={`/essays/${featuredEssay.slug}`}>
-                {featuredEssay.data.title}
-              </a>
-            </h3>
-
-            <!-- Excerpt -->
-            <p class="font-sans text-[14.5px] text-slate-300 leading-relaxed mb-6">
-              {featuredEssay.data.description}
-            </p>
+          <!-- Visual Hero Banner in Card -->
+          <div class="w-full md:w-5/12 aspect-[16/10] rounded-xl overflow-hidden border border-[#232B3E] bg-[#09090B] relative group-hover:border-cyan-500/40 transition-colors flex-shrink-0">
+            <img 
+              src="/images/essays/five_layer_brand_framework_stack.jpg" 
+              alt={featuredEssay.data.title}
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#111622] via-transparent to-transparent opacity-40"></div>
           </div>
 
-          <!-- Action Button -->
-          <a 
-            href={`/essays/${featuredEssay.slug}`}
-            class="pt-4 border-t border-[#232B3E] flex items-center justify-between font-mono text-[13px] font-bold text-slate-100 group-hover:text-cyan-400 transition-colors mt-auto"
-          >
-            <span>阅读全文 →</span>
-            <span class="group-hover:translate-x-2 transition-transform text-[16px]">→</span>
-          </a>
+          <!-- Card Content -->
+          <div class="flex flex-col justify-between flex-grow">
+            <div>
+              <!-- Metadata Row -->
+              <div class="flex flex-wrap items-center gap-3 mb-4">
+                <span class="font-mono text-[11px] font-extrabold uppercase tracking-wider text-cyan-400 bg-cyan-950/60 border border-cyan-800/60 px-3 py-0.5 rounded">
+                  {featuredEssay.data.module} • {featuredEssay.data.moduleName}
+                </span>
+                <span class="font-mono text-[11px] text-slate-400">
+                  ⏱ {featuredEssay.data.readingTime}
+                </span>
+                <span class="font-mono text-[11px] text-slate-500">
+                  • 作者：{featuredEssay.data.author || "Ran (然)"}
+                </span>
+              </div>
+
+              <!-- Title -->
+              <h3 class="font-sans font-bold text-[22px] sm:text-[28px] text-slate-100 mb-3 group-hover:text-cyan-400 transition-colors leading-snug">
+                <a href={`/essays/${featuredEssay.id}`}>
+                  {featuredEssay.data.title}
+                </a>
+              </h3>
+
+              <!-- Excerpt -->
+              <p class="font-sans text-[14.5px] sm:text-[15.5px] text-slate-300 leading-relaxed mb-6">
+                {featuredEssay.data.description}
+              </p>
+            </div>
+
+            <!-- Action Button -->
+            <a 
+              href={`/essays/${featuredEssay.id}`}
+              class="pt-4 border-t border-[#232B3E] flex items-center justify-between font-mono text-[13px] font-bold text-slate-100 group-hover:text-cyan-400 transition-colors mt-auto"
+            >
+              <span>阅读完整实证专著 →</span>
+              <span class="group-hover:translate-x-2 transition-transform text-[16px]">→</span>
+            </a>
+          </div>
         </article>
       )}
-
-      <!-- Right: Compact Recent Monographs (5 Columns) -->
-      <div class="lg:col-span-5 flex flex-col gap-6 justify-between">
-        {recentEssays.map((essay) => (
-          <EssayCard essay={essay} />
-        ))}
-      </div>
     </div>
   </section>
 </Layout>
