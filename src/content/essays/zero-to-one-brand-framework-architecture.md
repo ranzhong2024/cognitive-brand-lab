@@ -38,16 +38,16 @@ author: "Ran (然)"
 ![品牌资产生成的底层科学：斯彭斯昂贵信号 × 联想记忆网络 × 拜伦·夏普增长双引擎](/images/essays/brand_primitives_dual_engine.jpg)
 
 ### 1. 诺奖斯彭斯昂贵信号理论 (Spence's Costly Signaling Theory)
-2001年诺贝尔经济学奖得主迈克尔·斯彭斯（Michael Spence）指出：**在买卖双方信息不对称的市场中，唯有“具备高昂沉没成本且仿冒者一旦模仿就会破产”的信号，才能建立真正的信任（分离均衡 Separating Equilibrium）。**  
-- 口头吹嘘“品质第一”是廉价信号；
+2001年诺贝尔经济学奖得主[迈克尔·斯彭斯 (Michael Spence)](https://www.nobelprize.org/prizes/economic-sciences/2001/spence/facts/)（[斯坦福大学商学院官方主页](https://www.gsb.stanford.edu/faculty-research/faculty/a-michael-spence)）在其经典奠基论文《[Job Market Signaling (1973)](https://academic.oup.com/qje/article-abstract/87/3/355/1885035)》中指出：**在买卖双方信息高度不对称的市场中，唯有“具备高昂沉没成本且仿冒者一旦模仿就会破产”的信号，才能建立真正的信任（分离均衡 Separating Equilibrium）。**  
+- 口头吹嘘“品质第一”是零成本的廉价言论；
 - 像 **Patagonia** 一样自建北美最大修衣厂承诺终身免费修补、像 **Dyson** 耗费 5,127 个原型研发全透明集尘仓，才是同行不敢抄袭的“昂贵信号”。
 
 ### 2. 联想记忆网络模型 (Associative Network Memory Model, AMM)
-人类大脑记忆不是一个个孤立的文件袋，而是由**节点（Concepts/Brands）与连接弧（Links）**交织的庞大神经网络。  
+源自认知心理学权威文献 [Collins & Loftus (1975) 语义激活扩散理论](https://psycnet.apa.org/record/1976-06950-001) 与[卡耐基梅隆大学 John R. Anderson 认知科学实验室 (ACT-R)](https://act-r.psy.cmu.edu/)。人类大脑记忆不是一个个孤立的文件袋，而是由**节点（Concepts/Brands）与连接弧（Links）**交织的庞大神经网络。  
 品牌建设的本质，就是在用户大脑中建立起高强度的神经连接：当用户遇到某个生活场景（如“剧烈运动后口渴”）时，神经冲动能够第一时间自动扩散并点亮你的品牌节点。
 
 ### 3. Byron Sharp 心智可得性与物理可得性法则 (Mental & Physical Availability)
-南澳大学 Ehrenberg-Bass 研究所通过 30 年跨国实证数据证明：**品牌增长从来不是靠少数铁粉的极高复购，而是靠海量一年只买 1-2 次的“轻度买家（Light Buyers）”。**  
+[南澳大学 Ehrenberg-Bass 营销科学研究所](https://www.marketingscience.info/) 主任 [Byron Sharp 教授 (拜伦·夏普)](https://byronsharp.com/) 在其权威著作《[How Brands Grow: What Marketers Don't Know](https://www.marketingscience.info/how-brands-grow/)》中，通过 30 年跨国实证数据证明：**品牌增长从来不是靠少数铁粉的极高复购，而是靠海量一年只买 1-2 次的“轻度买家（Light Buyers）”。**  
 品牌破圈的公式极其简单粗暴：
 $$\text{Brand Growth} = \text{Mental Availability (心智好想起)} \times \text{Physical Availability (买起来零阻碍)}$$
 
@@ -67,7 +67,7 @@ $$\text{Brand Growth} = \text{Mental Availability (心智好想起)} \times \tex
 
 #### 1.1 品牌终极使命与黄金圈法则 (Mission, Vision & The Golden Circle)
 - **专有名词解析**：
-  - **Simon Sinek 黄金圈法则 (The Golden Circle)**：卓越品牌由内向外沟通，包含三层结构：
+  - [Simon Sinek (西蒙·斯涅克) 官方网站](https://simonsinek.com/) 提出的**黄金圈法则 (The Golden Circle)**（源自畅销专著《*Start with Why*》）：卓越品牌由内向外沟通，包含三层核心结构：
     - **Why（核心信仰）**：我们为何存在？我们坚信什么常识是错误的？
     - **How（实现路径）**：我们通过什么独特的价值链和哲学践行这一信仰？
     - **What（交付载体）**：我们具体销售什么物理产品或服务？
@@ -79,8 +79,8 @@ $$\text{Brand Growth} = \text{Mental Availability (心智好想起)} \times \tex
 
 #### 1.2 品类进入点 (Category Entry Points, CEPs) 与 JTBD 需求捕获
 - **专有名词解析**：
-  - **CEPs (Category Entry Points, 品类进入点)**：消费者在现实生活中产生购买念头时的具体情境触发线索（*When, Where, With Whom, While Doing What*）。品牌抢占的 CEPs 越多，心智可得性就越强。
-  - **JTBD (Jobs-To-Be-Done, 待办任务理论)**：哈佛商学院克里斯坦森教授提出，用户不是购买产品本身，而是“雇佣（Hire）”产品来完成其生活中的**功能性任务、社交任务与情感任务**。
+  - **CEPs (Category Entry Points, 品类进入点)**：由 [Ehrenberg-Bass 营销科学研究所](https://www.marketingscience.info/) 严格定义的底层概念，指消费者在现实生活中产生购买念头时的具体情境触发线索（*When, Where, With Whom, While Doing What*）。品牌抢占的 CEPs 越多，心智可得性就越强。
+  - **JTBD (Jobs-To-Be-Done, 待办任务理论)**：哈佛商学院克莱顿·克里斯坦森教授（[Clayton Christensen Institute 官方智库](https://www.christenseninstitute.org/)，详见[哈佛商业评论 HBR 奠基专论](https://hbr.org/2016/09/know-your-customers-jobs-to-be-done)）提出，用户不是购买产品本身，而是“雇佣（Hire）”产品来完成其生活中的**功能性任务、社交任务与情感任务**。
 - **美国真实标杆案例**：
   - **Athletic Brewing (美国无酒精精酿啤酒开创者)**：
     - 传统啤酒品牌死守“深夜酒吧、狂欢聚会”等红海 CEPs；
@@ -94,7 +94,7 @@ $$\text{Brand Growth} = \text{Mental Availability (心智好想起)} \times \tex
 
 ![Kapferer 品牌身份六角棱镜模型](/images/essays/kapferer_brand_identity_prism.jpg)
 
-- **专有名词解析**：由让-诺埃尔·卡普费雷（Jean-Noël Kapferer）提出，包含六个互为镜像的切面：
+- **专有名词解析**：由[巴黎 HEC 商学院终身名誉教授 Jean-Noël Kapferer (让-诺埃尔·卡普费雷)](https://www.hec.edu/en/faculty-research/faculty-directory/faculty-member/kapferer-jean-noel) 在其传世专著《*The New Strategic Brand Management*》中提出，包含六个互为镜像的切面：
   1. **Physique (外在物理特征)**：产品的材质、包装轮廓、触觉与标志性视觉；
   2. **Personality (人格特质)**：用拟人化性格描述品牌（如幽默、沉稳、激进）；
   3. **Culture (文化与价值观)**：品牌背后的精神发源地与文化根基；
@@ -111,16 +111,16 @@ $$\text{Brand Growth} = \text{Mental Availability (心智好想起)} \times \tex
     - *Self-Image*: “我是一个有独立思考能力、拒绝平庸的 Think Different 之人”。
 
 #### 2.2 荣格 12 品牌原型 (Brand Archetypes)
-- **专有名词解析**：基于荣格心理学，品牌可锚定人类集体无意识中的 12 种原型之一，使品牌形象具有直击本能的情感穿透力。
+- **专有名词解析**：基于荣格心理学，由著名学者 [Carol S. Pearson (卡罗尔·皮尔森博士官方网站)](https://www.carolspearson.com/) 与 Margaret Mark 在权威著作《*The Hero and the Outlaw: Building Extraordinary Brands Through the Power of Archetypes*》中系统工程化。品牌可锚定人类集体无意识中的 12 种原型之一，使品牌形象具有直击本能的情感穿透力。
 - **美国真实标杆案例**：
-  - **Liquid Death $\to$ 叛逆者原型 (The Outlaw)**：
+  - **Liquid Death ➔ 叛逆者原型 (The Outlaw)**：
     - 标语 “Murder Your Thirst”（谋杀你的口渴）。用易拉罐和重金属死亡骷髅包装矿泉水，彻底颠覆了达能、雀巢等巨头维持了几十年的“雪山纯净小清新”说教，估值迅速突破 14 亿美元。
-  - **Nike $\to$ 英雄原型 (The Hero)**：
+  - **Nike ➔ 英雄原型 (The Hero)**：
     - 标语 “Just Do It”。Nike 从不宣讲鞋底有多软，它的核心叙事永远是：**你内心有惰性与怀疑，但只要穿上战靴行动起来，你就能战胜心魔成为自己的英雄。**
 
 #### 2.3 独特品牌资产系统 (Distinctive Brand Assets, DBAs)
 - **专有名词解析**：
-  - **DBAs (Distinctive Brand Assets)**：在不出现品牌名字的情况下，能瞬间在用户潜意识中激活品牌记忆的感官线索。包含：**视觉符号、专属色彩、听觉声音商标、特征包装轮廓与标志性动作**。
+  - 由 [Jenni Romaniuk 教授 (珍妮·罗马纽克)](https://www.marketingscience.info/) 在专著《*Building Distinctive Brand Assets*》中创立的 **DBAs (Distinctive Brand Assets)** 理论：在不出现品牌名字的情况下，能瞬间在用户潜意识中激活品牌记忆的感官线索。包含：**视觉符号、专属色彩、听觉声音商标、特征包装轮廓与标志性动作**。
   - 判定标准为 **著名度 (Fame)** $\times$ **独占性 (Uniqueness)**。
 - **美国真实标杆矩阵**：
   - **Nike**: Swoosh 对勾 (视觉) + "Just Do It" (语言)
@@ -133,7 +133,7 @@ $$\text{Brand Growth} = \text{Mental Availability (心智好想起)} \times \tex
 ### 第三层：心智阶梯与 CBBE 共鸣架构 (Customer-Based Brand Equity)
 
 #### 3.1 凯文·凯勒 CBBE 品牌资产金字塔 (Keller's CBBE Model)
-- **专有名词解析**：由达特茅斯商学院教授 Kevin Lane Keller 提出，包含 4 阶段 6 模块的递进心智阶梯：
+- **专有名词解析**：由[达特茅斯学院 Tuck 商学院 Kevin Lane Keller (凯文·莱恩·凯勒) 教授官方主页](https://faculty.tuck.dartmouth.edu/kevin-lane-keller/) 在其传世教材《*Strategic Brand Management*》与经典论文《[Conceptualizing, Measuring, and Managing Customer-Based Brand Equity](https://journals.sagepub.com/doi/10.1177/002224299305700101)》中提出，包含 4 阶段 6 模块的递进心智阶梯：
   1. **显著度 (Brand Salience)**：用户在购买决策时能否第一时间想起你（*Who are you?*）；
   2. **性能与意象 (Brand Performance & Imagery)**：功能上如何满足需求？感性上唤起何种社会认同？（*What are you?*）；
   3. **理性判断与感性感觉 (Brand Judgments & Feelings)**：用户评估你的专业度、可靠度，并在内心产生共鸣感（*What about you?*）；
@@ -164,10 +164,10 @@ $$\text{Brand Growth} = \text{Mental Availability (心智好想起)} \times \tex
 - **美国真实标杆案例**：
   - **Liquid Death 的全渠道飞轮**：
     - *心智端*: 在 YouTube 和 TikTok 制造上亿播放量的荒诞重金属病毒视频；
-    - *物理端*: 迅速覆盖全美 Whole Foods, Target, 7-Eleven, Walmart 等超过 100,000 家线下便利店与商超货架，确保消费者在网上被逗笑后，下楼拐角就能立刻买到。
+    - *物理端*: 迅速覆盖全美 Whole Foods, Target, 7-Eleven, Walmart 等超过 100,000 家线下便利店与商超货架，确保消费者在网上被逗笑后，下楼拐点就能立刻买到。
 
 #### 4.2 双重危机法则 (Double Jeopardy Law)
-- **实证铁律**：小品牌不仅买家基数小，而且这些买家的忠诚度与年均购买频次也略低于大品牌。**初创品牌如果把全部精力放在“深耕极少数死忠粉的复购”，必死无疑；唯一通往规模化的道路是持续拉拢广谱轻度买家。**
+- **实证铁律**：由 William McPhee 最早发现、[Ehrenberg-Bass 营销科学研究所](https://www.marketingscience.info/) 大规模跨品类实证证明。小品牌不仅买家基数小，而且这些买家的忠诚度与年均购买频次也略低于大品牌。**初创品牌如果把全部精力放在“深耕极少数死忠粉的复购”，必死无疑；唯一通往规模化的道路是持续拉拢广谱轻度买家。**
 
 ---
 
@@ -180,9 +180,9 @@ $$\text{Brand Growth} = \text{Mental Availability (心智好想起)} \times \tex
 
 #### 5.2 核心品牌健康度度量衡仪表盘 (Brand Equity Metrics)
 - **Share of Search (SOS, 搜索份额)**：
-  - 品牌在 Google / Amazon 上的主动搜索量占整个品类搜索大盘的比例。学术界证明 **SOS 是未来 6-12 个月市场份额（SOM）的最强先行领先指标（Leading Indicator）**。
+  - 由 [英国广告从业者协会 (IPA 智库)](https://www.ipa.co.uk/knowledge/effectiveness/) 知名营销科学家 Les Binet 与 James Hankins 实证确立：品牌在 Google / Amazon 上的主动搜索量占整个品类搜索大盘的比例。学术界证明 **SOS 是未来 6-12 个月市场份额（SOM, Share of Market）的最强先行领先指标（Leading Indicator）**。
 - **Net Promoter Score (NPS, 净推荐值)**：
-  - $NPS = \%推荐者 (9-10分) - \%贬损者 (0-6分)$。衡量自发口碑增量。
+  - 由 [贝恩咨询 (Bain & Company 官方系统)](https://www.bain.com/consulting-services/customer-strategy-and-marketing/customer-loyalty-nps-management/) 资深合伙人 Fred Reichheld 创立（详见[哈佛商业评论 HBR 奠基专论](https://hbr.org/2003/12/the-one-number-you-need-to-grow)）：$NPS = \%推荐者 (9-10分) - \%贬损者 (0-6分)$。衡量自发口碑增量。
 - **Price Premium (品牌溢价率)**：
   - 在完全相同功能配置下，相比品类基准白牌能够维持的高定价百分比。
 
