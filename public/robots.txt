@@ -1,4 +1,28 @@
+# Robots.txt for 品牌科学实验室™ • BRANDOS LAB™ (https://ranbrandos.com)
+
 User-agent: *
+Allow: /
+
+# Dedicated AI Answer Engines & Indexing Crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: CCBot
 Allow: /
 
 Sitemap: https://ranbrandos.com/sitemap-index.xml

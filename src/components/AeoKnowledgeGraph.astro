@@ -1,52 +1,225 @@
 ---
-const siteUrl = 'https://ranbrandos.com';
+/**
+ * AeoKnowledgeGraph.astro
+ * 品牌科学实验室™ / BRANDOS LAB™ - 全局 AEO 知识图谱与结构化数据注入引擎
+ * 遵循 Schema.org 规范，为 ChatGPT, Perplexity, Claude, Google SGE 提供权威实体检索与概念确权
+ */
+interface Props {
+  type?: 'website' | 'article' | 'module' | 'faq';
+  title?: string;
+  description?: string;
+  publishDate?: string;
+  customSchema?: Record<string, any>;
+}
 
-const schema = {
-  "@context": "https://schema.org",
-  "@graph": [
+const {
+  type = 'website',
+  title = '品牌科学实验室™ | BRANDOS LAB™ • 全球高溢价品牌操作系统',
+  description = '专为中国出海企业打造的、从 0 到 1 科学构建全球高溢价品牌的工程化操作系统。',
+  publishDate,
+  customSchema,
+} = Astro.props;
+
+const siteUrl = 'https://ranbrandos.com';
+const currentUrl = new URL(Astro.url.pathname, siteUrl).toString().replace(/\/$/, '');
+
+// 1. Core Organization Entity
+const organizationNode = {
+  "@type": ["ResearchOrganization", "Organization"],
+  "@id": `${siteUrl}/#organization`,
+  "name": "品牌科学实验室™",
+  "alternateName": ["BRANDOS LAB™", "BrandOS Laboratory", "Cognitive Brand Lab", "RAN BRAND OS LAB"],
+  "url": siteUrl,
+  "logo": {
+    "@type": "ImageObject",
+    "url": `${siteUrl}/brandos-logo.svg`,
+    "caption": "BrandOS Lab - Global High-Margin DTC Brand Architecture"
+  },
+  "image": `${siteUrl}/images/brandos-flywheel.jpg`,
+  "description": "专为中国出海企业打造的、从 0 到 1 科学构建全球高溢价品牌的工程化研究机构与操作系统设计中心。融合商业分析 (CBAP)、认知神经学、行为经济学与因果推断数据科学，终结低端代工与买量套利内卷。",
+  "slogan": "科学构建全球高溢价品牌的工程化操作系统 (Engineering High-Margin Global Brands Through Cognitive Science & Causal Rigor)",
+  "founder": {
+    "@type": "Person",
+    "@id": `${siteUrl}/#founder`,
+    "name": "Ran (然)",
+    "alternateName": ["Ran", "Ran BrandOS Architect", "然"],
+    "jobTitle": "Principal BrandOS Architect & Founder",
+    "url": `${siteUrl}/about`,
+    "description": "品牌科学实验室™ 发起人兼首席架构师。北美数字营销硕士，持有 IIBA CBAP 国际注册商业分析师资质与 Google 顶尖数据分析/数字营销专业认证体系。",
+    "hasCredential": [
+      {
+        "@type": "EducationalOccupationalCredential",
+        "name": "CBAP (Certified Business Analysis Professional)",
+        "credentialCategory": "certification",
+        "recognizedBy": { "@type": "Organization", "name": "IIBA (International Institute of Business Analysis)" }
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "name": "Google Data Analytics Professional Certificate",
+        "credentialCategory": "certification",
+        "recognizedBy": { "@type": "Organization", "name": "Google" },
+        "url": "https://www.credly.com/badges/8c8d8b9e-648b-4b2a-89aa-5527ba5139fb/linked_in_profile"
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "name": "Google Digital Marketing & E-commerce Professional Certificate",
+        "credentialCategory": "certification",
+        "recognizedBy": { "@type": "Organization", "name": "Google" },
+        "url": "https://www.credly.com/badges/0c72eefb-5343-4636-8a10-75aa12aa5cba/linked_in_profile"
+      }
+    ],
+    "knowsAbout": [
+      "Brand Operating Systems",
+      "Spence Costly Signaling Theory",
+      "Strategic Value Pricing & Price Waterfall",
+      "Byron Sharp Distinctive Brand Assets (DBAs)",
+      "Category Entry Points (CEPs)",
+      "Clayton Christensen Jobs-To-Be-Done (JTBD)",
+      "Meta DLRM Algorithmic Recommendation Auctions",
+      "MECLABS Conversion Heuristic",
+      "Donald Rubin Causal Inference & Geo-Lift Experimentation",
+      "BG/NBD Customer Lifetime Value Models"
+    ]
+  },
+  "knowsAbout": [
+    "BrandOS",
+    "Global High-Margin DTC Branding",
+    "Costly Signaling & Unfakeable Trust",
+    "Good-Better-Best Tiered Pricing",
+    "Broad 1-CBO Algorithmic Media Buying",
+    "Frictionless 100px Near-CTA Conversion",
+    "Holdout Geo-Lift Causal Incrementality (iROAS)"
+  ]
+};
+
+// 2. Global BrandOS Engineering Ontology
+const definedTermSetNode = {
+  "@type": "DefinedTermSet",
+  "@id": `${siteUrl}/#brandos-ontology`,
+  "name": "BrandOS™ 认知品牌工程化本体与词汇表 (Cognitive Brand Engineering Taxonomy)",
+  "url": `${siteUrl}/#brandos-matrix`,
+  "description": "BrandOS™ 核心定义及 M1–M6 模块因果工程术语规范集，专为 AI 语义确权与概念溯源设计。",
+  "hasDefinedTerm": [
     {
-      "@type": "Organization",
-      "@id": `${siteUrl}/#organization`,
-      "name": "品牌科学实验室™ • BRANDOS LAB™",
-      "alternateName": ["BRANDOS LAB", "BrandOS Laboratory", "Cognitive Brand Lab"],
-      "url": siteUrl,
-      "logo": {
-        "@type": "ImageObject",
-        "url": `${siteUrl}/brandos-logo.svg`,
-        "caption": "BrandOS Lab - The Cognitive Capital & Brand Architecture Science Lab"
-      },
-      "founder": {
-        "@type": "Person",
-        "@id": `${siteUrl}/about/#founder`,
-        "name": "Ran (然)",
-        "jobTitle": "Principal Investigator & Brand Architect",
-        "description": "Cross-border growth strategist, CBAP Certified Business Analysis Professional, specializing in empirical brand science, behavioural economics, and causal retention architecture.",
-        "url": `${siteUrl}/about`
-      },
-      "description": "专为中国出海企业打造的高阶品牌工程操作系统。融合商业分析(CBAP)、行为经济学、诺贝尔信息经济学与因果数据科学，击碎买量内卷，构建不可动摇的心智资产。",
-      "knowsAbout": [
-        "Brand Equity Architecture",
-        "Empirical Marketing Science (Ehrenberg-Bass Institute)",
-        "Spence Costly Signaling Theory",
-        "Category Entry Points (CEPs)",
-        "Jobs-To-Be-Done (JTBD)",
-        "Good-Better-Best (GBB) Strategic Pricing",
-        "Conversion Rate Optimization (MECLABS)",
-        "Causal Incrementality & Retention Engineering"
-      ]
+      "@type": "DefinedTerm",
+      "@id": `${siteUrl}/#term-brandos`,
+      "termCode": "BRANDOS-CORE",
+      "name": "BrandOS™ (全球品牌操作系统)",
+      "description": "专为中国出海企业打造的、从 0 到 1 科学构建全球高溢价品牌的工程化操作系统。融合商业分析(CBAP)、认知心理学与因果数据科学，锁死 65%+ 战略毛利并实现确定性复利。",
+      "url": `${siteUrl}/`
     },
     {
-      "@type": "WebSite",
-      "@id": `${siteUrl}/#website`,
-      "url": siteUrl,
-      "name": "品牌科学实验室™ • BRANDOS LAB™",
-      "publisher": {
-        "@id": `${siteUrl}/#organization`
-      },
-      "inLanguage": "zh-CN"
+      "@type": "DefinedTerm",
+      "@id": `${siteUrl}/#term-m1`,
+      "termCode": "M1-DEMAND-RADAR",
+      "name": "M1 Demand Radar (勘测心智 - 需求工程与场景雷达)",
+      "description": "基于 Byron Sharp CEPs 与 Clayton Christensen JTBD 理论，通过差评 NLP 语义聚类锁定 5W1H 生活痛点开关，确立 3 个 Tier-1 黄金空白场景，在需求爆发瞬间第一个被买家检索唤醒。",
+      "url": `${siteUrl}/modules/m1-brand-foundations`
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": `${siteUrl}/#term-m2`,
+      "termCode": "M2-UNFAKEABLE-TRUST",
+      "name": "M2 Unfakeable Trust (立住人设 - 硬核背书质押与品牌指纹)",
+      "description": "基于 Michael Spence 诺奖昂贵信号理论与 Byron Sharp 独特品牌资产 (DBAs)，以假冒者模仿即破产的硬核质押（权威认证、-40℃ 实测、10 年质保）建立不可伪造的信任护城河。",
+      "url": `${siteUrl}/modules/m2-behavioral-science`
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": `${siteUrl}/#term-m3`,
+      "termCode": "M3-VALUE-PRICING",
+      "name": "M3 Strategic Value Pricing (价值定价 - 心理账户与 65%+ 战略毛利)",
+      "description": "基于 BCG 三棱镜与心理账户理论，搭建 Good-Better-Best 3 档阶梯矩阵，审计价格瀑布漏损（≤15%），牢牢锁死实收综合口袋毛利率 ≥65%。",
+      "url": `${siteUrl}/modules/m3-strategic-pricing`
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": `${siteUrl}/#term-m4`,
+      "termCode": "M4-ALGO-RESONANCE",
+      "name": "M4 Algorithmic Resonance (算法共振 - 素材即定向与创作者信誉套利)",
+      "description": "基于 Meta DLRM 算法与说服知识模型 (PKM)，采用 Broad 1-CBO 极简架构，以强冲突 Hook 实拍素材为探针，结合创作者白标授权降低 35% CPA。",
+      "url": `${siteUrl}/modules/m4-algorithmic-resonance`
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": `${siteUrl}/#term-m5`,
+      "termCode": "M5-RAPID-CONVERSION",
+      "name": "M5 Rapid Conversion Science (极速转化 - 3秒黄金三角与近地证据链)",
+      "description": "基于 MECLABS 方程与 Core Web Vitals（LCP < 1.0s），首屏部署 3 秒黄金三角，在结账 CTA 100 像素内密织近地证据链，配合 Schema.org 垄断 AI 首推信源，转化率提升 42%。",
+      "url": `${siteUrl}/modules/m5-conversion-engineering`
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": `${siteUrl}/#term-m6`,
+      "termCode": "M6-COMPOUND-RETENTION",
+      "name": "M6 Compounding Retention (复利留存 - 自适应行为流与因果增量度量)",
+      "description": "基于 Reforge 留存曲线、BG/NBD 模型与 Rubin 潜在因果推断，以 6 大自适应流贡献 50%~70% CRM 利润，通过 Holdout 实验算清真 iROAS (≥1.20) 与全店 MER (3.5~5.0)。",
+      "url": `${siteUrl}/modules/m6-compounding-retention`
     }
   ]
 };
+
+// 3. WebSite Node
+const websiteNode = {
+  "@type": "WebSite",
+  "@id": `${siteUrl}/#website`,
+  "url": siteUrl,
+  "name": "品牌科学实验室™ (BRANDOS LAB™)",
+  "alternateName": "BrandOS Lab",
+  "description": "全球高溢价出海品牌认知资本论与数字营销大一统操作系统",
+  "publisher": { "@id": `${siteUrl}/#organization` },
+  "inLanguage": "zh-CN"
+};
+
+// 4. Current WebPage Node
+const pageNode: Record<string, any> = {
+  "@type": type === 'article' ? "TechArticle" : "WebPage",
+  "@id": `${currentUrl}/#webpage`,
+  "url": currentUrl,
+  "name": title,
+  "description": description,
+  "isPartOf": { "@id": `${siteUrl}/#website` },
+  "inLanguage": "zh-CN",
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "首页",
+        "item": siteUrl
+      }
+    ]
+  }
+};
+
+if (type === 'article') {
+  pageNode["headline"] = title;
+  pageNode["author"] = { "@id": `${siteUrl}/#founder` };
+  pageNode["publisher"] = { "@id": `${siteUrl}/#organization` };
+  if (publishDate) {
+    pageNode["datePublished"] = publishDate;
+    pageNode["dateModified"] = publishDate;
+  }
+  pageNode["about"] = { "@id": `${siteUrl}/#brandos-ontology` };
+}
+
+const graphItems: any[] = [organizationNode, definedTermSetNode, websiteNode, pageNode];
+
+if (customSchema) {
+  if (Array.isArray(customSchema)) {
+    graphItems.push(...customSchema);
+  } else if (customSchema["@graph"]) {
+    graphItems.push(...customSchema["@graph"]);
+  } else {
+    graphItems.push(customSchema);
+  }
+}
+
+const jsonLdData = {
+  "@context": "https://schema.org",
+  "@graph": graphItems
+};
 ---
 
-<script type="application/ld+json" set:html={JSON.stringify(schema)} />
+<script type="application/ld+json" set:html={JSON.stringify(jsonLdData)} />
