@@ -1,6 +1,80 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%" style="background:#09090B; border-radius:16px; border:1px solid #232B3E;">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 520" width="100%" height="100%" style="background:#09090B; border-radius:20px; border:1px solid #232B3E;">
   <rect width="100%" height="100%" fill="#09090B"/>
-  <text x="400" y="225" fill="rgba(255, 255, 255, 0.03)" font-family="sans-serif" font-size="32" font-weight="900" text-anchor="middle" transform="rotate(-12 400 225)" letter-spacing="4">BRANDOS LAB™ // 品牌科学实验室™</text>
-  <text x="780" y="438" fill="rgba(0, 242, 254, 0.35)" font-family="monospace" font-size="10" font-weight="bold" text-anchor="end">BRANDOS LAB™ 品牌科学实验室 • 实证研究版权所有</text>
-  <text x="400" y="40" fill="#FAFAFA" font-family="sans-serif" font-size="17" font-weight="900" text-anchor="middle">100px 近地证据网与 MECLABS 极速转化结构</text>
+  
+  <defs>
+    <pattern id="grid-m5-tall" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="rgba(255, 255, 255, 0.03)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#grid-m5-tall)"/>
+
+  <!-- Watermark -->
+  <text x="380" y="260" fill="rgba(255, 255, 255, 0.03)" font-family="sans-serif" font-size="32" font-weight="900" text-anchor="middle" transform="rotate(-6 380 260)" letter-spacing="4">BRANDOS LAB™ // 品牌科学实验室™</text>
+
+  <!-- Step Header Title -->
+  <g transform="translate(30, 25)">
+    <rect width="700" height="42" rx="8" fill="#111622" stroke="#232B3E"/>
+    <text x="20" y="27" fill="#F43F5E" font-family="monospace" font-size="13" font-weight="bold">SCENE 05 // 极速转化与零顾虑收单</text>
+    <text x="250" y="27" fill="#FAFAFA" font-family="sans-serif" font-size="14" font-weight="bold">结账按钮 100 像素内密织 4 大定心丸 $\to$ 1 键指纹收单</text>
+  </g>
+
+  <!-- Left: Checkout Button with 100px Evidence Mesh (Hero Visual) -->
+  <g transform="translate(30, 80)">
+    <rect width="410" height="330" rx="16" fill="#111622" stroke="#F43F5E" stroke-width="2.5"/>
+    <text x="205" y="32" fill="#F43F5E" font-family="monospace" font-size="12" font-weight="bold" text-anchor="middle">⚡ 100PX NEAR-CTA EVIDENCE MESH</text>
+
+    <!-- 4 Security Badges Grid -->
+    <g transform="translate(20, 48)">
+      <!-- Badge 1 -->
+      <rect width="175" height="58" rx="10" fill="#09090B" stroke="#232B3E"/>
+      <text x="15" y="26" fill="#FAFAFA" font-family="sans-serif" font-size="14" font-weight="bold">🚚 48h 海外仓直发</text>
+      <text x="15" y="46" fill="#94A3B8" font-family="sans-serif" font-size="11">本地时效 • 极速达</text>
+      
+      <!-- Badge 2 -->
+      <rect x="195" y="0" width="175" height="58" rx="10" fill="#09090B" stroke="#232B3E"/>
+      <text x="210" y="26" fill="#FAFAFA" font-family="sans-serif" font-size="14" font-weight="bold">🛡️ 10 年免费包换</text>
+      <text x="210" y="46" fill="#94A3B8" font-family="sans-serif" font-size="11">官方售后 • 终身保</text>
+
+      <!-- Main Glowing 1-Click Checkout CTA Button (Massive) -->
+      <rect x="0" y="75" width="370" height="68" rx="14" fill="#FAFAFA" stroke="#00F2FE" stroke-width="3"/>
+      <text x="185" y="116" fill="#09090B" font-family="sans-serif" font-size="18" font-weight="900" text-anchor="middle"> Pay with Apple Pay / Shop Pay</text>
+
+      <!-- Badge 3 -->
+      <rect x="0" y="160" width="175" height="58" rx="10" fill="#09090B" stroke="#232B3E"/>
+      <text x="15" y="186" fill="#FAFAFA" font-family="sans-serif" font-size="14" font-weight="bold">🔄 30天免费退换</text>
+      <text x="15" y="206" fill="#94A3B8" font-family="sans-serif" font-size="11">零顾虑 • 试用无忧</text>
+
+      <!-- Badge 4 -->
+      <rect x="195" y="160" width="175" height="58" rx="10" fill="#09090B" stroke="#232B3E"/>
+      <text x="210" y="186" fill="#FAFAFA" font-family="sans-serif" font-size="14" font-weight="bold">🔒 256位安全加密</text>
+      <text x="210" y="206" fill="#94A3B8" font-family="sans-serif" font-size="11">银行级 • 资金保障</text>
+    </g>
+    <text x="205" y="305" fill="#34D399" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle">买家：“所有担忧都有保障，直接指纹付款！”</text>
+  </g>
+
+  <!-- Right: Quantitative Conversion Breakthrough -->
+  <g transform="translate(460, 80)">
+    <rect width="270" height="330" rx="16" fill="#111622" stroke="#232B3E" stroke-width="2"/>
+    <text x="20" y="38" fill="#FAFAFA" font-family="sans-serif" font-size="15" font-weight="900">📊 消除顾虑战果</text>
+    
+    <g transform="translate(15, 60)">
+      <rect width="240" height="110" rx="12" fill="#18111A" stroke="#F43F5E" stroke-width="2"/>
+      <text x="15" y="34" fill="#FB7185" font-family="sans-serif" font-size="14" font-weight="bold">结账跳出流失率：</text>
+      <text x="15" y="70" fill="#F43F5E" font-family="sans-serif" font-size="28" font-weight="900">骤降 -61.9% 📉</text>
+      <text x="15" y="94" fill="#94A3B8" font-family="sans-serif" font-size="11">告别加购放弃黑洞</text>
+    </g>
+
+    <g transform="translate(15, 190)">
+      <rect width="240" height="110" rx="12" fill="#0D1F1A" stroke="#10B981" stroke-width="2"/>
+      <text x="15" y="34" fill="#6EE7B7" font-family="sans-serif" font-size="14" font-weight="bold">移动端转化率 (CVR)：</text>
+      <text x="15" y="70" fill="#10B981" font-family="sans-serif" font-size="28" font-weight="900">暴涨 +34.8% 📈</text>
+      <text x="15" y="94" fill="#94A3B8" font-family="sans-serif" font-size="11">广告意愿无损变现</text>
+    </g>
+  </g>
+
+  <!-- Bottom Result Banner -->
+  <g transform="translate(30, 430)">
+    <rect width="700" height="65" rx="12" fill="#111622" stroke="#F43F5E" stroke-width="1.5"/>
+    <text x="25" y="38" fill="#FAFAFA" font-family="sans-serif" font-size="15" font-weight="900">🏆 标杆战例：Ridge & Gymshark 部署 100px 近地证据网，结账流失直接腰斩！</text>
+  </g>
 </svg>

@@ -1,6 +1,74 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%" style="background:#09090B; border-radius:16px; border:1px solid #232B3E;">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 520" width="100%" height="100%" style="background:#09090B; border-radius:20px; border:1px solid #232B3E;">
   <rect width="100%" height="100%" fill="#09090B"/>
-  <text x="400" y="225" fill="rgba(255, 255, 255, 0.03)" font-family="sans-serif" font-size="32" font-weight="900" text-anchor="middle" transform="rotate(-12 400 225)" letter-spacing="4">BRANDOS LAB™ // 品牌科学实验室™</text>
-  <text x="780" y="438" fill="rgba(0, 242, 254, 0.35)" font-family="monospace" font-size="10" font-weight="bold" text-anchor="end">BRANDOS LAB™ 品牌科学实验室 • 实证研究版权所有</text>
-  <text x="400" y="38" fill="#FAFAFA" font-family="sans-serif" font-size="17" font-weight="900" text-anchor="middle">鲁宾因果推断 (Holdout Geo-Lift) 停投实验与 6 大自适应流</text>
+  
+  <defs>
+    <pattern id="grid-m6-tall" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="rgba(255, 255, 255, 0.03)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#grid-m6-tall)"/>
+
+  <!-- Watermark -->
+  <text x="380" y="260" fill="rgba(255, 255, 255, 0.03)" font-family="sans-serif" font-size="32" font-weight="900" text-anchor="middle" transform="rotate(-6 380 260)" letter-spacing="4">BRANDOS LAB™ // 品牌科学实验室™</text>
+
+  <!-- Step Header Title -->
+  <g transform="translate(30, 25)">
+    <rect width="700" height="42" rx="8" fill="#111622" stroke="#232B3E"/>
+    <text x="20" y="27" fill="#A855F7" font-family="monospace" font-size="13" font-weight="bold">SCENE 06 // 自适应关怀与终身复利</text>
+    <text x="250" y="27" fill="#FAFAFA" font-family="sans-serif" font-size="14" font-weight="bold">收到货体验超预期 $\to$ 开启自动订阅，沉淀永久品牌资产</text>
+  </g>
+
+  <!-- Left: 3-Stage Lifecycle Flow Flywheel -->
+  <g transform="translate(30, 80)">
+    <rect width="410" height="330" rx="16" fill="#111622" stroke="#A855F7" stroke-width="2.5"/>
+    <text x="205" y="32" fill="#A855F7" font-family="monospace" font-size="12" font-weight="bold" text-anchor="middle">⚡ 6 大自适应生命周期邮件流</text>
+
+    <!-- Stage 1 -->
+    <g transform="translate(20, 48)">
+      <rect width="370" height="65" rx="10" fill="#09090B" stroke="#232B3E"/>
+      <text x="15" y="28" fill="#FAFAFA" font-family="sans-serif" font-size="14" font-weight="bold">📦 Day 3 签收关怀：</text>
+      <text x="15" y="50" fill="#94A3B8" font-family="sans-serif" font-size="12">使用高清视频教程 + 专属 VIP 客服通道</text>
+    </g>
+
+    <!-- Stage 2 -->
+    <g transform="translate(20, 125)">
+      <rect width="370" height="65" rx="10" fill="#09090B" stroke="#232B3E"/>
+      <text x="15" y="28" fill="#FAFAFA" font-family="sans-serif" font-size="14" font-weight="bold">🔔 Day 30 智能补给：</text>
+      <text x="15" y="50" fill="#94A3B8" font-family="sans-serif" font-size="12">根据耗损衰减模型，精准提醒备件补给</text>
+    </g>
+
+    <!-- Stage 3 (Autoship Hero) -->
+    <g transform="translate(20, 202)">
+      <rect width="370" height="85" rx="12" fill="#A855F7" opacity="0.22" stroke="#A855F7" stroke-width="2"/>
+      <text x="15" y="32" fill="#E9D5FF" font-family="sans-serif" font-size="15" font-weight="900">🔄 开启 Autoship 自动订阅</text>
+      <text x="15" y="54" fill="#FAFAFA" font-family="sans-serif" font-size="12.5">定期自动扣款与海外仓直发（享 10% 专属优惠）</text>
+      <text x="15" y="74" fill="#34D399" font-family="sans-serif" font-size="12" font-weight="bold">买家：“太省心了，不用每次重复下单！”</text>
+    </g>
+  </g>
+
+  <!-- Right: The Sovereign Brand Flywheel Result -->
+  <g transform="translate(460, 80)">
+    <rect width="270" height="330" rx="16" fill="#111622" stroke="#232B3E" stroke-width="2"/>
+    <text x="20" y="38" fill="#FAFAFA" font-family="sans-serif" font-size="15" font-weight="900">💎 终局：品牌主权资产</text>
+    
+    <g transform="translate(15, 60)">
+      <rect width="240" height="110" rx="12" fill="#0D1F1A" stroke="#10B981" stroke-width="2"/>
+      <text x="15" y="34" fill="#6EE7B7" font-family="sans-serif" font-size="14" font-weight="bold">老客自动订阅营收：</text>
+      <text x="15" y="70" fill="#10B981" font-family="sans-serif" font-size="28" font-weight="900">贡献 79.2% 💰</text>
+      <text x="15" y="94" fill="#94A3B8" font-family="sans-serif" font-size="11">关停广告订单依然不断</text>
+    </g>
+
+    <g transform="translate(15, 190)">
+      <rect width="240" height="110" rx="12" fill="#191326" stroke="#A855F7" stroke-width="2"/>
+      <text x="15" y="34" fill="#D8B4FE" font-family="sans-serif" font-size="14" font-weight="bold">全店营销效率比 (MER)：</text>
+      <text x="15" y="70" fill="#A855F7" font-family="sans-serif" font-size="28" font-weight="900">稳定 4.20x 🚀</text>
+      <text x="15" y="94" fill="#94A3B8" font-family="sans-serif" font-size="11">终结买量地租内卷</text>
+    </g>
+  </g>
+
+  <!-- Bottom Result Banner -->
+  <g transform="translate(30, 430)">
+    <rect width="700" height="65" rx="12" fill="#111622" stroke="#A855F7" stroke-width="1.5"/>
+    <text x="25" y="38" fill="#FAFAFA" font-family="sans-serif" font-size="15" font-weight="900">🏆 标杆战例：Chewy 凭借 Autoship 自动订阅狂揽 $11.1B 营收，3 年 LTV 跃升 1.85 倍！</text>
+  </g>
 </svg>

@@ -1,10 +1,73 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%" style="background:#09090B; border-radius:16px; border:1px solid #232B3E;">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 520" width="100%" height="100%" style="background:#09090B; border-radius:20px; border:1px solid #232B3E;">
   <rect width="100%" height="100%" fill="#09090B"/>
-  <text x="400" y="225" fill="rgba(255, 255, 255, 0.03)" font-family="sans-serif" font-size="32" font-weight="900" text-anchor="middle" transform="rotate(-12 400 225)" letter-spacing="4">BRANDOS LAB™ // 品牌科学实验室™</text>
-  <text x="780" y="438" fill="rgba(0, 242, 254, 0.35)" font-family="monospace" font-size="10" font-weight="bold" text-anchor="end">BRANDOS LAB™ 品牌科学实验室 • 实证研究版权所有</text>
-  <text x="400" y="42" fill="#FAFAFA" font-family="sans-serif" font-size="17" font-weight="900" text-anchor="middle">素材即定向 (AL-CAT) 与创作者白标投流架构</text>
-  <g transform="translate(60, 85)">
-    <rect width="200" height="295" rx="10" fill="#111622" stroke="#3B82F6"/>
-    <text x="100" y="30" fill="#60A5FA" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle">1. Broad 宽投受众</text>
+  
+  <defs>
+    <pattern id="grid-m4-tall" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="rgba(255, 255, 255, 0.03)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#grid-m4-tall)"/>
+
+  <!-- Watermark -->
+  <text x="380" y="260" fill="rgba(255, 255, 255, 0.03)" font-family="sans-serif" font-size="32" font-weight="900" text-anchor="middle" transform="rotate(-6 380 260)" letter-spacing="4">BRANDOS LAB™ // 品牌科学实验室™</text>
+
+  <!-- Step Header Title -->
+  <g transform="translate(30, 25)">
+    <rect width="700" height="42" rx="8" fill="#111622" stroke="#232B3E"/>
+    <text x="20" y="27" fill="#F59E0B" font-family="monospace" font-size="13" font-weight="bold">SCENE 04 // 达人种草与算法共振</text>
+    <text x="250" y="27" fill="#FAFAFA" font-family="sans-serif" font-size="14" font-weight="bold">刷社交媒体被欧美名厨/达人实拍 Hook 击穿</text>
+  </g>
+
+  <!-- Left: Creator Social Mockup -->
+  <g transform="translate(30, 80)">
+    <rect width="370" height="330" rx="16" fill="#111622" stroke="#F59E0B" stroke-width="2.5"/>
+    
+    <!-- Profile -->
+    <g transform="translate(20, 18)">
+      <circle cx="22" cy="22" r="20" fill="#F59E0B"/>
+      <text x="22" y="28" fill="#09090B" font-family="sans-serif" font-size="16" font-weight="900" text-anchor="middle">👨‍🍳</text>
+      <text x="52" y="18" fill="#FAFAFA" font-family="sans-serif" font-size="15" font-weight="bold">Chef Ramsay (米其林名厨) 💎</text>
+      <text x="52" y="36" fill="#F59E0B" font-family="monospace" font-size="11" font-weight="bold">达人主页白标授权 • 赞助广告</text>
+    </g>
+
+    <!-- Video Hook -->
+    <rect x="20" y="70" width="330" height="235" rx="10" fill="#09090B" stroke="#232B3E"/>
+    <text x="35" y="105" fill="#FCD34D" font-family="sans-serif" font-size="15" font-weight="900">💥 前 3 秒极限冲突 Hook：</text>
+    <text x="35" y="135" fill="#FAFAFA" font-family="sans-serif" font-size="14" font-weight="bold">“看我把这口锅丢在地上狠砸，”</text>
+    <text x="35" y="160" fill="#FAFAFA" font-family="sans-serif" font-size="14" font-weight="bold">“依然丝滑煎蛋不粘锅！” 🍳</text>
+    <text x="35" y="200" fill="#10B981" font-family="sans-serif" font-size="14" font-weight="bold">买家：“连名厨都在用，我也要买一个！”</text>
+    <text x="35" y="235" fill="#38BDF8" font-family="monospace" font-size="13" font-weight="bold">▶ 点击达人视频直达结账柜台</text>
+    <text x="35" y="265" fill="#94A3B8" font-family="sans-serif" font-size="12">借熟人信任破冰，彻底告别官方硬广反感</text>
+  </g>
+
+  <!-- Right: Algorithmic Architecture -->
+  <g transform="translate(420, 80)">
+    <rect width="310" height="330" rx="16" fill="#111622" stroke="#232B3E" stroke-width="1.5"/>
+    <text x="20" y="35" fill="#F59E0B" font-family="sans-serif" font-size="15" font-weight="900">⚡ 为什么白标投流能爆单？</text>
+    
+    <g transform="translate(15, 55)">
+      <rect width="280" height="70" rx="8" fill="#09090B" stroke="#F59E0B" stroke-width="1"/>
+      <text x="15" y="28" fill="#FAFAFA" font-family="sans-serif" font-size="13" font-weight="bold">1. 熟人信任破冰：</text>
+      <text x="15" y="50" fill="#94A3B8" font-family="sans-serif" font-size="12">达人个人背书，消除商业防线</text>
+    </g>
+
+    <g transform="translate(15, 140)">
+      <rect width="280" height="70" rx="8" fill="#09090B" stroke="#F59E0B" stroke-width="1"/>
+      <text x="15" y="28" fill="#FAFAFA" font-family="sans-serif" font-size="13" font-weight="bold">2. Broad 宽投找人：</text>
+      <text x="15" y="50" fill="#94A3B8" font-family="sans-serif" font-size="12">素材当探针，推荐算法自动匹配</text>
+    </g>
+
+    <g transform="translate(15, 225)">
+      <rect width="280" height="85" rx="8" fill="#10B981" opacity="0.18" stroke="#10B981" stroke-width="1.5"/>
+      <text x="15" y="28" fill="#34D399" font-family="sans-serif" font-size="14" font-weight="900">3. 量化战果：</text>
+      <text x="15" y="52" fill="#FAFAFA" font-family="sans-serif" font-size="13" font-weight="bold">前 3 秒停留率高达 43.8%</text>
+      <text x="15" y="74" fill="#10B981" font-family="sans-serif" font-size="14" font-weight="900">获客成本 (CPA) 骤降 39.2% 📉</text>
+    </g>
+  </g>
+
+  <!-- Bottom Result Banner -->
+  <g transform="translate(30, 430)">
+    <rect width="700" height="65" rx="12" fill="#18111A" stroke="#F59E0B" stroke-width="1.5"/>
+    <text x="25" y="38" fill="#FCD34D" font-family="sans-serif" font-size="15" font-weight="900">🏆 标杆战例：HexClad 借 Ramsay 主页白标投流，跻身 10 亿美元独角兽！</text>
   </g>
 </svg>

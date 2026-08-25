@@ -1,6 +1,72 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%" style="background:#09090B; border-radius:16px; border:1px solid #232B3E;">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 520" width="100%" height="100%" style="background:#09090B; border-radius:20px; border:1px solid #232B3E;">
   <rect width="100%" height="100%" fill="#09090B"/>
-  <text x="400" y="225" fill="rgba(255, 255, 255, 0.03)" font-family="sans-serif" font-size="32" font-weight="900" text-anchor="middle" transform="rotate(-12 400 225)" letter-spacing="4">BRANDOS LAB™ // 品牌科学实验室™</text>
-  <text x="780" y="438" fill="rgba(0, 242, 254, 0.35)" font-family="monospace" font-size="10" font-weight="bold" text-anchor="end">BRANDOS LAB™ 品牌科学实验室 • 实证研究版权所有</text>
-  <text x="400" y="42" fill="#FAFAFA" font-family="sans-serif" font-size="17" font-weight="900" text-anchor="middle">GBB 3 档阶梯定价与价格瀑布 (GOOD-BETTER-BEST SANDBOX)</text>
+  
+  <defs>
+    <pattern id="grid-m3-tall" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="rgba(255, 255, 255, 0.03)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#grid-m3-tall)"/>
+
+  <!-- Watermark -->
+  <text x="380" y="260" fill="rgba(255, 255, 255, 0.03)" font-family="sans-serif" font-size="32" font-weight="900" text-anchor="middle" transform="rotate(-6 380 260)" letter-spacing="4">BRANDOS LAB™ // 品牌科学实验室™</text>
+
+  <!-- Step Header Title -->
+  <g transform="translate(30, 25)">
+    <rect width="700" height="42" rx="8" fill="#111622" stroke="#232B3E"/>
+    <text x="20" y="27" fill="#10B981" font-family="monospace" font-size="13" font-weight="bold">SCENE 03 // 价值定价与阶梯选购</text>
+    <text x="250" y="27" fill="#FAFAFA" font-family="sans-serif" font-size="14" font-weight="bold">看到清晰的 3 档阶梯定价 $\to$ 买家痛快选购主力款</text>
+  </g>
+
+  <!-- Top Context Header -->
+  <g transform="translate(30, 78)">
+    <rect width="700" height="52" rx="10" fill="#111622" stroke="#232B3E"/>
+    <text x="25" y="32" fill="#FAFAFA" font-family="sans-serif" font-size="15" font-weight="bold">进入独立站选购：拒绝单一死板定价，设计 Good-Better-Best 3 档阶梯利润沙盘</text>
+  </g>
+
+  <!-- 3-Tier Pillars Grid -->
+  <!-- Tier 1: Good -->
+  <g transform="translate(30, 145)">
+    <rect width="215" height="270" rx="14" fill="#111622" stroke="#232B3E" stroke-width="1.5"/>
+    <text x="107" y="35" fill="#94A3B8" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="middle">🥉 Good (基础入门)</text>
+    <text x="107" y="85" fill="#FAFAFA" font-family="sans-serif" font-size="32" font-weight="900" text-anchor="middle">$199</text>
+    <text x="107" y="115" fill="#64748B" font-family="sans-serif" font-size="13" text-anchor="middle">捕获 15% 尝鲜客</text>
+    <line x1="20" y1="135" x2="195" y2="135" stroke="#232B3E"/>
+    <text x="20" y="170" fill="#94A3B8" font-family="sans-serif" font-size="13">• 满足基础核心功能</text>
+    <text x="20" y="200" fill="#94A3B8" font-family="sans-serif" font-size="13">• 降低首次决策门槛</text>
+    <text x="20" y="235" fill="#64748B" font-family="sans-serif" font-size="12">作用：锚定价格下限</text>
+  </g>
+
+  <!-- Tier 2: Better (HERO) -->
+  <g transform="translate(260, 135)">
+    <rect width="240" height="280" rx="16" fill="#111622" stroke="#10B981" stroke-width="3"/>
+    <rect x="0" y="0" width="240" height="32" rx="14" fill="#10B981"/>
+    <text x="120" y="21" fill="#09090B" font-family="sans-serif" font-size="13" font-weight="900" text-anchor="middle">🔥 70% 买家疯抢主力爆款</text>
+    
+    <text x="120" y="62" fill="#10B981" font-family="sans-serif" font-size="17" font-weight="900" text-anchor="middle">🥈 Better (旗舰主力款)</text>
+    <text x="120" y="110" fill="#FAFAFA" font-family="sans-serif" font-size="40" font-weight="900" text-anchor="middle">$399</text>
+    <text x="120" y="138" fill="#34D399" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle">吃透全店 70%+ 销量与净利</text>
+    <line x1="20" y1="155" x2="220" y2="155" stroke="#10B981" stroke-width="1.5" opacity="0.3"/>
+    <text x="20" y="185" fill="#FAFAFA" font-family="sans-serif" font-size="14" font-weight="bold">✓ 完整核心功能 + 10年质保</text>
+    <text x="20" y="215" fill="#10B981" font-family="sans-serif" font-size="15" font-weight="900">✓ 口袋毛利率锁死 70%</text>
+    <text x="20" y="250" fill="#6EE7B7" font-family="sans-serif" font-size="13" font-weight="bold">买家：“选主力款性价比最高！”</text>
+  </g>
+
+  <!-- Tier 3: Best -->
+  <g transform="translate(515, 145)">
+    <rect width="215" height="270" rx="14" fill="#111622" stroke="#232B3E" stroke-width="1.5"/>
+    <text x="107" y="35" fill="#94A3B8" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="middle">🥇 Best (顶级天花板)</text>
+    <text x="107" y="85" fill="#FAFAFA" font-family="sans-serif" font-size="32" font-weight="900" text-anchor="middle">$799</text>
+    <text x="107" y="115" fill="#64748B" font-family="sans-serif" font-size="13" text-anchor="middle">捕获 15% 极客与高净值</text>
+    <line x1="20" y1="135" x2="195" y2="135" stroke="#232B3E"/>
+    <text x="20" y="170" fill="#94A3B8" font-family="sans-serif" font-size="13">• 极限性能参数</text>
+    <text x="20" y="200" fill="#94A3B8" font-family="sans-serif" font-size="13">• 顶级用料与豪华权益</text>
+    <text x="20" y="235" fill="#64748B" font-family="sans-serif" font-size="12">作用：拉高全店溢价感知</text>
+  </g>
+
+  <!-- Bottom Result Banner -->
+  <g transform="translate(30, 435)">
+    <rect width="700" height="60" rx="12" fill="#0D1F1A" stroke="#10B981" stroke-width="1.5"/>
+    <text x="25" y="35" fill="#34D399" font-family="sans-serif" font-size="15" font-weight="900">🏆 财务成果：比竞品贵 30% 仍被疯抢 • AOV 跃升 +48% • 实收口袋毛利率牢牢守死 ≥65%</text>
+  </g>
 </svg>

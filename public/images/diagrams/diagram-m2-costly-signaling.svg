@@ -1,6 +1,57 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%" style="background:#09090B; border-radius:16px; border:1px solid #232B3E;">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 520" width="100%" height="100%" style="background:#09090B; border-radius:20px; border:1px solid #232B3E;">
   <rect width="100%" height="100%" fill="#09090B"/>
-  <text x="400" y="225" fill="rgba(255, 255, 255, 0.03)" font-family="sans-serif" font-size="32" font-weight="900" text-anchor="middle" transform="rotate(-12 400 225)" letter-spacing="4">BRANDOS LAB™ // 品牌科学实验室™</text>
-  <text x="780" y="438" fill="rgba(0, 242, 254, 0.35)" font-family="monospace" font-size="10" font-weight="bold" text-anchor="end">BRANDOS LAB™ 品牌科学实验室 • 实证研究版权所有</text>
-  <text x="400" y="42" fill="#FAFAFA" font-family="sans-serif" font-size="17" font-weight="900" text-anchor="middle">斯宾塞昂贵信号与分离均衡机制 (SEPARATING EQUILIBRIUM)</text>
+  
+  <defs>
+    <pattern id="grid-m2-tall" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="rgba(255, 255, 255, 0.03)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#grid-m2-tall)"/>
+
+  <!-- Watermark -->
+  <text x="380" y="260" fill="rgba(255, 255, 255, 0.03)" font-family="sans-serif" font-size="32" font-weight="900" text-anchor="middle" transform="rotate(-6 380 260)" letter-spacing="4">BRANDOS LAB™ // 品牌科学实验室™</text>
+
+  <!-- Step Header Title -->
+  <g transform="translate(30, 25)">
+    <rect width="700" height="42" rx="8" fill="#111622" stroke="#232B3E"/>
+    <text x="20" y="27" fill="#818CF8" font-family="monospace" font-size="13" font-weight="bold">SCENE 02 // 信任质押与心智破冰</text>
+    <text x="250" y="27" fill="#FAFAFA" font-family="sans-serif" font-size="14" font-weight="bold">看到硬核实测与权威质保 $\to$ 打消海外买家防备心</text>
+  </g>
+
+  <!-- Scene 1: Buyer Suspicion (Top Box) -->
+  <g transform="translate(30, 80)">
+    <rect width="700" height="135" rx="14" fill="#18111A" stroke="#F43F5E" stroke-width="2"/>
+    <rect x="20" y="15" width="220" height="30" rx="6" fill="#F43F5E" opacity="0.2"/>
+    <text x="130" y="36" fill="#F43F5E" font-family="sans-serif" font-size="14" font-weight="900" text-anchor="middle">🤔 海外买家防备心 (Trust Barrier)</text>
+    
+    <text x="25" y="75" fill="#FAFAFA" font-family="sans-serif" font-size="17" font-weight="900">“跨洋陌生的新网站，会不会是假冒皮包作坊？扣款不发货怎么办？”</text>
+    <text x="25" y="105" fill="#EF4444" font-family="sans-serif" font-size="13" font-weight="bold">❌ 传统白牌做法：只在网页打字写 “100% Quality” $\to$ 零成本吹嘘等于零信任，3秒关闭退出</text>
+  </g>
+
+  <!-- Transition Glowing Conduit -->
+  <g transform="translate(380, 225)">
+    <line x1="0" y1="0" x2="0" y2="28" stroke="#818CF8" stroke-width="4" stroke-dasharray="6 3"/>
+    <polygon points="-6,28 0,38 6,28" fill="#818CF8"/>
+    <text x="15" y="18" fill="#818CF8" font-family="sans-serif" font-size="12" font-weight="900">🛡️ 押下同行抄不起的真金白银质押</text>
+  </g>
+
+  <!-- Scene 2: Unfakeable Proof Center (Bottom Box) -->
+  <g transform="translate(30, 275)">
+    <rect width="700" height="215" rx="14" fill="#111622" stroke="#818CF8" stroke-width="2.5"/>
+    <rect x="20" y="15" width="280" height="30" rx="6" fill="#818CF8" opacity="0.2"/>
+    <text x="160" y="36" fill="#818CF8" font-family="sans-serif" font-size="14" font-weight="900" text-anchor="middle">✅ 假冒者抄不起的沉没质押 (Proof Center)</text>
+    
+    <g transform="translate(25, 60)">
+      <rect width="650" height="38" rx="8" fill="#09090B" stroke="#232B3E"/>
+      <text x="15" y="24" fill="#FAFAFA" font-family="sans-serif" font-size="14" font-weight="bold">🔬 SGS / UL 国际权威公证检测报告全公开（假货无法提供）</text>
+    </g>
+    <g transform="translate(25, 105)">
+      <rect width="650" height="38" rx="8" fill="#09090B" stroke="#232B3E"/>
+      <text x="15" y="24" fill="#FAFAFA" font-family="sans-serif" font-size="14" font-weight="bold">❄️ -40℃ 极寒破坏性实测视频（假货一旦测试直接报废）</text>
+    </g>
+    <g transform="translate(25, 150)">
+      <rect width="650" height="42" rx="8" fill="#10B981" opacity="0.15" stroke="#10B981" stroke-width="1.5"/>
+      <text x="15" y="26" fill="#34D399" font-family="sans-serif" font-size="14" font-weight="900">买家心声：“敢给这种承诺绝对是大牌！” ➔ 信任度 +300% • 支撑 50%~100% 溢价</text>
+    </g>
+  </g>
 </svg>
