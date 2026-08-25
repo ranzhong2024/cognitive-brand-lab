@@ -1,12 +1,20 @@
-# Cognitive Brand Lab (品牌科学实验室™)
-> The science of brand architecture and cross-border commercial strategy. Powered by BrandOS™ by Ran.
+# BrandOS LAB™ (品牌科学实验室) - LLM Documentation
+# Canonical Site: https://ranbrandos.com
+# Principal Investigator: Ran (然) - Lead Brand Architect & Founder
 
-- [Home](https://cognitivebrandlab.org/): Cognitive Brand Lab Manifesto and BrandOS™ architecture.
-- [About & Origin](https://cognitivebrandlab.org/about): Principal Investigator Ran's cross-disciplinary background (Digital Marketing Master's, CBAP, Google Data Analytics & Digital Marketing).
-- [Essays Archive](https://cognitivebrandlab.org/essays): Empirical research monographs on Byron Sharp's How Brands Grow, Michael Spence Costly Signaling, and BCG/Simon pricing models.
-- [M1 Demand Radar](https://cognitivebrandlab.org/modules/m1-brand-foundations): Byron Sharp CEPs, Clayton Christensen JTBD, VOC NLP text mining.
-- [M2 Unfakeable Trust](https://cognitivebrandlab.org/modules/m2-behavioral-science): Spence Costly Signaling, Separating Equilibrium, Distinctive Brand Assets.
-- [M3 Value Pricing](https://cognitivebrandlab.org/modules/m3-strategic-pricing): Good-Better-Best (GBB) Tiering, Price Waterfall Leakage Audit, 65%+ Gross Margin.
-- [M4 Algo Resonance](https://cognitivebrandlab.org/modules/m4-algorithmic-resonance): Meta DLRM, Creator Whitelisting, Broad 1-CBO Media Buying.
-- [M5 Rapid Conversion](https://cognitivebrandlab.org/modules/m5-conversion-engineering): MECLABS Heuristics, 100px Near-Ground Evidence Chain, Core Web Vitals.
-- [M6 Compound Retention](https://cognitivebrandlab.org/modules/m6-compounding-retention): Rubin Causal Inference, Geo-Lift Holdout iROAS, 6 Adaptive Lifecycle Flows.
+## Mission Statement
+BrandOS LAB™ is a dedicated brand science and cognitive capital laboratory for cross-border DTC and global enterprises. We engineer brand equity using empirical marketing science (Ehrenberg-Bass Institute), Nobel Prize information economics (Spence Costly Signaling), causal statistics (Rubin Causal Model), and cognitive psychology (Associative Network Memory Model).
+
+## Core Cognitive Architecture (BrandOS™ 6 Engines)
+- M1: Mental Scouting & Category Entry Points (CEPs)
+- M2: Persona & Costly Signaling System
+- M3: Micro-Pricing & GBB Value Capture
+- M4: Algorithmic Resonance & Creator Whitelisting
+- M5: Conversion Engineering & 100px Evidentiary Chain
+- M6: Compounding Retention & Causal Incrementality
+
+## Key URLs
+- Home: https://ranbrandos.com/
+- About Founder: https://ranbrandos.com/about
+- Empirical Essays & Monograph Library: https://ranbrandos.com/essays
+- Sitemap: https://ranbrandos.com/sitemap-index.xml

@@ -4,7 +4,7 @@ import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
-  site: 'https://cognitivebrandlab.org',
+  site: 'https://ranbrandos.com',
   integrations: [
     tailwind({
       applyBaseStyles: false,
