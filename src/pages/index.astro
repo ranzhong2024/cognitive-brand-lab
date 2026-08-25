@@ -1,7 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import BrandOSExplorer from '../components/BrandOSExplorer.astro';
 import AntithesisMatrix from '../components/AntithesisMatrix.astro';
+import BrandOSPipeline from '../components/BrandOSPipeline.astro';
 import EssayCard from '../components/EssayCard.astro';
 import { getCollection } from 'astro:content';
 
@@ -59,7 +59,6 @@ const allEssays = await getCollection('essays');
 allEssays.sort((a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime());
 
 const featuredEssay = allEssays.find(e => e.data.featured) || allEssays[0];
-const recentEssays = allEssays.filter(e => e.id !== featuredEssay?.id);
 ---
 
 <Layout 
@@ -70,8 +69,8 @@ const recentEssays = allEssays.filter(e => e.id !== featuredEssay?.id);
   <!-- Background Grid -->
   <div class="fixed inset-0 pointer-events-none bg-lab-grid opacity-40 z-0"></div>
 
-  <!-- SECTION 1: HERO MANIFESTO (3-Second Golden Triangle) -->
-  <section class="relative z-10 max-w-6xl mx-auto px-5 md:px-8 pt-20 sm:pt-28 pb-24 text-center flex flex-col items-center">
+  <!-- SECTION 1: HERO MANIFESTO (SLOGAN & 3-Second Golden Triangle) -->
+  <section class="relative z-10 max-w-6xl mx-auto px-5 md:px-8 pt-20 sm:pt-28 pb-20 text-center flex flex-col items-center">
     <!-- Live Status Beacon -->
     <div class="inline-flex items-center gap-2.5 px-4 py-1.5 bg-[#111622]/90 border border-[#232B3E] rounded-full text-slate-200 font-mono text-[11px] uppercase tracking-[0.2em] mb-8 backdrop-blur-md shadow-inner">
       <span class="relative flex h-2 w-2">
@@ -125,10 +124,10 @@ const recentEssays = allEssays.filter(e => e.id !== featuredEssay?.id);
     <!-- Dual Action CTAs -->
     <div class="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 w-full justify-center">
       <a 
-        href="#brandos-matrix"
+        href="#brandos-pipeline"
         class="w-full sm:w-auto bg-slate-100 text-[#09090B] hover:bg-[#00F2FE] hover:shadow-[0_0_30px_rgba(0,242,254,0.4)] px-8 py-4 font-mono text-[13px] font-extrabold tracking-[0.15em] transition-all duration-200 uppercase rounded flex items-center justify-center gap-3 group"
       >
-        <span>探索 BrandOS™ 品牌操作系统建设</span>
+        <span>查看 6 步品牌落地流程</span>
         <span class="group-hover:translate-y-0.5 transition-transform text-[16px]">↓</span>
       </a>
       <a 
@@ -140,19 +139,16 @@ const recentEssays = allEssays.filter(e => e.id !== featuredEssay?.id);
     </div>
   </section>
 
-  <!-- SECTION 2: THE INTERACTIVE BRANDOS EXPLORER (M1-M6 Real-World Cases) -->
-  <BrandOSExplorer />
-
-  <!-- SECTION 3: THE ANTITHESIS (流量绞杀 vs. 认知复利) -->
+  <!-- SECTION 2: THE ANTITHESIS (生死分野 · 流量绞杀 vs. 认知复利 对立矩阵) -->
   <AntithesisMatrix />
 
-  <!-- SECTION 4: PEER-REVIEWED PROOF CENTER -->
+  <!-- SECTION 3: THE VERTICAL BRANDOS CAUSAL PIPELINE (设计流程图 · BrandOS 6 阶推进流程图) -->
+  <BrandOSPipeline />
+
+  <!-- SECTION 4: PEER-REVIEWED PROOF CENTER (跨学科实证网络) -->
   <section class="border-t border-[#232B3E] bg-[#0A0D14] py-24 sm:py-28 relative z-10">
     <div class="max-w-6xl mx-auto px-5 md:px-8">
       <div class="text-center max-w-3xl mx-auto mb-16">
-        <span class="font-mono text-[12px] font-bold text-indigo-400 uppercase tracking-[0.25em] block mb-2">
-          SECTION 03 // PEER-REVIEWED FOUNDATIONS
-        </span>
         <h2 class="font-sans font-extrabold text-[30px] sm:text-[42px] text-slate-100">
           不可伪造的跨学科实证网络
         </h2>
@@ -170,9 +166,13 @@ const recentEssays = allEssays.filter(e => e.id !== featuredEssay?.id);
             <p class="text-slate-300 text-[14px] leading-relaxed mb-4 italic font-serif">
               “在信息严重不对称的全球市场中，廉价的言论毫无价值。唯有假冒者一旦模仿就会破产的高昂投入（Costly Signals），挑剔的买家才会真正产生确信。”
             </p>
+            <div class="bg-[#09090B] border border-indigo-950 p-3 rounded-lg text-[12.5px] text-indigo-300 font-sans mb-4">
+              <strong class="text-indigo-400 font-bold block mb-1">🤔 解决老板困惑：</strong>
+              为什么你降价自夸没人信，别人卖高价却被老外疯抢？
+            </div>
           </div>
           <div class="font-mono text-[12px] text-slate-400 pt-3 border-t border-[#232B3E] mt-auto">
-            支撑模块：<strong class="text-cyan-400">M2 立住人设 (昂贵信号理论与分离均衡机制)</strong>
+            支撑模块：<strong class="text-indigo-400">M2 信任质押 (昂贵信号理论与分离均衡机制)</strong>
           </div>
         </div>
 
@@ -184,6 +184,10 @@ const recentEssays = allEssays.filter(e => e.id !== featuredEssay?.id);
             <p class="text-slate-300 text-[14px] leading-relaxed mb-4 italic font-serif">
               “消费者不会爱上你的创业情怀。占领特定生活情境的品类进入点 (CEPs)，降低心智提取能耗，才是实现品牌规模化增长的唯一科学正道。”
             </p>
+            <div class="bg-[#09090B] border border-cyan-950 p-3 rounded-lg text-[12.5px] text-cyan-300 font-sans mb-4">
+              <strong class="text-cyan-400 font-bold block mb-1">🤔 解决老板困惑：</strong>
+              为什么“私域狂热铁粉”是伪命题，占领痛点场景才是做大的正道？
+            </div>
           </div>
           <div class="font-mono text-[12px] text-slate-400 pt-3 border-t border-[#232B3E] mt-auto">
             支撑模块：<strong class="text-cyan-400">M1 勘测心智 (心智显著性与品类进入点网格)</strong>
@@ -198,9 +202,13 @@ const recentEssays = allEssays.filter(e => e.id !== featuredEssay?.id);
             <p class="text-slate-300 text-[14px] leading-relaxed mb-4 italic font-serif">
               “停投广告后依然能自发完成的交易，属于老客自然回流；停投后立刻消失的订单，才代表广告创造的真实因果增量 (iROAS)。”
             </p>
+            <div class="bg-[#09090B] border border-emerald-950 p-3 rounded-lg text-[12.5px] text-emerald-300 font-sans mb-4">
+              <strong class="text-emerald-400 font-bold block mb-1">🤔 解决老板困惑：</strong>
+              为什么后台 ROAS 4.0 依然亏损，停投实验才能算清真净利？
+            </div>
           </div>
           <div class="font-mono text-[12px] text-slate-400 pt-3 border-t border-[#232B3E] mt-auto">
-            支撑模块：<strong class="text-cyan-400">M6 复利留存 (潜在因果模型与反事实实验)</strong>
+            支撑模块：<strong class="text-emerald-400">M6 复利留存 (潜在因果模型与反事实实验)</strong>
           </div>
         </div>
       </div>
