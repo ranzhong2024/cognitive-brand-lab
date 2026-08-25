@@ -111,7 +111,7 @@ const essays = allEssays.filter((e) => e.data.module === id);
 <Layout title={`${title} | 品牌科学实验室 (BRANDOS LAB)`} description={description}>
   <div class="max-w-6xl mx-auto px-6 py-20">
     <!-- Breadcrumb -->
-    <div class="flex items-center gap-2 font-mono text-[11px] text-slate-500 uppercase tracking-widest mb-8">
+    <div class="flex items-center gap-2 font-mono text-xs text-slate-500 uppercase tracking-widest mb-8">
       <a href="/" class="hover:text-cyan-400 transition-colors">BRANDOS LAB</a>
       <span>/</span>
       <a href="/#brandos-matrix" class="hover:text-cyan-400 transition-colors">ENGINE</a>
@@ -120,48 +120,42 @@ const essays = allEssays.filter((e) => e.data.module === id);
     </div>
 
     <!-- Header Block -->
-    <div class="border-b border-[#232B3E] pb-10 mb-12">
-      <div class="inline-block font-mono text-[10px] font-bold text-cyan-400 bg-cyan-950/40 border border-cyan-800/40 px-2.5 py-1 rounded mb-4">
+    <div class="border-b border-slate-800 pb-10 mb-12">
+      <div class="inline-block font-mono text-xs font-bold text-cyan-400 bg-cyan-950/40 border border-cyan-800/40 px-2.5 py-1 rounded mb-4">
         {systemContext}
       </div>
-      <h1 class="font-serif text-[32px] sm:text-[46px] font-bold text-slate-100 mb-4 leading-tight">
+      <h1 class="font-serif text-3xl sm:text-4xl font-bold text-slate-100 mb-4 leading-tight">
         {title}
       </h1>
-      <p class="font-sans text-slate-400 text-[16px] max-w-3xl leading-relaxed">
+      <p class="font-sans text-slate-400 text-base max-w-3xl leading-relaxed">
         {description}
       </p>
     </div>
 
     <!-- Key Sections Grid -->
     <div class="mb-16">
-      <h2 class="font-mono text-[12px] font-bold text-slate-400 uppercase tracking-[0.2em] mb-6">
+      <h2 class="font-mono text-xs font-bold text-slate-400 uppercase tracking-[0.2em] mb-6">
         模块工程支柱 (ENGINEERING PILLARS)
       </h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         {sections.map((sec) => (
-          <div class="bg-[#111622] border border-[#232B3E] p-6 rounded-lg">
-            <div class="font-mono text-[11px] font-bold text-cyan-400 mb-2">
-              SECTION {sec.number}
-            </div>
-            <h3 class="font-serif text-[18px] font-bold text-slate-100 mb-2">
-              {sec.title}
-            </h3>
-            <p class="font-sans text-[13px] text-slate-400 leading-relaxed">
-              {sec.desc}
-            </p>
+          <div class="bg-slate-900 border border-slate-800 p-6 rounded-lg">
+            <div class="font-mono text-xs font-bold text-cyan-400 mb-2">SECTION {sec.number}</div>
+            <h3 class="font-serif text-lg font-bold text-slate-100 mb-2">{sec.title}</h3>
+            <p class="font-sans text-sm text-slate-400 leading-relaxed">{sec.desc}</p>
           </div>
         ))}
       </div>
     </div>
 
     <!-- Related Flagship Essays -->
-    <div class="mb-16 border-t border-[#232B3E] pt-12">
+    <div class="mb-16 border-t border-slate-800 pt-12">
       <div class="flex justify-between items-end mb-8">
         <div>
-          <h2 class="font-mono text-[12px] font-bold text-cyan-400 uppercase tracking-[0.2em] mb-1">
+          <h2 class="font-mono text-xs font-bold text-cyan-400 uppercase tracking-[0.2em] mb-1">
             模块相关研报专著
           </h2>
-          <p class="font-serif text-[24px] text-slate-100">
+          <p class="font-serif text-2xl text-slate-100">
             {id} 深度理论与实战案例单行本
           </p>
         </div>
@@ -172,22 +166,22 @@ const essays = allEssays.filter((e) => e.data.module === id);
           {essays.map((essay) => {
             const targetId = essay.id || essay.slug;
             return (
-              <div class="bg-[#111622] border border-[#232B3E] hover:border-cyan-500/50 p-6 rounded-lg flex flex-col justify-between group">
+              <div class="bg-slate-900 border border-slate-800 hover:border-cyan-500/50 p-6 rounded-lg flex flex-col justify-between group">
                 <div>
-                  <div class="flex justify-between items-center mb-2 font-mono text-[10px] text-slate-500">
+                  <div class="flex justify-between items-center mb-2 font-mono text-xs text-slate-500">
                     <span class="text-cyan-400 font-bold uppercase">{essay.data.moduleName}</span>
                     <span>⏱ {essay.data.readingTime}</span>
                   </div>
-                  <h3 class="font-serif text-[18px] font-bold text-slate-100 mb-2 group-hover:text-cyan-400 transition-colors">
+                  <h3 class="font-serif text-lg font-bold text-slate-100 mb-2 group-hover:text-cyan-400 transition-colors">
                     <a href={`/essays/${targetId}`}>
                       {essay.data.title}
                     </a>
                   </h3>
-                  <p class="font-sans text-[13px] text-slate-400 line-clamp-2 mb-4">
+                  <p class="font-sans text-sm text-slate-400 line-clamp-2 mb-4">
                     {essay.data.description}
                   </p>
                 </div>
-                <a href={`/essays/${targetId}`} class="font-mono text-[11px] font-bold text-cyan-400 hover:underline flex items-center gap-1">
+                <a href={`/essays/${targetId}`} class="font-mono text-xs font-bold text-cyan-400 hover:underline flex items-center gap-1">
                   <span>阅读全文</span>
                   <span>→</span>
                 </a>
@@ -196,14 +190,14 @@ const essays = allEssays.filter((e) => e.data.module === id);
           })}
         </div>
       ) : (
-        <div class="bg-[#111622] border border-[#232B3E] p-8 rounded-lg text-center font-mono text-[12px] text-slate-500">
+        <div class="bg-slate-900 border border-slate-800 p-8 rounded-lg text-center font-mono text-xs text-slate-500">
           更多 {id} 专属研报正在由实验室研究员同行评审中，即将发布...
         </div>
       )}
     </div>
 
     <!-- Navigation Footer -->
-    <div class="border-t border-[#232B3E] pt-8 flex justify-between items-center font-mono text-[11px] text-slate-400">
+    <div class="border-t border-slate-800 pt-8 flex justify-between items-center font-mono text-xs text-slate-400">
       {prevModule ? (
         <a href={`/modules/${prevModule.slug}`} class="hover:text-cyan-400 transition-colors flex items-center gap-2">
           <span>←</span>
