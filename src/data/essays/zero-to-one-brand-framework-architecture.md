@@ -8,6 +8,8 @@ readingTime: "20 min read"
 tags: ["Brand Framework", "Keller CBBE", "Byron Sharp", "Mental Availability", "Spence Costly Signaling", "Liquid Death", "Patagonia", "Athletic Brewing", "Warby Parker", "BrandOS"]
 featured: true
 author: "Ran (然)"
+coverImage: "/images/essays/cover-zero-to-one-brand-framework.svg"
+coverAlt: "从0到1全要素品牌框架五层架构图解封面"
 ---
 
 > 我见过太多出海创业者和工厂转型老板，在启动新业务时犯下最昂贵的常识性错误：**花两万美金请设计工作室画一套精致的 VI、选个高级的 Pantone 色卡、起一个洋气的英文名字，然后就自豪地宣布“我们已经有了品牌”**。  
