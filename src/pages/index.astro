@@ -54,11 +54,12 @@ const homeCustomSchema = {
   ]
 };
 
-// 从 content collection 动态获取所有已发布专著
+// 从 content collection 动态获取所有已发布实例观察
 const allEssays = await getCollection('essays');
 allEssays.sort((a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime());
 
 const featuredEssay = allEssays.find(e => e.data.featured) || allEssays[0];
+const otherEssays = allEssays.filter(e => e.id !== featuredEssay?.id).slice(0, 3);
 ---
 
 <Layout 
@@ -134,7 +135,7 @@ const featuredEssay = allEssays.find(e => e.data.featured) || allEssays[0];
         href="/essays" 
         class="w-full sm:w-auto bg-[#111622]/80 hover:bg-[#182030] border border-[#232B3E] hover:border-cyan-400 text-slate-200 px-8 py-4 font-mono text-[13px] font-bold tracking-[0.15em] transition-all duration-200 uppercase rounded flex items-center justify-center gap-2 backdrop-blur"
       >
-        <span>查阅品牌笔记专著库 ↗</span>
+        <span>查阅品牌笔记与实例观察 ↗</span>
       </a>
     </div>
   </section>
@@ -256,17 +257,17 @@ const featuredEssay = allEssays.find(e => e.data.featured) || allEssays[0];
     </div>
   </section>
 
-  <!-- SECTION 6: BRAND NOTES (品牌笔记精选) -->
+  <!-- SECTION 6: BRAND NOTES (品牌笔记与实例观察) -->
   <section class="max-w-6xl mx-auto px-5 md:px-8 py-24 sm:py-28 relative z-10 border-t border-[#232B3E]">
     <!-- Section Header -->
     <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-10 border-b border-[#232B3E] pb-6 gap-4">
       <div>
         <div class="inline-flex items-center gap-2 px-3 py-0.5 bg-cyan-950/60 border border-cyan-800/60 rounded-full font-mono text-[11px] font-bold text-cyan-400 uppercase tracking-[0.2em] mb-3">
           <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse"></span>
-          CONTINUOUS RESEARCH // 品牌笔记专著库
+          CONTINUOUS RESEARCH // 品牌笔记与实例观察
         </div>
         <h2 class="font-sans font-extrabold text-[28px] sm:text-[40px] text-slate-100 leading-tight">
-          品牌笔记与实证专著
+          品牌笔记与实例观察
         </h2>
       </div>
       <a href="/essays" class="text-slate-200 hover:text-cyan-400 font-mono text-[13px] font-bold uppercase tracking-wider flex items-center gap-1.5 transition-colors self-start sm:self-auto">
@@ -280,18 +281,21 @@ const featuredEssay = allEssays.find(e => e.data.featured) || allEssays[0];
       {featuredEssay && (
         <article class="bg-[#111622] border border-cyan-500/50 hover:border-cyan-400 rounded-2xl p-6 sm:p-10 flex flex-col md:flex-row gap-8 justify-between transition-all duration-300 group hover:shadow-[0_0_40px_rgba(0,242,254,0.1)] relative overflow-hidden">
           <div class="absolute top-0 right-0 bg-cyan-400 text-[#09090B] font-mono text-[9px] font-black px-3 py-1 uppercase tracking-widest">
-            FEATURED MONOGRAPH
+            FEATURED OBSERVATION
           </div>
 
           <!-- Visual Hero Banner in Card -->
-          <div class="w-full md:w-5/12 aspect-[16/10] rounded-xl overflow-hidden border border-[#232B3E] bg-[#09090B] relative group-hover:border-cyan-500/40 transition-colors flex-shrink-0">
+          <a 
+            href={`/essays/${featuredEssay.id}`}
+            class="w-full md:w-5/12 aspect-[16/10] rounded-xl overflow-hidden border border-[#232B3E] bg-[#09090B] relative group-hover:border-cyan-500/40 transition-colors flex-shrink-0 block"
+          >
             <img 
-              src="/images/essays/five_layer_brand_framework_stack.jpg" 
-              alt={featuredEssay.data.title}
+              src={featuredEssay.data.coverImage || '/images/essays/cover-zero-to-one-brand-framework.svg'} 
+              alt={featuredEssay.data.coverAlt || featuredEssay.data.title}
               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
             />
-            <div class="absolute inset-0 bg-gradient-to-t from-[#111622] via-transparent to-transparent opacity-40"></div>
-          </div>
+            <div class="absolute inset-0 bg-gradient-to-t from-[#111622] via-transparent to-transparent opacity-30 pointer-events-none"></div>
+          </a>
 
           <!-- Card Content -->
           <div class="flex flex-col justify-between flex-grow">
@@ -327,12 +331,20 @@ const featuredEssay = allEssays.find(e => e.data.featured) || allEssays[0];
               href={`/essays/${featuredEssay.id}`}
               class="pt-4 border-t border-[#232B3E] flex items-center justify-between font-mono text-[13px] font-bold text-slate-100 group-hover:text-cyan-400 transition-colors mt-auto"
             >
-              <span>阅读完整实证专著 →</span>
+              <span>阅读完整实例观察</span>
               <span class="group-hover:translate-x-2 transition-transform text-[16px]">→</span>
             </a>
           </div>
         </article>
       )}
     </div>
+
+    {otherEssays.length > 0 && (
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mt-8">
+        {otherEssays.map((essay) => (
+          <EssayCard essay={essay} />
+        ))}
+      </div>
+    )}
   </section>
 </Layout>
