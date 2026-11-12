@@ -7,7 +7,7 @@ const essays = await getCollection('essays');
 essays.sort((a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime());
 
 const modulesList = [
-  { id: 'ALL', name: '全部专著', count: essays.length },
+  { id: 'ALL', name: '全部观察', count: essays.length },
   { id: 'M1', name: 'M1 勘测心智', count: essays.filter(e => e.data.module === 'M1').length },
   { id: 'M2', name: 'M2 信任质押', count: essays.filter(e => e.data.module === 'M2').length },
   { id: 'M3', name: 'M3 价值定价', count: essays.filter(e => e.data.module === 'M3').length },
@@ -22,8 +22,8 @@ const archiveSchema = {
     {
       "@type": "CollectionPage",
       "@id": "https://ranbrandos.com/essays#collection",
-      "name": "品牌笔记与实证专著库 | 品牌科学实验室™",
-      "description": "收录 Ran (然) 的品牌战略实证手记、出海课程深度拆解、诺奖理论还原与企业实战工程专著。拒绝营销玄学，输出最高认知密度的品牌科学指南。",
+      "name": "品牌笔记与实例观察 | 品牌科学实验室™",
+      "description": "收录 Ran (然) 的品牌战略实证手记、出海课程深度拆解、诺奖理论还原与一线商业实例观察。拒绝营销玄学，输出最高认知密度的品牌科学指南。",
       "url": "https://ranbrandos.com/essays",
       "author": {
         "@type": "Person",
@@ -67,8 +67,8 @@ const archiveSchema = {
 ---
 
 <Layout 
-  title="品牌笔记与实证专著库 | 品牌科学实验室™ • BRANDOS LAB™"
-  description="收录 Ran (然) 的品牌战略实证手记、出海课程深度拆解、诺奖理论还原与企业实战工程专著。拒绝营销玄学，输出最高认知密度的品牌科学指南。"
+  title="品牌笔记与实例观察 | 品牌科学实验室™ • BRANDOS LAB™"
+  description="收录 Ran (然) 的品牌战略实证手记、出海课程深度拆解、诺奖理论还原与一线商业实例观察。拒绝营销玄学，输出最高认知密度的品牌科学指南。"
   currentPath="/essays"
   customSchema={archiveSchema}
 >
@@ -82,13 +82,13 @@ const archiveSchema = {
         <div class="lg:col-span-7">
           <div class="inline-flex items-center gap-2 px-3.5 py-1 bg-cyan-950/60 border border-cyan-800/60 rounded-full font-mono text-[11px] font-bold text-cyan-400 uppercase tracking-[0.2em] mb-4">
             <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse"></span>
-            KNOWLEDGE BASE // 品牌科学实证专著
+            KNOWLEDGE BASE // 品牌笔记与实例观察
           </div>
           <h1 class="font-sans font-black text-[32px] sm:text-[46px] text-slate-100 mb-4 leading-tight">
-            品牌笔记与实证专著库
+            品牌笔记与实例观察
           </h1>
           <p class="font-sans text-[15px] sm:text-[17px] text-slate-300 leading-relaxed max-w-2xl">
-            收录 Ran (然) 的出海品牌战略手记、诺贝尔奖理论还原、价格沙盘与因果留存工程专著。持续更新原创内容，为中国出海企业构建带得走、抢不走的永久心智资产。
+            收录 Ran (然) 的出海品牌战略手记、诺贝尔奖理论还原、价格沙盘与一线商业实例观察。持续更新原创内容，为中国出海企业构建带得走、抢不走的永久心智资产。
           </p>
         </div>
 
@@ -144,7 +144,7 @@ const archiveSchema = {
       <div class="text-[32px] mb-3">🔍</div>
       <h3 class="font-sans font-bold text-[20px] text-slate-200 mb-2">未找到匹配的品牌笔记</h3>
       <p class="text-slate-400 text-[14px] max-w-md mx-auto mb-6">
-        请尝试更换搜索关键词，或点击上方模块分类查看全部专著。
+        请尝试更换搜索关键词，或点击上方模块分类查看全部实例观察。
       </p>
       <button 
         type="button"
@@ -162,7 +162,7 @@ const archiveSchema = {
           与其在价格战里继续内卷，不如从今天开启你的品牌之路。
         </h2>
         <p class="font-sans text-slate-300 text-[15px] sm:text-[16px] max-w-xl mx-auto mb-8 leading-relaxed">
-          阅读完专著如有出海品牌战略、商业分析或数据归因咨询需求，欢迎直接来信。
+          阅读完实例观察如有出海品牌战略、商业分析或数据归因咨询需求，欢迎直接来信。
         </p>
         <a 
           href="mailto:ranzhongus@icloud.com?subject=BrandOS%20%E5%93%81%E7%89%8C%E7%B3%BB%E7%BB%9F%E5%92%A8%E8%AF%A2&body=%E6%82%A8%E5%A5%BD%20Ran%EF%BC%8C%E6%88%91%E5%9C%A8%E9%98%85%E8%AF%BB%E4%BA%86%E5%93%81%E7%89%8C%E7%AC%94%E8%AE%B0%E5%90%8E%EF%BC%8C%E5%B8%8C%E6%9C%9B%E6%8E%A2%E8%AE%A8%E5%A6%82%E4%BD%95%E4%B8%BA%E6%88%91%E4%BB%AC%E7%9A%84%E4%BA%A7%E5%93%81%E6%90%AD%E5%BB%BA%20BrandOS%20%E5%93%81%E7%89%8C%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E3%80%82"

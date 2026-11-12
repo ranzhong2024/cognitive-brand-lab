@@ -13,6 +13,8 @@ const essays = defineCollection({
     tags: z.array(z.string()).default([]),
     featured: z.boolean().default(false),
     author: z.string().default('Ran'),
+    coverImage: z.string().optional(),
+    coverAlt: z.string().optional(),
   }),
 });
 
