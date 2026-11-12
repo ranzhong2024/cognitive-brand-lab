@@ -4,9 +4,264 @@
 
 @layer base {
   :root {
-    --color-canvas: #09090B;
-    --color-surface: #111622;
+    --color-bg-base: #09090B;
+    --color-text-primary: #F8FAFC;
+    --color-text-secondary: #94A3B8;
     --color-border: #232B3E;
-    --color-accent: #00F2FE;
   }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: #09090B;
+    color: #F8FAFC;
+  }
+
+  body {
+    background-color: #09090B;
+    color: #F8FAFC;
+    font-family: 'Plus Jakarta Sans', Inter, system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    letter-spacing: -0.01em;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  img {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+    pointer-events: none;
+  }
+
+  ::selection {
+    background-color: #00F2FE;
+    color: #030712;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #09090B;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #232B3E;
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #3B4866;
+  }
+}
+
+.bg-lab-grid {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+}
+
+.prose-custom {
+  font-size: 1.0625rem;
+  line-height: 1.85;
+  letter-spacing: 0.01em;
+  color: #CBD5E1;
+}
+
+.prose-custom > :first-child {
+  margin-top: 0;
+}
+
+.prose-custom h1 {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: #F8FAFC;
+  margin-top: 3.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.025em;
+  line-height: 1.25;
+}
+
+.prose-custom h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #F8FAFC;
+  margin-top: 4rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #232B3E;
+  padding-bottom: 0.75rem;
+  letter-spacing: -0.02em;
+  line-height: 1.35;
+}
+
+.prose-custom h3 {
+  font-size: 1.375rem;
+  font-weight: 600;
+  color: #00F2FE;
+  margin-top: 3rem;
+  margin-bottom: 1.125rem;
+  letter-spacing: -0.015em;
+  line-height: 1.4;
+}
+
+.prose-custom h4 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #F1F5F9;
+  margin-top: 2.25rem;
+  margin-bottom: 0.875rem;
+  letter-spacing: -0.01em;
+  line-height: 1.45;
+}
+
+.prose-custom p {
+  margin-bottom: 1.75rem;
+}
+
+.prose-custom strong {
+  color: #F8FAFC;
+  font-weight: 700;
+}
+
+.prose-custom em {
+  color: #E2E8F0;
+}
+
+.prose-custom a {
+  color: #22D3EE;
+  text-decoration: underline;
+  text-decoration-color: rgba(34, 211, 238, 0.35);
+  text-underline-offset: 4px;
+  transition: color 0.15s ease, text-decoration-color 0.15s ease;
+}
+
+.prose-custom a:hover {
+  color: #67E8F9;
+  text-decoration-color: #67E8F9;
+}
+
+.prose-custom blockquote {
+  border-left: 3px solid #00F2FE;
+  padding: 1.25rem 1.5rem;
+  font-style: normal;
+  color: #CBD5E1;
+  background: rgba(0, 242, 254, 0.04);
+  border-radius: 0 0.75rem 0.75rem 0;
+  margin: 2.25rem 0;
+}
+
+.prose-custom blockquote p {
+  margin-bottom: 1rem;
+}
+
+.prose-custom blockquote ol,
+.prose-custom blockquote ul {
+  margin-top: 0.75rem;
+  margin-bottom: 0;
+}
+
+.prose-custom blockquote > :last-child {
+  margin-bottom: 0;
+}
+
+.prose-custom ul {
+  list-style-type: disc;
+  padding-left: 1.625rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1.75rem;
+}
+
+.prose-custom ol {
+  list-style-type: decimal;
+  padding-left: 1.625rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1.75rem;
+}
+
+.prose-custom li {
+  margin-bottom: 0.75rem;
+  line-height: 1.85;
+}
+
+.prose-custom li > ul,
+.prose-custom li > ol {
+  margin-top: 0.625rem;
+  margin-bottom: 0.75rem;
+}
+
+.prose-custom li > p {
+  margin-bottom: 0.75rem;
+}
+
+.prose-custom hr {
+  border: 0;
+  border-top: 1px solid #232B3E;
+  margin: 3.5rem 0;
+}
+
+.prose-custom img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 2.25rem 0;
+  border-radius: 0.75rem;
+  border: 1px solid #232B3E;
+  background: #09090B;
+}
+
+.prose-custom table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2.5rem 0;
+  font-size: 0.95rem;
+  line-height: 1.75;
+  display: block;
+  overflow-x: auto;
+}
+
+.prose-custom th {
+  background: #111622;
+  border: 1px solid #232B3E;
+  padding: 1rem 1.25rem;
+  text-align: left;
+  color: #00F2FE;
+  font-weight: 700;
+}
+
+.prose-custom td {
+  border: 1px solid #232B3E;
+  padding: 1rem 1.25rem;
+  color: #CBD5E1;
+  vertical-align: top;
+}
+
+.prose-custom code {
+  font-family: 'JetBrains Mono', monospace;
+  background: #111622;
+  border: 1px solid #232B3E;
+  padding: 0.15rem 0.45rem;
+  border-radius: 0.375rem;
+  font-size: 0.875em;
+  color: #00F2FE;
+}
+
+.prose-custom pre {
+  background: #0B0F19;
+  border: 1px solid #232B3E;
+  border-radius: 0.75rem;
+  padding: 1.25rem 1.5rem;
+  overflow-x: auto;
+  margin: 2rem 0;
+}
+
+.prose-custom pre code {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  color: #E2E8F0;
 }
