@@ -1,7 +1,7 @@
 ---
 interface Props {
   essay: {
-    id: string;
+    id?: string;
     slug?: string;
     data: {
       title: string;
@@ -13,12 +13,14 @@ interface Props {
       tags?: string[];
       featured?: boolean;
       author?: string;
+      coverImage?: string;
+      coverAlt?: string;
     };
   };
 }
 
 const { essay } = Astro.props;
-const slug = essay.id || (essay as any).slug;
+const slug = (essay as any).id || (essay as any).slug;
 
 // Module Color Mapping
 const moduleColors: Record<string, { badge: string; border: string; accent: string; coverBg: string }> = {
@@ -32,6 +34,7 @@ const moduleColors: Record<string, { badge: string; border: string; accent: stri
 
 const style = moduleColors[essay.data.module] || moduleColors.M1;
 const formattedDate = essay.data.pubDate ? new Date(essay.data.pubDate).toISOString().slice(0, 10) : '2026-08';
+const coverSrc = essay.data.coverImage;
 ---
 
 <article 
@@ -40,32 +43,54 @@ const formattedDate = essay.data.pubDate ? new Date(essay.data.pubDate).toISOStr
   data-title={essay.data.title.toLowerCase()}
   data-desc={essay.data.description.toLowerCase()}
 >
-  <!-- Card Header Visual Canvas -->
-  <div class={`h-36 sm:h-40 bg-gradient-to-br ${style.coverBg} border-b border-[#232B3E] p-5 flex flex-col justify-between relative overflow-hidden`}>
-    <div class="absolute -right-6 -bottom-6 w-24 h-24 rounded-full bg-white/5 blur-2xl pointer-events-none"></div>
-    <div class="absolute top-2.5 right-3 font-mono text-[9px] text-slate-600 select-none">BrandOS™ MONOGRAPH</div>
-
-    <!-- Top Badge Row -->
-    <div class="flex items-center justify-between z-10">
-      <span class={`font-mono text-[11px] font-extrabold uppercase tracking-wider px-2.5 py-0.5 rounded border ${style.badge}`}>
-        {essay.data.module} • {essay.data.moduleName}
-      </span>
-      <span class="font-mono text-[11px] text-slate-400 flex items-center gap-1">
-        <span>⏱</span>
-        <span>{essay.data.readingTime}</span>
-      </span>
-    </div>
-
-    <!-- Monogram Watermark Icon in Cover -->
-    <div class="flex items-end justify-between z-10">
-      <div class="font-mono text-[10px] text-slate-400">
-        AUTHOR: <strong class="text-slate-200">{essay.data.author || "Ran (然)"}</strong>
-      </div>
-      <div class="font-mono text-[10px] text-slate-500">
-        {formattedDate}
+  {coverSrc ? (
+    <div>
+      <a href={`/essays/${slug}`} class="block aspect-[16/10] w-full overflow-hidden border-b border-[#232B3E] bg-[#09090B] relative">
+        <img 
+          src={coverSrc} 
+          alt={essay.data.coverAlt || essay.data.title}
+          class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+          loading="lazy"
+        />
+      </a>
+      <div class="px-5 pt-4 flex items-center justify-between gap-2">
+        <span class={`font-mono text-[11px] font-extrabold uppercase tracking-wider px-2.5 py-0.5 rounded border ${style.badge}`}>
+          {essay.data.module} • {essay.data.moduleName}
+        </span>
+        <span class="font-mono text-[11px] text-slate-400 flex items-center gap-1">
+          <span>⏱</span>
+          <span>{essay.data.readingTime}</span>
+        </span>
       </div>
     </div>
-  </div>
+  ) : (
+    <!-- Card Header Visual Canvas Fallback -->
+    <div class={`h-36 sm:h-40 bg-gradient-to-br ${style.coverBg} border-b border-[#232B3E] p-5 flex flex-col justify-between relative overflow-hidden`}>
+      <div class="absolute -right-6 -bottom-6 w-24 h-24 rounded-full bg-white/5 blur-2xl pointer-events-none"></div>
+      <div class="absolute top-2.5 right-3 font-mono text-[9px] text-slate-600 select-none">BrandOS™ CASE NOTE</div>
+
+      <!-- Top Badge Row -->
+      <div class="flex items-center justify-between z-10">
+        <span class={`font-mono text-[11px] font-extrabold uppercase tracking-wider px-2.5 py-0.5 rounded border ${style.badge}`}>
+          {essay.data.module} • {essay.data.moduleName}
+        </span>
+        <span class="font-mono text-[11px] text-slate-400 flex items-center gap-1">
+          <span>⏱</span>
+          <span>{essay.data.readingTime}</span>
+        </span>
+      </div>
+
+      <!-- Monogram Watermark Icon in Cover -->
+      <div class="flex items-end justify-between z-10">
+        <div class="font-mono text-[10px] text-slate-400">
+          AUTHOR: <strong class="text-slate-200">{essay.data.author || "Ran (然)"}</strong>
+        </div>
+        <div class="font-mono text-[10px] text-slate-500">
+          {formattedDate}
+        </div>
+      </div>
+    </div>
+  )}
 
   <!-- Card Body -->
   <div class="p-5 sm:p-6 flex flex-col flex-grow justify-between">
