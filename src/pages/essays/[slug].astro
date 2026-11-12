@@ -43,6 +43,7 @@ const articleSchema = {
       "@id": `${essayUrl}#article`,
       "headline": essay.data.title,
       "description": essay.data.description,
+      "image": essay.data.coverImage ? `https://ranbrandos.com${essay.data.coverImage}` : "https://ranbrandos.com/brandos-logo.svg",
       "datePublished": publishDateIso,
       "dateModified": publishDateIso,
       "mainEntityOfPage": essayUrl,
@@ -166,7 +167,7 @@ const articleSchema = {
         <aside class="hidden lg:block lg:col-span-3 sticky top-24">
           <div class="bg-[#111622] border border-[#232B3E] p-5 rounded-2xl max-h-[calc(100vh-120px)] overflow-y-auto shadow-lg">
             <div class="font-mono text-xs font-bold text-slate-400 uppercase tracking-wider mb-3 pb-2 border-b border-[#232B3E] flex items-center justify-between">
-              <span>📑 专著目录</span>
+              <span>📑 观察目录</span>
               <span class="text-xs text-cyan-400">TOC</span>
             </div>
             <nav class="space-y-2 font-sans text-xs">
