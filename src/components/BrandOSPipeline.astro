@@ -185,7 +185,7 @@ const pipelineSteps = isEn ? [
     caseDesc: "逆向挖掘 2.5 万条海外差评，放弃周末露营小电宝杀价，锁定 2021 德州暴风雪“全屋极寒应急备电”。众筹狂揽 $12.11M，客单价跃升至 $3,599，年营收突破 10 亿美元。",
     deliverable: "品类进入点 (CEPs) 场景网格",
     keyMetric: "场景检索唤醒率 100% • 蓝海客单 $3,599",
-    image: "/images/scenes/scene-01-pain-search.jpg",
+    image: "/images/diagrams/diagram-m1-cep-flow.svg",
     imageAlt: "01 痛点爆发 • 客户在 Amazon 搜索全屋应急备电设备",
     link: "/modules/m1-brand-foundations"
   },
@@ -210,7 +210,7 @@ const pipelineSteps = isEn ? [
     caseDesc: "Patagonia 承诺终身免费维修并在黑五登报号召“别买这件夹克”，营收逆势暴涨 +30% ($5.4亿)；Dyson 耗费 5,127 次失败打样打造全透明气旋指纹，彻底垄断高端吸尘心智。",
     deliverable: "不可伪造信任证据库 (Proof Center)",
     keyMetric: "支撑 50%~100% 品牌溢价 • 信任度 +300%",
-    image: "/images/scenes/scene-02-trust-proof.jpg",
+    image: "/images/diagrams/diagram-m2-costly-signaling.svg",
     imageAlt: "02 信任破冰 • 买家在电脑前查看权威实验室认证与 10 年质保",
     link: "/modules/m2-behavioral-science"
   },
@@ -235,7 +235,7 @@ const pipelineSteps = isEn ? [
     caseDesc: "用专业防熊认证锚定 $300+ 顶级保温箱树立权威，再用 $35 高频保温杯木马横扫大众。牢牢锁死 65%+ 战略毛利与 23.5% 实收净利，AOV 跃升 48%。",
     deliverable: "价格瀑布审计与 GBB 阶梯沙盘",
     keyMetric: "实收口袋毛利 ≥65% • AOV 跃升 +48%",
-    image: "/images/scenes/scene-03-pricing-selection.jpg",
+    image: "/images/diagrams/diagram-m3-gbb-pricing.svg",
     imageAlt: "03 痛快选购 • 买家在手机上选择 Good-Better-Best 3 档阶梯中的主力款",
     link: "/modules/m3-strategic-pricing"
   },
@@ -260,7 +260,7 @@ const pipelineSteps = isEn ? [
     caseDesc: "不再用品牌冷号发推销，直接获得名厨 Ramsay 认证主页投流授权，前 3 秒停留率高达 43.8%，获客成本 (CPA) 骤降 39.2%，跻身 10 亿美元独角兽。",
     deliverable: "Broad 1-CBO 极简账户 + 达人白标库",
     keyMetric: "前 3 秒停留 43.8% • 获客成本 (CPA) -39.2%",
-    image: "/images/scenes/scene-04-creator-social.jpg",
+    image: "/images/diagrams/diagram-m4-al-cat-broad.svg",
     imageAlt: "04 达人种草 • 用户在沙发上刷社交媒体观看名厨白标实拍视频",
     link: "/modules/m4-algorithmic-resonance"
   },
@@ -285,7 +285,7 @@ const pipelineSteps = isEn ? [
     caseDesc: "在结账柜台 100 像素内消除一切支付疑虑与操作摩擦，结账流失率骤降 61.9%，移动端转化率 (CVR) 提升 34.8%，让每一分广告意愿无损兑现为真金白银。",
     deliverable: "100px 近地证据网 + 1 键指纹收单",
     keyMetric: "结账流失骤降 -61.9% • 移动端 CVR +34.8%",
-    image: "/images/scenes/scene-05-checkout-pay.jpg",
+    image: "/images/diagrams/diagram-m5-100px-evidence.svg",
     imageAlt: "05 极速收单 • 买家使用 Apple Pay 1 键指纹无顾虑完成付款",
     link: "/modules/m5-conversion-engineering"
   },
@@ -310,7 +310,7 @@ const pipelineSteps = isEn ? [
     caseDesc: "Autoship 自动订阅贡献 79.2% 营收 ($11.1B)，6 大自适应流贡献 56.3% 留存收入，客户 3 年 LTV 增长 1.85 倍，全店营销效率比 (MER) 稳定在 4.20x。",
     deliverable: "自适应 CRM 行为流 + Geo-Lift 因果实验",
     keyMetric: "订阅与老客回流占 79% 营收 • 全店 MER 4.20x",
-    image: "/images/scenes/scene-06-unboxing-retention.jpg",
+    image: "/images/diagrams/diagram-m6-causal-holdout.svg",
     imageAlt: "06 终身复购 • 用户开箱高端产品并查看自适应订阅确认邮件",
     link: "/modules/m6-compounding-retention"
   }
@@ -452,19 +452,18 @@ const pipelineSteps = isEn ? [
                   </span>
                 </div>
                 <span class="font-mono text-[10px] font-bold text-slate-400 uppercase tracking-widest bg-[#182030] px-2 py-0.5 rounded border border-[#232B3E]">
-                  {isEn ? 'SYSTEM DIAGRAM' : 'REAL SCENE'}
+                  SYSTEM DIAGRAM
                 </span>
               </div>
 
               <!-- Visual Asset -->
-              <div class={`relative flex-grow overflow-hidden ${isEn ? 'aspect-[19/13] bg-[#09090B] p-2 flex items-center justify-center' : 'aspect-[16/10] sm:aspect-[16/9] lg:aspect-auto'}`}>
+              <div class="relative flex-grow overflow-hidden aspect-[19/13] bg-[#09090B] p-2 flex items-center justify-center">
                 <img 
                   src={step.image} 
                   alt={step.imageAlt}
-                  class={isEn ? 'w-full h-full object-contain' : 'w-full h-full object-cover group-hover/img:scale-105 transition-transform duration-700 brightness-95 group-hover/img:brightness-100'}
+                  class="w-full h-full object-contain"
                   loading="lazy"
                 />
-                {!isEn && <div class="absolute inset-0 bg-gradient-to-t from-[#09090B] via-transparent to-transparent opacity-80 pointer-events-none"></div>}
               </div>
 
               <!-- Bottom Explanation Caption -->

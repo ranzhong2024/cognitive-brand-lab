@@ -37,7 +37,7 @@ coverAlt: "从0到1全要素品牌框架五层架构图解封面"
 
 抛开所有复杂的学院派公式，品牌的底层机械结构其实就三句话：
 
-![品牌资产生成的底层科学：斯彭斯昂贵信号 × 联想记忆网络 × 拜伦·夏普增长双引擎](/images/essays/brand_primitives_dual_engine.jpg)
+![品牌资产生成的底层科学：斯彭斯昂贵信号 × 联想记忆网络 × 拜伦·夏普增长双引擎](/images/essays/brand-primitives-dual-engine.svg)
 
 ### 1. 诺奖斯彭斯“昂贵信号理论”：空口吹牛不值钱，下血本的质押才算数
 2001年诺贝尔经济学奖得主[迈克尔·斯彭斯 (Michael Spence)](https://www.nobelprize.org/prizes/economic-sciences/2001/spence/facts/)（[斯坦福大学商学院官方主页](https://www.gsb.stanford.edu/faculty-research/faculty/a-michael-spence)，详见经典论文《[Job Market Signaling (1973)](https://academic.oup.com/qje/article-abstract/87/3/355/1885035)》）揭示过一个商业真理：**在大家互不信任的市场里，只有那些“骗子一旦模仿就会倾家荡产的真金白银承诺”，才能换来买家真正的信任。**  
@@ -63,7 +63,7 @@ coverAlt: "从0到1全要素品牌框架五层架构图解封面"
 
 一套真正能赚钱、能抗风险的品牌框架，自底向上必须完整穿透以下五大层级：
 
-![从 0 到 1 全要素品牌框架五层架构全景图](/images/essays/five_layer_brand_framework_stack.jpg)
+![从 0 到 1 全要素品牌框架五层架构全景图](/images/essays/five-layer-brand-framework-stack.svg)
 
 ---
 
@@ -98,7 +98,7 @@ coverAlt: "从0到1全要素品牌框架五层架构图解封面"
 
 #### 2.1 Kapferer 品牌身份六角棱镜 (品牌立体人设)
 
-![Kapferer 品牌身份六角棱镜模型](/images/essays/kapferer_brand_identity_prism.jpg)
+![Kapferer 品牌身份六角棱镜模型](/images/essays/kapferer-brand-identity-prism.svg)
 
 - **大白话解析**：由[巴黎 HEC 商学院终身名誉教授 Jean-Noël Kapferer (让-诺埃尔·卡普费雷)](https://www.hec.edu/en/faculty-research/faculty-directory/faculty-member/kapferer-jean-noel) 在其经典专著《*The New Strategic Brand Management*》中提出，把品牌像一个真人一样拆成 6 个切面：
   1. **物理特征 (Physique)**：外表长什么样？材质、轮廓包装与标志性视觉；
@@ -145,7 +145,7 @@ coverAlt: "从0到1全要素品牌框架五层架构图解封面"
   3. **第三阶 · 理性判断与感性共鸣 (Judgments & Feelings)**：觉得你靠不靠谱？用起来有没有自豪感？（*我觉得你怎么样？*）；
   4. **第四阶 · 终极品牌共鸣 (Resonance)**：逢人就主动安利、非你不买、形成忠诚社群（*我和你之间是什么关系？*）。
 
-![凯勒 CBBE 品牌资产金字塔模型](/images/essays/keller_cbbe_equity_pyramid.jpg)
+![凯勒 CBBE 品牌资产金字塔模型](/images/essays/keller-cbbe-equity-pyramid.svg)
 
 #### 3.2 品类及格线 vs 必买杀手锏 (POPs vs PODs)
 - **大白话解析**：
@@ -162,7 +162,7 @@ coverAlt: "从0到1全要素品牌框架五层架构图解封面"
 
 #### 4.1 埃伦伯格-巴斯增长双引擎 (好想起 + 买得到)
 
-![埃伦伯格-巴斯增长双引擎与双重危机法则](/images/essays/byron_sharp_growth_flywheel.jpg)
+![埃伦伯格-巴斯增长双引擎与双重危机法则](/images/essays/byron-sharp-growth-flywheel.svg)
 
 - **大白话解析**：
   - **心智可得性**：在用户产生需求的各个生活瞬间，你的品牌都能被轻松想起；
