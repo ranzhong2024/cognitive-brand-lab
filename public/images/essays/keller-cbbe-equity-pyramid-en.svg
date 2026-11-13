@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="100%" height="100%" role="img" aria-label="Keller Customer-Based Brand Equity CBBE 4-Step Pyramid Model">
+  <rect width="800" height="480" rx="16" fill="#09090B" stroke="#232B3E"/>
+  <text x="400" y="240" fill="rgba(255, 255, 255, 0.03)" font-family="sans-serif" font-size="30" font-weight="900" text-anchor="middle" transform="rotate(-8 400 240)" letter-spacing="4">BRANDOS LAB™ // COGNITIVE BRAND SCIENCE</text>
+
+  <text x="400" y="38" fill="#FAFAFA" font-family="sans-serif" font-size="18" font-weight="900" text-anchor="middle">Keller CBBE Brand Equity Pyramid: Rational + Emotional Ascent</text>
+  <text x="400" y="58" fill="#94A3B8" font-family="monospace" font-size="11" text-anchor="middle">4 PROGRESSIVE STAGES FROM SALIENCE TO RESONANCE (WARBY PARKER POPs vs. PODs)</text>
+
+  <!-- Track Labels -->
+  <text x="130" y="96" fill="#38BDF8" font-family="monospace" font-size="11.5" font-weight="bold" text-anchor="middle">RATIONAL ROUTE</text>
+  <text x="670" y="96" fill="#C084FC" font-family="monospace" font-size="11.5" font-weight="bold" text-anchor="middle">EMOTIONAL ROUTE</text>
+
+  <!-- Tier 4 Apex: Resonance -->
+  <polygon points="340,92 460,92 496,158 304,158" fill="rgba(251, 191, 36, 0.16)" stroke="#FBBF24" stroke-width="2"/>
+  <text x="400" y="124" fill="#FDE68A" font-family="sans-serif" font-size="13.5" font-weight="900" text-anchor="middle">4. RESONANCE</text>
+  <text x="400" y="143" fill="#CBD5E1" font-family="monospace" font-size="10" text-anchor="middle">Active Loyalty &amp; Evangelism</text>
+
+  <!-- Tier 3: Judgments | Feelings -->
+  <polygon points="296,168 400,168 400,236 254,236" fill="rgba(56, 189, 248, 0.12)" stroke="#38BDF8" stroke-width="1.6"/>
+  <text x="338" y="199" fill="#E0F2FE" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle">3A. JUDGMENTS</text>
+  <text x="338" y="218" fill="#94A3B8" font-family="sans-serif" font-size="11" text-anchor="middle">Quality · Credibility</text>
+
+  <polygon points="400,168 504,168 546,236 400,236" fill="rgba(192, 132, 252, 0.12)" stroke="#C084FC" stroke-width="1.6"/>
+  <text x="462" y="199" fill="#F3E8FF" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle">3B. FEELINGS</text>
+  <text x="462" y="218" fill="#94A3B8" font-family="sans-serif" font-size="11" text-anchor="middle">Pride · Belonging</text>
+
+  <!-- Tier 2: Performance | Imagery -->
+  <polygon points="246,246 400,246 400,314 202,314" fill="rgba(16, 185, 129, 0.12)" stroke="#10B981" stroke-width="1.6"/>
+  <text x="312" y="277" fill="#D1FAE5" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle">2A. PERFORMANCE</text>
+  <text x="312" y="296" fill="#94A3B8" font-family="sans-serif" font-size="11" text-anchor="middle">Specs · Reliability · Price</text>
+
+  <polygon points="400,246 554,246 598,314 400,314" fill="rgba(129, 140, 248, 0.14)" stroke="#818CF8" stroke-width="1.6"/>
+  <text x="488" y="277" fill="#E0E7FF" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle">2B. IMAGERY</text>
+  <text x="488" y="296" fill="#94A3B8" font-family="sans-serif" font-size="11" text-anchor="middle">Identity · Usage Situations</text>
+
+  <!-- Tier 1 Base: Salience -->
+  <polygon points="194,324 606,324 652,386 148,386" fill="rgba(0, 242, 254, 0.14)" stroke="#00F2FE" stroke-width="2"/>
+  <text x="400" y="352" fill="#00F2FE" font-family="sans-serif" font-size="14" font-weight="900" text-anchor="middle">1. BRAND SALIENCE (MENTAL DEPTH &amp; BREADTH)</text>
+  <text x="400" y="372" fill="#E2E8F0" font-family="monospace" font-size="11" text-anchor="middle">"Who are you?" → Recalled first across every buying situation</text>
+
+  <!-- Bottom Warby Parker POP vs POD Bar -->
+  <rect x="44" y="404" width="712" height="50" rx="10" fill="#111622" stroke="#232B3E"/>
+  <text x="64" y="425" fill="#94A3B8" font-family="sans-serif" font-size="12"><tspan fill="#38BDF8" font-weight="bold">POPs (Table Stakes):</tspan> Anti-glare optics &amp; lightweight frames</text>
+  <text x="64" y="443" fill="#CBD5E1" font-family="sans-serif" font-size="12"><tspan fill="#34D399" font-weight="bold">PODs (Warby Parker Edge):</tspan> $95 flat transparent pricing + 5 Free Home Try-On boxes + Buy-a-Pair, Give-a-Pair</text>
+
+  <text x="780" y="472" fill="rgba(0, 242, 254, 0.45)" font-family="monospace" font-size="10" font-weight="bold" text-anchor="end">BRANDOS LAB™ // COGNITIVE BRAND SCIENCE</text>
+</svg>

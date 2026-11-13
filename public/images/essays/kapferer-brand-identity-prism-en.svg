@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="100%" height="100%" role="img" aria-label="Kapferer Brand Identity Prism Hexagonal Model">
+  <rect width="800" height="480" rx="16" fill="#09090B" stroke="#232B3E"/>
+  <text x="400" y="240" fill="rgba(255, 255, 255, 0.03)" font-family="sans-serif" font-size="30" font-weight="900" text-anchor="middle" transform="rotate(-8 400 240)" letter-spacing="4">BRANDOS LAB™ // COGNITIVE BRAND SCIENCE</text>
+
+  <text x="400" y="38" fill="#FAFAFA" font-family="sans-serif" font-size="18" font-weight="900" text-anchor="middle">Kapferer Brand Identity Prism (6-Facet Living Persona Architecture)</text>
+  <text x="400" y="58" fill="#94A3B8" font-family="monospace" font-size="11" text-anchor="middle">EXTERNALIZATION (LEFT) vs. INTERNALIZATION (RIGHT) · APPLE BENCHMARK MAPPING</text>
+
+  <!-- Top / Bottom Poles -->
+  <rect x="275" y="76" width="250" height="32" rx="16" fill="rgba(0, 242, 254, 0.14)" stroke="#00F2FE"/>
+  <text x="400" y="96" fill="#00F2FE" font-family="monospace" font-size="12" font-weight="bold" text-anchor="middle">PICTURE OF SENDER (BRAND ORIGIN)</text>
+
+  <rect x="265" y="408" width="270" height="32" rx="16" fill="rgba(16, 185, 129, 0.14)" stroke="#10B981"/>
+  <text x="400" y="428" fill="#34D399" font-family="monospace" font-size="12" font-weight="bold" text-anchor="middle">PICTURE OF RECEIVER (BUYER MIRROR)</text>
+
+  <!-- Center Hexagon Visual -->
+  <polygon points="400,126 510,192 510,322 400,388 290,322 290,192" fill="#111622" stroke="#818CF8" stroke-width="2"/>
+  <line x1="290" y1="257" x2="510" y2="257" stroke="#232B3E" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <text x="400" y="218" fill="#F8FAFC" font-family="sans-serif" font-size="15" font-weight="900" text-anchor="middle">EXTERNAL</text>
+  <text x="400" y="236" fill="#38BDF8" font-family="monospace" font-size="11" text-anchor="middle">Visible Signals</text>
+  <text x="400" y="294" fill="#F8FAFC" font-family="sans-serif" font-size="15" font-weight="900" text-anchor="middle">INTERNAL</text>
+  <text x="400" y="312" fill="#A5B4FC" font-family="monospace" font-size="11" text-anchor="middle">Soul &amp; Values</text>
+
+  <!-- Left 3 Externalization Cards -->
+  <g transform="translate(34, 126)">
+    <rect width="232" height="76" rx="10" fill="#111622" stroke="#00F2FE" stroke-opacity="0.6"/>
+    <text x="16" y="26" fill="#00F2FE" font-family="monospace" font-size="12" font-weight="bold">1. PHYSIQUE (FORM)</text>
+    <text x="16" y="46" fill="#F8FAFC" font-family="sans-serif" font-size="12">Physical shell &amp; tactile unboxing.</text>
+    <text x="16" y="64" fill="#94A3B8" font-family="monospace" font-size="10.5">Apple: Unibody aluminum, white box</text>
+  </g>
+  <g transform="translate(34, 219)">
+    <rect width="232" height="76" rx="10" fill="#111622" stroke="#818CF8" stroke-opacity="0.6"/>
+    <text x="16" y="26" fill="#818CF8" font-family="monospace" font-size="12" font-weight="bold">2. RELATIONSHIP (BOND)</text>
+    <text x="16" y="46" fill="#F8FAFC" font-family="sans-serif" font-size="12">Role played with the customer.</text>
+    <text x="16" y="64" fill="#94A3B8" font-family="monospace" font-size="10.5">Apple: Co-pilot for independent makers</text>
+  </g>
+  <g transform="translate(34, 312)">
+    <rect width="232" height="76" rx="10" fill="#111622" stroke="#10B981" stroke-opacity="0.6"/>
+    <text x="16" y="26" fill="#34D399" font-family="monospace" font-size="12" font-weight="bold">3. REFLECTION (SOCIAL VIEW)</text>
+    <text x="16" y="46" fill="#F8FAFC" font-family="sans-serif" font-size="12">How the world labels its buyers.</text>
+    <text x="16" y="64" fill="#94A3B8" font-family="monospace" font-size="10.5">Apple: Design-literate creative pro</text>
+  </g>
+
+  <!-- Right 3 Internalization Cards -->
+  <g transform="translate(534, 126)">
+    <rect width="232" height="76" rx="10" fill="#111622" stroke="#00F2FE" stroke-opacity="0.6"/>
+    <text x="16" y="26" fill="#00F2FE" font-family="monospace" font-size="12" font-weight="bold">4. PERSONALITY (TONE)</text>
+    <text x="16" y="46" fill="#F8FAFC" font-family="sans-serif" font-size="12">Brand character if it spoke aloud.</text>
+    <text x="16" y="64" fill="#94A3B8" font-family="monospace" font-size="10.5">Apple: Visionary, minimalist, poised</text>
+  </g>
+  <g transform="translate(534, 219)">
+    <rect width="232" height="76" rx="10" fill="#111622" stroke="#C084FC" stroke-opacity="0.6"/>
+    <text x="16" y="26" fill="#C084FC" font-family="monospace" font-size="12" font-weight="bold">5. CULTURE (ETHOS)</text>
+    <text x="16" y="46" fill="#F8FAFC" font-family="sans-serif" font-size="12">Foundational philosophy &amp; roots.</text>
+    <text x="16" y="64" fill="#94A3B8" font-family="monospace" font-size="10.5">Apple: California Bauhaus functionalism</text>
+  </g>
+  <g transform="translate(534, 312)">
+    <rect width="232" height="76" rx="10" fill="#111622" stroke="#10B981" stroke-opacity="0.6"/>
+    <text x="16" y="26" fill="#34D399" font-family="monospace" font-size="12" font-weight="bold">6. SELF-IMAGE (INNER VOICE)</text>
+    <text x="16" y="46" fill="#F8FAFC" font-family="sans-serif" font-size="12">Who the buyer feels they are inside.</text>
+    <text x="16" y="64" fill="#94A3B8" font-family="monospace" font-size="10">Apple: "Think Different, reject average"</text>
+  </g>
+
+  <text x="780" y="464" fill="rgba(0, 242, 254, 0.45)" font-family="monospace" font-size="10" font-weight="bold" text-anchor="end">BRANDOS LAB™ // COGNITIVE BRAND SCIENCE</text>
+</svg>

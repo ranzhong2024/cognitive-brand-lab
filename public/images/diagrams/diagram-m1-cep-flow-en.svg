@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 520" width="100%" height="100%" style="background:#09090B; border-radius:20px; border:1px solid #232B3E;">
+  <rect width="100%" height="100%" fill="#09090B"/>
+  <defs>
+    <pattern id="grid-m1-en" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="rgba(255, 255, 255, 0.03)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#grid-m1-en)"/>
+  <text x="380" y="260" fill="rgba(255, 255, 255, 0.03)" font-family="sans-serif" font-size="28" font-weight="900" text-anchor="middle" transform="rotate(-6 380 260)" letter-spacing="4">BRANDOS LAB™ // COGNITIVE BRAND SCIENCE</text>
+
+  <g transform="translate(30, 25)">
+    <rect width="700" height="42" rx="8" fill="#111622" stroke="#232B3E"/>
+    <text x="18" y="26" fill="#00F2FE" font-family="monospace" font-size="12" font-weight="bold">SCENE 01 // PAIN &amp; MEMORY CUE</text>
+    <text x="682" y="26" fill="#FAFAFA" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="end">Real Crisis Hits → Brain Searches for the First Relief</text>
+  </g>
+
+  <g transform="translate(30, 80)">
+    <rect width="700" height="150" rx="14" fill="#18111A" stroke="#F43F5E" stroke-width="2"/>
+    <rect x="20" y="15" width="236" height="30" rx="6" fill="#F43F5E" opacity="0.2"/>
+    <text x="138" y="35" fill="#F43F5E" font-family="sans-serif" font-size="13" font-weight="900" text-anchor="middle">🚨 Urgent Buying Trigger</text>
+    <text x="25" y="75" fill="#FAFAFA" font-family="sans-serif" font-size="17" font-weight="900">"-20°C Blizzard Blackout! Home Heating Is Down"</text>
+    <text x="25" y="105" fill="#E2E8F0" font-family="sans-serif" font-size="13.5">Buyer Panic: "All I see are camping power banks. Which unit saves my home?"</text>
+    <text x="25" y="132" fill="#EF4444" font-family="sans-serif" font-size="12.5" font-weight="bold">✕ Gap: Cheap $99 camping batteries trip out and take 8+ hrs to recharge</text>
+  </g>
+
+  <g transform="translate(380, 240)">
+    <line x1="0" y1="0" x2="0" y2="28" stroke="#00F2FE" stroke-width="4" stroke-dasharray="6 3"/>
+    <polygon points="-6,28 0,38 6,28" fill="#00F2FE"/>
+    <text x="16" y="18" fill="#00F2FE" font-family="sans-serif" font-size="12" font-weight="900">🧠 Fires Associative Memory Network</text>
+  </g>
+
+  <g transform="translate(30, 290)">
+    <rect width="700" height="200" rx="14" fill="#111622" stroke="#00F2FE" stroke-width="2.5"/>
+    <rect x="20" y="15" width="278" height="30" rx="6" fill="#00F2FE" opacity="0.2"/>
+    <text x="159" y="35" fill="#00F2FE" font-family="sans-serif" font-size="13" font-weight="900" text-anchor="middle">💡 Instant Recall: Searches "EcoFlow"</text>
+    <text x="25" y="74" fill="#FAFAFA" font-family="sans-serif" font-size="16.5" font-weight="900">"We need EcoFlow Whole-Home Backup!" (Direct Branded Search)</text>
+
+    <g transform="translate(25, 95)">
+      <rect width="310" height="42" rx="8" fill="#09090B" stroke="#232B3E"/>
+      <text x="16" y="26" fill="#38BDF8" font-family="sans-serif" font-size="12.5" font-weight="bold">✓ Locked CEP: Whole-Home High Output</text>
+    </g>
+    <g transform="translate(350, 95)">
+      <rect width="325" height="42" rx="8" fill="#09090B" stroke="#232B3E"/>
+      <text x="16" y="26" fill="#38BDF8" font-family="sans-serif" font-size="12.5" font-weight="bold">✓ Locked CEP: 1-Hour X-Stream Fast Charge</text>
+    </g>
+    <g transform="translate(25, 148)">
+      <rect width="650" height="38" rx="8" fill="#10B981" opacity="0.15" stroke="#10B981" stroke-width="1.5"/>
+      <text x="16" y="24" fill="#34D399" font-family="sans-serif" font-size="13" font-weight="900">🏆 Result: $3,599 AOV · $12.11M Crowdfunding Record · $1B+ Annual Revenue</text>
+    </g>
+  </g>
+</svg>

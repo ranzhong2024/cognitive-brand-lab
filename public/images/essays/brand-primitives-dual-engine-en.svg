@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%" role="img" aria-label="Brand Equity Primitives: Costly Signaling, Memory Networks, and Dual Availability">
+  <defs>
+    <pattern id="gpGrid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="rgba(148, 163, 184, 0.05)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="450" rx="16" fill="#09090B" stroke="#232B3E"/>
+  <rect width="800" height="450" rx="16" fill="url(#gpGrid)"/>
+
+  <!-- Watermark -->
+  <text x="400" y="225" fill="rgba(255, 255, 255, 0.03)" font-family="sans-serif" font-size="30" font-weight="900" text-anchor="middle" transform="rotate(-10 400 225)" letter-spacing="4">BRANDOS LAB™ // COGNITIVE BRAND SCIENCE</text>
+
+  <!-- Title -->
+  <text x="400" y="42" fill="#FAFAFA" font-family="sans-serif" font-size="17" font-weight="900" text-anchor="middle">Brand Primitives: Three First-Principles Mechanisms Behind Pricing Power</text>
+  <text x="400" y="64" fill="#94A3B8" font-family="monospace" font-size="11" text-anchor="middle">SPENCE SIGNALING × COLLINS-LOFTUS MEMORY NETS × EHRENBERG-BASS AVAILABILITY</text>
+
+  <!-- Card 1: Costly Signals -->
+  <g transform="translate(36, 92)">
+    <rect width="226" height="236" rx="12" fill="#111622" stroke="#818CF8" stroke-width="1.6"/>
+    <rect x="16" y="16" width="194" height="24" rx="6" fill="rgba(129, 140, 248, 0.16)"/>
+    <text x="113" y="32" fill="#A5B4FC" font-family="monospace" font-size="11" font-weight="bold" text-anchor="middle">01 · COSTLY SIGNALING</text>
+    <text x="113" y="66" fill="#F8FAFC" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="middle">Michael Spence (Nobel 2001)</text>
+    <text x="18" y="96" fill="#CBD5E1" font-family="sans-serif" font-size="12">• "100% High Quality" is zero-cost</text>
+    <text x="26" y="114" fill="#94A3B8" font-family="sans-serif" font-size="11.5">cheap talk — buyers ignore it.</text>
+    <text x="18" y="144" fill="#CBD5E1" font-family="sans-serif" font-size="12">• Trust requires sunk capital that</text>
+    <text x="26" y="162" fill="#94A3B8" font-family="sans-serif" font-size="11.5">counterfeits go broke copying.</text>
+    <rect x="16" y="182" width="194" height="38" rx="8" fill="#09090B" stroke="#232B3E"/>
+    <text x="113" y="205" fill="#818CF8" font-family="monospace" font-size="9.5" font-weight="bold" text-anchor="middle">Patagonia · 5,127 Dyson Prototypes</text>
+  </g>
+
+  <!-- Card 2: Associative Memory -->
+  <g transform="translate(287, 92)">
+    <rect width="226" height="236" rx="12" fill="#111622" stroke="#00F2FE" stroke-width="1.6"/>
+    <rect x="16" y="16" width="194" height="24" rx="6" fill="rgba(0, 242, 254, 0.14)"/>
+    <text x="113" y="32" fill="#00F2FE" font-family="monospace" font-size="11" font-weight="bold" text-anchor="middle">02 · MEMORY NETWORKS</text>
+    <text x="113" y="66" fill="#F8FAFC" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="middle">Collins &amp; Loftus / ACT-R</text>
+    <text x="18" y="96" fill="#CBD5E1" font-family="sans-serif" font-size="12">• Brains retrieve concepts through</text>
+    <text x="26" y="114" fill="#94A3B8" font-family="sans-serif" font-size="11.5">spreading activation cues.</text>
+    <text x="18" y="144" fill="#CBD5E1" font-family="sans-serif" font-size="12">• Solder your brand directly onto</text>
+    <text x="26" y="162" fill="#94A3B8" font-family="sans-serif" font-size="11.5">urgent real-life triggers.</text>
+    <rect x="16" y="182" width="194" height="38" rx="8" fill="#09090B" stroke="#232B3E"/>
+    <text x="113" y="205" fill="#00F2FE" font-family="monospace" font-size="11" font-weight="bold" text-anchor="middle">Need Hits → Brand Fires First</text>
+  </g>
+
+  <!-- Card 3: Dual Availability -->
+  <g transform="translate(538, 92)">
+    <rect width="226" height="236" rx="12" fill="#111622" stroke="#10B981" stroke-width="1.6"/>
+    <rect x="16" y="16" width="194" height="24" rx="6" fill="rgba(16, 185, 129, 0.14)"/>
+    <text x="113" y="32" fill="#34D399" font-family="monospace" font-size="11" font-weight="bold" text-anchor="middle">03 · DUAL AVAILABILITY</text>
+    <text x="113" y="66" fill="#F8FAFC" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="middle">Byron Sharp (Growth Law)</text>
+    <text x="18" y="96" fill="#CBD5E1" font-family="sans-serif" font-size="12">• Scale comes from broad light</text>
+    <text x="26" y="114" fill="#94A3B8" font-family="sans-serif" font-size="11.5">buyers, not 1,000 superfans.</text>
+    <text x="18" y="144" fill="#CBD5E1" font-family="sans-serif" font-size="12">• Easy to think of (Mental) ×</text>
+    <text x="26" y="162" fill="#94A3B8" font-family="sans-serif" font-size="11.5">easy to buy (Physical).</text>
+    <rect x="16" y="182" width="194" height="38" rx="8" fill="#09090B" stroke="#232B3E"/>
+    <text x="113" y="205" fill="#34D399" font-family="monospace" font-size="11" font-weight="bold" text-anchor="middle">Mental × Physical = Brand Equity</text>
+  </g>
+
+  <!-- Unified Equation Banner -->
+  <g transform="translate(36, 352)">
+    <rect width="728" height="62" rx="12" fill="#0D1F1A" stroke="#10B981" stroke-width="1.5"/>
+    <text x="364" y="28" fill="#6EE7B7" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle">EQUITY SYNTHESIS: ZERO-TO-ONE MULTIPLICATIVE ENGINE</text>
+    <text x="364" y="48" fill="#E2E8F0" font-family="monospace" font-size="12" text-anchor="middle">Branded Recall (Mental) × Frictionless Buying (Physical) × Costly Proof = Defensible Pricing Power</text>
+  </g>
+
+  <text x="780" y="438" fill="rgba(0, 242, 254, 0.45)" font-family="monospace" font-size="10" font-weight="bold" text-anchor="end">BRANDOS LAB™ // COGNITIVE BRAND SCIENCE</text>
+</svg>
