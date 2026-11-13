@@ -16,6 +16,14 @@ const essays = defineCollection({
     lang: z.enum(['zh', 'en']).default('zh'),
     coverImage: z.string().optional(),
     coverAlt: z.string().optional(),
+    faqs: z
+      .array(
+        z.object({
+          question: z.string(),
+          answer: z.string(),
+        })
+      )
+      .optional(),
   }),
 });
 

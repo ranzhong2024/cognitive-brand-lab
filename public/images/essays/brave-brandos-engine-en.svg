@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%" role="img" aria-label="B.R.A.V.E. Architecture Mapped to BrandOS M1-M6 Engineering Dual-Engine Diagram">
+  <defs>
+    <pattern id="engGridEn" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="rgba(148, 163, 184, 0.05)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="500" rx="16" fill="#09090B" stroke="#232B3E"/>
+  <rect width="800" height="500" rx="16" fill="url(#engGridEn)"/>
+
+  <!-- Watermark -->
+  <text x="400" y="255" fill="rgba(255, 255, 255, 0.03)" font-family="'Plus Jakarta Sans', sans-serif" font-size="25" font-weight="900" text-anchor="middle" transform="rotate(-8 400 255)" letter-spacing="4">BRANDOS LAB™ // COGNITIVE BRAND SCIENCE</text>
+
+  <!-- Title -->
+  <text x="400" y="38" fill="#FAFAFA" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="900" text-anchor="middle">B.R.A.V.E. Mental Tension × BrandOS™ M1–M6 Dual-Engine Architecture</text>
+  <text x="400" y="60" fill="#94A3B8" font-family="'JetBrains Mono', monospace" font-size="11" text-anchor="middle">DUAL-ENGINE FUSION // ANCHORING EACH CULTURAL DIMENSION ONTO HARD UNIT ECONOMICS</text>
+
+  <!-- Column Headers -->
+  <g transform="translate(28, 78)">
+    <rect x="0" y="0" width="186" height="28" rx="6" fill="#111622" stroke="#00F2FE" stroke-opacity="0.4"/>
+    <text x="93" y="18" fill="#00F2FE" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="bold" text-anchor="middle">B.R.A.V.E. PILLAR</text>
+
+    <rect x="218" y="0" width="276" height="28" rx="6" fill="#111622" stroke="#818CF8" stroke-opacity="0.4"/>
+    <text x="356" y="18" fill="#A5B4FC" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="bold" text-anchor="middle">BRANDOS™ M1–M6 CHASSIS</text>
+
+    <rect x="526" y="0" width="218" height="28" rx="6" fill="#0D1F1A" stroke="#10B981" stroke-opacity="0.5"/>
+    <text x="635" y="18" fill="#6EE7B7" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="bold" text-anchor="middle">VERIFIED PROOF &amp; METRICS</text>
+  </g>
+
+  <!-- Row 1: B -->
+  <g transform="translate(28, 116)">
+    <rect x="0" y="0" width="186" height="58" rx="10" fill="#111622" stroke="#00F2FE" stroke-width="1.4"/>
+    <text x="14" y="25" fill="#00F2FE" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="bold">B · Brand Foundation</text>
+    <text x="14" y="44" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5">Unified end-to-end trust system</text>
+
+    <line x1="186" y1="29" x2="218" y2="29" stroke="#00F2FE" stroke-width="1.5" stroke-dasharray="3 2"/>
+    <rect x="218" y="0" width="276" height="58" rx="10" fill="#111622" stroke="#232B3E"/>
+    <text x="232" y="25" fill="#E2E8F0" font-family="'Plus Jakarta Sans', sans-serif" font-size="11.5" font-weight="bold">M1 DBAs + M2 Costly Signaling</text>
+    <text x="232" y="44" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5">Hardware proof, PDP &amp; unboxing aligned</text>
+
+    <line x1="494" y1="29" x2="526" y2="29" stroke="#10B981" stroke-width="1.5" stroke-dasharray="3 2"/>
+    <rect x="526" y="0" width="218" height="58" rx="10" fill="#0D1821" stroke="#232B3E"/>
+    <text x="540" y="25" fill="#6EE7B7" font-family="'Plus Jakarta Sans', sans-serif" font-size="11.5" font-weight="bold">Bambu Lab Killed Ender Tax</text>
+    <text x="540" y="44" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5">~RMB 10B in 2025 (~37% share &lt;$2.5k)</text>
+  </g>
+
+  <!-- Row 2: R -->
+  <g transform="translate(28, 184)">
+    <rect x="0" y="0" width="186" height="58" rx="10" fill="#111622" stroke="#818CF8" stroke-width="1.4"/>
+    <text x="14" y="25" fill="#A5B4FC" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="bold">R · Relationships</text>
+    <text x="14" y="44" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5">Community over rented audience</text>
+
+    <line x1="186" y1="29" x2="218" y2="29" stroke="#818CF8" stroke-width="1.5" stroke-dasharray="3 2"/>
+    <rect x="218" y="0" width="276" height="58" rx="10" fill="#111622" stroke="#232B3E"/>
+    <text x="232" y="25" fill="#E2E8F0" font-family="'Plus Jakarta Sans', sans-serif" font-size="11.5" font-weight="bold">M6 Retention · Value First</text>
+    <text x="232" y="44" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5">Co-creation flywheels &amp; holdout lift tests</text>
+
+    <line x1="494" y1="29" x2="526" y2="29" stroke="#10B981" stroke-width="1.5" stroke-dasharray="3 2"/>
+    <rect x="526" y="0" width="218" height="58" rx="10" fill="#0D1821" stroke="#232B3E"/>
+    <text x="540" y="25" fill="#6EE7B7" font-family="'Plus Jakarta Sans', sans-serif" font-size="11.5" font-weight="bold">MakerWorld Moat</text>
+    <text x="540" y="44" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5">~10M MAU · 83% 1-year retention</text>
+  </g>
+
+  <!-- Row 3: A -->
+  <g transform="translate(28, 252)">
+    <rect x="0" y="0" width="186" height="58" rx="10" fill="#111622" stroke="#F59E0B" stroke-width="1.4"/>
+    <text x="14" y="25" fill="#FCD34D" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="bold">A · Audacity</text>
+    <text x="14" y="44" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5">Name real friction as enemy</text>
+
+    <line x1="186" y1="29" x2="218" y2="29" stroke="#F59E0B" stroke-width="1.5" stroke-dasharray="3 2"/>
+    <rect x="218" y="0" width="276" height="58" rx="10" fill="#111622" stroke="#232B3E"/>
+    <text x="232" y="25" fill="#E2E8F0" font-family="'Plus Jakarta Sans', sans-serif" font-size="11.5" font-weight="bold">M1 Whitespace + M4 Hooks</text>
+    <text x="232" y="44" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5">Sharp 3s cognitive hooks for Meta DLRM</text>
+
+    <line x1="494" y1="29" x2="526" y2="29" stroke="#10B981" stroke-width="1.5" stroke-dasharray="3 2"/>
+    <rect x="526" y="0" width="218" height="58" rx="10" fill="#0D1821" stroke="#232B3E"/>
+    <text x="540" y="25" fill="#6EE7B7" font-family="'Plus Jakarta Sans', sans-serif" font-size="11.5" font-weight="bold">Owala Commuter CEPs</text>
+    <text x="540" y="44" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5">Avoid Jaguar's empty-showroom shock</text>
+  </g>
+
+  <!-- Row 4: V -->
+  <g transform="translate(28, 320)">
+    <rect x="0" y="0" width="186" height="58" rx="10" fill="#111622" stroke="#10B981" stroke-width="1.4"/>
+    <text x="14" y="25" fill="#34D399" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="bold">V · Values</text>
+    <text x="14" y="44" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5">Trade-offs beat wall slogans</text>
+
+    <line x1="186" y1="29" x2="218" y2="29" stroke="#10B981" stroke-width="1.5" stroke-dasharray="3 2"/>
+    <rect x="218" y="0" width="276" height="58" rx="10" fill="#111622" stroke="#232B3E"/>
+    <text x="232" y="25" fill="#E2E8F0" font-family="'Plus Jakarta Sans', sans-serif" font-size="11.5" font-weight="bold">M2 Pratfall &amp; User Covenant</text>
+    <text x="232" y="44" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5">Proven by hiring, firing &amp; rejected cash</text>
+
+    <line x1="494" y1="29" x2="526" y2="29" stroke="#10B981" stroke-width="1.5" stroke-dasharray="3 2"/>
+    <rect x="526" y="0" width="218" height="58" rx="10" fill="#0D1821" stroke="#232B3E"/>
+    <text x="540" y="25" fill="#6EE7B7" font-family="'Plus Jakarta Sans', sans-serif" font-size="11.5" font-weight="bold">Poppi ≤5g Sugar Discipline</text>
+    <text x="540" y="44" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5">PepsiCo $1.95B exit; Duolingo lesson</text>
+  </g>
+
+  <!-- Row 5: E -->
+  <g transform="translate(28, 388)">
+    <rect x="0" y="0" width="186" height="58" rx="10" fill="#111622" stroke="#A855F7" stroke-width="1.4"/>
+    <text x="14" y="25" fill="#D8B4FE" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="bold">E · Energy</text>
+    <text x="14" y="44" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5">Market-perceived BVS™ speed</text>
+
+    <line x1="186" y1="29" x2="218" y2="29" stroke="#A855F7" stroke-width="1.5" stroke-dasharray="3 2"/>
+    <rect x="218" y="0" width="276" height="58" rx="10" fill="#111622" stroke="#232B3E"/>
+    <text x="232" y="25" fill="#E2E8F0" font-family="'Plus Jakarta Sans', sans-serif" font-size="11.5" font-weight="bold">M3 65%+ Margin + Cadence</text>
+    <text x="232" y="44" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5">Waterfall leakage ≤15%; cash protects scale</text>
+
+    <line x1="494" y1="29" x2="526" y2="29" stroke="#10B981" stroke-width="1.5" stroke-dasharray="3 2"/>
+    <rect x="526" y="0" width="218" height="58" rx="10" fill="#0D1821" stroke="#232B3E"/>
+    <text x="540" y="25" fill="#6EE7B7" font-family="'Plus Jakarta Sans', sans-serif" font-size="11.5" font-weight="bold">Anker Cash-Flow Warning</text>
+    <text x="540" y="44" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5">Require ≥20% 14-day MVT reply rate</text>
+  </g>
+
+  <text x="28" y="478" fill="#64748B" font-family="'JetBrains Mono', monospace" font-size="10">FORMULA: Impact×40% + Feasibility×30% + (B.R.A.V.E. Fit×2)×30%</text>
+  <text x="772" y="478" fill="rgba(0, 242, 254, 0.5)" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="bold" text-anchor="end">BRANDOS LAB™ // COGNITIVE BRAND SCIENCE</text>
+</svg>
