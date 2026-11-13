@@ -36,6 +36,9 @@ const isEn = lang === 'en';
 const siteBase = (Astro.site || 'https://ranbrandos.com').toString();
 const canonicalURL = new URL(Astro.url.pathname, siteBase);
 const alternates = getAlternateUrls(Astro.url.pathname, siteBase);
+const gaMeasurementId =
+  (import.meta.env as { PUBLIC_GA_ID?: string }).PUBLIC_GA_ID || 'G-5GBCJV3K49';
+const enableAnalytics = import.meta.env.PROD && Boolean(gaMeasurementId);
 ---
 
 <!DOCTYPE html>
@@ -88,6 +91,26 @@ const alternates = getAlternateUrls(Astro.url.pathname, siteBase);
       customSchema={customSchema}
       lang={lang}
     />
+
+    {enableAnalytics && (
+      <>
+        <!-- Google Analytics 4 (gtag.js) -->
+        <script
+          is:inline
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=${gaMeasurementId}`}
+        ></script>
+        <script is:inline define:vars={{ gaMeasurementId }}>
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            window.dataLayer.push(arguments);
+          }
+          window.gtag = gtag;
+          gtag('js', new Date());
+          gtag('config', gaMeasurementId);
+        </script>
+      </>
+    )}
   </head>
   <body class="bg-[#09090B] text-[#F8FAFC] font-sans antialiased min-h-screen flex flex-col selection:bg-[#00F2FE] selection:text-[#030712] relative overflow-x-hidden">
     <div class="fixed inset-0 bg-[linear-gradient(to_right,#1f29370a_1px,transparent_1px),linear-gradient(to_bottom,#1f29370a_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none z-0"></div>
