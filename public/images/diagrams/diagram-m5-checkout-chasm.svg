@@ -1,47 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%" style="background:#09090B; border-radius:16px; border:1px solid #232B3E;">
   <rect width="100%" height="100%" fill="#09090B"/>
   
   <!-- Watermark Elements -->
-  <text x="400" y="225" fill="rgba(255, 255, 255, 0.03)" font-family="sans-serif" font-size="32" font-weight="900" text-anchor="middle" transform="rotate(-12 400 225)" letter-spacing="4">BRANDOS LAB™ // 品牌科学实验室™</text>
-  <text x="780" y="438" fill="rgba(0, 242, 254, 0.35)" font-family="monospace" font-size="10" font-weight="bold" text-anchor="end">BRANDOS LAB™ 品牌科学实验室 • 实证研究版权所有</text>
+  <text x="400" y="225" fill="rgba(255, 255, 255, 0.03)" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="32" font-weight="900" text-anchor="middle" transform="rotate(-12 400 225)" letter-spacing="4">BRANDOS LAB™ // 品牌科学实验室™</text>
+  <text x="780" y="438" fill="rgba(0, 242, 254, 0.35)" font-family="'JetBrains Mono', 'PingFang SC', 'Microsoft YaHei', monospace" font-size="10" font-weight="bold" text-anchor="end">BRANDOS LAB™ 品牌科学实验室 • 实证研究版权所有</text>
 
-  <text x="400" y="40" fill="#FAFAFA" font-family="sans-serif" font-size="17" font-weight="900" text-anchor="middle">买家结账最后 3 秒“心理断崖”与极速顺畅化解</text>
+  <text x="400" y="40" fill="#FAFAFA" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="17" font-weight="900" text-anchor="middle">买家结账最后 3 秒“心理断崖”与极速顺畅化解</text>
 
   <!-- Left Box: Chasm & Friction -->
   <g transform="translate(60, 80)">
     <rect width="320" height="315" rx="10" fill="#111622" stroke="#F43F5E" stroke-width="1.5"/>
-    <text x="160" y="30" fill="#F43F5E" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle">❌ 传统独立站：结账死亡峡谷</text>
+    <text x="160" y="30" fill="#F43F5E" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="14" font-weight="bold" text-anchor="middle">❌ 传统独立站：结账死亡峡谷</text>
 
     <rect x="20" y="55" width="280" height="42" rx="4" fill="#1C1917" stroke="#44403C"/>
-    <text x="30" y="78" fill="#FCA5A5" font-family="sans-serif" font-size="11">页面加载 3.5 秒 (卡顿白屏)</text>
+    <text x="30" y="78" fill="#FCA5A5" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="11">页面加载 3.5 秒 (卡顿白屏)</text>
 
     <rect x="20" y="105" width="280" height="42" rx="4" fill="#1C1917" stroke="#44403C"/>
-    <text x="30" y="128" fill="#FCA5A5" font-family="sans-serif" font-size="11">无质保声明，担心被盗刷/假货</text>
+    <text x="30" y="128" fill="#FCA5A5" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="11">无质保声明，担心被盗刷/假货</text>
 
     <rect x="20" y="155" width="280" height="42" rx="4" fill="#1C1917" stroke="#44403C"/>
-    <text x="30" y="178" fill="#FCA5A5" font-family="sans-serif" font-size="11">8 步繁琐表单录入，放弃付款</text>
+    <text x="30" y="178" fill="#FCA5A5" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="11">8 步繁琐表单录入，放弃付款</text>
 
     <rect x="20" y="215" width="280" height="70" rx="6" fill="#450A0A" stroke="#7F1D1D"/>
-    <text x="160" y="243" fill="#EF4444" font-family="sans-serif" font-size="13" font-weight="black" text-anchor="middle">跳出流失率高达 75%+</text>
-    <text x="160" y="265" fill="#F87171" font-family="sans-serif" font-size="11" text-anchor="middle">千辛万苦买来的流量全部白费</text>
+    <text x="160" y="243" fill="#EF4444" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="13" font-weight="900" text-anchor="middle">跳出流失率高达 75%+</text>
+    <text x="160" y="265" fill="#F87171" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="11" text-anchor="middle">千辛万苦买来的流量全部白费</text>
   </g>
 
   <!-- Right Box: BrandOS Smooth -->
   <g transform="translate(420, 80)">
     <rect width="320" height="315" rx="10" fill="#111622" stroke="#10B981" stroke-width="2"/>
-    <text x="160" y="30" fill="#10B981" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle">⚡ BrandOS 极速转化工程</text>
+    <text x="160" y="30" fill="#10B981" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="14" font-weight="bold" text-anchor="middle">⚡ BrandOS 极速转化工程</text>
 
     <rect x="20" y="55" width="280" height="42" rx="4" fill="#064E3B" stroke="#047857"/>
-    <text x="30" y="78" fill="#A7F3D0" font-family="sans-serif" font-size="11" font-weight="bold">0.85 秒秒开 (LCP &lt; 1s, AVIF 压缩)</text>
+    <text x="30" y="78" fill="#A7F3D0" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="11" font-weight="bold">0.85 秒秒开 (LCP &lt; 1s, AVIF 压缩)</text>
 
     <rect x="20" y="105" width="280" height="42" rx="4" fill="#064E3B" stroke="#047857"/>
-    <text x="30" y="128" fill="#A7F3D0" font-family="sans-serif" font-size="11" font-weight="bold">100px 近地证据网抹平全部焦虑</text>
+    <text x="30" y="128" fill="#A7F3D0" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="11" font-weight="bold">100px 近地证据网抹平全部焦虑</text>
 
     <rect x="20" y="155" width="280" height="42" rx="4" fill="#064E3B" stroke="#047857"/>
-    <text x="30" y="178" fill="#A7F3D0" font-family="sans-serif" font-size="11" font-weight="bold">Shop Pay / Apple Pay 1 键免密直付</text>
+    <text x="30" y="178" fill="#A7F3D0" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="11" font-weight="bold">Shop Pay / Apple Pay 1 键免密直付</text>
 
     <rect x="20" y="215" width="280" height="70" rx="6" fill="#022C22" stroke="#059669"/>
-    <text x="160" y="243" fill="#10B981" font-family="sans-serif" font-size="13" font-weight="black" text-anchor="middle">结账流失暴降 61.9%</text>
-    <text x="160" y="265" fill="#34D399" font-family="sans-serif" font-size="11" text-anchor="middle">移动端转化率大涨 34.8%！</text>
+    <text x="160" y="243" fill="#10B981" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="13" font-weight="900" text-anchor="middle">结账流失暴降 61.9%</text>
+    <text x="160" y="265" fill="#34D399" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="11" text-anchor="middle">移动端转化率大涨 34.8%！</text>
   </g>
 </svg>
