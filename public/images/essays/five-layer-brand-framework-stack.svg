@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%" role="img" aria-label="从 0 到 1 全要素品牌框架五层架构全景图">
+  <rect width="800" height="500" rx="16" fill="#09090B" stroke="#232B3E"/>
+
+  <!-- Watermark -->
+  <text x="400" y="255" fill="rgba(255, 255, 255, 0.03)" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="30" font-weight="900" text-anchor="middle" transform="rotate(-8 400 255)" letter-spacing="4">BRANDOS LAB™ // 品牌科学实验室</text>
+
+  <text x="400" y="40" fill="#FAFAFA" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="17.5" font-weight="900" text-anchor="middle">从 0 到 1 全要素品牌架构全景蓝图（自下而上 5 大工程层级）</text>
+  <text x="400" y="62" fill="#94A3B8" font-family="'JetBrains Mono', 'PingFang SC', 'Microsoft YaHei', monospace" font-size="11" text-anchor="middle">因果构建路径：战略地基 → 身份与识别资产 → 心智阶梯 → 规模分发 → 治理仪表盘</text>
+
+  <!-- L5 Apex -->
+  <g transform="translate(36, 84)">
+    <rect width="728" height="68" rx="10" fill="#1F1A0D" stroke="#FBBF24" stroke-width="1.8"/>
+    <text x="20" y="26" fill="#FDE68A" font-family="'JetBrains Mono', 'PingFang SC', 'Microsoft YaHei', monospace" font-size="12" font-weight="bold">LAYER 05 · 品牌架构治理与健康度仪表盘</text>
+    <text x="708" y="26" fill="#FBBF24" font-family="'JetBrains Mono', 'PingFang SC', 'Microsoft YaHei', monospace" font-size="11" font-weight="bold" text-anchor="end">核心指标：声量份额 SOS · NPS · 溢价率</text>
+    <text x="20" y="50" fill="#F8FAFC" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="13" font-weight="bold">母品牌制 (Masterbrand) vs 多品牌矩阵 (House of Brands) • 前置健康度监控</text>
+  </g>
+
+  <!-- L4 -->
+  <g transform="translate(36, 162)">
+    <rect width="728" height="68" rx="10" fill="#0D1F1A" stroke="#10B981" stroke-width="1.8"/>
+    <text x="20" y="26" fill="#6EE7B7" font-family="'JetBrains Mono', 'PingFang SC', 'Microsoft YaHei', monospace" font-size="12" font-weight="bold">LAYER 04 · 增长飞轮与全渠道物理分发</text>
+    <text x="708" y="26" fill="#34D399" font-family="'JetBrains Mono', 'PingFang SC', 'Microsoft YaHei', monospace" font-size="11" font-weight="bold" text-anchor="end">实例：Liquid Death (14 亿美元估值)</text>
+    <text x="20" y="50" fill="#F8FAFC" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="13" font-weight="bold">心智可得性 × 物理可得性 • 通过收割广泛轻度买家打破“双重危机定律”</text>
+  </g>
+
+  <!-- L3 -->
+  <g transform="translate(36, 240)">
+    <rect width="728" height="68" rx="10" fill="#191326" stroke="#C084FC" stroke-width="1.8"/>
+    <text x="20" y="26" fill="#E9D5FF" font-family="'JetBrains Mono', 'PingFang SC', 'Microsoft YaHei', monospace" font-size="12" font-weight="bold">LAYER 03 · 凯勒 CBBE 心智资产共鸣金字塔</text>
+    <text x="708" y="26" fill="#C084FC" font-family="'JetBrains Mono', 'PingFang SC', 'Microsoft YaHei', monospace" font-size="11" font-weight="bold" text-anchor="end">实例：Warby Parker ($95 + 在家试戴)</text>
+    <text x="20" y="50" fill="#F8FAFC" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="13" font-weight="bold">显著度 → 绩效与形象 → 判断与感受 → 品牌共鸣 (行业入场线 POPs vs 独家壁垒 PODs)</text>
+  </g>
+
+  <!-- L2 -->
+  <g transform="translate(36, 318)">
+    <rect width="728" height="68" rx="10" fill="#13162A" stroke="#818CF8" stroke-width="1.8"/>
+    <text x="20" y="26" fill="#C7D2FE" font-family="'JetBrains Mono', 'PingFang SC', 'Microsoft YaHei', monospace" font-size="12" font-weight="bold">LAYER 02 · 品牌身份棱镜与独特感官资产 (DBAs)</text>
+    <text x="708" y="26" fill="#818CF8" font-family="'JetBrains Mono', 'PingFang SC', 'Microsoft YaHei', monospace" font-size="11" font-weight="bold" text-anchor="end">资产样例：Apple · Nike · 蒂芙尼蓝 · 可口可乐</text>
+    <text x="20" y="50" fill="#F8FAFC" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="13" font-weight="bold">Kapferer 六维身份棱镜 • 12 荣格原型人格 • 剥离文字依然过目不忘的非语言资产</text>
+  </g>
+
+  <!-- L1 Base -->
+  <g transform="translate(36, 396)">
+    <rect width="728" height="68" rx="10" fill="#0B1924" stroke="#00F2FE" stroke-width="2"/>
+    <text x="20" y="26" fill="#00F2FE" font-family="'JetBrains Mono', 'PingFang SC', 'Microsoft YaHei', monospace" font-size="12" font-weight="bold">LAYER 01 · 品牌战略与底层认知原语</text>
+    <text x="708" y="26" fill="#38BDF8" font-family="'JetBrains Mono', 'PingFang SC', 'Microsoft YaHei', monospace" font-size="11" font-weight="bold" text-anchor="end">实例：Patagonia · Athletic Brewing (50%+)</text>
+    <text x="20" y="50" fill="#F8FAFC" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="13" font-weight="bold">黄金圈法则 (Why/How/What) • 品类进入点 (CEPs 场景网) • 待完成任务 (JTBD)</text>
+  </g>
+
+  <text x="780" y="486" fill="rgba(0, 242, 254, 0.45)" font-family="'JetBrains Mono', 'PingFang SC', 'Microsoft YaHei', monospace" font-size="10" font-weight="bold" text-anchor="end">BRANDOS LAB™ // 品牌科学实验室</text>
+</svg>
