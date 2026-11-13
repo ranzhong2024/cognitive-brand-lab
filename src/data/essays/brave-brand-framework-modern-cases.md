@@ -23,7 +23,7 @@ tags:
 featured: false
 author: "Ran (然)"
 lang: "zh"
-coverImage: "/images/essays/cover-brave-brand-framework-zh.jpg"
+coverImage: "/images/essays/cover-brave-brand-framework-zh.svg"
 coverAlt: "B.R.A.V.E. 品牌框架五大维度与 BrandOS™ M1–M6 工程底座双引擎融合架构图解"
 faqs:
   - question: "什么是 B.R.A.V.E. 品牌框架？为什么出海卖家照搬这套框架很容易失败？"
@@ -83,7 +83,7 @@ faqs:
 
 对技术出身的出海老板而言，B.R.A.V.E. 绝非多余。**拆穿本质，B.R.A.V.E. 不是美学装饰清单，而是一套将品牌基石（Brand）、共创关系（Relationships）、破局胆略（Audacity）、契约价值观（Values）与市场动能（Energy）转化为品牌加速度（Brand Velocity Score, BVS™）的商业张力引擎**——它恰恰补齐了硬核工程最缺的心智动能层，把冰冷的 M1–M6 参数翻译成海外买家能感知、愿传播、打心底认同的活体品牌。
 
-![B.R.A.V.E. 五维架构与 BrandOS M1–M6 工程底座双引擎映射](/images/essays/brave-brandos-engine-zh.jpg)
+![B.R.A.V.E. 五维架构与 BrandOS M1–M6 工程底座双引擎映射](/images/essays/brave-brandos-engine-zh.svg)
 
 ### 1. B（Brand 品牌基石）➔ M1 独特资产（DBAs）+ M2 信任质押
 在 [M1 独特资产（DBAs）](/modules/m1-brand-foundations/) 与 [M2 信任质押](/modules/m2-behavioral-science/) 的双轨约束下，Brand 不是 Logo 或市场部的孤立 KPI，而是横跨产品、客服、履约交付的一致性信任系统，反模式是触点撕裂与盲目追热点。

@@ -8,7 +8,7 @@ pubDate: 2026-11-13
 readingTime: "12 min read"
 featured: false
 author: "Ran"
-coverImage: "/images/essays/cover-brave-brand-framework-en.jpg"
+coverImage: "/images/essays/cover-brave-brand-framework-en.svg"
 coverAlt: "B.R.A.V.E. Brand Framework integrated with BrandOS™ M1–M6 engineering architecture diagram"
 tags:
   - "B.R.A.V.E. Framework"
@@ -81,7 +81,7 @@ This confirms a BrandOS™ iron law: **without [M3 Value Pricing](/en/modules/m3
 
 For technical founders, B.R.A.V.E. is not optional decoration. **Stripped of agency jargon, B.R.A.V.E. is a commercial tension engine that converts Brand, Relationships, Audacity, Values, and Energy into measurable Brand Velocity Score (BVS™).** It supplies the exact mental momentum engineering-heavy teams lack—translating cold M1–M6 specs into a living brand overseas buyers notice, share, and trust at first sight.
 
-![B.R.A.V.E. Architecture & BrandOS™ M1–M6 Dual-Engine Mapping](/images/essays/brave-brandos-engine-en.jpg)
+![B.R.A.V.E. Architecture & BrandOS™ M1–M6 Dual-Engine Mapping](/images/essays/brave-brandos-engine-en.svg)
 
 ### 1. B (Brand) ➔ M1 Distinctive Brand Assets (DBAs) + M2 Costly Proof
 Anchored by [M1 Distinctive Brand Assets (DBAs)](/en/modules/m1-brand-foundations/) and [M2 Costly Signaling](/en/modules/m2-behavioral-science/), Brand is not a logo or an isolated marketing KPI. It is a unified trust system spanning product, customer support, and fulfillment—where disconnected touchpoints and trend-chasing are fatal.

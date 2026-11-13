@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%" role="img" aria-label="B.R.A.V.E. 五维心智引擎与 BrandOS M1–M6 工程底座一一映射架构图">
+  <defs>
+    <pattern id="engGridZh" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="rgba(148, 163, 184, 0.05)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="500" rx="16" fill="#09090B" stroke="#232B3E"/>
+  <rect width="800" height="500" rx="16" fill="url(#engGridZh)"/>
+
+  <!-- Watermark -->
+  <text x="400" y="255" fill="rgba(255, 255, 255, 0.03)" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="28" font-weight="900" text-anchor="middle" transform="rotate(-8 400 255)" letter-spacing="4">BRANDOS LAB™ // 品牌科学实验室</text>
+
+  <!-- Title -->
+  <text x="400" y="38" fill="#FAFAFA" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="16.5" font-weight="900" text-anchor="middle">B.R.A.V.E. 心智动能层 × BrandOS™ M1–M6 工程底座双引擎映射</text>
+  <text x="400" y="60" fill="#94A3B8" font-family="'JetBrains Mono', 'PingFang SC', 'Microsoft YaHei', monospace" font-size="11" text-anchor="middle">DUAL-ENGINE ARCHITECTURE // 把抽象品牌口诀逐维锁死在硬核增长与毛利系统之上</text>
+
+  <!-- Column Headers -->
+  <g transform="translate(28, 78)">
+    <rect x="0" y="0" width="186" height="28" rx="6" fill="#111622" stroke="#00F2FE" stroke-opacity="0.4"/>
+    <text x="93" y="18" fill="#00F2FE" font-family="'JetBrains Mono', 'PingFang SC', monospace" font-size="11" font-weight="bold" text-anchor="middle">B.R.A.V.E. 五大张力维度</text>
+
+    <rect x="218" y="0" width="276" height="28" rx="6" fill="#111622" stroke="#818CF8" stroke-opacity="0.4"/>
+    <text x="356" y="18" fill="#A5B4FC" font-family="'JetBrains Mono', 'PingFang SC', monospace" font-size="11" font-weight="bold" text-anchor="middle">BrandOS™ M1–M6 工程底座</text>
+
+    <rect x="526" y="0" width="218" height="28" rx="6" fill="#0D1F1A" stroke="#10B981" stroke-opacity="0.5"/>
+    <text x="635" y="18" fill="#6EE7B7" font-family="'JetBrains Mono', 'PingFang SC', monospace" font-size="11" font-weight="bold" text-anchor="middle">实证标杆与刚性验收指标</text>
+  </g>
+
+  <!-- Row 1: B -->
+  <g transform="translate(28, 116)">
+    <rect x="0" y="0" width="186" height="58" rx="10" fill="#111622" stroke="#00F2FE" stroke-width="1.4"/>
+    <text x="16" y="25" fill="#00F2FE" font-family="'JetBrains Mono', 'PingFang SC', monospace" font-size="12.5" font-weight="bold">B · Brand 品牌基石</text>
+    <text x="16" y="44" fill="#94A3B8" font-family="'Plus Jakarta Sans', 'PingFang SC', sans-serif" font-size="11">触点全链路一致的信任系统</text>
+
+    <line x1="186" y1="29" x2="218" y2="29" stroke="#00F2FE" stroke-width="1.5" stroke-dasharray="3 2"/>
+    <rect x="218" y="0" width="276" height="58" rx="10" fill="#111622" stroke="#232B3E"/>
+    <text x="234" y="25" fill="#E2E8F0" font-family="'Plus Jakarta Sans', 'PingFang SC', sans-serif" font-size="12" font-weight="bold">M1 独特资产 DBAs + M2 昂贵信号</text>
+    <text x="234" y="44" fill="#94A3B8" font-family="'Plus Jakarta Sans', 'PingFang SC', sans-serif" font-size="11">硬件实测 + 包装售后体验 100% 兑现承诺</text>
+
+    <line x1="494" y1="29" x2="526" y2="29" stroke="#10B981" stroke-width="1.5" stroke-dasharray="3 2"/>
+    <rect x="526" y="0" width="218" height="58" rx="10" fill="#0D1821" stroke="#232B3E"/>
+    <text x="542" y="25" fill="#6EE7B7" font-family="'Plus Jakarta Sans', 'PingFang SC', sans-serif" font-size="12" font-weight="bold">拓竹终结“折腾税”</text>
+    <text x="542" y="44" fill="#94A3B8" font-family="'Plus Jakarta Sans', 'PingFang SC', sans-serif" font-size="11">年销破百亿 / 占 $2500 下约 37%</text>
+  </g>
+
+  <!-- Row 2: R -->
+  <g transform="translate(28, 184)">
+    <rect x="0" y="0" width="186" height="58" rx="10" fill="#111622" stroke="#818CF8" stroke-width="1.4"/>
+    <text x="16" y="25" fill="#A5B4FC" font-family="'JetBrains Mono', 'PingFang SC', monospace" font-size="12.5" font-weight="bold">R · Relationships</text>
+    <text x="16" y="44" fill="#94A3B8" font-family="'Plus Jakarta Sans', 'PingFang SC', sans-serif" font-size="11">分清受众与高粘性共创社区</text>
+
+    <line x1="186" y1="29" x2="218" y2="29" stroke="#818CF8" stroke-width="1.5" stroke-dasharray="3 2"/>
+    <rect x="218" y="0" width="276" height="58" rx="10" fill="#111622" stroke="#232B3E"/>
+    <text x="234" y="25" fill="#E2E8F0" font-family="'Plus Jakarta Sans', 'PingFang SC', sans-serif" font-size="12" font-weight="bold">M6 复利留存 · 价值先于索取</text>
+    <text x="234" y="44" fill="#94A3B8" font-family="'Plus Jakarta Sans', 'PingFang SC', sans-serif" font-size="11">共创生态与事件流，Holdout 验证净留存</text>
+
+    <line x1="494" y1="29" x2="526" y2="29" stroke="#10B981" stroke-width="1.5" stroke-dasharray="3 2"/>
+    <rect x="526" y="0" width="218" height="58" rx="10" fill="#0D1821" stroke="#232B3E"/>
+    <text x="542" y="25" fill="#6EE7B7" font-family="'Plus Jakarta Sans', 'PingFang SC', sans-serif" font-size="12" font-weight="bold">MakerWorld 自建护城河</text>
+    <text x="542" y="44" fill="#94A3B8" font-family="'Plus Jakarta Sans', 'PingFang SC', sans-serif" font-size="11">1000 万 MAU · 83% 一年期留存</text>
+  </g>
+
+  <!-- Row 3: A -->
+  <g transform="translate(28, 252)">
+    <rect x="0" y="0" width="186" height="58" rx="10" fill="#111622" stroke="#F59E0B" stroke-width="1.4"/>
+    <text x="16" y="25" fill="#FCD34D" font-family="'JetBrains Mono', 'PingFang SC', monospace" font-size="12.5" font-weight="bold">A · Audacity 胆略</text>
+    <text x="16" y="44" fill="#94A3B8" font-family="'Plus Jakarta Sans', 'PingFang SC', sans-serif" font-size="11">精准定义行业敌人的真勇</text>
+
+    <line x1="186" y1="29" x2="218" y2="29" stroke="#F59E0B" stroke-width="1.5" stroke-dasharray="3 2"/>
+    <rect x="218" y="0" width="276" height="58" rx="10" fill="#111622" stroke="#232B3E"/>
+    <text x="234" y="25" fill="#E2E8F0" font-family="'Plus Jakarta Sans', 'PingFang SC', sans-serif" font-size="12" font-weight="bold">M1 品类空白 + M4 强冲突 Hook</text>
+    <text x="234" y="44" fill="#94A3B8" font-family="'Plus Jakarta Sans', 'PingFang SC', sans-serif" font-size="11">前 3 秒向 Meta DLRM 喂入极纯意图信号</text>
+
+    <line x1="494" y1="29" x2="526" y2="29" stroke="#10B981" stroke-width="1.5" stroke-dasharray="3 2"/>
+    <rect x="526" y="0" width="218" height="58" rx="10" fill="#0D1821" stroke="#232B3E"/>
+    <text x="542" y="25" fill="#6EE7B7" font-family="'Plus Jakarta Sans', 'PingFang SC', sans-serif" font-size="12" font-weight="bold">Owala 切入随行新 CEPs</text>
+    <text x="542" y="44" fill="#94A3B8" font-family="'Plus Jakarta Sans', 'PingFang SC', sans-serif" font-size="11">严防无实物的捷豹式表演自杀</text>
+  </g>
+
+  <!-- Row 4: V -->
+  <g transform="translate(28, 320)">
+    <rect x="0" y="0" width="186" height="58" rx="10" fill="#111622" stroke="#10B981" stroke-width="1.4"/>
+    <text x="16" y="25" fill="#34D399" font-family="'JetBrains Mono', 'PingFang SC', monospace" font-size="12.5" font-weight="bold">V · Values 价值观</text>
+    <text x="16" y="44" fill="#94A3B8" font-family="'Plus Jakarta Sans', 'PingFang SC', sans-serif" font-size="11">看取舍与底线，不看墙上口号</text>
+
+    <line x1="186" y1="29" x2="218" y2="29" stroke="#10B981" stroke-width="1.5" stroke-dasharray="3 2"/>
+    <rect x="218" y="0" width="276" height="58" rx="10" fill="#111622" stroke="#232B3E"/>
+    <text x="234" y="25" fill="#E2E8F0" font-family="'Plus Jakarta Sans', 'PingFang SC', sans-serif" font-size="12" font-weight="bold">M2 仰巴脚效应与真实契约锁</text>
+    <text x="234" y="44" fill="#94A3B8" font-family="'Plus Jakarta Sans', 'PingFang SC', sans-serif" font-size="11">招人/晋升/放弃快钱均以买家契约为准</text>
+
+    <line x1="494" y1="29" x2="526" y2="29" stroke="#10B981" stroke-width="1.5" stroke-dasharray="3 2"/>
+    <rect x="526" y="0" width="218" height="58" rx="10" fill="#0D1821" stroke="#232B3E"/>
+    <text x="542" y="25" fill="#6EE7B7" font-family="'Plus Jakarta Sans', 'PingFang SC', sans-serif" font-size="12" font-weight="bold">Poppi 死磕 ≤5g 糖定位</text>
+    <text x="542" y="44" fill="#94A3B8" font-family="'Plus Jakarta Sans', 'PingFang SC', sans-serif" font-size="11">百事 $1.95B 收购 · 戒多邻国翻车</text>
+  </g>
+
+  <!-- Row 5: E -->
+  <g transform="translate(28, 388)">
+    <rect x="0" y="0" width="186" height="58" rx="10" fill="#111622" stroke="#A855F7" stroke-width="1.4"/>
+    <text x="16" y="25" fill="#D8B4FE" font-family="'JetBrains Mono', 'PingFang SC', monospace" font-size="12.5" font-weight="bold">E · Energy 动能</text>
+    <text x="16" y="44" fill="#94A3B8" font-family="'Plus Jakarta Sans', 'PingFang SC', sans-serif" font-size="11">市场感知的 BVS™ 增长加速度</text>
+
+    <line x1="186" y1="29" x2="218" y2="29" stroke="#A855F7" stroke-width="1.5" stroke-dasharray="3 2"/>
+    <rect x="218" y="0" width="276" height="58" rx="10" fill="#111622" stroke="#232B3E"/>
+    <text x="234" y="25" fill="#E2E8F0" font-family="'Plus Jakarta Sans', 'PingFang SC', sans-serif" font-size="12" font-weight="bold">M3 65%+ 口袋毛利 + 发布节律</text>
+    <text x="234" y="44" fill="#94A3B8" font-family="'Plus Jakarta Sans', 'PingFang SC', sans-serif" font-size="11">瀑布漏损 ≤15%，库存纪律保障现金流</text>
+
+    <line x1="494" y1="29" x2="526" y2="29" stroke="#10B981" stroke-width="1.5" stroke-dasharray="3 2"/>
+    <rect x="526" y="0" width="218" height="58" rx="10" fill="#0D1821" stroke="#232B3E"/>
+    <text x="542" y="25" fill="#6EE7B7" font-family="'Plus Jakarta Sans', 'PingFang SC', sans-serif" font-size="12" font-weight="bold">安克 2025 现金流警示</text>
+    <text x="542" y="44" fill="#94A3B8" font-family="'Plus Jakarta Sans', 'PingFang SC', sans-serif" font-size="11">2 周 MVT ≥20% 方可扩量加码</text>
+  </g>
+
+  <text x="28" y="478" fill="#64748B" font-family="'JetBrains Mono', 'PingFang SC', monospace" font-size="10.5">SCORECARD: 战略影响×40% + 可行性×30% + (B.R.A.V.E.契合度×2)×30%</text>
+  <text x="772" y="478" fill="rgba(0, 242, 254, 0.5)" font-family="'JetBrains Mono', 'PingFang SC', monospace" font-size="10" font-weight="bold" text-anchor="end">BRANDOS LAB™ // 品牌科学实验室</text>
+</svg>
