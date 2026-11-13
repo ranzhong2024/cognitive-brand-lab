@@ -1,0 +1,708 @@
+---
+import { getLocalizedPath, type Lang } from '../utils/i18n';
+
+interface Props {
+  lang?: Lang;
+}
+
+const { lang = 'zh' } = Astro.props;
+const isEn = lang === 'en';
+---
+
+<section class="max-w-6xl mx-auto px-5 md:px-8 py-20 relative z-10 border-b border-[#232B3E]" id="brandos-matrix">
+  <!-- Section Title -->
+  <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 border-b border-[#232B3E] pb-6">
+    <div>
+      <div class="inline-flex items-center gap-2 px-3.5 py-1 bg-cyan-950/40 border border-cyan-800/40 rounded-full font-mono text-[11px] font-bold text-cyan-400 uppercase tracking-[0.2em] mb-3">
+        <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse"></span>
+        INTERACTIVE SYSTEM EXPLORER
+      </div>
+      <h2 class="font-sans font-extrabold text-[28px] sm:text-[42px] text-slate-100 leading-tight">
+        {isEn ? 'BrandOS™ Architecture Console' : 'BrandOS™ 品牌操作系统建设'}
+      </h2>
+    </div>
+    <p class="text-slate-400 text-[14px] sm:text-[15px] mt-3 md:mt-0 font-sans max-w-md">
+      {isEn ? (
+        <>Select any of the 6 modules below to inspect its <span class="text-cyan-400 font-semibold">scientific mechanism</span>, benchmark case study, and financial outcomes.</>
+      ) : (
+        <>点击下方 6 大阶段，切换查看各模块的<span class="text-cyan-400 font-semibold">可视化科学模型</span>、真实实战战例与量化财务战果。</>
+      )}
+    </p>
+  </div>
+
+  <!-- Interactive 6-Tab Stepper -->
+  <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2.5 mb-8">
+    <button class="os-tab-btn active p-3 rounded-lg border border-cyan-500 bg-cyan-950/30 text-left transition-all group" data-tab="m1">
+      <div class="flex items-center justify-between font-mono text-[11px] mb-1">
+        <span class="font-black text-cyan-400">01</span>
+        <span class="text-cyan-300 text-[10px] uppercase">RADAR</span>
+      </div>
+      <div class="font-bold text-slate-100 text-[14px]">{isEn ? 'M1 Demand Radar' : 'M1 勘测心智'}</div>
+      <div class="text-[11px] text-slate-400 mt-0.5 truncate">{isEn ? 'EcoFlow Storm Pivot' : 'EcoFlow 暴风雪应急'}</div>
+    </button>
+
+    <button class="os-tab-btn p-3 rounded-lg border border-[#232B3E] bg-[#111622] text-left transition-all hover:border-slate-500 group" data-tab="m2">
+      <div class="flex items-center justify-between font-mono text-[11px] mb-1">
+        <span class="font-black text-indigo-400">02</span>
+        <span class="text-indigo-300 text-[10px] uppercase">TRUST</span>
+      </div>
+      <div class="font-bold text-slate-200 text-[14px]">{isEn ? 'M2 Unfakeable Trust' : 'M2 立住人设'}</div>
+      <div class="text-[11px] text-slate-400 mt-0.5 truncate">{isEn ? 'Dyson 5,127 Prototypes' : 'Dyson 5127次打样'}</div>
+    </button>
+
+    <button class="os-tab-btn p-3 rounded-lg border border-[#232B3E] bg-[#111622] text-left transition-all hover:border-slate-500 group" data-tab="m3">
+      <div class="flex items-center justify-between font-mono text-[11px] mb-1">
+        <span class="font-black text-emerald-400">03</span>
+        <span class="text-emerald-300 text-[10px] uppercase">PRICING</span>
+      </div>
+      <div class="font-bold text-slate-200 text-[14px]">{isEn ? 'M3 Value Pricing' : 'M3 价值定价'}</div>
+      <div class="text-[11px] text-slate-400 mt-0.5 truncate">{isEn ? 'YETI 65%+ Margin' : 'YETI 65%+ 战略毛利'}</div>
+    </button>
+
+    <button class="os-tab-btn p-3 rounded-lg border border-[#232B3E] bg-[#111622] text-left transition-all hover:border-slate-500 group" data-tab="m4">
+      <div class="flex items-center justify-between font-mono text-[11px] mb-1">
+        <span class="font-black text-amber-400">04</span>
+        <span class="text-amber-300 text-[10px] uppercase">ALGO</span>
+      </div>
+      <div class="font-bold text-slate-200 text-[14px]">{isEn ? 'M4 Algo Resonance' : 'M4 算法共振'}</div>
+      <div class="text-[11px] text-slate-400 mt-0.5 truncate">{isEn ? 'HexClad Whitelisting' : 'HexClad 白标买爆'}</div>
+    </button>
+
+    <button class="os-tab-btn p-3 rounded-lg border border-[#232B3E] bg-[#111622] text-left transition-all hover:border-slate-500 group" data-tab="m5">
+      <div class="flex items-center justify-between font-mono text-[11px] mb-1">
+        <span class="font-black text-rose-400">05</span>
+        <span class="text-rose-300 text-[10px] uppercase">CONVERT</span>
+      </div>
+      <div class="font-bold text-slate-200 text-[14px]">{isEn ? 'M5 Rapid Convert' : 'M5 极速转化'}</div>
+      <div class="text-[11px] text-slate-400 mt-0.5 truncate">{isEn ? 'Ridge 100px Proof' : 'Gymshark 100px 证据'}</div>
+    </button>
+
+    <button class="os-tab-btn p-3 rounded-lg border border-[#232B3E] bg-[#111622] text-left transition-all hover:border-slate-500 group" data-tab="m6">
+      <div class="flex items-center justify-between font-mono text-[11px] mb-1">
+        <span class="font-black text-purple-400">06</span>
+        <span class="text-purple-300 text-[10px] uppercase">COMPOUND</span>
+      </div>
+      <div class="font-bold text-slate-200 text-[14px]">{isEn ? 'M6 Retention' : 'M6 复利留存'}</div>
+      <div class="text-[11px] text-slate-400 mt-0.5 truncate">{isEn ? 'Chewy 80% Autoship' : 'Chewy 80% 自动订阅'}</div>
+    </button>
+  </div>
+
+  <!-- Interactive Display Console -->
+  <div class="bg-[#111622] border border-[#232B3E] rounded-2xl p-6 sm:p-10 shadow-2xl relative overflow-hidden">
+    <div class="absolute top-3 right-4 font-mono text-[10px] text-slate-600 select-none">BrandOS™ CONSOLE // REAL-WORLD CASES</div>
+
+    <!-- PANEL M1: EcoFlow -->
+    <div class="os-panel active grid grid-cols-1 lg:grid-cols-12 gap-8 items-center" id="panel-m1">
+      <div class="lg:col-span-6 bg-[#09090B] border border-cyan-500/40 rounded-xl p-5 sm:p-6 relative overflow-hidden shadow-[0_0_30px_rgba(0,242,254,0.06)]">
+        <div class="flex justify-between items-center mb-4 pb-3 border-b border-[#232B3E]">
+          <span class="font-mono text-[11px] text-cyan-400 font-bold uppercase">{isEn ? '5W1H CEP DEMAND RADAR SCAN' : '5W1H 需求与场景雷达扫描'}</span>
+          <span class="font-mono text-[10px] text-slate-500">ECOFLOW 25,000+ VOC</span>
+        </div>
+
+        <div class="relative w-full aspect-[4/3] flex items-center justify-center">
+          <svg class="w-full h-full max-h-[260px]" viewBox="0 0 300 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="150" cy="120" r="100" stroke="#232B3E" stroke-width="1" stroke-dasharray="3 3" />
+            <circle cx="150" cy="120" r="70" stroke="#232B3E" stroke-width="1" />
+            <circle cx="150" cy="120" r="40" stroke="#232B3E" stroke-width="1" />
+            <line x1="150" y1="20" x2="150" y2="220" stroke="#232B3E" stroke-width="1" />
+            <line x1="50" y1="120" x2="250" y2="120" stroke="#232B3E" stroke-width="1" />
+            <path d="M150 120 L240 70 A100 100 0 0 0 150 20 Z" fill="url(#radar-gradient)" opacity="0.4" />
+            <g class="animate-pulse">
+              <circle cx="195" cy="65" r="7" fill="#00F2FE" />
+              <circle cx="195" cy="65" r="14" stroke="#00F2FE" stroke-width="1" opacity="0.6" />
+              <text x={isEn ? "195" : "210"} y={isEn ? "44" : "70"} fill="#00F2FE" font-family="JetBrains Mono" font-size={isEn ? "9" : "10"} font-weight="bold" text-anchor={isEn ? "middle" : "start"}>
+                {isEn ? 'Storm Backup (Tier-1 White Space)' : '暴风雪全屋应急备电 (Tier-1 空白)'}
+              </text>
+              <circle cx="100" cy="160" r="5" fill="#EF4444" />
+              <text x="110" y="164" fill="#EF4444" font-family="JetBrains Mono" font-size={isEn ? "8.5" : "9"}>
+                {isEn ? 'Camping Packs (Red Ocean Price War)' : '露营烧烤 (红海内卷·杀价泥潭)'}
+              </text>
+              <circle cx="190" cy="170" r="5" fill="#10B981" />
+              <text x={isEn ? "150" : "120"} y="200" fill="#94A3B8" font-family="JetBrains Mono" font-size={isEn ? "8.5" : "9"} text-anchor={isEn ? "middle" : "start"}>
+                {isEn ? '1-Hr X-Stream Charge (100% Review Fix)' : 'X-Stream 1小时快充 (差评解决率 100%)'}
+              </text>
+            </g>
+            <defs>
+              <radialGradient id="radar-gradient" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(150 120) rotate(45) scale(100)">
+                <stop stop-color="#00F2FE" stop-opacity="0.8"/>
+                <stop offset="1" stop-color="#00F2FE" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+          </svg>
+        </div>
+
+        <div class="mt-3 pt-3 border-t border-[#232B3E] flex justify-between items-center font-mono text-[11px]">
+          <span class="text-slate-400">
+            {isEn ? (<>VOC Fault Line: <strong class="text-cyan-400">8-Hr Charge Fails in Emergencies</strong></>) : (<>差评断层发现：<strong class="text-cyan-400">传统充电需8小时遇灾即瘫痪</strong></>)}
+          </span>
+          <span class="text-emerald-400 font-bold">{isEn ? 'Crowdfund: $12.11M' : '众筹纪录: $12.11M'}</span>
+        </div>
+      </div>
+
+      <div class="lg:col-span-6 flex flex-col justify-between">
+        <div>
+          <div class="inline-flex items-center gap-2 px-2.5 py-0.5 bg-cyan-950/80 border border-cyan-800/60 rounded text-cyan-400 font-mono text-[11px] font-bold uppercase mb-3">
+            STAGE 01 // DEMAND RADAR
+          </div>
+          <h3 class="font-sans font-bold text-[24px] sm:text-[28px] text-slate-100 mb-2">
+            {isEn
+              ? 'M1 Demand Radar: Mine Real Review Fault Lines Before Launching SKUs'
+              : 'M1 勘测心智：别盲目测款，用 AI 挖出海外差评断层'}
+          </h3>
+          <p class="text-slate-300 text-[15px] leading-relaxed mb-6 font-sans">
+            {isEn
+              ? 'Stop guessing trending gadgets. Cluster tens of thousands of Reddit and Amazon negative reviews into 5W1H jobs-to-be-done to lock in uncontested buying triggers giants overlook.'
+              : '彻底告别盲目测款和粗暴铺货。通过抓取海外 Reddit 与 Amazon 数万条差评，用 AI 深度聚类出买家最痛却没人解决的 5W1H 刚需场景，开辟巨头看不见的场景蓝海。'}
+          </p>
+
+          <div class="space-y-3.5 mb-6">
+            <div class="flex items-start gap-3 bg-[#09090B] p-3.5 rounded-lg border border-[#232B3E]">
+              <span class="text-cyan-400 font-mono font-bold text-[14px]">01</span>
+              <div>
+                <div class="font-bold text-slate-200 text-[13px]">
+                  {isEn ? 'Case Study: EcoFlow Portable Power Repositioning' : '实证战例：EcoFlow 正浩便携储能品类重锚'}
+                </div>
+                <div class="text-slate-400 text-[12.5px] mt-0.5">
+                  {isEn
+                    ? 'Exited crowded weekend camping packs to own 2021 Texas blackout home backup, engineering 1-hour X-Stream fast charging around acute outage anxiety.'
+                    : '从“周末露营小电宝”跳出，锁定 2021 德州暴风雪“全屋极寒应急备电”，开发 1 小时快充专利彻底解决差评痛点。'}
+                </div>
+              </div>
+            </div>
+            <div class="flex items-start gap-3 bg-[#09090B] p-3.5 rounded-lg border border-[#232B3E]">
+              <span class="text-emerald-400 font-mono font-bold text-[14px]">02</span>
+              <div>
+                <div class="font-bold text-slate-200 text-[13px]">
+                  {isEn ? 'Financial Impact: Record Launch & $1B Scale' : '财务成果：众筹破纪录与 10 亿美元跨越'}
+                </div>
+                <div class="text-slate-400 text-[12.5px] mt-0.5">
+                  {isEn
+                    ? 'Raised $12.11M on Kickstarter, lifted ASP from $299 to $3,599+, and scaled annual revenue from $15M past $1B.'
+                    : 'Kickstarter 狂揽 $12.11M 创全球科技众筹纪录；客单价从 $299 跃升至 $3599+；年营收从 $1500 万爆发突破 10 亿美元。'}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a href={getLocalizedPath('/modules/m1-brand-foundations', lang)} class="inline-flex items-center gap-2 font-mono text-[13px] font-bold text-cyan-400 hover:text-cyan-300 transition-colors">
+          <span>{isEn ? 'Explore M1 Engineering Deep Dive' : '进入 M1 深度工程解析'}</span>
+          <span>→</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- PANEL M2: Patagonia & Dyson -->
+    <div class="os-panel hidden grid grid-cols-1 lg:grid-cols-12 gap-8 items-center" id="panel-m2">
+      <div class="lg:col-span-6 bg-[#09090B] border border-indigo-500/40 rounded-xl p-5 sm:p-6 relative overflow-hidden shadow-[0_0_30px_rgba(99,102,241,0.06)]">
+        <div class="flex justify-between items-center mb-4 pb-3 border-b border-[#232B3E]">
+          <span class="font-mono text-[11px] text-indigo-400 font-bold uppercase">{isEn ? 'SPENCE COSTLY SIGNALING EQUILIBRIUM' : '斯宾塞昂贵信号与分离均衡'}</span>
+          <span class="font-mono text-[10px] text-slate-500">DYSON & PATAGONIA</span>
+        </div>
+
+        <div class="relative w-full aspect-[4/3] flex items-center justify-center">
+          <svg class="w-full h-full max-h-[260px]" viewBox="0 0 300 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="40" y1="200" x2="260" y2="200" stroke="#232B3E" stroke-width="2" />
+            <polygon points="150,200 140,220 160,220" fill="#27272A" />
+            <line x1="50" y1="170" x2="250" y2="130" stroke="#00F2FE" stroke-width="3" stroke-linecap="round" />
+            <g transform={isEn ? "translate(46, 158)" : "translate(60, 160)"}>
+              <rect width={isEn ? "86" : "60"} height="35" rx="6" fill="#111622" stroke="#EF4444" stroke-width="1.5"/>
+              <text x={isEn ? "43" : "30"} y="17" fill="#EF4444" font-family="JetBrains Mono" font-size={isEn ? "8" : "9"} font-weight="bold" text-anchor="middle">
+                {isEn ? 'Cheap Ad Claims' : '口头自夸'}
+              </text>
+              <text x={isEn ? "43" : "30"} y="28" fill="#94A3B8" font-family="JetBrains Mono" font-size="7.5" text-anchor="middle">
+                {isEn ? '$0 Cost • Zero Trust' : '$0 成本 / 零信任'}
+              </text>
+            </g>
+            <g transform={isEn ? "translate(162, 95)" : "translate(180, 100)"}>
+              <rect width={isEn ? "104" : "80"} height="44" rx="6" fill="#111622" stroke="#00F2FE" stroke-width="1.5"/>
+              <text x={isEn ? "52" : "40"} y="16" fill="#00F2FE" font-family="JetBrains Mono" font-size={isEn ? "8.5" : "9"} font-weight="bold" text-anchor="middle">
+                {isEn ? 'Costly Signaling' : '昂贵信号质押'}
+              </text>
+              <text x={isEn ? "52" : "40"} y="27" fill="#E2E8F0" font-family="JetBrains Mono" font-size="7.2" text-anchor="middle">
+                {isEn ? '5,127 Tests • Clear Bin' : '5127次原型/全透明仓'}
+              </text>
+              <text x={isEn ? "52" : "40"} y="38" fill="#10B981" font-family="JetBrains Mono" font-size="7.5" font-weight="bold" text-anchor="middle">
+                {isEn ? '+100% Price Power' : '+100% 溢价抢购'}
+              </text>
+            </g>
+          </svg>
+        </div>
+
+        <div class="mt-3 pt-3 border-t border-[#232B3E] flex justify-between items-center font-mono text-[11px]">
+          <span class="text-slate-400">
+            {isEn ? (<>Moat Mechanism: <strong class="text-indigo-400">Uncopiable Sunk Proof</strong></>) : (<>公信力机制：<strong class="text-indigo-400">假冒者模仿即破产的沉没质押</strong></>)}
+          </span>
+          <span class="text-emerald-400 font-bold">{isEn ? 'Counter-Promo Lift: +30%' : '反向营销增收: +30%'}</span>
+        </div>
+      </div>
+
+      <div class="lg:col-span-6 flex flex-col justify-between">
+        <div>
+          <div class="inline-flex items-center gap-2 px-2.5 py-0.5 bg-indigo-950/80 border border-indigo-800/60 rounded text-indigo-400 font-mono text-[11px] font-bold uppercase mb-3">
+            STAGE 02 // UNFAKEABLE TRUST
+          </div>
+          <h3 class="font-sans font-bold text-[24px] sm:text-[28px] text-slate-100 mb-2">
+            {isEn
+              ? 'M2 Unfakeable Trust: Replace Hollow Slogans With Verifiable Proof'
+              : 'M2 立住人设：口头吹嘘没人信，用极端实测彻底破除防备'}
+          </h3>
+          <p class="text-slate-300 text-[15px] leading-relaxed mb-6 font-sans">
+            {isEn
+              ? 'Writing “premium quality” costs zero dollars—and buys zero credibility. Anchor your storefront on accredited lab audits, decade-long warranties, and destructive torture tests copycats cannot afford.'
+              : '打字写“品质优良”一文不值。用假冒者模仿即破产的高成本投入（国际权威认证、10 年包换、极限破坏性实测），在独立站建立不可动摇的公信力护城河。'}
+          </p>
+
+          <div class="space-y-3.5 mb-6">
+            <div class="flex items-start gap-3 bg-[#09090B] p-3.5 rounded-lg border border-[#232B3E]">
+              <span class="text-indigo-400 font-mono font-bold text-[14px]">01</span>
+              <div>
+                <div class="font-bold text-slate-200 text-[13px]">
+                  {isEn ? 'Case Study: Patagonia "Don’t Buy This Jacket"' : '实证战例：Patagonia《不要买这件夹克》反向营销'}
+                </div>
+                <div class="text-slate-400 text-[12.5px] mt-0.5">
+                  {isEn
+                    ? 'Built North America’s largest apparel repair hub (100k items/yr) and pledged 1% of sales, turning radical consistency into cult loyalty (+30% YoY revenue).'
+                    : '自建北美最大维修工厂年修 10 万件旧衣，坚持 1% 刚性收入捐赠，2022 年将 $30 亿股权全部捐赠，换来全球不可动摇的狂热崇拜。'}
+                </div>
+              </div>
+            </div>
+            <div class="flex items-start gap-3 bg-[#09090B] p-3.5 rounded-lg border border-[#232B3E]">
+              <span class="text-emerald-400 font-mono font-bold text-[14px]">02</span>
+              <div>
+                <div class="font-bold text-slate-200 text-[13px]">
+                  {isEn ? 'Case Study: Dyson 5,127 Prototypes & Clear Cyclone DBA' : '实证战例：Dyson 戴森 5,127 次原型与透明气旋指纹'}
+                </div>
+                <div class="text-slate-400 text-[12.5px] mt-0.5">
+                  {isEn
+                    ? 'Engineered 5,127 hand-built prototypes and showcased transparent polycarbonate dustbins so physics became visible—commanding 3x–5x pricing and 25%–30% EBITDA.'
+                    : '手工打磨 5,127 个原型抵押房产，首创全透明航空聚碳酸酯集尘仓，让技术肉眼可见，吸尘器售价 3-5 倍于竞品，EBITDA 达 25%-30%。'}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a href={getLocalizedPath('/modules/m2-behavioral-science', lang)} class="inline-flex items-center gap-2 font-mono text-[13px] font-bold text-indigo-400 hover:text-indigo-300 transition-colors">
+          <span>{isEn ? 'Explore M2 Engineering Deep Dive' : '进入 M2 深度工程解析'}</span>
+          <span>→</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- PANEL M3: YETI -->
+    <div class="os-panel hidden grid grid-cols-1 lg:grid-cols-12 gap-8 items-center" id="panel-m3">
+      <div class="lg:col-span-6 bg-[#09090B] border border-emerald-500/40 rounded-xl p-5 sm:p-6 relative overflow-hidden shadow-[0_0_30px_rgba(168,85,247,0.06)]">
+        <div class="flex justify-between items-center mb-4 pb-3 border-b border-[#232B3E]">
+          <span class="font-mono text-[11px] text-emerald-400 font-bold uppercase">{isEn ? 'GOOD-BETTER-BEST PRICING LADDER' : 'Good-Better-Best 3 档阶梯定价模型'}</span>
+          <span class="font-mono text-[10px] text-slate-500">YETI 65%+ GROSS MARGIN</span>
+        </div>
+
+        <div class="relative w-full aspect-[4/3] flex items-center justify-center">
+          <svg class="w-full h-full max-h-[260px]" viewBox="0 0 300 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g transform="translate(26, 130)">
+              <rect width="70" height="80" rx="4" fill="#111622" stroke="#232B3E" stroke-width="1.5" />
+              <text x="35" y="24" fill="#94A3B8" font-family="JetBrains Mono" font-size="9" text-anchor="middle" font-weight="bold">GOOD</text>
+              <text x="35" y="42" fill="#E2E8F0" font-family="JetBrains Mono" font-size="12" text-anchor="middle" font-weight="bold">$250</text>
+              <text x="35" y="60" fill="#64748B" font-family="JetBrains Mono" font-size="7.5" text-anchor="middle">{isEn ? 'Entry Gateway' : '降低尝试摩擦'}</text>
+            </g>
+            <g transform="translate(110, 80)">
+              <rect width="80" height="130" rx="6" fill="#111622" stroke="#10B981" stroke-width="2" />
+              <rect x="0" y="0" width="80" height="16" rx="4" fill="#10B981" />
+              <text x="40" y="11" fill="#09090B" font-family="JetBrains Mono" font-size="8" text-anchor="middle" font-weight="extrabold">{isEn ? 'BETTER (CORE)' : 'BETTER (主力)'}</text>
+              <text x="40" y="40" fill="#10B981" font-family="JetBrains Mono" font-size="14" text-anchor="middle" font-weight="bold">$325</text>
+              <text x="40" y="58" fill="#E2E8F0" font-family="JetBrains Mono" font-size="8" text-anchor="middle">{isEn ? '70% Unit Volume' : '贡献 70% 销量'}</text>
+              <text x="40" y="75" fill="#34D399" font-family="JetBrains Mono" font-size="8" text-anchor="middle" font-weight="bold">{isEn ? '68%+ Margin' : '毛利率 68%+'}</text>
+            </g>
+            <g transform="translate(204, 40)">
+              <rect width="72" height="170" rx="4" fill="#111622" stroke="#00F2FE" stroke-width="1.5" />
+              <text x="36" y="24" fill="#00F2FE" font-family="JetBrains Mono" font-size="8.5" text-anchor="middle" font-weight="bold">{isEn ? 'BEST (ANCHOR)' : 'BEST (天花板)'}</text>
+              <text x="36" y="44" fill="#00F2FE" font-family="JetBrains Mono" font-size="11.5" text-anchor="middle" font-weight="bold">$450-$800</text>
+              <text x="36" y="62" fill="#94A3B8" font-family="JetBrains Mono" font-size="7.5" text-anchor="middle">{isEn ? 'Price Anchor' : '树立极端溢价锚点'}</text>
+            </g>
+          </svg>
+        </div>
+
+        <div class="mt-3 pt-3 border-t border-[#232B3E] flex justify-between items-center font-mono text-[11px]">
+          <span class="text-slate-400">
+            {isEn ? (<>Pocket Margin: <strong class="text-emerald-400">65%+ Gross / 23.5% Net</strong></>) : (<>战略毛利：<strong class="text-emerald-400">DTC 综合毛利 65%+ / 净利 23.5%</strong></>)}
+          </span>
+          <span class="text-cyan-400 font-bold">{isEn ? 'Drinkware AOV: +48%' : '饮具连带 AOV: +48%'}</span>
+        </div>
+      </div>
+
+      <div class="lg:col-span-6 flex flex-col justify-between">
+        <div>
+          <div class="inline-flex items-center gap-2 px-2.5 py-0.5 bg-emerald-950/80 border border-emerald-800/60 rounded text-emerald-400 font-mono text-[11px] font-bold uppercase mb-3">
+            STAGE 03 // VALUE PRICING
+          </div>
+          <h3 class="font-sans font-bold text-[24px] sm:text-[28px] text-slate-100 mb-2">
+            {isEn
+              ? 'M3 Value Pricing: Architect GBB Tiers to Lock In 65%+ Gross Margin'
+              : 'M3 价值定价：告别降价亏本，设计 3 档阶梯死守 65%+ 战略毛利'}
+          </h3>
+          <p class="text-slate-300 text-[15px] leading-relaxed mb-6 font-sans">
+            {isEn
+              ? 'Pricing extracts willingness-to-pay from buyer mental accounts—never simple BOM markup. Build Good-Better-Best tiers where the center SKU wins 70%+ volume while capping waterfall leakage.'
+              : '定价不是算生产成本，而是提取买家心理账户。构建 Good-Better-Best 3 档阶梯利润沙盘，用主力旗舰款吃透 70%+ 销量，严控漏损，留足研发与获客弹药。'}
+          </p>
+
+          <div class="space-y-3.5 mb-6">
+            <div class="flex items-start gap-3 bg-[#09090B] p-3.5 rounded-lg border border-[#232B3E]">
+              <span class="text-emerald-400 font-mono font-bold text-[14px]">01</span>
+              <div>
+                <div class="font-bold text-slate-200 text-[13px]">
+                  {isEn ? 'Case Study: YETI Bear-Proof Validation' : '实证战例：YETI 酷冷箱防熊认证打破 $30 垃圾货架'}
+                </div>
+                <div class="text-slate-400 text-[12.5px] mt-0.5">
+                  {isEn
+                    ? 'Secured IGBC #3425 grizzly-resistant certification so a rotomolded cooler commanded $325+ as field-grade survival armor rather than competing at $30.'
+                    : '通过 IGBC #3425 防熊撞击认证，把 $20 成本的塑料箱直接定在 $325 成为户外硬核徽章，摆脱比价泥潭。'}
+                </div>
+              </div>
+            </div>
+            <div class="flex items-start gap-3 bg-[#09090B] p-3.5 rounded-lg border border-[#232B3E]">
+              <span class="text-cyan-400 font-mono font-bold text-[14px]">02</span>
+              <div>
+                <div class="font-bold text-slate-200 text-[13px]">
+                  {isEn ? 'Trojan Horse: Rambler Drinkware Frequency' : '产品矩阵：Rambler 饮具特洛伊木马带动全店高频复购'}
+                </div>
+                <div class="text-slate-400 text-[12.5px] mt-0.5">
+                  {isEn
+                    ? '$35–$45 tumblers turned a once-every-five-years cooler brand into daily carry, lifting AOV +48% and net margin to 23.5%.'
+                    : '推出 $35-$45 高毛利保温杯，将 5 年买一次的耐用品变为年年买的生活方式，全店 AOV 飙升 48%，实收净利润率高达 23.5%。'}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a href={getLocalizedPath('/modules/m3-strategic-pricing', lang)} class="inline-flex items-center gap-2 font-mono text-[13px] font-bold text-emerald-400 hover:text-emerald-300 transition-colors">
+          <span>{isEn ? 'Explore M3 Engineering Deep Dive' : '进入 M3 深度工程解析'}</span>
+          <span>→</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- PANEL M4: HexClad -->
+    <div class="os-panel hidden grid grid-cols-1 lg:grid-cols-12 gap-8 items-center" id="panel-m4">
+      <div class="lg:col-span-6 bg-[#09090B] border border-amber-500/40 rounded-xl p-5 sm:p-6 relative overflow-hidden shadow-[0_0_30px_rgba(245,158,11,0.06)]">
+        <div class="flex justify-between items-center mb-4 pb-3 border-b border-[#232B3E]">
+          <span class="font-mono text-[11px] text-amber-400 font-bold uppercase">{isEn ? '1-CBO BROAD + CREATOR WHITELISTING' : '1-CBO / Broad 宽投与达人白标授权'}</span>
+          <span class="font-mono text-[10px] text-slate-500">HEXCLAD + GORDON RAMSAY</span>
+        </div>
+
+        <div class="relative w-full aspect-[4/3] flex items-center justify-center">
+          <svg class="w-full h-full max-h-[260px]" viewBox="0 0 300 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="30" y="30" width="240" height="180" rx="10" fill="#111622" stroke="#27272A" stroke-width="1.5"/>
+            <g transform="translate(50, 45)">
+              <circle cx="16" cy="16" r="16" fill="#F59E0B"/>
+              <text x="16" y="21" fill="#09090B" font-family="JetBrains Mono" font-size="12" font-weight="black" text-anchor="middle">GR</text>
+              <text x="40" y="14" fill="#FAFAFA" font-family="Plus Jakarta Sans" font-size="11" font-weight="bold">@GordonRamsay</text>
+              <text x="40" y="25" fill="#10B981" font-family="JetBrains Mono" font-size="8">Sponsored • Partnership Ads</text>
+            </g>
+            <rect x="50" y="85" width="200" height="85" rx="6" fill="#09090B" stroke="#F59E0B" stroke-width="1"/>
+            <text x="150" y="115" fill="#F59E0B" font-family="JetBrains Mono" font-size={isEn ? "9" : "10"} font-weight="bold" text-anchor="middle">
+              {isEn ? '0-3s Pattern Interrupt: Metal Spatula Test' : '0-3s 模式打断 Hook: 金属铲暴力刮锅'}
+            </text>
+            <text x="150" y="132" fill="#E2E8F0" font-family="JetBrains Mono" font-size="8.5" text-anchor="middle">
+              {isEn ? '3s Thumbstop Rate: 43.8% (Avg 18%)' : '前 3 秒停留率 43.8% (行业均值 18%)'}
+            </text>
+            <text x="150" y="152" fill="#10B981" font-family="JetBrains Mono" font-size="10" font-weight="bold" text-anchor="middle">CPA -39.2% • MER 3.85x</text>
+          </svg>
+        </div>
+
+        <div class="mt-3 pt-3 border-t border-[#232B3E] flex justify-between items-center font-mono text-[11px]">
+          <span class="text-slate-400">
+            {isEn ? (<>Auction Edge: <strong class="text-amber-400">Creative Is Targeting + Whitelisting</strong></>) : (<>算法机制：<strong class="text-amber-400">素材即定向 + 创作者信用降维打击</strong></>)}
+          </span>
+          <span class="text-emerald-400 font-bold">{isEn ? 'Revenue $170M -> $380M' : '营收 $1.7亿 → $3.8亿'}</span>
+        </div>
+      </div>
+
+      <div class="lg:col-span-6 flex flex-col justify-between">
+        <div>
+          <div class="inline-flex items-center gap-2 px-2.5 py-0.5 bg-amber-950/80 border border-amber-800/60 rounded text-amber-400 font-mono text-[11px] font-bold uppercase mb-3">
+            STAGE 04 // ALGORITHMIC RESONANCE
+          </div>
+          <h3 class="font-sans font-bold text-[24px] sm:text-[28px] text-slate-100 mb-2">
+            {isEn
+              ? 'M4 Algo Resonance: Cut CPA 39% With Broad 1-CBO & Creator Whitelisting'
+              : 'M4 算法共振：别再死切标签，借红人主页白标投流获客成本大降 39%'}
+          </h3>
+          <p class="text-slate-300 text-[15px] leading-relaxed mb-6 font-sans">
+            {isEn
+              ? 'Stop fragmenting ad sets on narrow interests. Feed broad DLRM recommendation auctions with high-contrast native hooks launched through whitelisted local creator handles.'
+              : '彻底放开受众定向（Broad 宽投），让千亿推荐算法自动寻人；签约欧美垂直创作者并获取其主页白标授权（Whitelisting），借真实熟人信用击碎用户防备心。'}
+          </p>
+
+          <div class="space-y-3.5 mb-6">
+            <div class="flex items-start gap-3 bg-[#09090B] p-3.5 rounded-lg border border-[#232B3E]">
+              <span class="text-amber-400 font-mono font-bold text-[14px]">01</span>
+              <div>
+                <div class="font-bold text-slate-200 text-[13px]">
+                  {isEn ? 'Case Study: HexClad x Gordon Ramsay Whitelisting' : '实证战例：HexClad 借 Gordon Ramsay 主页白标投流'}
+                </div>
+                <div class="text-slate-400 text-[12.5px] mt-0.5">
+                  {isEn
+                    ? 'Running metal-spatula stress tests from Gordon Ramsay’s handle bypassed persuasion defense and reached a 43.8% 3-second thumbstop rate.'
+                    : '直接用名厨社交主页发广告，彻底绕过消费者心理防御；0-3 秒金属锅铲刮擦暴力实测，前 3 秒停留率高达 43.8%。'}
+                </div>
+              </div>
+            </div>
+            <div class="flex items-start gap-3 bg-[#09090B] p-3.5 rounded-lg border border-[#232B3E]">
+              <span class="text-emerald-400 font-mono font-bold text-[14px]">02</span>
+              <div>
+                <div class="font-bold text-slate-200 text-[13px]">
+                  {isEn ? 'Financial Impact: Doubled Revenue to Unicorn Scale' : '财务成果：两年营收翻倍并晋升 $10 亿独角兽'}
+                </div>
+                <div class="text-slate-400 text-[12.5px] mt-0.5">
+                  {isEn
+                    ? 'Lowered CPA by 39.2%, held storewide MER at 3.85x, and scaled revenue from $170M to $380M+.'
+                    : '获客成本 (CPA) 大降 39.2%，全店综合效率比 MER 达 3.85x，营收从 $1.7 亿狂飙至 $3.8 亿+，获得福克斯与顶级机构 1 亿美元追投。'}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a href={getLocalizedPath('/modules/m4-algorithmic-resonance', lang)} class="inline-flex items-center gap-2 font-mono text-[13px] font-bold text-amber-400 hover:text-amber-300 transition-colors">
+          <span>{isEn ? 'Explore M4 Engineering Deep Dive' : '进入 M4 深度工程解析'}</span>
+          <span>→</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- PANEL M5: Gymshark & Ridge -->
+    <div class="os-panel hidden grid grid-cols-1 lg:grid-cols-12 gap-8 items-center" id="panel-m5">
+      <div class="lg:col-span-6 bg-[#09090B] border border-rose-500/40 rounded-xl p-5 sm:p-6 relative overflow-hidden shadow-[0_0_30px_rgba(244,63,94,0.06)]">
+        <div class="flex justify-between items-center mb-4 pb-3 border-b border-[#232B3E]">
+          <span class="font-mono text-[11px] text-rose-400 font-bold uppercase">{isEn ? '100PX PROOF MESH & 1-TAP CHECKOUT' : '100px 近地证据网与 1 键极速结算'}</span>
+          <span class="font-mono text-[10px] text-slate-500">RIDGE & GYMSHARK</span>
+        </div>
+
+        <div class="relative w-full aspect-[4/3] flex items-center justify-center">
+          <svg class="w-full h-full max-h-[260px]" viewBox="0 0 300 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g transform="translate(40, 20)">
+              <rect width="220" height="42" rx="8" fill="#00F2FE" />
+              <text x="110" y="26" fill="#09090B" font-family="Plus Jakarta Sans" font-size="12" font-weight="900" text-anchor="middle">ADD TO CART • $80.00</text>
+            </g>
+            <g transform="translate(40, 75)">
+              <rect width="220" height="120" rx="8" fill="#111622" stroke="#F43F5E" stroke-width="1.5" stroke-dasharray="3 3"/>
+              <text x="110" y="20" fill="#F43F5E" font-family="JetBrains Mono" font-size={isEn ? "8.2" : "9"} font-weight="bold" text-anchor="middle">
+                {isEn ? '100px Near-CTA Proof Mesh (Zero Anxiety)' : '100px 近地证据网 (消除结算阻力与焦虑)'}
+              </text>
+              <g transform="translate(15, 32)">
+                <text x="0" y="12" fill="#FBBF24" font-family="JetBrains Mono" font-size="8.5">
+                  {isEn ? '★★★★★ 4.8 (40,000+ Verified Reviews)' : '★★★★★ 4.8 (40,000+ 真实买家评价)'}
+                </text>
+                <text x="0" y="28" fill="#E2E8F0" font-family="JetBrains Mono" font-size="8.5">
+                  {isEn ? '🛡️ Lifetime Replacement Warranty' : '🛡️ 终身质保 (损坏免费包换新)'}
+                </text>
+                <text x="0" y="44" fill="#E2E8F0" font-family="JetBrains Mono" font-size="8.5">
+                  {isEn ? '📦 Free US Shipping + 99-Day Trial' : '📦 全美免运 + 99 天无理由退货'}
+                </text>
+                <text x="0" y="60" fill="#38BDF8" font-family="JetBrains Mono" font-size="8">
+                  {isEn ? '⚡ Shop Pay / Apple Pay 1-Tap Checkout' : '⚡ Shop Pay / Apple Pay 1键指纹收单'}
+                </text>
+              </g>
+              <text x="110" y="110" fill="#10B981" font-family="JetBrains Mono" font-size="8.5" font-weight="bold" text-anchor="middle">
+                {isEn ? 'Drop-Off -61.9% • Mobile CVR +34.8%' : '结账流失降 61.9% • CVR +34.8%'}
+              </text>
+            </g>
+          </svg>
+        </div>
+
+        <div class="mt-3 pt-3 border-t border-[#232B3E] flex justify-between items-center font-mono text-[11px]">
+          <span class="text-slate-400">
+            {isEn ? (<>Conversion Architecture: <strong class="text-rose-400">0.85s LCP + Zero Doubt</strong></>) : (<>转化工程：<strong class="text-rose-400">LCP 0.85s + 消除人脑结算焦虑</strong></>)}
+          </span>
+          <span class="text-emerald-400 font-bold">{isEn ? 'Drop-Off: -61.9%' : '结账跳出: -61.9%'}</span>
+        </div>
+      </div>
+
+      <div class="lg:col-span-6 flex flex-col justify-between">
+        <div>
+          <div class="inline-flex items-center gap-2 px-2.5 py-0.5 bg-rose-950/80 border border-rose-800/60 rounded text-rose-400 font-mono text-[11px] font-bold uppercase mb-3">
+            STAGE 05 // RAPID CONVERSION
+          </div>
+          <h3 class="font-sans font-bold text-[24px] sm:text-[28px] text-slate-100 mb-2">
+            {isEn
+              ? 'M5 Rapid Conversion: 0.85s Speed + 100px Proof Mesh Cut Cart Drop-Off 61.9%'
+              : 'M5 极速转化：消除结账顾虑，0.85 秒秒开与 100px 证据网流失暴降 61.9%'}
+          </h3>
+          <p class="text-slate-300 text-[15px] leading-relaxed mb-6 font-sans">
+            {isEn
+              ? 'Pair sub-second Core Web Vitals with a 3-second above-the-fold clarity triangle and dense trust assurances inside 100px of the primary CTA button.'
+              : '打造 0.85s 物理级闪电加载；首屏 3 秒清晰传达价值；在结账按钮 100 像素内密织质保与安全近地证据网，配合 Shop Pay 指纹 3 秒收单，彻底消除结账焦虑。'}
+          </p>
+
+          <div class="space-y-3.5 mb-6">
+            <div class="flex items-start gap-3 bg-[#09090B] p-3.5 rounded-lg border border-[#232B3E]">
+              <span class="text-rose-400 font-mono font-bold text-[14px]">01</span>
+              <div>
+                <div class="font-bold text-slate-200 text-[13px]">
+                  {isEn ? 'Case Study: Ridge Wallet 100px Evidence Cluster' : '实证战例：Ridge Wallet 100px 近地证据网'}
+                </div>
+                <div class="text-slate-400 text-[12.5px] mt-0.5">
+                  {isEn
+                    ? 'Anchored 40,000+ five-star reviews, lifetime warranty, and 99-day trial right beneath Add-to-Cart, dropping checkout abandonment from 68.5% to 26.1%.'
+                    : '加购按钮正下方密织 40,000+ 五星好评、终身质保、99 天试用与军工铝合金证据，结账放弃率从 68.5% 骤降至 26.1%。'}
+                </div>
+              </div>
+            </div>
+            <div class="flex items-start gap-3 bg-[#09090B] p-3.5 rounded-lg border border-[#232B3E]">
+              <span class="text-emerald-400 font-mono font-bold text-[14px]">02</span>
+              <div>
+                <div class="font-bold text-slate-200 text-[13px]">
+                  {isEn ? 'Case Study: Gymshark Gamified Slide-Out Cart' : '实证战例：Gymshark 抽屉购物车游戏化引擎'}
+                </div>
+                <div class="text-slate-400 text-[12.5px] mt-0.5">
+                  {isEn
+                    ? 'Dynamic free-shipping progress bar plus one-tap accessory cross-sells lifted attach rate to 24.5% and boosted mobile CVR +34.8%.'
+                    : '动态免运进度条 + 1 键交叉销售配件，不跳转流畅体验，加购连带率提升至 24.5%，移动端转化率大增 34.8%。'}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a href={getLocalizedPath('/modules/m5-conversion-engineering', lang)} class="inline-flex items-center gap-2 font-mono text-[13px] font-bold text-rose-400 hover:text-rose-300 transition-colors">
+          <span>{isEn ? 'Explore M5 Engineering Deep Dive' : '进入 M5 深度工程解析'}</span>
+          <span>→</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- PANEL M6: Chewy -->
+    <div class="os-panel hidden grid grid-cols-1 lg:grid-cols-12 gap-8 items-center" id="panel-m6">
+      <div class="lg:col-span-6 bg-[#09090B] border border-purple-500/40 rounded-xl p-5 sm:p-6 relative overflow-hidden shadow-[0_0_30px_rgba(168,85,247,0.06)]">
+        <div class="flex justify-between items-center mb-4 pb-3 border-b border-[#232B3E]">
+          <span class="font-mono text-[11px] text-purple-400 font-bold uppercase">{isEn ? 'CAUSAL HOLDOUT & AUTOSHIP FLYWHEEL' : '因果推断增量 (Holdout) 与自动订阅飞轮'}</span>
+          <span class="font-mono text-[10px] text-slate-500">CHEWY 79.2% AUTOSHIP</span>
+        </div>
+
+        <div class="relative w-full aspect-[4/3] flex items-center justify-center">
+          <svg class="w-full h-full max-h-[260px]" viewBox="0 0 300 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g transform="translate(22, 30)">
+              <rect width="256" height="60" rx="8" fill="#111622" stroke="#A855F7" stroke-width="1.5"/>
+              <text x="128" y="24" fill="#A855F7" font-family="JetBrains Mono" font-size={isEn ? "9" : "10"} font-weight="bold" text-anchor="middle">
+                {isEn ? 'Donald Rubin Causal Holdout Experiment' : 'Donald Rubin 潜在因果推断停投实验'}
+              </text>
+              <text x="128" y="44" fill="#E2E8F0" font-family="JetBrains Mono" font-size="8" text-anchor="middle">
+                {isEn ? 'Strip 82% Organic Return • Audit True iROAS' : '剔除 82% 老客自然回流假归因 • 算清真增量 iROAS'}
+              </text>
+            </g>
+            <g transform="translate(22, 105)">
+              <rect width="256" height="95" rx="8" fill="#111622" stroke="#10B981" stroke-width="2"/>
+              <text x="128" y="22" fill="#10B981" font-family="JetBrains Mono" font-size={isEn ? "10" : "11"} font-weight="extrabold" text-anchor="middle">
+                {isEn ? 'Autoship Recurring Share: 79.2% Sales' : 'Autoship 定期自动订阅: 79.2% 净营收'}
+              </text>
+              <text x="128" y="42" fill="#E2E8F0" font-family="JetBrains Mono" font-size="8.5" text-anchor="middle">
+                {isEn ? '$11.1B Net Sales • 6 Flows Drive 56.3%' : '年净销售额 $111 亿 • 6大自适应行为流贡献 56.3%'}
+              </text>
+              <text x="128" y="62" fill="#38BDF8" font-family="JetBrains Mono" font-size="8.2" text-anchor="middle">
+                {isEn ? 'Hand-Painted Pet Care • Spam Rate < 0.03%' : '离世宠物手绘油画极致关怀 • 垃圾投诉率严格 < 0.03%'}
+              </text>
+              <text x="128" y="82" fill="#FBBF24" font-family="JetBrains Mono" font-size="9" font-weight="bold" text-anchor="middle">
+                {isEn ? 'Yr-3 LTV 1.85x • Storewide MER 4.20x' : '第 3 年老客 LTV 达 1.85x • 全店 MER 4.20x'}
+              </text>
+            </g>
+          </svg>
+        </div>
+
+        <div class="mt-3 pt-3 border-t border-[#232B3E] flex justify-between items-center font-mono text-[11px]">
+          <span class="text-slate-400">
+            {isEn ? (<>Retention Loop: <strong class="text-purple-400">6 Flows + Causal Incrementality</strong></>) : (<>留存机制：<strong class="text-purple-400">6 大自适应流 + 剔除自然回流水分</strong></>)}
+          </span>
+          <span class="text-emerald-400 font-bold">{isEn ? 'Autoship Share: 79.2%' : 'Autoship 收入: 79.2%'}</span>
+        </div>
+      </div>
+
+      <div class="lg:col-span-6 flex flex-col justify-between">
+        <div>
+          <div class="inline-flex items-center gap-2 px-2.5 py-0.5 bg-purple-950/80 border border-purple-800/60 rounded text-purple-400 font-mono text-[11px] font-bold uppercase mb-3">
+            STAGE 06 // COMPOUND RETENTION
+          </div>
+          <h3 class="font-sans font-bold text-[24px] sm:text-[28px] text-slate-100 mb-2">
+            {isEn
+              ? 'M6 Compounding Retention: 6 Lifecycle Flows + Causal Holdout Testing'
+              : 'M6 复利留存：不做一次性买卖，6 大自适应邮件唤醒老客停投广告订单不断'}
+          </h3>
+          <p class="text-slate-300 text-[15px] leading-relaxed mb-6 font-sans">
+            {isEn
+              ? 'Deploy six adaptive lifecycle email flows while running regional Holdout Geo-Lift tests to separate true incremental profit (iROAS) from organic repeat illusions.'
+              : '部署 6 大生命周期自适应行为流在关键节点精准唤醒老客；常态化执行区域停投对比实验（Holdout Geo-Lift），剥离老客自然回流水分，算清每一分真净利。'}
+          </p>
+
+          <div class="space-y-3.5 mb-6">
+            <div class="flex items-start gap-3 bg-[#09090B] p-3.5 rounded-lg border border-[#232B3E]">
+              <span class="text-purple-400 font-mono font-bold text-[14px]">01</span>
+              <div>
+                <div class="font-bold text-slate-200 text-[13px]">
+                  {isEn ? 'Case Study: Chewy 79.2% Autoship Subscription Engine' : '实证战例：Chewy 宠物电商 79.2% 自动定期订阅'}
+                </div>
+                <div class="text-slate-400 text-[12.5px] mt-0.5">
+                  {isEn
+                    ? 'Locked in recurring pet replenishment across $11.1B annual revenue while unexpected empathy gestures drove 44.8% email open rates.'
+                    : '宠粮自动发货绑定终身消费，年净销售额 $111 亿美元，配合手绘宠物纪念油画等极致关怀，邮件打开率高达 44.8%。'}
+                </div>
+              </div>
+            </div>
+            <div class="flex items-start gap-3 bg-[#09090B] p-3.5 rounded-lg border border-[#232B3E]">
+              <span class="text-emerald-400 font-mono font-bold text-[14px]">02</span>
+              <div>
+                <div class="font-bold text-slate-200 text-[13px]">
+                  {isEn ? 'Causal Accounting: Stripping 82% Organic Cannibalization' : '因果核算：Holdout 停投实验剥离 82% 自然蚕食'}
+                </div>
+                <div class="text-slate-400 text-[12.5px] mt-0.5">
+                  {isEn
+                    ? 'Cut wasted retargeting spend and let 6 behavioral flows generate 56.3% of CRM revenue—holding storewide MER at 4.20x.'
+                    : '砍掉虚假繁荣的重定向买量，自适应行为流贡献 56.3% 留存收入，全店跨周期真实营销效率 MER 飙升至 4.20x。'}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a href={getLocalizedPath('/modules/m6-compounding-retention', lang)} class="inline-flex items-center gap-2 font-mono text-[13px] font-bold text-purple-400 hover:text-purple-300 transition-colors">
+          <span>{isEn ? 'Explore M6 Engineering Deep Dive' : '进入 M6 深度工程解析'}</span>
+          <span>→</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  function setupTabs() {
+    const tabs = document.querySelectorAll('.os-tab-btn');
+    const panels = document.querySelectorAll('.os-panel');
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        const target = tab.getAttribute('data-tab');
+        
+        tabs.forEach(t => {
+          t.classList.remove('active', 'border-cyan-500', 'bg-cyan-950/30');
+          t.classList.add('border-[#232B3E]', 'bg-[#111622]');
+        });
+        tab.classList.add('active', 'border-cyan-500', 'bg-cyan-950/30');
+        tab.classList.remove('border-[#232B3E]', 'bg-[#111622]');
+
+        panels.forEach(panel => {
+          if (panel.id === `panel-${target}`) {
+            panel.classList.remove('hidden');
+            panel.classList.add('active');
+          } else {
+            panel.classList.add('hidden');
+            panel.classList.remove('active');
+          }
+        });
+      });
+    });
+  }
+
+  setupTabs();
+  document.addEventListener('astro:page-load', setupTabs);
+</script>
