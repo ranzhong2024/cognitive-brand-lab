@@ -20,6 +20,8 @@ An applied research laboratory and engineering operating system built for global
 ## Featured Case Notes (Brand Notes & Case Studies)
 - [从0到1搭建品牌框架的底层科学 (ZH)](https://ranbrandos.com/essays/zero-to-one-brand-framework-architecture/)
 - [The Science of Zero-to-One Brand Architecture (EN)](https://ranbrandos.com/en/essays/zero-to-one-brand-framework-architecture/)
+- [别再把 B.R.A.V.E. 品牌框架当鸡汤：没有 BrandOS™ 底座的胆略与能量，本质是表演型自杀 (ZH)](https://ranbrandos.com/essays/brave-brand-framework-modern-cases/): Dissects 2024–2026 Jaguar, Duolingo, Bambu Lab, Owala, Poppi, and Anker cases—anchoring B.R.A.V.E. onto BrandOS™ M1–M6 costly signals, CEPs, 65%+ pocket margin, weighted creative scoring, and a 2-week zero-cost MVT.
+- [B.R.A.V.E. Brand Framework Is Not Fluff: Audacity Without BrandOS™ Engineering Fails (EN)](https://ranbrandos.com/en/essays/brave-brand-framework-modern-cases/): Connects B.R.A.V.E. (Brand, Relationships, Audacity, Values, Energy) and Brand Velocity Score (BVS™) to BrandOS™ M1–M6 engineering, protecting 65%+ margin and verifying real relationship equity via a 14-day MVT.
 
 ## Site Index & Routes
 - **Chinese (Default)**:

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%" role="img" aria-label="B.R.A.V.E. Five Failure Modes Radar vs. BrandOS Engineering Guardrails">
+  <defs>
+    <pattern id="radarGridEn" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="rgba(148, 163, 184, 0.05)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="500" rx="16" fill="#09090B" stroke="#232B3E"/>
+  <rect width="800" height="500" rx="16" fill="url(#radarGridEn)"/>
+
+  <!-- Watermark -->
+  <text x="400" y="258" fill="rgba(255, 255, 255, 0.03)" font-family="sans-serif" font-size="26" font-weight="900" text-anchor="middle" transform="rotate(-8 400 258)" letter-spacing="4">BRANDOS LAB™ // COGNITIVE BRAND SCIENCE</text>
+
+  <!-- Header -->
+  <text x="400" y="38" fill="#FAFAFA" font-family="sans-serif" font-size="16" font-weight="900" text-anchor="middle">B.R.A.V.E. Five Failure Modes vs. BrandOS™ Engineering Guardrails</text>
+  <text x="400" y="60" fill="#94A3B8" font-family="monospace" font-size="11" text-anchor="middle">RISK RADAR // WHY SOFT B.R.A.V.E. POSTERS BREAK WITHOUT M1–M6 UNIT ECONOMICS</text>
+
+  <!-- Column Headers -->
+  <g transform="translate(28, 78)">
+    <rect x="0" y="0" width="128" height="28" rx="6" fill="#111622" stroke="#232B3E"/>
+    <text x="64" y="18" fill="#00F2FE" font-family="monospace" font-size="10.5" font-weight="bold" text-anchor="middle">FAILURE TRAP</text>
+
+    <rect x="138" y="0" width="294" height="28" rx="6" fill="#18111A" stroke="#F43F5E" stroke-opacity="0.5"/>
+    <text x="285" y="18" fill="#FDA4AF" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">✕ Unanchored Symptom (2024–2026 Evidence)</text>
+
+    <rect x="442" y="0" width="302" height="28" rx="6" fill="#0D1F1A" stroke="#10B981" stroke-opacity="0.5"/>
+    <text x="593" y="18" fill="#6EE7B7" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">✓ BrandOS™ Gate &amp; Structural Fix</text>
+  </g>
+
+  <!-- Row 1: Brand -->
+  <g transform="translate(28, 118)">
+    <rect x="0" y="0" width="128" height="62" rx="10" fill="#111622" stroke="#00F2FE" stroke-width="1.4"/>
+    <text x="64" y="26" fill="#00F2FE" font-family="monospace" font-size="11.5" font-weight="bold" text-anchor="middle">B · FRACTURE</text>
+    <text x="64" y="45" fill="#94A3B8" font-family="sans-serif" font-size="10" text-anchor="middle">Broken touchpoints</text>
+
+    <rect x="138" y="0" width="294" height="62" rx="10" fill="#111622" stroke="#232B3E"/>
+    <text x="150" y="25" fill="#E2E8F0" font-family="sans-serif" font-size="11.5" font-weight="bold">Pretty logo &amp; ads, clumsy checkout &amp; support</text>
+    <text x="150" y="45" fill="#94A3B8" font-family="sans-serif" font-size="10.5">Erasing legacy DBAs before shipping real product proof</text>
+
+    <rect x="442" y="0" width="302" height="62" rx="10" fill="#111622" stroke="#232B3E"/>
+    <text x="454" y="25" fill="#A7F3D0" font-family="sans-serif" font-size="11.5" font-weight="bold">M1 CEPs + M2 Costly Signals &amp; DBA Lock</text>
+    <text x="454" y="45" fill="#94A3B8" font-family="sans-serif" font-size="10.5">100% alignment from hero PDP to unboxing &amp; warranty</text>
+  </g>
+
+  <!-- Row 2: Relationships -->
+  <g transform="translate(28, 190)">
+    <rect x="0" y="0" width="128" height="62" rx="10" fill="#111622" stroke="#818CF8" stroke-width="1.4"/>
+    <text x="64" y="26" fill="#A5B4FC" font-family="monospace" font-size="11.5" font-weight="bold" text-anchor="middle">R · ONE-SIDED</text>
+    <text x="64" y="45" fill="#94A3B8" font-family="sans-serif" font-size="10" text-anchor="middle">Audience != Tribe</text>
+
+    <rect x="138" y="0" width="294" height="62" rx="10" fill="#111622" stroke="#232B3E"/>
+    <text x="150" y="25" fill="#E2E8F0" font-family="sans-serif" font-size="11.5" font-weight="bold">Treating CRM &amp; groups as discount extraction</text>
+    <text x="150" y="45" fill="#94A3B8" font-family="sans-serif" font-size="10.5">Single-point dependency; zero chatter without promos</text>
+
+    <rect x="442" y="0" width="302" height="62" rx="10" fill="#111622" stroke="#232B3E"/>
+    <text x="454" y="25" fill="#A7F3D0" font-family="sans-serif" font-size="11.5" font-weight="bold">Value-First Utility + Co-Creation Moats</text>
+    <text x="454" y="45" fill="#94A3B8" font-family="sans-serif" font-size="10.5">Bambu Lab MakerWorld: 10M MAU, 83% 1-yr retention</text>
+  </g>
+
+  <!-- Row 3: Audacity -->
+  <g transform="translate(28, 262)">
+    <rect x="0" y="0" width="128" height="62" rx="10" fill="#111622" stroke="#F59E0B" stroke-width="1.4"/>
+    <text x="64" y="26" fill="#FCD34D" font-family="monospace" font-size="11.5" font-weight="bold" text-anchor="middle">A · RECKLESS</text>
+    <text x="64" y="45" fill="#94A3B8" font-family="sans-serif" font-size="10" text-anchor="middle">Shock sans substance</text>
+
+    <rect x="138" y="0" width="294" height="62" rx="10" fill="#111622" stroke="#232B3E"/>
+    <text x="150" y="25" fill="#E2E8F0" font-family="sans-serif" font-size="11.5" font-weight="bold">Performative stunts untethered from hardware</text>
+    <text x="150" y="45" fill="#94A3B8" font-family="sans-serif" font-size="10.5">Jaguar 32s car-free rebrand; EU reg. down ~97% Apr '25</text>
+
+    <rect x="442" y="0" width="302" height="62" rx="10" fill="#111622" stroke="#232B3E"/>
+    <text x="454" y="25" fill="#A7F3D0" font-family="sans-serif" font-size="11.5" font-weight="bold">Real Enemy + Mandatory 2-Week MVT Gate</text>
+    <text x="454" y="45" fill="#94A3B8" font-family="sans-serif" font-size="10.5">Owala FreeSip spout solved real spill friction first</text>
+  </g>
+
+  <!-- Row 4: Values -->
+  <g transform="translate(28, 334)">
+    <rect x="0" y="0" width="128" height="62" rx="10" fill="#111622" stroke="#10B981" stroke-width="1.4"/>
+    <text x="64" y="26" fill="#34D399" font-family="monospace" font-size="11.5" font-weight="bold" text-anchor="middle">V · HOLLOW</text>
+    <text x="64" y="45" fill="#94A3B8" font-family="sans-serif" font-size="10" text-anchor="middle">Values-action gap</text>
+
+    <rect x="138" y="0" width="294" height="62" rx="10" fill="#111622" stroke="#232B3E"/>
+    <text x="150" y="25" fill="#E2E8F0" font-family="sans-serif" font-size="11.5" font-weight="bold">Wall slogans abandoned under margin pressure</text>
+    <text x="150" y="45" fill="#94A3B8" font-family="sans-serif" font-size="10.5">Duolingo Apr 2025 "AI-first" memo triggered streak boycotts</text>
+
+    <rect x="442" y="0" width="302" height="62" rx="10" fill="#111622" stroke="#232B3E"/>
+    <text x="454" y="25" fill="#A7F3D0" font-family="sans-serif" font-size="11.5" font-weight="bold">Front-Page Filter + M2 Pratfall Honesty</text>
+    <text x="454" y="45" fill="#94A3B8" font-family="sans-serif" font-size="10.5">Enforced in hiring/firing; willingly reject wrong buyers</text>
+  </g>
+
+  <!-- Row 5: Energy -->
+  <g transform="translate(28, 406)">
+    <rect x="0" y="0" width="128" height="62" rx="10" fill="#111622" stroke="#A855F7" stroke-width="1.4"/>
+    <text x="64" y="26" fill="#D8B4FE" font-family="monospace" font-size="11.5" font-weight="bold" text-anchor="middle">E · BURNOUT</text>
+    <text x="64" y="45" fill="#94A3B8" font-family="sans-serif" font-size="10" text-anchor="middle">Hype sans cash flow</text>
+
+    <rect x="138" y="0" width="294" height="62" rx="10" fill="#111622" stroke="#232B3E"/>
+    <text x="150" y="25" fill="#E2E8F0" font-family="sans-serif" font-size="11.5" font-weight="bold">Erratic hype spikes or inventory cash traps</text>
+    <text x="150" y="45" fill="#94A3B8" font-family="sans-serif" font-size="10.5">Anker 2025 rev. CNY 30.5B vs. op. cash flow -82.5%</text>
+
+    <rect x="442" y="0" width="302" height="62" rx="10" fill="#111622" stroke="#232B3E"/>
+    <text x="454" y="25" fill="#A7F3D0" font-family="sans-serif" font-size="11.5" font-weight="bold">Steady Cadence × M3 65%+ Margin × Holdouts</text>
+    <text x="454" y="45" fill="#94A3B8" font-family="sans-serif" font-size="10.5">Duolingo 1.7B Dead Duo views tied to DAU velocity</text>
+  </g>
+
+  <text x="772" y="488" fill="rgba(0, 242, 254, 0.5)" font-family="monospace" font-size="10" font-weight="bold" text-anchor="end">BRANDOS LAB™ // COGNITIVE BRAND SCIENCE</text>
+</svg>

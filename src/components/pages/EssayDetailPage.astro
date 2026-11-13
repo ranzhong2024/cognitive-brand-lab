@@ -36,7 +36,7 @@ const publishDateIso = essay.data.pubDate ? new Date(essay.data.pubDate).toISOSt
 const essayUrl = `https://ranbrandos.com${essayPath}`;
 const articleSections = headings ? headings.map((h) => h.text) : [];
 
-const articleSchema = {
+const articleSchema: Record<string, any> = {
   "@context": "https://schema.org",
   "@graph": [
     {
@@ -104,6 +104,22 @@ const articleSchema = {
     }
   ]
 };
+
+if (essay.data.faqs && essay.data.faqs.length > 0) {
+  (articleSchema["@graph"] as any[]).push({
+    "@type": "FAQPage",
+    "@id": `${essayUrl}#faq`,
+    "inLanguage": isEn ? "en" : "zh-CN",
+    "mainEntity": essay.data.faqs.map((faq) => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer,
+      },
+    })),
+  });
+}
 ---
 
 <Layout
