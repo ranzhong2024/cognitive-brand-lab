@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%" role="img" aria-label="品牌资产生成的底层科学：斯彭斯昂贵信号、联想记忆网络与拜伦·夏普增长双引擎">
+  <defs>
+    <pattern id="gpGridZh" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="rgba(148, 163, 184, 0.05)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="450" rx="16" fill="#09090B" stroke="#232B3E"/>
+  <rect width="800" height="450" rx="16" fill="url(#gpGridZh)"/>
+
+  <!-- Watermark -->
+  <text x="400" y="225" fill="rgba(255, 255, 255, 0.03)" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="30" font-weight="900" text-anchor="middle" transform="rotate(-10 400 225)" letter-spacing="4">BRANDOS LAB™ // 品牌科学实验室</text>
+
+  <!-- Title -->
+  <text x="400" y="42" fill="#FAFAFA" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="16.5" font-weight="900" text-anchor="middle">品牌资产原语：支撑高溢价与定价权的三大第一性原理</text>
+  <text x="400" y="64" fill="#94A3B8" font-family="'JetBrains Mono', 'PingFang SC', 'Microsoft YaHei', monospace" font-size="11" text-anchor="middle">斯彭斯昂贵信号 × 联想记忆激活网络 × 拜伦·夏普双重可得性</text>
+
+  <!-- Card 1: Costly Signals -->
+  <g transform="translate(36, 92)">
+    <rect width="226" height="236" rx="12" fill="#111622" stroke="#818CF8" stroke-width="1.6"/>
+    <rect x="16" y="16" width="194" height="24" rx="6" fill="rgba(129, 140, 248, 0.16)"/>
+    <text x="113" y="32" fill="#A5B4FC" font-family="'JetBrains Mono', 'PingFang SC', 'Microsoft YaHei', monospace" font-size="11" font-weight="bold" text-anchor="middle">01 · 昂贵信号质押</text>
+    <text x="113" y="66" fill="#F8FAFC" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="14.5" font-weight="bold" text-anchor="middle">迈克尔·斯彭斯 (2001 诺奖)</text>
+    <text x="18" y="96" fill="#CBD5E1" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="12">• 自夸 “100% 高品质” 属于</text>
+    <text x="26" y="114" fill="#94A3B8" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="11.5">零成本廉价空话，买家直接免疫</text>
+    <text x="18" y="144" fill="#CBD5E1" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="12">• 真正信任源于冒牌货抄不起</text>
+    <text x="26" y="162" fill="#94A3B8" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="11.5">的不可逆沉没成本质押</text>
+    <rect x="16" y="182" width="194" height="38" rx="8" fill="#09090B" stroke="#232B3E"/>
+    <text x="113" y="205" fill="#818CF8" font-family="'JetBrains Mono', 'PingFang SC', 'Microsoft YaHei', monospace" font-size="10" font-weight="bold" text-anchor="middle">Patagonia · 戴森 5,127 次原型</text>
+  </g>
+
+  <!-- Card 2: Associative Memory -->
+  <g transform="translate(287, 92)">
+    <rect width="226" height="236" rx="12" fill="#111622" stroke="#00F2FE" stroke-width="1.6"/>
+    <rect x="16" y="16" width="194" height="24" rx="6" fill="rgba(0, 242, 254, 0.14)"/>
+    <text x="113" y="32" fill="#00F2FE" font-family="'JetBrains Mono', 'PingFang SC', 'Microsoft YaHei', monospace" font-size="11" font-weight="bold" text-anchor="middle">02 · 联想记忆网络</text>
+    <text x="113" y="66" fill="#F8FAFC" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="14.5" font-weight="bold" text-anchor="middle">Collins &amp; Loftus / ACT-R</text>
+    <text x="18" y="96" fill="#CBD5E1" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="12">• 人类大脑通过线索扩散激活</text>
+    <text x="26" y="114" fill="#94A3B8" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="11.5">瞬时检索心智中的品牌节点</text>
+    <text x="18" y="144" fill="#CBD5E1" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="12">• 必须将品牌字号死死焊接在</text>
+    <text x="26" y="162" fill="#94A3B8" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="11.5">真实的高频生活痛点触发器上</text>
+    <rect x="16" y="182" width="194" height="38" rx="8" fill="#09090B" stroke="#232B3E"/>
+    <text x="113" y="205" fill="#00F2FE" font-family="'JetBrains Mono', 'PingFang SC', 'Microsoft YaHei', monospace" font-size="10.5" font-weight="bold" text-anchor="middle">需求突发 → 第一秒想起你</text>
+  </g>
+
+  <!-- Card 3: Dual Availability -->
+  <g transform="translate(538, 92)">
+    <rect width="226" height="236" rx="12" fill="#111622" stroke="#10B981" stroke-width="1.6"/>
+    <rect x="16" y="16" width="194" height="24" rx="6" fill="rgba(16, 185, 129, 0.14)"/>
+    <text x="113" y="32" fill="#34D399" font-family="'JetBrains Mono', 'PingFang SC', 'Microsoft YaHei', monospace" font-size="11" font-weight="bold" text-anchor="middle">03 · 双重可得性</text>
+    <text x="113" y="66" fill="#F8FAFC" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="14.5" font-weight="bold" text-anchor="middle">拜伦·夏普 (增长科学定律)</text>
+    <text x="18" y="96" fill="#CBD5E1" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="12">• 品牌规模源于广泛轻度买家，</text>
+    <text x="26" y="114" fill="#94A3B8" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="11.5">而非迷信 “1,000 名死忠铁粉”</text>
+    <text x="18" y="144" fill="#CBD5E1" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="12">• 想得到 (心智可得性) ×</text>
+    <text x="26" y="162" fill="#94A3B8" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="11.5">买得到 (物理可得性)</text>
+    <rect x="16" y="182" width="194" height="38" rx="8" fill="#09090B" stroke="#232B3E"/>
+    <text x="113" y="205" fill="#34D399" font-family="'JetBrains Mono', 'PingFang SC', 'Microsoft YaHei', monospace" font-size="10.5" font-weight="bold" text-anchor="middle">心智 × 物理 = 品牌资产总和</text>
+  </g>
+
+  <!-- Unified Equation Banner -->
+  <g transform="translate(36, 352)">
+    <rect width="728" height="62" rx="12" fill="#0D1F1A" stroke="#10B981" stroke-width="1.5"/>
+    <text x="364" y="27" fill="#6EE7B7" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="13.5" font-weight="bold" text-anchor="middle">资产合成总公式：从 0 到 1 品牌溢价乘数引擎</text>
+    <text x="364" y="48" fill="#E2E8F0" font-family="'JetBrains Mono', 'PingFang SC', 'Microsoft YaHei', monospace" font-size="11.5" text-anchor="middle">品牌联想检索 (心智) × 零摩擦获取 (物理) × 沉没成本证据 (信任) = 抢不走的定价权</text>
+  </g>
+
+  <text x="780" y="438" fill="rgba(0, 242, 254, 0.45)" font-family="'JetBrains Mono', 'PingFang SC', 'Microsoft YaHei', monospace" font-size="10" font-weight="bold" text-anchor="end">BRANDOS LAB™ // 品牌科学实验室</text>
+</svg>
