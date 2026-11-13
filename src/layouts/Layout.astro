@@ -3,6 +3,7 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import MobileDrawer from '../components/MobileDrawer.astro';
 import AeoKnowledgeGraph from '../components/AeoKnowledgeGraph.astro';
+import { getAlternateUrls, type Lang } from '../utils/i18n';
 import '../styles/global.css';
 
 interface Props {
@@ -13,11 +14,17 @@ interface Props {
   publishDate?: string;
   currentPath?: string;
   customSchema?: Record<string, any>;
+  lang?: Lang;
 }
 
 const {
-  title = '品牌科学实验室™ | BRANDOS LAB™ • 全球高溢价品牌操作系统',
-  description = '广告费是每天归零的消耗，而品牌心智是年年复利的资产。专为中国出海企业打造的、从 0 到 1 科学构建全球高溢价品牌的工程化操作系统。',
+  lang = 'zh',
+  title = lang === 'en'
+    ? 'BrandOS Lab™ | Engineering Global High-Margin DTC Brands'
+    : '品牌科学实验室™ | BRANDOS LAB™ • 全球高溢价品牌操作系统',
+  description = lang === 'en'
+    ? 'Ad spend resets to zero every day; mental equity compounds year after year. A scientific brand operating system designed to build high-margin global DTC brands from zero to one.'
+    : '广告费是每天归零的消耗，而品牌心智是年年复利的资产。专为中国出海企业打造的、从 0 到 1 科学构建全球高溢价品牌的工程化操作系统。',
   image = '/images/brandos-flywheel.jpg',
   type = 'website',
   publishDate,
@@ -25,22 +32,28 @@ const {
   customSchema,
 } = Astro.props;
 
-const canonicalURL = new URL(Astro.url.pathname, Astro.site || 'https://ranbrandos.com');
+const isEn = lang === 'en';
+const siteBase = (Astro.site || 'https://ranbrandos.com').toString();
+const canonicalURL = new URL(Astro.url.pathname, siteBase);
+const alternates = getAlternateUrls(Astro.url.pathname, siteBase);
 ---
 
 <!DOCTYPE html>
-<html lang="zh-CN" class="scroll-smooth">
+<html lang={isEn ? 'en' : 'zh-CN'} class="scroll-smooth">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="canonical" href={canonicalURL} />
+    <link rel="alternate" hreflang="zh-CN" href={alternates.zhUrl} />
+    <link rel="alternate" hreflang="en" href={alternates.enUrl} />
+    <link rel="alternate" hreflang="x-default" href={alternates.zhUrl} />
 
     <!-- SEO & AEO Meta Tags -->
     <title>{title}</title>
     <meta name="title" content={title} />
     <meta name="description" content={description} />
-    <meta name="author" content="Ran (品牌科学实验室™ / BRANDOS LAB™)" />
+    <meta name="author" content={isEn ? 'Ran (BrandOS Lab™)' : 'Ran (品牌科学实验室™ / BRANDOS LAB™)'} />
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
 
     <!-- Open Graph / Facebook -->
@@ -49,7 +62,9 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site || 'https://ranbrand
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:image" content={image} />
-    <meta property="og:site_name" content="品牌科学实验室™ / BRANDOS LAB™" />
+    <meta property="og:site_name" content={isEn ? 'BrandOS Lab™' : '品牌科学实验室™ / BRANDOS LAB™'} />
+    <meta property="og:locale" content={isEn ? 'en_US' : 'zh_CN'} />
+    <meta property="og:locale:alternate" content={isEn ? 'zh_CN' : 'en_US'} />
     {publishDate && <meta property="article:published_time" content={publishDate} />}
 
     <!-- Twitter -->
@@ -71,16 +86,17 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site || 'https://ranbrand
       description={description} 
       publishDate={publishDate} 
       customSchema={customSchema}
+      lang={lang}
     />
   </head>
   <body class="bg-[#09090B] text-[#F8FAFC] font-sans antialiased min-h-screen flex flex-col selection:bg-[#00F2FE] selection:text-[#030712] relative overflow-x-hidden">
     <div class="fixed inset-0 bg-[linear-gradient(to_right,#1f29370a_1px,transparent_1px),linear-gradient(to_bottom,#1f29370a_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none z-0"></div>
-    <Header currentPath={currentPath} />
-    <MobileDrawer />
+    <Header currentPath={currentPath} lang={lang} />
+    <MobileDrawer lang={lang} currentPath={currentPath} />
     <main id="main-content" class="flex-grow relative z-10">
       <slot />
     </main>
-    <Footer />
+    <Footer lang={lang} />
 
     <!-- Anti-copy and Anti-theft Script -->
     <script is:inline>
