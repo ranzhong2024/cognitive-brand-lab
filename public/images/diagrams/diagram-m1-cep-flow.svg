@@ -1,61 +1,61 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 520" width="100%" height="100%" style="background:#09090B; border-radius:20px; border:1px solid #232B3E;">
-  <rect width="100%" height="100%" fill="#09090B"/>
-  
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 520" width="100%" height="100%" role="img" aria-label="M1 场景 01：CEP 痛点触发与大脑第一心智反射">
   <defs>
     <pattern id="grid-m1-tall" width="30" height="30" patternUnits="userSpaceOnUse">
       <path d="M 30 0 L 0 0 0 30" fill="none" stroke="rgba(255, 255, 255, 0.03)" stroke-width="1"/>
     </pattern>
   </defs>
-  <rect width="100%" height="100%" fill="url(#grid-m1-tall)"/>
+  <rect width="760" height="520" rx="20" fill="#09090B" stroke="#232B3E"/>
+  <rect width="760" height="520" rx="20" fill="url(#grid-m1-tall)"/>
 
   <!-- Watermark -->
-  <text x="380" y="260" fill="rgba(255, 255, 255, 0.03)" font-family="sans-serif" font-size="32" font-weight="900" text-anchor="middle" transform="rotate(-6 380 260)" letter-spacing="4">BRANDOS LAB™ // 品牌科学实验室™</text>
+  <text x="380" y="260" fill="rgba(255, 255, 255, 0.03)" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="30" font-weight="900" text-anchor="middle" transform="rotate(-6 380 260)" letter-spacing="4">BRANDOS LAB™ // 品牌科学实验室</text>
 
   <!-- Step Header Title -->
   <g transform="translate(30, 25)">
     <rect width="700" height="42" rx="8" fill="#111622" stroke="#232B3E"/>
-    <text x="20" y="27" fill="#00F2FE" font-family="monospace" font-size="13" font-weight="bold">SCENE 01 // 痛点爆发与心智唤醒</text>
-    <text x="250" y="27" fill="#FAFAFA" font-family="sans-serif" font-size="14" font-weight="bold">海外用户突发生活麻烦 $\to$ 大脑紧急寻找解药</text>
+    <text x="20" y="26" fill="#00F2FE" font-family="'JetBrains Mono', 'PingFang SC', 'Microsoft YaHei', monospace" font-size="13" font-weight="bold">SCENE 01 // 痛点爆发与心智唤醒</text>
+    <text x="680" y="26" fill="#FAFAFA" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="13.5" font-weight="bold" text-anchor="end">突发生活麻烦 → 大脑紧急寻找品牌解药</text>
   </g>
 
   <!-- Scene 1: Trouble Trigger (Top Box) -->
   <g transform="translate(30, 80)">
     <rect width="700" height="150" rx="14" fill="#18111A" stroke="#F43F5E" stroke-width="2"/>
-    <rect x="20" y="15" width="200" height="30" rx="6" fill="#F43F5E" opacity="0.2"/>
-    <text x="120" y="36" fill="#F43F5E" font-family="sans-serif" font-size="14" font-weight="900" text-anchor="middle">🚨 突发危机时刻 (Pain Trigger)</text>
-    
-    <text x="25" y="75" fill="#FAFAFA" font-family="sans-serif" font-size="18" font-weight="900">“零下 20℃ 极寒暴风雪断电！暖气停摆，家人受冻”</text>
-    <text x="25" y="105" fill="#E2E8F0" font-family="sans-serif" font-size="14">买家极度恐慌：“市面上全是露营小充电宝，哪款能带大功率暖气救命？！”</text>
-    <text x="25" y="132" fill="#EF4444" font-family="sans-serif" font-size="13" font-weight="bold">❌ 痛点现状：传统 $99 露营小电池根本带不动，买家心急如焚</text>
+    <rect x="20" y="15" width="230" height="30" rx="6" fill="#F43F5E" opacity="0.2"/>
+    <text x="135" y="35" fill="#F43F5E" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="13.5" font-weight="900" text-anchor="middle">! 突发危机时刻 (Pain Trigger)</text>
+
+    <text x="25" y="75" fill="#FAFAFA" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="17" font-weight="900">“零下 20°C 极寒暴风雪断电！暖气停摆，家人受冻”</text>
+    <text x="25" y="105" fill="#E2E8F0" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="13.5">买家极度焦虑：“市面上全是露营小充电宝，哪款能带大功率暖气救命？”</text>
+    <text x="25" y="132" fill="#EF4444" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="13" font-weight="bold">× 痛点现状：传统 $99 露营小电池根本带不动，急需高确定性方案</text>
   </g>
 
   <!-- Transition Glowing Conduit -->
   <g transform="translate(380, 240)">
     <line x1="0" y1="0" x2="0" y2="28" stroke="#00F2FE" stroke-width="4" stroke-dasharray="6 3"/>
     <polygon points="-6,28 0,38 6,28" fill="#00F2FE"/>
-    <text x="15" y="18" fill="#00F2FE" font-family="sans-serif" font-size="12" font-weight="900">🧠 激活大脑检索网络</text>
+    <text x="16" y="18" fill="#00F2FE" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="12" font-weight="900">▼ 激活大脑记忆检索网络 (CEPs)</text>
   </g>
 
   <!-- Scene 2: Solution & Mind Share (Bottom Box) -->
   <g transform="translate(30, 290)">
     <rect width="700" height="200" rx="14" fill="#111622" stroke="#00F2FE" stroke-width="2.5"/>
-    <rect x="20" y="15" width="240" height="30" rx="6" fill="#00F2FE" opacity="0.2"/>
-    <text x="140" y="36" fill="#00F2FE" font-family="sans-serif" font-size="14" font-weight="900" text-anchor="middle">💡 大脑第一反射：指名 EcoFlow</text>
-    
-    <text x="25" y="75" fill="#FAFAFA" font-family="sans-serif" font-size="18" font-weight="900">“必须买 EcoFlow 全屋应急备电！”（不比价，直接搜品牌名）</text>
-    
+    <rect x="20" y="15" width="260" height="30" rx="6" fill="#00F2FE" opacity="0.2"/>
+    <text x="150" y="35" fill="#00F2FE" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="13.5" font-weight="900" text-anchor="middle">● 大脑第一反射：指名 EcoFlow</text>
+
+    <text x="25" y="75" fill="#FAFAFA" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="16.5" font-weight="900">“必须买 EcoFlow 全屋应急备电！”（不比价，直接搜品牌名）</text>
+
     <g transform="translate(25, 95)">
-      <rect width="310" height="42" rx="8" fill="#09090B" stroke="#232B3E"/>
-      <text x="15" y="26" fill="#38BDF8" font-family="sans-serif" font-size="13" font-weight="bold">✓ 锁定场景：全屋应急超大功率</text>
+      <rect width="315" height="42" rx="8" fill="#09090B" stroke="#232B3E"/>
+      <text x="15" y="26" fill="#38BDF8" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="13" font-weight="bold">✓ 锁定场景：全屋应急超大功率输出</text>
     </g>
-    <g transform="translate(350, 95)">
-      <rect width="325" height="42" rx="8" fill="#09090B" stroke="#232B3E"/>
-      <text x="15" y="26" fill="#38BDF8" font-family="sans-serif" font-size="13" font-weight="bold">✓ 锁定场景：1 小时闪电极速充满</text>
+    <g transform="translate(355, 95)">
+      <rect width="320" height="42" rx="8" fill="#09090B" stroke="#232B3E"/>
+      <text x="15" y="26" fill="#38BDF8" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="13" font-weight="bold">✓ 锁定场景：1 小时 X-Stream 极速充满</text>
     </g>
 
     <g transform="translate(25, 148)">
       <rect width="650" height="38" rx="8" fill="#10B981" opacity="0.15" stroke="#10B981" stroke-width="1.5"/>
-      <text x="15" y="24" fill="#34D399" font-family="sans-serif" font-size="14" font-weight="900">🏆 战果：客单价 $3,599 依然秒下单 • 众筹 $12.11M • 年营收突破 10 亿美元</text>
+      <text x="15" y="24" fill="#34D399" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="13.5" font-weight="900">★ 战果：客单价 $3,599 依然秒下单 • 众筹 $12.11M • 年营收突破 10 亿美元</text>
     </g>
   </g>
 </svg>
