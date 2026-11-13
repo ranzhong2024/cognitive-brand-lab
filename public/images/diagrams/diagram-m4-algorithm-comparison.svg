@@ -1,43 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%" style="background:#09090B; border-radius:16px; border:1px solid #232B3E;">
   <rect width="100%" height="100%" fill="#09090B"/>
   
   <!-- Watermark Elements -->
-  <text x="400" y="225" fill="rgba(255, 255, 255, 0.03)" font-family="sans-serif" font-size="32" font-weight="900" text-anchor="middle" transform="rotate(-12 400 225)" letter-spacing="4">BRANDOS LAB™ // 品牌科学实验室™</text>
-  <text x="780" y="438" fill="rgba(0, 242, 254, 0.35)" font-family="monospace" font-size="10" font-weight="bold" text-anchor="end">BRANDOS LAB™ 品牌科学实验室 • 实证研究版权所有</text>
+  <text x="400" y="225" fill="rgba(255, 255, 255, 0.03)" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="32" font-weight="900" text-anchor="middle" transform="rotate(-12 400 225)" letter-spacing="4">BRANDOS LAB™ // 品牌科学实验室™</text>
+  <text x="780" y="438" fill="rgba(0, 242, 254, 0.35)" font-family="'JetBrains Mono', 'PingFang SC', 'Microsoft YaHei', monospace" font-size="10" font-weight="bold" text-anchor="end">BRANDOS LAB™ 品牌科学实验室 • 实证研究版权所有</text>
 
-  <text x="400" y="40" fill="#FAFAFA" font-family="sans-serif" font-size="17" font-weight="900" text-anchor="middle">万亿深度学习算法 (DLRM) vs 手动死切标签机制对比</text>
+  <text x="400" y="40" fill="#FAFAFA" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="17" font-weight="900" text-anchor="middle">万亿深度学习算法 (DLRM) vs 手动死切标签机制对比</text>
 
   <g transform="translate(60, 80)">
     <rect width="320" height="315" rx="10" fill="#111622" stroke="#F43F5E" stroke-width="1.5"/>
-    <text x="160" y="30" fill="#F43F5E" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle">❌ 传统旧做法：死切 30 个重叠标签</text>
+    <text x="160" y="30" fill="#F43F5E" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="14" font-weight="bold" text-anchor="middle">❌ 传统旧做法：死切 30 个重叠标签</text>
 
     <rect x="20" y="55" width="280" height="90" rx="6" fill="#1C1917" stroke="#44403C"/>
-    <text x="30" y="78" fill="#FCA5A5" font-family="sans-serif" font-size="11" font-weight="bold">局限在 20 万微小人群池：</text>
-    <text x="30" y="98" fill="#A8A29E" font-family="sans-serif" font-size="10">• 手动勾选“爱好户外 + 年龄25-35 + 加州”</text>
-    <text x="30" y="118" fill="#A8A29E" font-family="sans-serif" font-size="10">• 多个广告组在同一个小池子里互飙高价竞价</text>
-    <text x="30" y="132" fill="#78716C" font-family="sans-serif" font-size="10">• 3天后人群迅速洗干，产生严重受众疲劳</text>
+    <text x="30" y="78" fill="#FCA5A5" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="11" font-weight="bold">局限在 20 万微小人群池：</text>
+    <text x="30" y="98" fill="#A8A29E" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="10">• 手动勾选“爱好户外 + 年龄25-35 + 加州”</text>
+    <text x="30" y="118" fill="#A8A29E" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="10">• 多个广告组在同一个小池子里互飙高价竞价</text>
+    <text x="30" y="132" fill="#78716C" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="10">• 3天后人群迅速洗干，产生严重受众疲劳</text>
 
     <rect x="20" y="160" width="280" height="115" rx="6" fill="#450A0A" stroke="#7F1D1D"/>
-    <text x="30" y="185" fill="#EF4444" font-family="sans-serif" font-size="12" font-weight="bold">致命后果：</text>
-    <text x="30" y="208" fill="#FCA5A5" font-family="sans-serif" font-size="11">• 竞价自相残杀，CPM 飙升至 $45+</text>
-    <text x="30" y="230" fill="#FCA5A5" font-family="sans-serif" font-size="11">• 限制了算法全网寻优的能力</text>
-    <text x="30" y="252" fill="#EF4444" font-family="sans-serif" font-size="12" font-weight="bold">• 广告生命周期极其短命</text>
+    <text x="30" y="185" fill="#EF4444" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="12" font-weight="bold">致命后果：</text>
+    <text x="30" y="208" fill="#FCA5A5" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="11">• 竞价自相残杀，CPM 飙升至 $45+</text>
+    <text x="30" y="230" fill="#FCA5A5" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="11">• 限制了算法全网寻优的能力</text>
+    <text x="30" y="252" fill="#EF4444" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="12" font-weight="bold">• 广告生命周期极其短命</text>
   </g>
 
   <g transform="translate(420, 80)">
     <rect width="320" height="315" rx="10" fill="#111622" stroke="#10B981" stroke-width="2"/>
-    <text x="160" y="30" fill="#10B981" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle">⚡ BrandOS 科学做法：Broad 宽投 + AL-CAT</text>
+    <text x="160" y="30" fill="#10B981" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="14" font-weight="bold" text-anchor="middle">⚡ BrandOS 科学做法：Broad 宽投 + AL-CAT</text>
 
     <rect x="20" y="55" width="280" height="90" rx="6" fill="#064E3B" stroke="#047857"/>
-    <text x="30" y="78" fill="#6EE7B7" font-family="sans-serif" font-size="11" font-weight="bold">开放全美 2.5 亿全量人群池：</text>
-    <text x="30" y="98" fill="#A7F3D0" font-family="sans-serif" font-size="10">• 0 人工标签限制，彻底释放 DLRM 算力</text>
-    <text x="30" y="118" fill="#A7F3D0" font-family="sans-serif" font-size="10">• 靠视频前 3 秒 Hook 毫秒级匹配共鸣者</text>
-    <text x="30" y="132" fill="#34D399" font-family="sans-serif" font-size="10">• 视频即定向，不断探索全新的长尾高净值用户</text>
+    <text x="30" y="78" fill="#6EE7B7" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="11" font-weight="bold">开放全美 2.5 亿全量人群池：</text>
+    <text x="30" y="98" fill="#A7F3D0" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="10">• 0 人工标签限制，彻底释放 DLRM 算力</text>
+    <text x="30" y="118" fill="#A7F3D0" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="10">• 靠视频前 3 秒 Hook 毫秒级匹配共鸣者</text>
+    <text x="30" y="132" fill="#34D399" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="10">• 视频即定向，不断探索全新的长尾高净值用户</text>
 
     <rect x="20" y="160" width="280" height="115" rx="6" fill="#022C22" stroke="#059669"/>
-    <text x="30" y="185" fill="#34D399" font-family="sans-serif" font-size="12" font-weight="bold">确定性收益：</text>
-    <text x="30" y="208" fill="#A7F3D0" font-family="sans-serif" font-size="11">• 竞价成本 CPM 暴降 45% (仅 $18-$22)</text>
-    <text x="30" y="230" fill="#A7F3D0" font-family="sans-serif" font-size="11">• 算法持续学习越跑越聪明，CPA 稳定</text>
-    <text x="30" y="252" fill="#10B981" font-family="sans-serif" font-size="12" font-weight="bold">• 单条超级素材持续跑量 6-12 个月！</text>
+    <text x="30" y="185" fill="#34D399" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="12" font-weight="bold">确定性收益：</text>
+    <text x="30" y="208" fill="#A7F3D0" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="11">• 竞价成本 CPM 暴降 45% (仅 $18-$22)</text>
+    <text x="30" y="230" fill="#A7F3D0" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="11">• 算法持续学习越跑越聪明，CPA 稳定</text>
+    <text x="30" y="252" fill="#10B981" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="12" font-weight="bold">• 单条超级素材持续跑量 6-12 个月！</text>
   </g>
 </svg>

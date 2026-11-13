@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" width="100%" height="100%" role="img" aria-label="埃伦伯格-巴斯增长双引擎与双重危机法则">
+  <rect width="800" height="460" rx="16" fill="#09090B" stroke="#232B3E"/>
+  <text x="400" y="235" fill="rgba(255, 255, 255, 0.03)" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="30" font-weight="900" text-anchor="middle" transform="rotate(-8 400 235)" letter-spacing="4">BRANDOS LAB™ // 品牌科学实验室</text>
+
+  <text x="400" y="40" fill="#FAFAFA" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="17.5" font-weight="900" text-anchor="middle">埃伦伯格-巴斯增长双引擎与“双重危机法则”实战对比</text>
+  <text x="400" y="62" fill="#94A3B8" font-family="'JetBrains Mono', 'PingFang SC', 'Microsoft YaHei', monospace" font-size="11" text-anchor="middle">市场份额增长本质 = 渗透覆盖广泛轻度买家 × 心智可得性 × 物理可得性</text>
+
+  <!-- Left Panel: Growth Formula + Liquid Death -->
+  <g transform="translate(38, 86)">
+    <rect width="352" height="332" rx="14" fill="#111622" stroke="#00F2FE" stroke-width="1.8"/>
+    <text x="20" y="34" fill="#00F2FE" font-family="'JetBrains Mono', 'PingFang SC', 'Microsoft YaHei', monospace" font-size="12" font-weight="bold">▲ 品牌增长乘法飞轮</text>
+
+    <rect x="20" y="52" width="312" height="78" rx="10" fill="#09090B" stroke="#232B3E"/>
+    <text x="34" y="76" fill="#38BDF8" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="13.5" font-weight="bold">1. 心智可得性 (CEPs + DBAs)</text>
+    <text x="34" y="96" fill="#CBD5E1" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="12">朋克易拉罐反常识视觉与喜剧广告，</text>
+    <text x="34" y="114" fill="#94A3B8" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="11.5">在 TikTok / YouTube 斩获上亿自然播放</text>
+
+    <text x="176" y="148" fill="#00F2FE" font-family="'JetBrains Mono', monospace" font-size="16" font-weight="900" text-anchor="middle">×</text>
+
+    <rect x="20" y="158" width="312" height="78" rx="10" fill="#09090B" stroke="#232B3E"/>
+    <text x="34" y="182" fill="#34D399" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="13.5" font-weight="bold">2. 物理可得性 (全域零摩擦购买)</text>
+    <text x="34" y="202" fill="#CBD5E1" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="12">铺进 Whole Foods、Target、Walmart</text>
+    <text x="34" y="220" fill="#94A3B8" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="11.5">与音乐节冷柜，让人想喝就能随手买到</text>
+
+    <rect x="20" y="252" width="312" height="62" rx="10" fill="#0D1F1A" stroke="#10B981"/>
+    <text x="34" y="276" fill="#6EE7B7" font-family="'JetBrains Mono', 'PingFang SC', 'Microsoft YaHei', monospace" font-size="11" font-weight="bold">实战标杆：LIQUID DEATH</text>
+    <text x="34" y="298" fill="#F8FAFC" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="13" font-weight="bold">100,000+ 线下零售网点 → 14 亿美元估值</text>
+  </g>
+
+  <!-- Right Panel: Double Jeopardy Trap -->
+  <g transform="translate(410, 86)">
+    <rect width="352" height="332" rx="14" fill="#111622" stroke="#F43F5E" stroke-width="1.8"/>
+    <text x="20" y="34" fill="#FB7185" font-family="'JetBrains Mono', 'PingFang SC', 'Microsoft YaHei', monospace" font-size="12" font-weight="bold">! 警惕“小众铁粉”双重危机陷阱</text>
+
+    <rect x="20" y="52" width="312" height="102" rx="10" fill="#18111A" stroke="#7F1D1D"/>
+    <text x="34" y="76" fill="#FCA5A5" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="13.5" font-weight="bold">为什么“1,000 名铁粉”会遇到天花板？</text>
+    <text x="34" y="98" fill="#E2E8F0" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="12">小品牌承受双重惩罚：买你的人本就更少，</text>
+    <text x="34" y="116" fill="#E2E8F0" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="12">而且这些人每年的平均复购率也比大牌更低</text>
+    <text x="34" y="138" fill="#F87171" font-family="'JetBrains Mono', 'PingFang SC', 'Microsoft YaHei', monospace" font-size="10.5">死守极小池塘搞内卷留存，根本无法做大规模</text>
+
+    <rect x="20" y="170" width="312" height="144" rx="10" fill="#09090B" stroke="#232B3E"/>
+    <text x="34" y="196" fill="#34D399" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="13.5" font-weight="bold">实证科学破局公式 (BrandOS 路径)</text>
+    <text x="34" y="220" fill="#CBD5E1" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="12">✓ 第一优先级：扩大全品类新客渗透率</text>
+    <text x="34" y="242" fill="#CBD5E1" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="12">✓ 触达一年只买 1–2 次的广大轻度买家</text>
+    <text x="34" y="264" fill="#CBD5E1" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="12">✓ 持续用一致的独特资产 (DBAs) 刷记忆</text>
+    <text x="34" y="292" fill="#38BDF8" font-family="'JetBrains Mono', 'PingFang SC', 'Microsoft YaHei', monospace" font-size="10.5" font-weight="bold">盘子做大之后，复购忠诚度会自然随之抬升</text>
+  </g>
+
+  <text x="780" y="444" fill="rgba(0, 242, 254, 0.45)" font-family="'JetBrains Mono', 'PingFang SC', 'Microsoft YaHei', monospace" font-size="10" font-weight="bold" text-anchor="end">BRANDOS LAB™ // 品牌科学实验室</text>
+</svg>

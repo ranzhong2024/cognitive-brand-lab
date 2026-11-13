@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="100%" height="100%" role="img" aria-label="凯勒 CBBE 品牌资产四阶金字塔模型">
+  <rect width="800" height="480" rx="16" fill="#09090B" stroke="#232B3E"/>
+  <text x="400" y="240" fill="rgba(255, 255, 255, 0.03)" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="30" font-weight="900" text-anchor="middle" transform="rotate(-8 400 240)" letter-spacing="4">BRANDOS LAB™ // 品牌科学实验室</text>
+
+  <text x="400" y="38" fill="#FAFAFA" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="17.5" font-weight="900" text-anchor="middle">凯勒 CBBE 品牌资产金字塔：理性绩效 + 感性认同双阶跃升</text>
+  <text x="400" y="58" fill="#94A3B8" font-family="'JetBrains Mono', 'PingFang SC', 'Microsoft YaHei', monospace" font-size="11" text-anchor="middle">从显著度到终极共鸣的 4 个递进台阶（Warby Parker POPs vs PODs 拆解）</text>
+
+  <!-- Track Labels -->
+  <text x="130" y="96" fill="#38BDF8" font-family="'JetBrains Mono', 'PingFang SC', 'Microsoft YaHei', monospace" font-size="11.5" font-weight="bold" text-anchor="middle">左路：理性硬核轨道</text>
+  <text x="670" y="96" fill="#C084FC" font-family="'JetBrains Mono', 'PingFang SC', 'Microsoft YaHei', monospace" font-size="11.5" font-weight="bold" text-anchor="middle">右路：感性心智轨道</text>
+
+  <!-- Tier 4 Apex: Resonance -->
+  <polygon points="335,92 465,92 504,158 296,158" fill="rgba(251, 191, 36, 0.16)" stroke="#FBBF24" stroke-width="2"/>
+  <text x="400" y="124" fill="#FDE68A" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="13.5" font-weight="900" text-anchor="middle">4. 品牌共鸣 (RESONANCE)</text>
+  <text x="400" y="143" fill="#CBD5E1" font-family="'JetBrains Mono', 'PingFang SC', 'Microsoft YaHei', monospace" font-size="10" text-anchor="middle">主动忠诚与自发推荐裂变</text>
+
+  <!-- Tier 3: Judgments | Feelings -->
+  <polygon points="292,168 400,168 400,236 248,236" fill="rgba(56, 189, 248, 0.12)" stroke="#38BDF8" stroke-width="1.6"/>
+  <text x="336" y="199" fill="#E0F2FE" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="13" font-weight="bold" text-anchor="middle">3A. 理性判断</text>
+  <text x="336" y="218" fill="#94A3B8" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="11" text-anchor="middle">品质 · 权威可信度</text>
+
+  <polygon points="400,168 508,168 552,236 400,236" fill="rgba(192, 132, 252, 0.12)" stroke="#C084FC" stroke-width="1.6"/>
+  <text x="464" y="199" fill="#F3E8FF" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="13" font-weight="bold" text-anchor="middle">3B. 感性情绪</text>
+  <text x="464" y="218" fill="#94A3B8" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="11" text-anchor="middle">身份归属 · 自豪感</text>
+
+  <!-- Tier 2: Performance | Imagery -->
+  <polygon points="242,246 400,246 400,314 196,314" fill="rgba(16, 185, 129, 0.12)" stroke="#10B981" stroke-width="1.6"/>
+  <text x="310" y="277" fill="#D1FAE5" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="13" font-weight="bold" text-anchor="middle">2A. 性能表现</text>
+  <text x="310" y="296" fill="#94A3B8" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="11" text-anchor="middle">参数 · 耐用度 · 定价结构</text>
+
+  <polygon points="400,246 558,246 604,314 400,314" fill="rgba(129, 140, 248, 0.14)" stroke="#818CF8" stroke-width="1.6"/>
+  <text x="490" y="277" fill="#E0E7FF" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="13" font-weight="bold" text-anchor="middle">2B. 心智形象</text>
+  <text x="490" y="296" fill="#94A3B8" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="11" text-anchor="middle">用户人设 · 典型使用场景</text>
+
+  <!-- Tier 1 Base: Salience -->
+  <polygon points="188,324 612,324 658,386 142,386" fill="rgba(0, 242, 254, 0.14)" stroke="#00F2FE" stroke-width="2"/>
+  <text x="400" y="352" fill="#00F2FE" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="14" font-weight="900" text-anchor="middle">1. 品牌显著度 (记忆检索的深度 × 场景广度)</text>
+  <text x="400" y="372" fill="#E2E8F0" font-family="'JetBrains Mono', 'PingFang SC', 'Microsoft YaHei', monospace" font-size="11" text-anchor="middle">“你是谁？” → 任何刚需购买场景触发时，能否第一时间浮现脑海</text>
+
+  <!-- Bottom Warby Parker POP vs POD Bar -->
+  <rect x="44" y="404" width="712" height="50" rx="10" fill="#111622" stroke="#232B3E"/>
+  <text x="64" y="425" fill="#94A3B8" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="12"><tspan fill="#38BDF8" font-weight="bold">POPs 行业共同点（及格线）：</tspan>防反光镀膜镜片 + 轻量化板材镜架</text>
+  <text x="64" y="443" fill="#CBD5E1" font-family="'Plus Jakarta Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif" font-size="12"><tspan fill="#34D399" font-weight="bold">PODs 差异点（Warby Parker 壁垒）：</tspan>$95 透明统一定价 + 5 副免费寄回家试戴 + 买一副捐一副</text>
+
+  <text x="780" y="472" fill="rgba(0, 242, 254, 0.45)" font-family="'JetBrains Mono', 'PingFang SC', 'Microsoft YaHei', monospace" font-size="10" font-weight="bold" text-anchor="end">BRANDOS LAB™ // 品牌科学实验室</text>
+</svg>
