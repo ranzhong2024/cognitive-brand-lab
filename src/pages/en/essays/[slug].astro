@@ -1,0 +1,17 @@
+---
+import EssayDetailPage from '../../../components/pages/EssayDetailPage.astro';
+import { getCollection } from 'astro:content';
+import { getEssaySlug } from '../../../utils/i18n';
+
+export async function getStaticPaths() {
+  const essays = (await getCollection('essays')).filter((e) => e.data.lang === 'en');
+  return essays.map((essay) => ({
+    params: { slug: getEssaySlug(essay) },
+    props: { essay },
+  }));
+}
+
+const { essay } = Astro.props;
+---
+
+<EssayDetailPage essay={essay} lang="en" />
