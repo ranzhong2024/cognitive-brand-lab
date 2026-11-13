@@ -1,0 +1,158 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import ModuleSectionCard from '../ModuleSectionCard.astro';
+import EssayCard from '../EssayCard.astro';
+import { getCollection } from 'astro:content';
+import type { ModuleDefinition } from '../../data/modules';
+import { getLocalizedPath, type Lang } from '../../utils/i18n';
+
+interface Props {
+  module: ModuleDefinition;
+  lang?: Lang;
+}
+
+const { module, lang = 'zh' } = Astro.props;
+const isEn = lang === 'en';
+const { id, title, description, systemContext, nextModule, prevModule, sections, slug } = module;
+
+const allEssays = (await getCollection('essays')).filter((e) => e.data.lang === lang);
+const essays = allEssays.filter((e) => e.data.module === id);
+
+const homeUrl = `https://ranbrandos.com${getLocalizedPath('/', lang)}`;
+const matrixUrl = `https://ranbrandos.com${getLocalizedPath('/#brandos-matrix', lang)}`;
+const moduleUrl = `https://ranbrandos.com${getLocalizedPath(`/modules/${slug}`, lang)}`;
+
+const moduleSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Course",
+      "@id": `${moduleUrl}#course`,
+      "name": title,
+      "description": description,
+      "provider": {
+        "@type": "Organization",
+        "@id": "https://ranbrandos.com/#organization",
+        "name": isEn ? "BrandOS Lab™" : "品牌科学实验室™ (BRANDOS LAB™)"
+      },
+      "instructor": {
+        "@type": "Person",
+        "@id": "https://ranbrandos.com/#founder"
+      },
+      "hasCourseInstance": {
+        "@type": "CourseInstance",
+        "courseMode": "online",
+        "inLanguage": isEn ? "en" : "zh-CN"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": `${moduleUrl}#breadcrumb`,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": isEn ? "Home" : "首页",
+          "item": homeUrl
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": isEn ? "BrandOS™ Module Architecture" : "BrandOS™ 模块架构",
+          "item": matrixUrl
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": `${id}: ${title}`,
+          "item": moduleUrl
+        }
+      ]
+    }
+  ]
+};
+---
+
+<Layout
+  lang={lang}
+  title={`${title} | ${isEn ? 'BrandOS Lab™' : '品牌科学实验室 (BRANDOS LAB)'}`}
+  description={description}
+  customSchema={moduleSchema}
+>
+  <div class="max-w-6xl mx-auto px-5 md:px-8 py-16 sm:py-24">
+    <!-- Breadcrumb -->
+    <nav aria-label="Breadcrumb" class="flex items-center gap-2 font-mono text-xs text-slate-500 uppercase tracking-widest mb-8">
+      <a href={getLocalizedPath('/', lang)} class="hover:text-cyan-400 transition-colors">BRANDOS LAB</a>
+      <span>/</span>
+      <a href={getLocalizedPath('/#brandos-matrix', lang)} class="hover:text-cyan-400 transition-colors">ENGINE</a>
+      <span>/</span>
+      <span class="text-cyan-400">{id}</span>
+    </nav>
+
+    <!-- Header Block -->
+    <header class="border-b border-slate-800 pb-10 mb-12">
+      <div class="inline-block font-mono text-xs font-bold text-cyan-400 bg-cyan-950/40 border border-cyan-800/40 px-2.5 py-1 rounded mb-4">
+        {systemContext}
+      </div>
+      <h1 class="font-sans text-3xl sm:text-4xl md:text-5xl font-black text-slate-100 mb-4 leading-tight">
+        {title}
+      </h1>
+      <p class="font-sans text-slate-400 text-base sm:text-lg max-w-3xl leading-relaxed">
+        {description}
+      </p>
+    </header>
+
+    <!-- Key Sections Grid -->
+    <section class="mb-16">
+      <h2 class="font-mono text-xs font-bold text-slate-400 uppercase tracking-[0.2em] mb-6">
+        {isEn ? 'ENGINEERING PILLARS' : '模块工程支柱 (ENGINEERING PILLARS)'}
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {sections.map((sec) => <ModuleSectionCard number={sec.number} title={sec.title} desc={sec.desc} />)}
+      </div>
+    </section>
+
+    <!-- Related Flagship Essays -->
+    <section class="mb-16 border-t border-slate-800 pt-12">
+      <div class="flex justify-between items-end mb-8">
+        <div>
+          <h2 class="font-mono text-xs font-bold text-cyan-400 uppercase tracking-[0.2em] mb-1">
+            {isEn ? 'RELATED BRAND NOTES & CASE STUDIES' : '模块相关品牌笔记与实例观察'}
+          </h2>
+          <p class="font-sans text-2xl font-bold text-slate-100">
+            {isEn ? `${id} Deep-Dive Theory & Applied Case Studies` : `${id} 深度理论与实战案例单行本`}
+          </p>
+        </div>
+      </div>
+
+      {essays.length > 0 ? (
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {essays.map((essay) => <EssayCard essay={essay} lang={lang} />)}
+        </div>
+      ) : (
+        <div class="bg-slate-900 border border-slate-800 p-8 rounded-lg text-center font-mono text-xs text-slate-500">
+          {isEn
+            ? `Additional ${id} field studies are currently under lab peer review and coming soon...`
+            : `更多 ${id} 专属研报正在由实验室研究员同行评审中，即将发布...`}
+        </div>
+      )}
+    </section>
+
+    <!-- Navigation Footer -->
+    <footer class="border-t border-slate-800 pt-8 flex justify-between items-center font-mono text-xs text-slate-400">
+      {prevModule ? (
+        <a href={getLocalizedPath(`/modules/${prevModule.slug}`, lang)} class="hover:text-cyan-400 transition-colors flex items-center gap-2">
+          <span>←</span>
+          <span>{prevModule.name}</span>
+        </a>
+      ) : <div />}
+
+      {nextModule ? (
+        <a href={getLocalizedPath(`/modules/${nextModule.slug}`, lang)} class="hover:text-cyan-400 transition-colors flex items-center gap-2">
+          <span>{nextModule.name}</span>
+          <span>→</span>
+        </a>
+      ) : <div />}
+    </footer>
+  </div>
+</Layout>

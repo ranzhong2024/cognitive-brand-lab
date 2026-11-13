@@ -1,15 +1,29 @@
 ---
+import { getLocalizedPath, type Lang } from '../utils/i18n';
+
 interface Props {
   currentPath?: string;
+  lang?: Lang;
 }
 
-const { currentPath = '/' } = Astro.props;
+const { currentPath = '/', lang = 'zh' } = Astro.props;
+
+const zhHref = getLocalizedPath(currentPath, 'zh');
+const enHref = getLocalizedPath(currentPath, 'en');
+const homeHref = getLocalizedPath('/', lang);
+const matrixHref = getLocalizedPath('/#brandos-matrix', lang);
+const essaysHref = getLocalizedPath('/essays', lang);
+const aboutHref = getLocalizedPath('/about', lang);
+
+const isEssaysActive = currentPath.startsWith('/essays') || currentPath.startsWith('/en/essays');
+const cleanPath = currentPath.replace(/\/$/, '') || '/';
+const isAboutActive = cleanPath === '/about' || cleanPath === '/en/about';
 ---
 
 <header class="sticky top-0 z-50 w-full bg-[#09090B]/90 backdrop-blur-md border-b border-[#232B3E] transition-all duration-200">
-  <div class="flex justify-between items-center w-full px-5 md:px-12 py-3 max-w-6xl mx-auto">
+  <div class="flex justify-between items-center w-full px-4 sm:px-5 md:px-10 py-3 max-w-6xl mx-auto gap-3">
     <!-- Brand Identity & Monogram -->
-    <a href="/" class="flex items-center gap-3.5 group">
+    <a href={homeHref} class="flex items-center gap-3 group shrink-0">
       <!-- High-Precision Solid B Monogram SVG -->
       <div class="w-9 h-9 rounded-lg border border-[#27272A] bg-[#09090B] flex items-center justify-center group-hover:border-cyan-400 group-hover:shadow-[0_0_15px_rgba(0,242,254,0.3)] transition-all duration-300 p-1">
         <svg viewBox="0 0 48 48" class="w-full h-full" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -20,51 +34,74 @@ const { currentPath = '/' } = Astro.props;
       </div>
 
       <div class="flex flex-col">
-        <span class="font-sans font-extrabold text-[17px] sm:text-[19px] text-slate-100 tracking-tight group-hover:text-cyan-400 transition-colors leading-none">
+        <span class="font-sans font-extrabold text-[17px] sm:text-[19px] text-slate-100 tracking-tight group-hover:text-cyan-400 transition-colors leading-none whitespace-nowrap">
           BrandOS Lab
         </span>
-        <span class="font-mono text-[9.5px] font-bold uppercase tracking-[0.2em] text-cyan-400 mt-1">
-          品牌科学实验室™
+        <span class="font-mono text-[9.5px] font-bold uppercase tracking-[0.2em] text-cyan-400 mt-1 whitespace-nowrap">
+          {lang === 'en' ? 'COGNITIVE BRAND LAB™' : '品牌科学实验室™'}
         </span>
       </div>
     </a>
 
     <!-- Desktop Navigation -->
-    <nav class="hidden md:flex gap-8 items-center font-mono text-[12px] font-bold uppercase tracking-[0.15em]">
+    <nav class="hidden md:flex gap-5 lg:gap-7 items-center font-mono text-[12px] font-bold uppercase tracking-[0.14em]">
       <a 
-        href="/#brandos-matrix" 
-        class="text-slate-300 hover:text-cyan-400 transition-colors py-1"
+        href={matrixHref} 
+        class="text-slate-300 hover:text-cyan-400 transition-colors py-1 whitespace-nowrap"
       >
         BrandOS™
       </a>
       <a 
-        href="/essays" 
-        class={`transition-colors py-1 ${currentPath.startsWith('/essays') ? 'text-cyan-400 border-b border-cyan-400' : 'text-slate-300 hover:text-slate-100'}`}
+        href={essaysHref} 
+        class={`transition-colors py-1 whitespace-nowrap ${isEssaysActive ? 'text-cyan-400 border-b border-cyan-400' : 'text-slate-300 hover:text-slate-100'}`}
       >
-        品牌笔记 (BRAND NOTES)
+        {lang === 'en' ? 'BRAND NOTES' : '品牌笔记 (BRAND NOTES)'}
       </a>
       <a 
-        href="/about" 
-        class={`transition-colors py-1 ${currentPath === '/about' ? 'text-cyan-400 border-b border-cyan-400' : 'text-slate-300 hover:text-slate-100'}`}
+        href={aboutHref} 
+        class={`transition-colors py-1 whitespace-nowrap ${isAboutActive ? 'text-cyan-400 border-b border-cyan-400' : 'text-slate-300 hover:text-slate-100'}`}
       >
-        关于实验室 (ABOUT)
+        {lang === 'en' ? 'ABOUT LAB' : '关于实验室 (ABOUT)'}
       </a>
     </nav>
 
-    <!-- Header Actions (Desktop Direct CTA + Mobile Hamburger) -->
-    <div class="flex items-center gap-3">
-      <a 
-        href="/essays" 
-        class="hidden sm:inline-flex items-center gap-2 font-mono text-[11px] font-bold text-[#09090B] bg-slate-100 hover:bg-cyan-400 px-4 py-2 rounded transition-all duration-200 uppercase tracking-wider shadow-sm"
+    <!-- Header Actions (Language Switcher + Desktop Direct CTA + Mobile Hamburger) -->
+    <div class="flex items-center gap-2.5 shrink-0">
+      <div
+        class="inline-flex items-center rounded-md border border-[#232B3E] bg-[#111622] p-0.5 font-mono text-[11px] font-bold tracking-wider"
+        role="group"
+        aria-label={lang === 'en' ? 'Language Switcher' : '中英文切换'}
       >
-        <span>查阅品牌笔记 ↗</span>
+        <a
+          href={zhHref}
+          hreflang="zh-CN"
+          aria-current={lang === 'zh' ? 'page' : undefined}
+          class={`px-2 py-1 rounded transition-colors whitespace-nowrap ${lang === 'zh' ? 'bg-cyan-400 text-[#09090B]' : 'text-slate-400 hover:text-slate-100'}`}
+        >
+          中文
+        </a>
+        <a
+          href={enHref}
+          hreflang="en"
+          aria-current={lang === 'en' ? 'page' : undefined}
+          class={`px-2 py-1 rounded transition-colors whitespace-nowrap ${lang === 'en' ? 'bg-cyan-400 text-[#09090B]' : 'text-slate-400 hover:text-slate-100'}`}
+        >
+          EN
+        </a>
+      </div>
+
+      <a 
+        href={essaysHref} 
+        class="hidden lg:inline-flex items-center gap-2 font-mono text-[11px] font-bold text-[#09090B] bg-slate-100 hover:bg-cyan-400 px-3.5 py-2 rounded transition-all duration-200 uppercase tracking-wider shadow-sm whitespace-nowrap"
+      >
+        <span>{lang === 'en' ? 'READ NOTES ↗' : '查阅品牌笔记 ↗'}</span>
       </a>
 
       <!-- Mobile Hamburger Button -->
       <button 
         id="open-drawer-btn"
-        class="md:hidden w-11 h-11 rounded bg-[#111622] border border-[#232B3E] text-slate-200 hover:text-white flex items-center justify-center text-[18px]"
-        aria-label="Open Navigation Menu"
+        class="md:hidden w-10 h-10 rounded bg-[#111622] border border-[#232B3E] text-slate-200 hover:text-white flex items-center justify-center text-[18px]"
+        aria-label={lang === 'en' ? 'Open Navigation Menu' : '打开导航菜单'}
       >
         ☰
       </button>

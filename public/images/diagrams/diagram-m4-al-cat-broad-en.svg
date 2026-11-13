@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 520" width="100%" height="100%" style="background:#09090B; border-radius:20px; border:1px solid #232B3E;">
+  <rect width="100%" height="100%" fill="#09090B"/>
+  <defs>
+    <pattern id="grid-m4-en" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="rgba(255, 255, 255, 0.03)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#grid-m4-en)"/>
+  <text x="380" y="260" fill="rgba(255, 255, 255, 0.03)" font-family="sans-serif" font-size="28" font-weight="900" text-anchor="middle" transform="rotate(-6 380 260)" letter-spacing="4">BRANDOS LAB™ // COGNITIVE BRAND SCIENCE</text>
+
+  <g transform="translate(30, 25)">
+    <rect width="700" height="42" rx="8" fill="#111622" stroke="#232B3E"/>
+    <text x="18" y="26" fill="#F59E0B" font-family="monospace" font-size="12" font-weight="bold">SCENE 04 // CREATOR WHITELISTING</text>
+    <text x="682" y="26" fill="#FAFAFA" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="end">Native Creator Hooks Bypass Ad Resistance</text>
+  </g>
+
+  <g transform="translate(30, 80)">
+    <rect width="370" height="330" rx="16" fill="#111622" stroke="#F59E0B" stroke-width="2.5"/>
+    <g transform="translate(20, 18)">
+      <circle cx="22" cy="22" r="20" fill="#F59E0B"/>
+      <text x="22" y="28" fill="#09090B" font-family="sans-serif" font-size="16" font-weight="900" text-anchor="middle">GR</text>
+      <text x="52" y="18" fill="#FAFAFA" font-family="sans-serif" font-size="14.5" font-weight="bold">@GordonRamsay (Michelin Chef)</text>
+      <text x="52" y="36" fill="#F59E0B" font-family="monospace" font-size="11" font-weight="bold">Whitelisted Handle · Partnership Ad</text>
+    </g>
+
+    <rect x="20" y="70" width="330" height="235" rx="10" fill="#09090B" stroke="#232B3E"/>
+    <text x="34" y="104" fill="#FCD34D" font-family="sans-serif" font-size="14" font-weight="900">💥 0–3s Cognitive Pattern Interrupt:</text>
+    <text x="34" y="134" fill="#FAFAFA" font-family="sans-serif" font-size="13.5" font-weight="bold">"Watch me scrape a metal spatula</text>
+    <text x="34" y="156" fill="#FAFAFA" font-family="sans-serif" font-size="13.5" font-weight="bold">across this pan — eggs still glide!"</text>
+    <text x="34" y="198" fill="#10B981" font-family="sans-serif" font-size="13" font-weight="bold">Buyer: "If Chef Ramsay cooks with it..."</text>
+    <text x="34" y="232" fill="#38BDF8" font-family="monospace" font-size="12" font-weight="bold">▶ Shop Direct from Creator Video</text>
+    <text x="34" y="264" fill="#94A3B8" font-family="sans-serif" font-size="11.5">Parasocial trust beats Persuasion Knowledge</text>
+  </g>
+
+  <g transform="translate(420, 80)">
+    <rect width="310" height="330" rx="16" fill="#111622" stroke="#232B3E" stroke-width="1.5"/>
+    <text x="20" y="34" fill="#F59E0B" font-family="sans-serif" font-size="14.5" font-weight="900">⚡ Why Whitelisting Scales</text>
+    <g transform="translate(15, 55)">
+      <rect width="280" height="70" rx="8" fill="#09090B" stroke="#F59E0B" stroke-width="1"/>
+      <text x="15" y="26" fill="#FAFAFA" font-family="sans-serif" font-size="13" font-weight="bold">1. Disarms PKM Guard:</text>
+      <text x="15" y="48" fill="#94A3B8" font-family="sans-serif" font-size="11.5">Runs via creator handle, not cold brand</text>
+    </g>
+    <g transform="translate(15, 140)">
+      <rect width="280" height="70" rx="8" fill="#09090B" stroke="#F59E0B" stroke-width="1"/>
+      <text x="15" y="26" fill="#FAFAFA" font-family="sans-serif" font-size="13" font-weight="bold">2. Creative Is Targeting:</text>
+      <text x="15" y="48" fill="#94A3B8" font-family="sans-serif" font-size="11.5">Broad 1-CBO lets DLRM find buyers</text>
+    </g>
+    <g transform="translate(15, 225)">
+      <rect width="280" height="85" rx="8" fill="#10B981" opacity="0.18" stroke="#10B981" stroke-width="1.5"/>
+      <text x="15" y="26" fill="#34D399" font-family="sans-serif" font-size="13.5" font-weight="900">3. Proven Impact:</text>
+      <text x="15" y="50" fill="#FAFAFA" font-family="sans-serif" font-size="12.5" font-weight="bold">3-Second Hook Hold Rate: 43.8%</text>
+      <text x="15" y="72" fill="#10B981" font-family="sans-serif" font-size="13.5" font-weight="900">Acquisition Cost (CPA) -39.2% 📉</text>
+    </g>
+  </g>
+
+  <g transform="translate(30, 430)">
+    <rect width="700" height="65" rx="12" fill="#18111A" stroke="#F59E0B" stroke-width="1.5"/>
+    <text x="350" y="38" fill="#FCD34D" font-family="sans-serif" font-size="14" font-weight="900" text-anchor="middle">🏆 Benchmark: HexClad Scaled Past $380M+ &amp; $1B Valuation via Creator Whitelisting</text>
+  </g>
+</svg>

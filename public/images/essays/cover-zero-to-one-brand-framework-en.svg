@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%" role="img" aria-label="From 0 to 1 Full-Stack Brand Framework 5-Layer Architecture Cover">
+  <defs>
+    <linearGradient id="bgGradEn" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070A10"/>
+      <stop offset="55%" stop-color="#0D1424"/>
+      <stop offset="100%" stop-color="#080B12"/>
+    </linearGradient>
+    <radialGradient id="cyanAuraEn" cx="72%" cy="48%" r="48%">
+      <stop offset="0%" stop-color="#00F2FE" stop-opacity="0.22"/>
+      <stop offset="55%" stop-color="#6366F1" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#070A10" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="beamGradEn" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F2FE"/>
+      <stop offset="100%" stop-color="#818CF8"/>
+    </linearGradient>
+    <linearGradient id="spineGradEn" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#00F2FE" stop-opacity="0.2"/>
+      <stop offset="50%" stop-color="#818CF8" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#FBBF24" stop-opacity="0.9"/>
+    </linearGradient>
+    <pattern id="swissGridEn" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(148, 163, 184, 0.06)" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bgGradEn)"/>
+  <rect width="800" height="500" fill="url(#swissGridEn)"/>
+  <rect width="800" height="500" fill="url(#cyanAuraEn)"/>
+  <rect x="16" y="16" width="768" height="468" rx="14" fill="none" stroke="#1E293B" stroke-width="1"/>
+
+  <!-- Top Telemetry Header -->
+  <rect x="44" y="38" width="232" height="26" rx="13" fill="rgba(0, 242, 254, 0.09)" stroke="rgba(0, 242, 254, 0.35)" stroke-width="1"/>
+  <circle cx="60" cy="51" r="3.5" fill="#00F2FE"/>
+  <text x="72" y="55" fill="#00F2FE" font-family="monospace" font-size="11" font-weight="bold" letter-spacing="1.5">M1 // BRAND ARCHITECTURE</text>
+  <text x="752" y="55" fill="#64748B" font-family="monospace" font-size="11" font-weight="bold" text-anchor="end" letter-spacing="1.2">FIELD OBSERVATION · 01</text>
+  <line x1="44" y1="80" x2="756" y2="80" stroke="#1E293B" stroke-width="1"/>
+
+  <!-- Left Editorial Typography Column -->
+  <text x="46" y="126" fill="#38BDF8" font-family="monospace" font-size="11.5" font-weight="bold" letter-spacing="1.8">FIRST PRINCIPLES · COGNITIVE OPS</text>
+  <text x="44" y="176" fill="#F8FAFC" font-family="sans-serif" font-size="40" font-weight="900">From 0 to 1</text>
+  <text x="44" y="220" fill="#F8FAFC" font-family="sans-serif" font-size="30" font-weight="900">5-Layer Brand Stack</text>
+  <rect x="46" y="246" width="132" height="3.5" rx="2" fill="url(#beamGradEn)"/>
+
+  <!-- 3 Core Scientific Pillars -->
+  <g transform="translate(46, 282)">
+    <rect x="0" y="0" width="342" height="38" rx="8" fill="#0F172A" stroke="#1E293B"/>
+    <circle cx="18" cy="19" r="4.5" fill="#00F2FE"/>
+    <text x="34" y="23" fill="#E2E8F0" font-family="sans-serif" font-size="13.5" font-weight="bold">Keller CBBE Pyramid</text>
+    <text x="326" y="23" fill="#38BDF8" font-family="monospace" font-size="10.5" text-anchor="end">MEMORY NET</text>
+
+    <rect x="0" y="48" width="342" height="38" rx="8" fill="#0F172A" stroke="#1E293B"/>
+    <circle cx="18" cy="67" r="4.5" fill="#818CF8"/>
+    <text x="34" y="71" fill="#E2E8F0" font-family="sans-serif" font-size="13.5" font-weight="bold">Byron Sharp Availability</text>
+    <text x="326" y="71" fill="#A5B4FC" font-family="monospace" font-size="10.5" text-anchor="end">GROWTH LAW</text>
+
+    <rect x="0" y="96" width="342" height="38" rx="8" fill="#0F172A" stroke="#1E293B"/>
+    <circle cx="18" cy="115" r="4.5" fill="#10B981"/>
+    <text x="34" y="119" fill="#E2E8F0" font-family="sans-serif" font-size="13.5" font-weight="bold">Spence Costly Signals</text>
+    <text x="326" y="119" fill="#6EE7B7" font-family="monospace" font-size="10.5" text-anchor="end">MARGIN LOCK</text>
+  </g>
+
+  <!-- Right Column: 5-Layer Glowing Architectural Stack -->
+  <g transform="translate(425, 108)">
+    <line x1="165" y1="24" x2="165" y2="306" stroke="url(#spineGradEn)" stroke-width="2" stroke-dasharray="4 4"/>
+    <polygon points="165,12 159,24 171,24" fill="#FBBF24"/>
+
+    <polygon points="75,32 255,32 272,72 58,72" fill="rgba(251, 191, 36, 0.14)" stroke="#FBBF24" stroke-width="1.8"/>
+    <text x="165" y="56" fill="#FDE68A" font-family="sans-serif" font-size="12.5" font-weight="bold" text-anchor="middle">L5 · Governance &amp; Equity</text>
+
+    <polygon points="56,88 274,88 290,128 40,128" fill="rgba(16, 185, 129, 0.14)" stroke="#34D399" stroke-width="1.8"/>
+    <text x="165" y="112" fill="#A7F3D0" font-family="sans-serif" font-size="12.5" font-weight="bold" text-anchor="middle">L4 · Mental × Physical Scale</text>
+
+    <polygon points="38,144 292,144 308,184 22,184" fill="rgba(192, 132, 252, 0.14)" stroke="#C084FC" stroke-width="1.8"/>
+    <text x="165" y="168" fill="#E9D5FF" font-family="sans-serif" font-size="12.5" font-weight="bold" text-anchor="middle">L3 · CBBE Resonance Ladder</text>
+
+    <polygon points="20,200 310,200 324,240 6,240" fill="rgba(129, 140, 248, 0.15)" stroke="#818CF8" stroke-width="1.8"/>
+    <text x="165" y="224" fill="#C7D2FE" font-family="sans-serif" font-size="12.5" font-weight="bold" text-anchor="middle">L2 · Identity Prism &amp; DBAs</text>
+
+    <polygon points="4,256 326,256 340,298 -10,298" fill="rgba(0, 242, 254, 0.16)" stroke="#00F2FE" stroke-width="2"/>
+    <text x="165" y="281" fill="#E0F2FE" font-family="sans-serif" font-size="12.5" font-weight="bold" text-anchor="middle">L1 · Golden Circle, CEPs &amp; JTBD</text>
+  </g>
+
+  <!-- Bottom Footer Strip -->
+  <line x1="44" y1="448" x2="756" y2="448" stroke="#1E293B" stroke-width="1"/>
+  <text x="46" y="470" fill="#64748B" font-family="monospace" font-size="11">CASES: LIQUID DEATH · PATAGONIA · WARBY PARKER</text>
+  <text x="754" y="470" fill="rgba(0, 242, 254, 0.55)" font-family="monospace" font-size="11" font-weight="bold" text-anchor="end">BRANDOS LAB™ // COGNITIVE BRAND SCIENCE</text>
+</svg>

@@ -1,5 +1,8 @@
 ---
+import { getEssaySlug, getLocalizedPath, type Lang } from '../utils/i18n';
+
 interface Props {
+  lang?: Lang;
   essay: {
     id?: string;
     slug?: string;
@@ -19,8 +22,10 @@ interface Props {
   };
 }
 
-const { essay } = Astro.props;
-const slug = (essay as any).id || (essay as any).slug;
+const { essay, lang = 'zh' } = Astro.props;
+const isEn = lang === 'en';
+const slug = getEssaySlug({ id: (essay as any).id || (essay as any).slug || '' });
+const essayHref = getLocalizedPath(`/essays/${slug}`, lang);
 
 // Module Color Mapping
 const moduleColors: Record<string, { badge: string; border: string; accent: string; coverBg: string }> = {
@@ -45,7 +50,7 @@ const coverSrc = essay.data.coverImage;
 >
   {coverSrc ? (
     <div>
-      <a href={`/essays/${slug}`} class="block aspect-[16/10] w-full overflow-hidden border-b border-[#232B3E] bg-[#09090B] relative">
+      <a href={essayHref} class="block aspect-[16/10] w-full overflow-hidden border-b border-[#232B3E] bg-[#09090B] relative">
         <img 
           src={coverSrc} 
           alt={essay.data.coverAlt || essay.data.title}
@@ -83,7 +88,7 @@ const coverSrc = essay.data.coverImage;
       <!-- Monogram Watermark Icon in Cover -->
       <div class="flex items-end justify-between z-10">
         <div class="font-mono text-[10px] text-slate-400">
-          AUTHOR: <strong class="text-slate-200">{essay.data.author || "Ran (然)"}</strong>
+          AUTHOR: <strong class="text-slate-200">{essay.data.author || (isEn ? 'Ran' : 'Ran (然)')}</strong>
         </div>
         <div class="font-mono text-[10px] text-slate-500">
           {formattedDate}
@@ -96,7 +101,7 @@ const coverSrc = essay.data.coverImage;
   <div class="p-5 sm:p-6 flex flex-col flex-grow justify-between">
     <div>
       <h3 class="font-sans font-bold text-[18px] sm:text-[20px] text-slate-100 mb-2.5 group-hover:text-cyan-400 transition-colors leading-snug line-clamp-2 min-h-[56px]">
-        <a href={`/essays/${slug}`}>
+        <a href={essayHref}>
           {essay.data.title}
         </a>
       </h3>
@@ -108,10 +113,10 @@ const coverSrc = essay.data.coverImage;
 
     <!-- Bottom Read Action -->
     <a 
-      href={`/essays/${slug}`}
+      href={essayHref}
       class="pt-3.5 border-t border-[#232B3E] flex items-center justify-between font-mono text-[12px] font-bold text-slate-300 group-hover:text-cyan-400 transition-colors mt-auto"
     >
-      <span>阅读全文</span>
+      <span>{isEn ? 'Read Full Case Note' : '阅读全文'}</span>
       <span class="group-hover:translate-x-1.5 transition-transform text-[14px]">→</span>
     </a>
   </div>

@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%" role="img" aria-label="Brand Notes and Field Observations Repository Cover">
+  <defs>
+    <linearGradient id="bnBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070A10"/>
+      <stop offset="60%" stop-color="#0D1424"/>
+      <stop offset="100%" stop-color="#080B12"/>
+    </linearGradient>
+    <radialGradient id="bnAura" cx="75%" cy="35%" r="55%">
+      <stop offset="0%" stop-color="#00F2FE" stop-opacity="0.22"/>
+      <stop offset="60%" stop-color="#6366F1" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#070A10" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="bnGrid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="rgba(148, 163, 184, 0.06)" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#bnBg)"/>
+  <rect width="800" height="450" fill="url(#bnGrid)"/>
+  <rect width="800" height="450" fill="url(#bnAura)"/>
+  <rect x="16" y="16" width="768" height="418" rx="14" fill="none" stroke="#1E293B" stroke-width="1"/>
+
+  <!-- Watermark -->
+  <text x="400" y="235" fill="rgba(255, 255, 255, 0.03)" font-family="sans-serif" font-size="30" font-weight="900" text-anchor="middle" transform="rotate(-10 400 235)" letter-spacing="4">BRANDOS LAB™ // COGNITIVE BRAND SCIENCE</text>
+
+  <!-- Header Badge -->
+  <rect x="44" y="40" width="290" height="28" rx="14" fill="rgba(0, 242, 254, 0.1)" stroke="rgba(0, 242, 254, 0.35)" stroke-width="1"/>
+  <circle cx="62" cy="54" r="4" fill="#00F2FE"/>
+  <text x="76" y="58" fill="#00F2FE" font-family="monospace" font-size="11" font-weight="bold" letter-spacing="1.4">KNOWLEDGE ARCHIVE · EN</text>
+  <text x="756" y="58" fill="#64748B" font-family="monospace" font-size="11" font-weight="bold" text-anchor="end">PEER-REVIEWED EVIDENCE</text>
+  <line x1="44" y1="84" x2="756" y2="84" stroke="#1E293B" stroke-width="1"/>
+
+  <!-- Headline -->
+  <text x="44" y="138" fill="#F8FAFC" font-family="sans-serif" font-size="36" font-weight="900">Brand Notes &amp; Field Observations</text>
+  <text x="44" y="172" fill="#94A3B8" font-family="sans-serif" font-size="16">Replacing agency guesswork with empirical brand science &amp; unit economics</text>
+
+  <!-- Module Matrix Preview Row -->
+  <g transform="translate(44, 210)">
+    <rect width="222" height="146" rx="12" fill="#0F172A" stroke="#00F2FE" stroke-opacity="0.45"/>
+    <text x="18" y="32" fill="#00F2FE" font-family="monospace" font-size="12" font-weight="bold">M1–M2 // MINDSET &amp; PROOF</text>
+    <text x="18" y="64" fill="#F8FAFC" font-family="sans-serif" font-size="15" font-weight="bold">CEPs, JTBD &amp; Spence Signals</text>
+    <text x="18" y="92" fill="#94A3B8" font-family="sans-serif" font-size="12.5">Wire recall to live triggers</text>
+    <text x="18" y="112" fill="#94A3B8" font-family="sans-serif" font-size="12.5">&amp; unfakeable proof pledges.</text>
+    <text x="18" y="134" fill="#38BDF8" font-family="monospace" font-size="11" font-weight="bold">BYRON SHARP · MICHAEL SPENCE</text>
+  </g>
+
+  <g transform="translate(289, 210)">
+    <rect width="222" height="146" rx="12" fill="#0F172A" stroke="#10B981" stroke-opacity="0.45"/>
+    <text x="18" y="32" fill="#10B981" font-family="monospace" font-size="12" font-weight="bold">M3–M4 // MARGIN &amp; SCALE</text>
+    <text x="18" y="64" fill="#F8FAFC" font-family="sans-serif" font-size="15" font-weight="bold">65%+ Pricing &amp; Creator Ads</text>
+    <text x="18" y="92" fill="#94A3B8" font-family="sans-serif" font-size="12.5">GBB tiered extraction &amp;</text>
+    <text x="18" y="112" fill="#94A3B8" font-family="sans-serif" font-size="12.5">broad DLRM creative probing.</text>
+    <text x="18" y="134" fill="#34D399" font-family="monospace" font-size="11" font-weight="bold">HERMANN SIMON · META AL-CAT</text>
+  </g>
+
+  <g transform="translate(534, 210)">
+    <rect width="222" height="146" rx="12" fill="#0F172A" stroke="#A855F7" stroke-opacity="0.45"/>
+    <text x="18" y="32" fill="#A855F7" font-family="monospace" font-size="12" font-weight="bold">M5–M6 // CONVERT &amp; CAUSAL</text>
+    <text x="18" y="64" fill="#F8FAFC" font-family="sans-serif" font-size="15" font-weight="bold">100px Mesh &amp; True iROAS</text>
+    <text x="18" y="92" fill="#94A3B8" font-family="sans-serif" font-size="12.5">0.85s frictionless checkout &amp;</text>
+    <text x="18" y="112" fill="#94A3B8" font-family="sans-serif" font-size="12.5">holdout incrementality rigor.</text>
+    <text x="18" y="134" fill="#C084FC" font-family="monospace" font-size="11" font-weight="bold">MECLABS · DONALD RUBIN</text>
+  </g>
+
+  <!-- Footer -->
+  <line x1="44" y1="392" x2="756" y2="392" stroke="#1E293B" stroke-width="1"/>
+  <text x="44" y="416" fill="#64748B" font-family="monospace" font-size="11">ENGINEERING SOVEREIGN GLOBAL HIGH-MARGIN BRANDS</text>
+  <text x="756" y="416" fill="rgba(0, 242, 254, 0.55)" font-family="monospace" font-size="11" font-weight="bold" text-anchor="end">BRANDOS LAB™ // RAN</text>
+</svg>

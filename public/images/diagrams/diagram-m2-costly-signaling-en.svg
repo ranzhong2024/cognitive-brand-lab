@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 520" width="100%" height="100%" style="background:#09090B; border-radius:20px; border:1px solid #232B3E;">
+  <rect width="100%" height="100%" fill="#09090B"/>
+  <defs>
+    <pattern id="grid-m2-en" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="rgba(255, 255, 255, 0.03)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#grid-m2-en)"/>
+  <text x="380" y="260" fill="rgba(255, 255, 255, 0.03)" font-family="sans-serif" font-size="28" font-weight="900" text-anchor="middle" transform="rotate(-6 380 260)" letter-spacing="4">BRANDOS LAB™ // COGNITIVE BRAND SCIENCE</text>
+
+  <g transform="translate(30, 25)">
+    <rect width="700" height="42" rx="8" fill="#111622" stroke="#232B3E"/>
+    <text x="18" y="26" fill="#818CF8" font-family="monospace" font-size="12" font-weight="bold">SCENE 02 // COSTLY PROOF PLEDGE</text>
+    <text x="682" y="26" fill="#FAFAFA" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="end">Hard Lab Proof &amp; Warranties → Shatter Skepticism</text>
+  </g>
+
+  <g transform="translate(30, 80)">
+    <rect width="700" height="135" rx="14" fill="#18111A" stroke="#F43F5E" stroke-width="2"/>
+    <rect x="20" y="15" width="246" height="30" rx="6" fill="#F43F5E" opacity="0.2"/>
+    <text x="143" y="35" fill="#F43F5E" font-family="sans-serif" font-size="13" font-weight="900" text-anchor="middle">🤔 First-Time Buyer Defense</text>
+    <text x="25" y="75" fill="#FAFAFA" font-family="sans-serif" font-size="16" font-weight="900">"Unfamiliar overseas DTC site — is this a fly-by-night dropshipper?"</text>
+    <text x="25" y="105" fill="#EF4444" font-family="sans-serif" font-size="12.5" font-weight="bold">✕ Cheap Talk Trap: Typing "100% Top Quality" costs $0 → Zero credibility → 3s bounce</text>
+  </g>
+
+  <g transform="translate(380, 225)">
+    <line x1="0" y1="0" x2="0" y2="28" stroke="#818CF8" stroke-width="4" stroke-dasharray="6 3"/>
+    <polygon points="-6,28 0,38 6,28" fill="#818CF8"/>
+    <text x="16" y="18" fill="#818CF8" font-family="sans-serif" font-size="12" font-weight="900">🛡️ Stake Unfakeable Capital Signals</text>
+  </g>
+
+  <g transform="translate(30, 275)">
+    <rect width="700" height="215" rx="14" fill="#111622" stroke="#818CF8" stroke-width="2.5"/>
+    <rect x="20" y="15" width="320" height="30" rx="6" fill="#818CF8" opacity="0.2"/>
+    <text x="180" y="35" fill="#818CF8" font-family="sans-serif" font-size="13" font-weight="900" text-anchor="middle">✅ Costly Signaling (Proof Center)</text>
+
+    <g transform="translate(25, 60)">
+      <rect width="650" height="38" rx="8" fill="#09090B" stroke="#232B3E"/>
+      <text x="16" y="24" fill="#FAFAFA" font-family="sans-serif" font-size="13.5" font-weight="bold">🔬 Public UL / SGS Accredited Lab Test Reports (Counterfeits Cannot Forge)</text>
+    </g>
+    <g transform="translate(25, 105)">
+      <rect width="650" height="38" rx="8" fill="#09090B" stroke="#232B3E"/>
+      <text x="16" y="24" fill="#FAFAFA" font-family="sans-serif" font-size="13.5" font-weight="bold">❄️ Destructive -40°C Stress Footage + 10-Year Replacement Backstop</text>
+    </g>
+    <g transform="translate(25, 150)">
+      <rect width="650" height="42" rx="8" fill="#10B981" opacity="0.15" stroke="#10B981" stroke-width="1.5"/>
+      <text x="16" y="26" fill="#34D399" font-family="sans-serif" font-size="13" font-weight="900">Buyer Verdict: "Real engineering authority" → +300% Trust · +50%–100% Price Premium</text>
+    </g>
+  </g>
+</svg>

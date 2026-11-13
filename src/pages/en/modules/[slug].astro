@@ -1,0 +1,15 @@
+---
+import ModuleDetailPage from '../../../components/pages/ModuleDetailPage.astro';
+import { getModules } from '../../../data/modules';
+
+export function getStaticPaths() {
+  return getModules('en').map((mod) => ({
+    params: { slug: mod.slug },
+    props: { module: mod },
+  }));
+}
+
+const { module } = Astro.props;
+---
+
+<ModuleDetailPage module={module} lang="en" />
