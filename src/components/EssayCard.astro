@@ -63,10 +63,14 @@ const coverSrc = essay.data.coverImage;
         <span class={`font-mono text-[11px] font-extrabold uppercase tracking-wider px-2.5 py-0.5 rounded border ${style.badge}`}>
           {essay.data.module} • {essay.data.moduleName}
         </span>
-        <span class="font-mono text-[11px] text-slate-400 flex items-center gap-1">
-          <span>⏱</span>
-          <span>{essay.data.readingTime}</span>
-        </span>
+        <div class="font-mono text-[11px] text-slate-400 flex items-center gap-1.5">
+          <span>{formattedDate}</span>
+          <span class="text-slate-600">•</span>
+          <span class="flex items-center gap-1">
+            <span>⏱</span>
+            <span>{essay.data.readingTime}</span>
+          </span>
+        </div>
       </div>
     </div>
   ) : (
