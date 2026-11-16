@@ -1,6 +1,7 @@
 export type Lang = 'zh' | 'en';
 
 export const MODULE_ORDER: Record<string, number> = {
+  BrandOS: 0,
   M1: 1,
   M2: 2,
   M3: 3,

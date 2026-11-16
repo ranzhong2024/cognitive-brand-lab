@@ -24,6 +24,7 @@ const allEssays = sortEssaysByModule(
 const relatedEssays = allEssays.filter((e) => e.id !== essay.id).slice(0, 2);
 
 const moduleColors: Record<string, { badge: string; border: string; accent: string }> = {
+  BrandOS: { badge: 'text-sky-300 bg-sky-950/70 border-sky-500/50', border: 'border-sky-500/40', accent: '#38BDF8' },
   M1: { badge: 'text-cyan-400 bg-cyan-950/60 border-cyan-800/60', border: 'border-cyan-500/40', accent: '#00F2FE' },
   M2: { badge: 'text-indigo-400 bg-indigo-950/60 border-indigo-800/60', border: 'border-indigo-500/40', accent: '#818CF8' },
   M3: { badge: 'text-emerald-400 bg-emerald-950/60 border-emerald-800/60', border: 'border-emerald-500/40', accent: '#10B981' },
@@ -205,7 +206,7 @@ if (essay.data.faqs && essay.data.faqs.length > 0) {
         </aside>
       )}
 
-      <article class={`${headings && headings.length > 0 ? 'lg:col-span-9' : 'lg:col-span-12'} max-w-[76ch] mx-auto w-full`}>
+      <article class={`${headings && headings.length > 0 ? 'lg:col-span-9' : 'lg:col-span-12'} min-w-0 max-w-[76ch] mx-auto w-full`}>
         <div class="prose-custom">
           <Content />
         </div>

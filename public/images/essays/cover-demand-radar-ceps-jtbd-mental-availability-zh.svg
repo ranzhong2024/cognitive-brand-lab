@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#18181B" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="glowCyan" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#00F2FE" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#09090B" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="500" fill="#09090B"/>
+  <rect width="800" height="500" fill="url(#grid)"/>
+  <rect width="800" height="500" fill="url(#glowCyan)"/>
+  <rect x="28" y="28" width="744" height="444" rx="12" fill="none" stroke="#27272A" stroke-width="1.5"/>
+  <text x="48" y="60" fill="#00F2FE" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11.5" font-weight="700">BRANDOS™ M1 // 勘测心智 DEMAND RADAR &amp; MENTAL SENSING</text>
+  <text x="752" y="60" text-anchor="end" fill="#64748B" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11">EHRENBERG-BASS × JTBD</text>
+
+  <text x="48" y="96" fill="#F8FAFC" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="22" font-weight="800">别拿“做个好看产品”当品牌起点：M1 心智勘测与需求雷达</text>
+  <text x="48" y="120" fill="#94A3B8" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12.5">锁死高价值品类进入点 (CEPs) × JTBD 四力推拉开关 × 1-3 星差评 NLP 矿脉</text>
+
+  <!-- Left Radar Visual -->
+  <rect x="48" y="144" width="320" height="238" rx="10" fill="#111622" stroke="#1E293B"/>
+  <circle cx="208" cy="264" r="88" fill="none" stroke="#164E63" stroke-dasharray="4 4"/>
+  <circle cx="208" cy="264" r="56" fill="none" stroke="#0891B2" stroke-opacity="0.7"/>
+  <circle cx="208" cy="264" r="24" fill="#083344" stroke="#00F2FE" stroke-width="1.5"/>
+  <line x1="112" y1="264" x2="304" y2="264" stroke="#1E293B"/>
+  <line x1="208" y1="168" x2="208" y2="360" stroke="#1E293B"/>
+  <text x="208" y="268" text-anchor="middle" fill="#00F2FE" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11" font-weight="800">CEP CORE</text>
+  <!-- CEP Nodes -->
+  <circle cx="146" cy="208" r="6" fill="#00F2FE"/>
+  <text x="64" y="188" fill="#67E8F9" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11" font-weight="700">场景1: 通勤冷饮/杯架</text>
+  <circle cx="272" cy="210" r="6" fill="#10B981"/>
+  <text x="268" y="188" fill="#6EE7B7" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11" font-weight="700">场景2: 断电应急备灾</text>
+  <circle cx="266" cy="316" r="6" fill="#38BDF8"/>
+  <text x="242" y="346" fill="#BAE6FD" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11" font-weight="700">场景3: 背包防漏刚需</text>
+  <text x="64" y="366" fill="#94A3B8" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="10">MMS · MPen · Network Size · SoM</text>
+
+  <!-- Right 3 Diagnostic Pillars -->
+  <rect x="386" y="144" width="366" height="72" rx="8" fill="#111622" stroke="#00F2FE" stroke-opacity="0.45"/>
+  <text x="404" y="169" fill="#00F2FE" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11" font-weight="800">01 // EHRENBERG-BASS 心智可得性四指标</text>
+  <text x="404" y="191" fill="#E2E8F0" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12" font-weight="700">用二进制场景联想取代虚假“品牌知名度”幻觉</text>
+  <text x="404" y="207" fill="#94A3B8" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11">SparkToro 2024：美国 58.5% Google 搜索零点击，场景即入口</text>
+
+  <rect x="386" y="227" width="366" height="72" rx="8" fill="#111622" stroke="#232B3E"/>
+  <text x="404" y="252" fill="#38BDF8" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11" font-weight="800">02 // CHRISTENSEN &amp; MOESTA JTBD 四力开关</text>
+  <text x="404" y="274" fill="#E2E8F0" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12" font-weight="700">Push + Pull &gt; Habit + Anxiety（消杀换新焦虑）</text>
+  <text x="404" y="290" fill="#94A3B8" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11">40% 奶昔卖在清晨通勤：真正的竞品不是另一杯奶昔</text>
+
+  <rect x="386" y="310" width="366" height="72" rx="8" fill="#111622" stroke="#232B3E"/>
+  <text x="404" y="335" fill="#10B981" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11" font-weight="800">03 // 商业真实对照（CEPs 成王败寇）</text>
+  <text x="404" y="357" fill="#6EE7B7" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11.5" font-weight="700">赢家：Stanley $70M→$750M | Owala +400% 反超</text>
+  <text x="404" y="373" fill="#FCA5A5" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11">警钟：Humane 退货超销量变砖 | Allbirds 连跌至 $189.8M</text>
+
+  <!-- Bottom Evidence Strip -->
+  <rect x="48" y="396" width="704" height="42" rx="8" fill="#0F172A" stroke="#1E293B"/>
+  <text x="66" y="421" fill="#E2E8F0" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11.5" font-weight="700">M1 工程交付门槛：跑通 1-3 星差评 NLP 聚簇 + 8-12 场 Switch 逆向访谈，锁定 3 个 Tier-1 CEPs 再开模</text>
+
+  <text x="48" y="458" fill="#52525B" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="10.5">BRANDOS LAB™ // 品牌科学实验室™ · M1 勘测心智系统总图</text>
+  <text x="752" y="458" text-anchor="end" fill="#52525B" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="10.5">COVER M1 // ZH</text>
+</svg>

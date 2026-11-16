@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#18181B" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="glowPurple" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#A855F7" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#09090B" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="500" fill="#09090B"/>
+  <rect width="800" height="500" fill="url(#grid)"/>
+  <rect width="800" height="500" fill="url(#glowPurple)"/>
+  <rect x="28" y="28" width="744" height="444" rx="12" fill="none" stroke="#27272A" stroke-width="1.5"/>
+  <text x="48" y="58" fill="#C084FC" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11.5" font-weight="700">FORENSIC AUDIT // CORRELATION ILLUSION VS. RUBIN COUNTERFACTUAL HOLDOUTS</text>
+  <text x="752" y="58" text-anchor="end" fill="#64748B" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11">CAUSAL INCREMENTALITY</text>
+
+  <text x="48" y="90" fill="#F8FAFC" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="19" font-weight="800">Why Platform ROAS Looks 4.0 While Cash Burns: 3 Landmark Blackout Audits</text>
+  <text x="48" y="112" fill="#94A3B8" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="12">Donald Rubin Potential Outcomes: Without Y(0) holdouts, ad dashboards take credit for organic intent</text>
+
+  <rect x="48" y="134" width="466" height="80" rx="7" fill="#111622" stroke="#EF4444" stroke-opacity="0.6"/>
+  <text x="64" y="158" fill="#FCA5A5" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="12.5" font-weight="800">1. eBay "T-Rex" (Blake, Nosko, Tadelis · Econometrica 2015)</text>
+  <text x="64" y="179" fill="#CBD5E1" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="11">• Attribution Myth: Standard regression claimed ~4,000% non-brand ROI</text>
+  <text x="64" y="198" fill="#F87171" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="700">• Causal Truth: Geo-holdouts showed -63% ROI; 99.5% brand clicks shifted organic</text>
+
+  <rect x="48" y="226" width="466" height="80" rx="7" fill="#111622" stroke="#F59E0B" stroke-opacity="0.6"/>
+  <text x="64" y="250" fill="#FCD34D" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="12.5" font-weight="800">2. Airbnb Marketing Blackout (2020–2021 Earnings Disclosure)</text>
+  <text x="64" y="271" fill="#CBD5E1" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="11">• Stress Test: Slashed $600M+ total marketing spend (heavy performance cut)</text>
+  <text x="64" y="290" fill="#FBBF24" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="700">• Causal Truth: Traffic returned to 95% of 2019 levels unpaid (~91% direct/organic)</text>
+
+  <rect x="48" y="318" width="466" height="80" rx="7" fill="#111622" stroke="#A855F7" stroke-opacity="0.6"/>
+  <text x="64" y="342" fill="#E9D5FF" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="12.5" font-weight="800">3. Uber $100M–$120M Click-Flooding Purge (Kevin Frisch · 2017)</text>
+  <text x="64" y="363" fill="#CBD5E1" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="11">• Fraud Hijack: Rogue apps fired fake clicks 2 seconds before organic installs</text>
+  <text x="64" y="382" fill="#C084FC" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="700">• Causal Truth: Shut off 2/3 spend ($100M–$120M) with zero drop in installs</text>
+
+  <rect x="530" y="134" width="222" height="264" rx="8" fill="#2E1065" fill-opacity="0.4" stroke="#A855F7" stroke-width="1.5"/>
+  <text x="641" y="162" text-anchor="middle" fill="#E9D5FF" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="13" font-weight="800">BrandOS™ M6 Causal Gate</text>
+
+  <rect x="544" y="178" width="194" height="62" rx="5" fill="#09090B" stroke="#A855F7" stroke-opacity="0.5"/>
+  <text x="554" y="198" fill="#C084FC" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="700">1. Meta GeoLift (SCM)</text>
+  <text x="554" y="216" fill="#CBD5E1" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="10">Build synthetic control regions</text>
+  <text x="554" y="230" fill="#CBD5E1" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="10">modeling true Y(0) baseline</text>
+
+  <rect x="544" y="250" width="194" height="62" rx="5" fill="#09090B" stroke="#A855F7" stroke-opacity="0.5"/>
+  <text x="554" y="270" fill="#C084FC" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="700">2. SUTVA Isolation</text>
+  <text x="554" y="288" fill="#CBD5E1" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="10">Zero cross-cell interference</text>
+  <text x="554" y="302" fill="#CBD5E1" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="10">across regions &amp; promo codes</text>
+
+  <rect x="544" y="322" width="194" height="62" rx="5" fill="#064E3B" fill-opacity="0.45" stroke="#10B981"/>
+  <text x="554" y="342" fill="#6EE7B7" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="800">3. iROAS &amp; MER Gates</text>
+  <text x="554" y="360" fill="#E2E8F0" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="10.5" font-weight="700">iROAS &gt;= 1.20</text>
+  <text x="554" y="375" fill="#E2E8F0" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="10.5" font-weight="700">MER 3.5 – 5.0</text>
+
+  <rect x="48" y="408" width="704" height="30" rx="5" fill="#18181B" stroke="#27272A"/>
+  <text x="64" y="427" fill="#E9D5FF" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="10.5" font-weight="700">CFO Bottom Line: Paying ad platforms for buyers who already intended to purchase organically is a hidden tax on pocket margin</text>
+
+  <text x="48" y="458" fill="#52525B" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="10.5">BRANDOS LAB™ // RUBIN CAUSAL INCREMENTALITY AUDIT</text>
+  <text x="752" y="458" text-anchor="end" fill="#52525B" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="10.5">FIG. M6-01</text>
+</svg>

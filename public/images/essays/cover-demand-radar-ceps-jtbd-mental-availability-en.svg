@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#18181B" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="glowCyan" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#00F2FE" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#09090B" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="500" fill="#09090B"/>
+  <rect width="800" height="500" fill="url(#grid)"/>
+  <rect width="800" height="500" fill="url(#glowCyan)"/>
+  <rect x="28" y="28" width="744" height="444" rx="12" fill="none" stroke="#27272A" stroke-width="1.5"/>
+  <text x="48" y="60" fill="#00F2FE" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11.5" font-weight="700">BRANDOS™ M1 // DEMAND RADAR &amp; MENTAL SENSING</text>
+  <text x="752" y="60" text-anchor="end" fill="#64748B" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11">EHRENBERG-BASS × JTBD</text>
+
+  <text x="48" y="96" fill="#F8FAFC" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="21.5" font-weight="800">Stop Starting Brands With Specs: Engineering Demand via CEPs &amp; JTBD</text>
+  <text x="48" y="120" fill="#94A3B8" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="12.5">Capturing Tier-1 Category Entry Points, Moesta’s Four Switch Forces &amp; 1–3 Star Review NLP Signals</text>
+
+  <!-- Left Radar Visual -->
+  <rect x="48" y="144" width="320" height="238" rx="10" fill="#111622" stroke="#1E293B"/>
+  <circle cx="208" cy="264" r="88" fill="none" stroke="#164E63" stroke-dasharray="4 4"/>
+  <circle cx="208" cy="264" r="56" fill="none" stroke="#0891B2" stroke-opacity="0.7"/>
+  <circle cx="208" cy="264" r="24" fill="#083344" stroke="#00F2FE" stroke-width="1.5"/>
+  <line x1="112" y1="264" x2="304" y2="264" stroke="#1E293B"/>
+  <line x1="208" y1="168" x2="208" y2="360" stroke="#1E293B"/>
+  <text x="208" y="268" text-anchor="middle" fill="#00F2FE" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11" font-weight="800">CEP CORE</text>
+  <circle cx="146" cy="208" r="6" fill="#00F2FE"/>
+  <text x="64" y="188" fill="#67E8F9" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="10.5" font-weight="700">CEP 1: Cupholder Commute</text>
+  <circle cx="272" cy="210" r="6" fill="#10B981"/>
+  <text x="234" y="188" fill="#6EE7B7" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="10.5" font-weight="700">CEP 2: 3-Day Blackout</text>
+  <circle cx="266" cy="316" r="6" fill="#38BDF8"/>
+  <text x="220" y="346" fill="#BAE6FD" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="10.5" font-weight="700">CEP 3: Leakproof Carry</text>
+  <text x="64" y="366" fill="#94A3B8" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="10">MMS · MPen · Network Size · SoM</text>
+
+  <!-- Right 3 Diagnostic Pillars -->
+  <rect x="386" y="144" width="366" height="72" rx="8" fill="#111622" stroke="#00F2FE" stroke-opacity="0.45"/>
+  <text x="404" y="169" fill="#00F2FE" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11" font-weight="800">01 // ROMANIUK 4 MENTAL AVAILABILITY METRICS</text>
+  <text x="404" y="191" fill="#E2E8F0" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="12" font-weight="700">Replace vanity "awareness" with binary CEP retrieval</text>
+  <text x="404" y="207" fill="#94A3B8" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="11">SparkToro 2024: 58.5% US Google searches end in zero clicks</text>
+
+  <rect x="386" y="227" width="366" height="72" rx="8" fill="#111622" stroke="#232B3E"/>
+  <text x="404" y="252" fill="#38BDF8" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11" font-weight="800">02 // CHRISTENSEN &amp; MOESTA FOUR FORCES</text>
+  <text x="404" y="274" fill="#E2E8F0" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="12" font-weight="700">Push + Pull &gt; Habit + Anxiety (Kill switch fear first)</text>
+  <text x="404" y="290" fill="#94A3B8" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="11">~40% of milkshakes hired for one-handed 20-min commutes</text>
+
+  <rect x="386" y="310" width="366" height="72" rx="8" fill="#111622" stroke="#232B3E"/>
+  <text x="404" y="335" fill="#10B981" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11" font-weight="800">03 // EMPIRICAL CEP BATTLEFIELD</text>
+  <text x="404" y="357" fill="#6EE7B7" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="11.5" font-weight="700">Winners: Stanley $70M→$750M | Owala +400% Surge</text>
+  <text x="404" y="373" fill="#FCA5A5" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="11">Failures: Humane Returns&gt;Sales ($116M) | Allbirds → $189.8M</text>
+
+  <rect x="48" y="396" width="704" height="42" rx="8" fill="#0F172A" stroke="#1E293B"/>
+  <text x="66" y="421" fill="#E2E8F0" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="11.5" font-weight="700">M1 Gatekeeper: Cluster 1–3 star VoC reviews + 8–12 Switch Interviews to lock 3 Tier-1 CEPs before tooling</text>
+
+  <text x="48" y="458" fill="#52525B" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="10.5">BRANDOS LAB™ // M1 DEMAND RADAR ARCHITECTURE</text>
+  <text x="752" y="458" text-anchor="end" fill="#52525B" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="10.5">COVER M1 // EN</text>
+</svg>
