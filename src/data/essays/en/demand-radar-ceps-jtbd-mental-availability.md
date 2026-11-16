@@ -4,7 +4,7 @@ description: "Beyond demographic personas: BrandOS™ M1 pairs Romaniuk's 4 CEP 
 lang: "en"
 module: "M1"
 moduleName: "Demand Radar"
-pubDate: 2026-11-16
+pubDate: 2026-09-07
 readingTime: "16 min read"
 featured: false
 author: "Ran"
