@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGradEn" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1120"/>
+      <stop offset="55%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#1E1B4B"/>
+    </linearGradient>
+    <pattern id="swissGridEn" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="0.6" stroke-opacity="0.35"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bgGradEn)"/>
+  <rect width="800" height="500" fill="url(#swissGridEn)"/>
+
+  <!-- Outer Frame -->
+  <rect x="28" y="28" width="744" height="444" rx="14" fill="none" stroke="#334155" stroke-width="1.2"/>
+
+  <!-- Top Header Badge -->
+  <rect x="52" y="50" width="290" height="28" rx="6" fill="#1E293B" stroke="#4F46E5" stroke-width="1.2"/>
+  <circle cx="68" cy="64" r="4" fill="#10B981"/>
+  <text x="82" y="68" fill="#E2E8F0" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="11.5" font-weight="700" letter-spacing="1">BRANDOS™ LAB · M5 CHOICE ARCHITECTURE</text>
+
+  <text x="748" y="68" text-anchor="end" fill="#64748B" font-family="monospace" font-size="11" letter-spacing="1.5">KAHNEMAN × THALER × CUGELMAN</text>
+
+  <!-- Main Title Block -->
+  <text x="52" y="114" fill="#F8FAFC" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="25" font-weight="800">Behavioral Economics × Choice Architecture</text>
+  <text x="52" y="144" fill="#94A3B8" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="13.5" font-weight="500">From Dark-Pattern Sludge to High-Trust Conversion Engineering &amp; Pricing Power</text>
+
+  <!-- Left Panel: Sludge Zone -->
+  <rect x="52" y="172" width="320" height="248" rx="12" fill="#0F172A" fill-opacity="0.88" stroke="#F43F5E" stroke-width="1.2" stroke-opacity="0.65"/>
+  <rect x="68" y="188" width="150" height="24" rx="4" fill="#4C0519" stroke="#F43F5E" stroke-width="0.8"/>
+  <text x="143" y="204" text-anchor="middle" fill="#FDA4AF" font-family="system-ui, -apple-system, sans-serif" font-size="10.5" font-weight="700">SLUDGE · DARK PATTERNS</text>
+  <text x="354" y="204" text-anchor="end" fill="#F43F5E" font-family="monospace" font-size="11" font-weight="700">λ = -2.25x Backlash</text>
+
+  <g transform="translate(68, 226)">
+    <rect width="288" height="48" rx="8" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+    <circle cx="22" cy="24" r="6" fill="#F43F5E"/>
+    <text x="38" y="21" fill="#F8FAFC" font-family="system-ui, -apple-system, sans-serif" font-size="12.5" font-weight="700">Fake Scarcity &amp; Drip Pricing Shock</text>
+    <text x="38" y="38" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif" font-size="10.5">Triggers PKM Defense · Baymard 70.22% Abandonment</text>
+  </g>
+
+  <g transform="translate(68, 284)">
+    <rect width="288" height="48" rx="8" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+    <circle cx="22" cy="24" r="6" fill="#FB923C"/>
+    <text x="38" y="21" fill="#F8FAFC" font-family="system-ui, -apple-system, sans-serif" font-size="12.5" font-weight="700">Cancellation Labyrinths (Iliad Flow)</text>
+    <text x="38" y="38" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif" font-size="10.5">Amazon $2.5B FTC Settlement · Adobe ETF Lawsuit</text>
+  </g>
+
+  <g transform="translate(68, 342)">
+    <rect width="288" height="58" rx="8" fill="#2A1215" stroke="#F43F5E" stroke-width="0.9" stroke-dasharray="4 3"/>
+    <text x="144" y="24" text-anchor="middle" fill="#FCA5A5" font-family="system-ui, -apple-system, sans-serif" font-size="11.5" font-weight="700">Outcome: Insecure / Pessimistic Quadrant</text>
+    <text x="144" y="42" text-anchor="middle" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif" font-size="10.5">High Refunds → Poisoned Ad Pixels → Runaway CAC</text>
+  </g>
+
+  <!-- Center Transition Arrow -->
+  <g transform="translate(382, 278)">
+    <rect x="0" y="0" width="36" height="36" rx="18" fill="#4F46E5"/>
+    <path d="M 11 18 L 25 18 M 19 12 L 25 18 L 19 24" fill="none" stroke="#F8FAFC" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Right Panel: BrandOS Nudge Architecture -->
+  <rect x="428" y="172" width="320" height="248" rx="12" fill="#0F172A" fill-opacity="0.92" stroke="#10B981" stroke-width="1.4"/>
+  <rect x="444" y="188" width="166" height="24" rx="4" fill="#064E3B" stroke="#10B981" stroke-width="0.8"/>
+  <text x="527" y="204" text-anchor="middle" fill="#6EE7B7" font-family="system-ui, -apple-system, sans-serif" font-size="10.5" font-weight="700">NUDGE · BRANDOS™ ENGINE</text>
+  <text x="732" y="204" text-anchor="end" fill="#10B981" font-family="monospace" font-size="11" font-weight="700">Compounding LTV</text>
+
+  <g transform="translate(444, 226)">
+    <rect width="288" height="48" rx="8" fill="#1E293B" stroke="#4F46E5" stroke-width="1"/>
+    <circle cx="22" cy="24" r="6" fill="#38BDF8"/>
+    <text x="38" y="21" fill="#F8FAFC" font-family="system-ui, -apple-system, sans-serif" font-size="12.5" font-weight="700">M3 Reference Shift &amp; M2 Pratfall Trust</text>
+    <text x="38" y="38" fill="#CBD5E1" font-family="system-ui, -apple-system, sans-serif" font-size="10.5">Anker eufy $0/mo Reframe · Frito-Lay EEG Guilt Drop</text>
+  </g>
+
+  <g transform="translate(444, 284)">
+    <rect width="288" height="48" rx="8" fill="#1E293B" stroke="#10B981" stroke-width="1"/>
+    <circle cx="22" cy="24" r="6" fill="#10B981"/>
+    <text x="38" y="21" fill="#F8FAFC" font-family="system-ui, -apple-system, sans-serif" font-size="12.5" font-weight="700">M5 Barrier Removal &amp; M6 IKEA Loop</text>
+    <text x="38" y="38" fill="#CBD5E1" font-family="system-ui, -apple-system, sans-serif" font-size="10.5">Airbnb 2x CVR (9%→23%) · Oura 24h Sizing to $1B Rev</text>
+  </g>
+
+  <g transform="translate(444, 342)">
+    <rect width="288" height="58" rx="8" fill="#064E3B" fill-opacity="0.45" stroke="#10B981" stroke-width="1"/>
+    <text x="144" y="24" text-anchor="middle" fill="#6EE7B7" font-family="system-ui, -apple-system, sans-serif" font-size="11.5" font-weight="700">Outcome: Cugelman Secure Quadrant</text>
+    <text x="144" y="42" text-anchor="middle" fill="#E2E8F0" font-family="system-ui, -apple-system, sans-serif" font-size="10.5">Removing 1 Unit of Friction = 2.25x Feature Hype</text>
+  </g>
+
+  <!-- Footer Bar -->
+  <line x1="52" y1="436" x2="748" y2="436" stroke="#334155" stroke-width="0.8"/>
+  <text x="52" y="456" fill="#64748B" font-family="system-ui, -apple-system, sans-serif" font-size="11">Primitives: Prospect Theory · Coherent Arbitrariness · Cugelman Emotion Map · 5-Sec AIM Test</text>
+  <text x="748" y="456" text-anchor="end" fill="#94A3B8" font-family="monospace" font-size="11" font-weight="700">RANBRANDOS.COM</text>
+</svg>

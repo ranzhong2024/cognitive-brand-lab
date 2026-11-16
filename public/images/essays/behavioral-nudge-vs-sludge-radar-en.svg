@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="radBgEn" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1120"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+    <pattern id="radGridEn" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#1E293B" stroke-width="0.8"/>
+    </pattern>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#radBgEn)"/>
+  <rect width="800" height="500" fill="url(#radGridEn)"/>
+  <rect x="28" y="28" width="744" height="444" rx="12" fill="none" stroke="#334155" stroke-width="1.2"/>
+
+  <!-- Header -->
+  <text x="48" y="60" fill="#10B981" font-family="monospace" font-size="11" font-weight="700" letter-spacing="1.5">DIAGNOSTIC RADAR · NUDGE VS. SLUDGE UNIT ECONOMICS</text>
+  <text x="48" y="88" fill="#F8FAFC" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-size="19.5" font-weight="800">Nudge (Choice Architecture) vs. Sludge (Dark Patterns) 5-Axis Diagnostic</text>
+  <text x="752" y="60" text-anchor="end" fill="#64748B" font-family="monospace" font-size="11">FIG 02 / DIAGNOSTIC MATRIX</text>
+
+  <!-- Left Radar Chart -->
+  <g>
+    <polygon points="235,158 349,241 306,375 164,375 121,241" fill="#0F172A" stroke="#334155" stroke-width="1.2"/>
+    <polygon points="235,198 311,253 282,343 188,343 159,253" fill="none" stroke="#334155" stroke-width="0.8" stroke-dasharray="3 3"/>
+    <polygon points="235,238 273,266 259,310 211,310 197,266" fill="none" stroke="#334155" stroke-width="0.8" stroke-dasharray="2 2"/>
+
+    <!-- Axes -->
+    <line x1="235" y1="278" x2="235" y2="158" stroke="#334155" stroke-width="0.9"/>
+    <line x1="235" y1="278" x2="349" y2="241" stroke="#334155" stroke-width="0.9"/>
+    <line x1="235" y1="278" x2="306" y2="375" stroke="#334155" stroke-width="0.9"/>
+    <line x1="235" y1="278" x2="164" y2="375" stroke="#334155" stroke-width="0.9"/>
+    <line x1="235" y1="278" x2="121" y2="241" stroke="#334155" stroke-width="0.9"/>
+
+    <!-- Sludge Polygon -->
+    <polygon points="235,248 265,268 249,298 196,331 142,248" fill="#F43F5E" fill-opacity="0.22" stroke="#F43F5E" stroke-width="2"/>
+
+    <!-- BrandOS Nudge Polygon -->
+    <polygon points="235,166 340,244 300,367 170,367 152,251" fill="#10B981" fill-opacity="0.25" stroke="#10B981" stroke-width="2.4"/>
+
+    <!-- Axis Labels -->
+    <text x="235" y="144" text-anchor="middle" fill="#F8FAFC" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700">Price Anchor Integrity (M3)</text>
+    <text x="356" y="244" text-anchor="start" fill="#F8FAFC" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700">Zero Friction (M5)</text>
+    <text x="314" y="396" text-anchor="middle" fill="#F8FAFC" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700">LTV Retention (M6)</text>
+    <text x="148" y="396" text-anchor="middle" fill="#F8FAFC" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700">Pixel &amp; Legal Safety (M4)</text>
+    <text x="115" y="236" text-anchor="end" fill="#FDA4AF" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700">FOMO Urgency</text>
+  </g>
+
+  <!-- Right Side Comparison Scorecard -->
+  <rect x="462" y="118" width="290" height="304" rx="10" fill="#0F172A" stroke="#334155" stroke-width="1.2"/>
+
+  <!-- Legend -->
+  <rect x="480" y="136" width="12" height="12" rx="3" fill="#10B981"/>
+  <text x="498" y="146" fill="#6EE7B7" font-family="system-ui, -apple-system, sans-serif" font-size="11.5" font-weight="700">BrandOS™ Nudge Architecture (4.8/5)</text>
+
+  <rect x="480" y="160" width="12" height="12" rx="3" fill="#F43F5E"/>
+  <text x="498" y="170" fill="#FDA4AF" font-family="system-ui, -apple-system, sans-serif" font-size="11.5" font-weight="700">Manipulative Sludge Patterns (1.8/5)</text>
+
+  <line x1="480" y1="186" x2="734" y2="186" stroke="#334155" stroke-width="0.8"/>
+
+  <!-- Metric Rows -->
+  <g transform="translate(480, 202)">
+    <text x="0" y="14" fill="#F8FAFC" font-family="system-ui, -apple-system, sans-serif" font-size="11.5" font-weight="700">1. Checkout Abandonment (Baymard)</text>
+    <text x="0" y="31" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif" font-size="10.5">Sludge drip-pricing hits 70.2%+ vs Upfront Total 2x CVR</text>
+  </g>
+
+  <g transform="translate(480, 254)">
+    <text x="0" y="14" fill="#F8FAFC" font-family="system-ui, -apple-system, sans-serif" font-size="11.5" font-weight="700">2. Emotional Landing Zone (Cugelman)</text>
+    <text x="0" y="31" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif" font-size="10.5">Sludge triggers Insecure Reactance vs Nudge Secure Trust</text>
+  </g>
+
+  <g transform="translate(480, 306)">
+    <text x="0" y="14" fill="#F8FAFC" font-family="system-ui, -apple-system, sans-serif" font-size="11.5" font-weight="700">3. Ad Algorithm Signal Health (M4)</text>
+    <text x="0" y="31" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif" font-size="10.5">Sludge trains pixels on refunders vs High-LTV lookalikes</text>
+  </g>
+
+  <g transform="translate(480, 358)">
+    <text x="0" y="14" fill="#F8FAFC" font-family="system-ui, -apple-system, sans-serif" font-size="11.5" font-weight="700">4. Regulatory &amp; Brand Equity Risk</text>
+    <text x="0" y="31" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif" font-size="10.5">FTC ROSCA / EU CPC fines vs Compounding Brand Equity</text>
+  </g>
+
+  <!-- Footer -->
+  <line x1="48" y1="438" x2="752" y2="438" stroke="#334155" stroke-width="0.8"/>
+  <text x="48" y="456" fill="#64748B" font-family="system-ui, -apple-system, sans-serif" font-size="10.5">Rule: Any conversion lift that relies on hidden fees or cancellation traps is high-interest brand debt.</text>
+  <text x="752" y="456" text-anchor="end" fill="#94A3B8" font-family="monospace" font-size="11" font-weight="700">RANBRANDOS.COM</text>
+</svg>

@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="radBgZh" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1120"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+    <pattern id="radGridZh" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#1E293B" stroke-width="0.8"/>
+    </pattern>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#radBgZh)"/>
+  <rect width="800" height="500" fill="url(#radGridZh)"/>
+  <rect x="28" y="28" width="744" height="444" rx="12" fill="none" stroke="#334155" stroke-width="1.2"/>
+
+  <!-- Header -->
+  <text x="48" y="60" fill="#10B981" font-family="monospace" font-size="11" font-weight="700" letter-spacing="1.5">DIAGNOSTIC RADAR · NUDGE VS. SLUDGE UNIT ECONOMICS</text>
+  <text x="48" y="88" fill="#F8FAFC" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="20" font-weight="800">Nudge（认知助推）vs. Sludge（心理淤泥）五维转化健康度雷达</text>
+  <text x="752" y="60" text-anchor="end" fill="#64748B" font-family="monospace" font-size="11">FIG 02 / DIAGNOSTIC MATRIX</text>
+
+  <!-- Left Radar Chart (Center: cx=235, cy=278, R=120) -->
+  <!-- Pentagon Outer R=120: (235,158), (349,241), (306,375), (164,375), (121,241) -->
+  <!-- Pentagon Mid R=80: (235,198), (311,253), (282,343), (188,343), (159,253) -->
+  <!-- Pentagon Inner R=40: (235,238), (273,266), (259,310), (211,310), (197,266) -->
+  <g>
+    <polygon points="235,158 349,241 306,375 164,375 121,241" fill="#0F172A" stroke="#334155" stroke-width="1.2"/>
+    <polygon points="235,198 311,253 282,343 188,343 159,253" fill="none" stroke="#334155" stroke-width="0.8" stroke-dasharray="3 3"/>
+    <polygon points="235,238 273,266 259,310 211,310 197,266" fill="none" stroke="#334155" stroke-width="0.8" stroke-dasharray="2 2"/>
+
+    <!-- Axes -->
+    <line x1="235" y1="278" x2="235" y2="158" stroke="#334155" stroke-width="0.9"/>
+    <line x1="235" y1="278" x2="349" y2="241" stroke="#334155" stroke-width="0.9"/>
+    <line x1="235" y1="278" x2="306" y2="375" stroke="#334155" stroke-width="0.9"/>
+    <line x1="235" y1="278" x2="164" y2="375" stroke="#334155" stroke-width="0.9"/>
+    <line x1="235" y1="278" x2="121" y2="241" stroke="#334155" stroke-width="0.9"/>
+
+    <!-- Sludge Polygon (Red: high impulse click, terrible trust/LTV/compliance) -->
+    <polygon points="235,248 265,268 249,298 196,331 142,248" fill="#F43F5E" fill-opacity="0.22" stroke="#F43F5E" stroke-width="2"/>
+
+    <!-- BrandOS Nudge Polygon (Emerald: high across sustainable dimensions) -->
+    <polygon points="235,166 340,244 300,367 170,367 152,251" fill="#10B981" fill-opacity="0.25" stroke="#10B981" stroke-width="2.4"/>
+
+    <!-- Axis Labels -->
+    <text x="235" y="144" text-anchor="middle" fill="#F8FAFC" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11.5" font-weight="700">价格锚点诚实度 (M3)</text>
+    <text x="360" y="244" text-anchor="start" fill="#F8FAFC" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11.5" font-weight="700">结账零摩擦 (M5)</text>
+    <text x="314" y="396" text-anchor="middle" fill="#F8FAFC" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11.5" font-weight="700">LTV 复利留存 (M6)</text>
+    <text x="150" y="396" text-anchor="middle" fill="#F8FAFC" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11.5" font-weight="700">合规与像素健康 (M4)</text>
+    <text x="112" y="236" text-anchor="end" fill="#FDA4AF" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11.5" font-weight="700">短期焦虑逼单</text>
+  </g>
+
+  <!-- Right Side Comparison Scorecard -->
+  <rect x="462" y="118" width="290" height="304" rx="10" fill="#0F172A" stroke="#334155" stroke-width="1.2"/>
+
+  <!-- Legend -->
+  <rect x="480" y="136" width="12" height="12" rx="3" fill="#10B981"/>
+  <text x="498" y="146" fill="#6EE7B7" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="12" font-weight="700">BrandOS™ 正向助推 (Nudge 4.8/5)</text>
+
+  <rect x="480" y="160" width="12" height="12" rx="3" fill="#F43F5E"/>
+  <text x="498" y="170" fill="#FDA4AF" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="12" font-weight="700">暗黑模式淤泥 (Sludge 1.8/5)</text>
+
+  <line x1="480" y1="186" x2="734" y2="186" stroke="#334155" stroke-width="0.8"/>
+
+  <!-- Metric Rows -->
+  <g transform="translate(480, 202)">
+    <text x="0" y="14" fill="#F8FAFC" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="12" font-weight="700">1. 结账弃购率 (Baymard 基准)</text>
+    <text x="0" y="32" fill="#94A3B8" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11">Sludge 滴水加价高达 70.2%+ vs 全包前置转化翻倍</text>
+  </g>
+
+  <g transform="translate(480, 254)">
+    <text x="0" y="14" fill="#F8FAFC" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="12" font-weight="700">2. 大脑情绪落点 (Cugelman 模型)</text>
+    <text x="0" y="32" fill="#94A3B8" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11">Sludge 困于 Insecure 防备 vs Nudge 稳居 Secure 安全区</text>
+  </g>
+
+  <g transform="translate(480, 306)">
+    <text x="0" y="14" fill="#F8FAFC" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="12" font-weight="700">3. 广告算法回传质量 (Meta/Google)</text>
+    <text x="0" y="32" fill="#94A3B8" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11">Sludge 招来高退货羊毛党 vs Nudge 沉淀高净值种子人群</text>
+  </g>
+
+  <g transform="translate(480, 358)">
+    <text x="0" y="14" fill="#F8FAFC" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="12" font-weight="700">4. 监管与品牌资产风险</text>
+    <text x="0" y="32" fill="#94A3B8" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11">FTC ROSCA / 欧盟 CPC 重罚 vs 长期定价权护城河</text>
+  </g>
+
+  <!-- Footer -->
+  <line x1="48" y1="438" x2="752" y2="438" stroke="#334155" stroke-width="0.8"/>
+  <text x="48" y="456" fill="#64748B" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11">诊断准则：任何需要靠“隐藏信息”或“制造退订障碍”才能维持的转化率，本质上都是高息负债。</text>
+  <text x="752" y="456" text-anchor="end" fill="#94A3B8" font-family="monospace" font-size="11" font-weight="700">RANBRANDOS.COM</text>
+</svg>

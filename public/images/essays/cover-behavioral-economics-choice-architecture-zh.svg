@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1120"/>
+      <stop offset="55%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#1E1B4B"/>
+    </linearGradient>
+    <linearGradient id="indigoGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366F1"/>
+      <stop offset="100%" stop-color="#38BDF8"/>
+    </linearGradient>
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10B981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <linearGradient id="crimsonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F43F5E"/>
+      <stop offset="100%" stop-color="#FB923C"/>
+    </linearGradient>
+    <pattern id="swissGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="0.6" stroke-opacity="0.35"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bgGrad)"/>
+  <rect width="800" height="500" fill="url(#swissGrid)"/>
+
+  <!-- Outer Frame -->
+  <rect x="28" y="28" width="744" height="444" rx="14" fill="none" stroke="#334155" stroke-width="1.2"/>
+
+  <!-- Top Header Badge -->
+  <rect x="52" y="50" width="248" height="28" rx="6" fill="#1E293B" stroke="#4F46E5" stroke-width="1.2"/>
+  <circle cx="68" cy="64" r="4" fill="#10B981"/>
+  <text x="82" y="69" fill="#E2E8F0" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12" font-weight="700" letter-spacing="1">BRANDOS™ LAB · M5 转化与选择架构</text>
+
+  <text x="748" y="68" text-anchor="end" fill="#64748B" font-family="monospace" font-size="11" letter-spacing="1.5">KAHNEMAN × THALER × CUGELMAN</text>
+
+  <!-- Main Title Block -->
+  <text x="52" y="116" fill="#F8FAFC" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="28" font-weight="800">行为经济学 × BrandOS™ 选择架构</text>
+  <text x="52" y="146" fill="#94A3B8" font-family="system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="14" font-weight="500">从“暗黑操纵淤泥（Sludge）”到“零摩擦认知助推（Nudge）”的高溢价复利跃迁</text>
+
+  <!-- Left Panel: Sludge Zone (Dark Patterns & Loss Trap) -->
+  <rect x="52" y="172" width="320" height="248" rx="12" fill="#0F172A" fill-opacity="0.88" stroke="#F43F5E" stroke-width="1.2" stroke-opacity="0.65"/>
+  <rect x="68" y="188" width="136" height="24" rx="4" fill="#4C0519" stroke="#F43F5E" stroke-width="0.8"/>
+  <text x="136" y="204" text-anchor="middle" fill="#FDA4AF" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" font-weight="700">SLUDGE · 心理淤泥陷阱</text>
+  <text x="354" y="204" text-anchor="end" fill="#F43F5E" font-family="monospace" font-size="11" font-weight="700">λ = -2.25x 反噬</text>
+
+  <!-- Sludge Items -->
+  <g transform="translate(68, 226)">
+    <rect width="288" height="48" rx="8" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+    <circle cx="22" cy="24" r="6" fill="#F43F5E"/>
+    <text x="38" y="21" fill="#F8FAFC" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="13" font-weight="700">伪稀缺倒计时 &amp; 滴水加价 (Drip Pricing)</text>
+    <text x="38" y="38" fill="#94A3B8" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11">触发 PKM 说服防御 · Baymard 70.22% 弃购主因</text>
+  </g>
+
+  <g transform="translate(68, 284)">
+    <rect width="288" height="48" rx="8" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+    <circle cx="22" cy="24" r="6" fill="#FB923C"/>
+    <text x="38" y="21" fill="#F8FAFC" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="13" font-weight="700">退订迷宫与违约金 (Iliad Flow &amp; ETF)</text>
+    <text x="38" y="38" fill="#94A3B8" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11">Amazon 25 亿美元和解 · Adobe FTC 诉讼重锤</text>
+  </g>
+
+  <g transform="translate(68, 342)">
+    <rect width="288" height="58" rx="8" fill="#2A1215" stroke="#F43F5E" stroke-width="0.9" stroke-dasharray="4 3"/>
+    <text x="144" y="24" text-anchor="middle" fill="#FCA5A5" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="12" font-weight="700">情绪落点：Insecure / Pessimistic 焦虑防备区</text>
+    <text x="144" y="43" text-anchor="middle" fill="#94A3B8" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11">短期逼单拉高退货率 → 污染广告像素 → CAC 失控</text>
+  </g>
+
+  <!-- Center Transition Arrow -->
+  <g transform="translate(382, 278)">
+    <rect x="0" y="0" width="36" height="36" rx="18" fill="#4F46E5"/>
+    <path d="M 11 18 L 25 18 M 19 12 L 25 18 L 19 24" fill="none" stroke="#F8FAFC" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Right Panel: BrandOS Nudge Architecture -->
+  <rect x="428" y="172" width="320" height="248" rx="12" fill="#0F172A" fill-opacity="0.92" stroke="#10B981" stroke-width="1.4"/>
+  <rect x="444" y="188" width="152" height="24" rx="4" fill="#064E3B" stroke="#10B981" stroke-width="0.8"/>
+  <text x="520" y="204" text-anchor="middle" fill="#6EE7B7" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11" font-weight="700">NUDGE · BrandOS™ 选择架构</text>
+  <text x="732" y="204" text-anchor="end" fill="#10B981" font-family="monospace" font-size="11" font-weight="700">LTV × CVR 复利</text>
+
+  <!-- Nudge Pillars -->
+  <g transform="translate(444, 226)">
+    <rect width="288" height="48" rx="8" fill="#1E293B" stroke="#4F46E5" stroke-width="1"/>
+    <circle cx="22" cy="24" r="6" fill="#38BDF8"/>
+    <text x="38" y="21" fill="#F8FAFC" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="13" font-weight="700">M3 参照点重构 &amp; M2 仰巴脚效应</text>
+    <text x="38" y="38" fill="#CBD5E1" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11">Anker eufy 0 月费破局 · Frito-Lay 消除大脑内疚</text>
+  </g>
+
+  <g transform="translate(444, 284)">
+    <rect width="288" height="48" rx="8" fill="#1E293B" stroke="#10B981" stroke-width="1"/>
+    <circle cx="22" cy="24" r="6" fill="#10B981"/>
+    <text x="38" y="21" fill="#F8FAFC" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="13" font-weight="700">M5 认知减阻 &amp; M6 禀赋/宜家飞轮</text>
+    <text x="38" y="38" fill="#CBD5E1" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11">Airbnb 转化翻倍 (9%→23%) · Oura 24h 试戴年入 $1B</text>
+  </g>
+
+  <g transform="translate(444, 342)">
+    <rect width="288" height="58" rx="8" fill="#064E3B" fill-opacity="0.45" stroke="#10B981" stroke-width="1"/>
+    <text x="144" y="24" text-anchor="middle" fill="#6EE7B7" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="12" font-weight="700">情绪落点：Cugelman Secure 笃定安全象限</text>
+    <text x="144" y="43" text-anchor="middle" fill="#E2E8F0" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11">消除 1 单位结账摩擦 = 2.25 单位卖点堆砌推力</text>
+  </g>
+
+  <!-- Footer Bar -->
+  <line x1="52" y1="436" x2="748" y2="436" stroke="#334155" stroke-width="0.8"/>
+  <text x="52" y="456" fill="#64748B" font-family="system-ui, -apple-system, 'PingFang SC', sans-serif" font-size="11">架构模型：前景理论 (Prospect Theory) · 连贯任意性 · Cugelman 情绪地图 · 5 秒 AIM 闪测</text>
+  <text x="748" y="456" text-anchor="end" fill="#94A3B8" font-family="monospace" font-size="11" font-weight="700">RANBRANDOS.COM</text>
+</svg>
