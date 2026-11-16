@@ -3,7 +3,7 @@ title: "别再用打折换伪销量：用 Price Waterfall 价格瀑布与 GBB �
 description: "拆解 Marn & Rosiello 11.1% 定价杠杆、Simon-Kucher 68% 幻觉与 43% 价格实现率落差，以及 2025 年美国 800 美元免税取消冲击；对比 YETI（230 bps 关税拖累下仍守 57.4%）、Apple 存储阶梯、Whoop HaaS 与 3B/JCPenney 战局，用麦肯锡价格瀑布与 GBB 锁死 BrandOS™ M3 65%+ 战略毛利。"
 module: "M3"
 moduleName: "价值定价与毛利工程"
-pubDate: 2026-11-15
+pubDate: 2026-10-05
 readingTime: "15 min read"
 tags:
   - "价值定价"
