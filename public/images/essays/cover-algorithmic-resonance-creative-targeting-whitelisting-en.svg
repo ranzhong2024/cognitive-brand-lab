@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#18181B" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="emeraldGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10B981" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#10B981" stop-opacity="0.02"/>
+    </linearGradient>
+    <linearGradient id="redGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EF4444" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#F59E0B" stop-opacity="0.04"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="#09090B"/>
+  <rect width="800" height="500" fill="url(#grid)"/>
+  <rect x="24" y="24" width="752" height="452" rx="12" fill="none" stroke="#27272A" stroke-width="1.5"/>
+
+  <rect x="44" y="42" width="214" height="24" rx="4" fill="#064E3B" stroke="#10B981" stroke-width="1"/>
+  <text x="151" y="58" text-anchor="middle" fill="#34D399" font-family="monospace" font-size="11" font-weight="700" letter-spacing="0.8">BRANDOS™ // M4 SCALE ENGINE</text>
+  <text x="756" y="58" text-anchor="end" fill="#71717A" font-family="monospace" font-size="11">ANDROMEDA × AL-CAT × PARTNERSHIP</text>
+
+  <text x="44" y="102" fill="#F8FAFC" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="22" font-weight="800">Algorithmic Resonance &amp; Creator Credibility Arbitrage</text>
+  <text x="44" y="128" fill="#94A3B8" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="13">Meta Andromeda scores 1B+ ads/sec—replacing manual audience slicing with creative probes &amp; whitelisting</text>
+
+  <rect x="44" y="154" width="332" height="260" rx="10" fill="url(#redGlow)" stroke="#7F1D1D" stroke-width="1.5"/>
+  <text x="64" y="182" fill="#FCA5A5" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="14" font-weight="700">The Legacy Trap: Sliced Ad Sets &amp; Studio Polish</text>
+  <text x="64" y="201" fill="#A1A1AA" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11">Learning-limited buckets + instant PKM ad-recognition defense</text>
+
+  <rect x="64" y="218" width="292" height="44" rx="5" fill="#18181B" stroke="#7F1D1D"/>
+  <text x="76" y="236" fill="#FECACA" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11.5" font-weight="700">1. Fragmented Ad Sets (&lt;50 conv/wk)</text>
+  <text x="76" y="253" fill="#A1A1AA" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="10.2">Auction overlap starves signal &amp; drives CPM inflation</text>
+
+  <rect x="64" y="270" width="292" height="44" rx="5" fill="#18181B" stroke="#7F1D1D"/>
+  <text x="76" y="288" fill="#FECACA" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11.5" font-weight="700">2. Brand-Handle Hi-Fi Studio Ads</text>
+  <text x="76" y="305" fill="#A1A1AA" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="10.2">Triggers Friestad &amp; Wright PKM shield; dies at Freq 3–4</text>
+
+  <rect x="64" y="322" width="292" height="44" rx="5" fill="#18181B" stroke="#7F1D1D"/>
+  <text x="76" y="340" fill="#FECACA" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11.5" font-weight="700">3. Unwhitelisted Organic Gifting Only</text>
+  <text x="76" y="357" fill="#A1A1AA" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="10.2">10%–20% post rates; 85% momentum decays in 48 hours</text>
+
+  <rect x="64" y="376" width="292" height="26" rx="4" fill="#450A0A" stroke="#EF4444"/>
+  <text x="210" y="393" text-anchor="middle" fill="#FECACA" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11.2" font-weight="700">Outcome: Spiking CPA / 3-Day Burnout / Vanity ROAS</text>
+
+  <path d="M 386 284 L 408 284" stroke="#10B981" stroke-width="2.5"/>
+  <polygon points="406,278 416,284 406,290" fill="#10B981"/>
+
+  <rect x="420" y="154" width="336" height="260" rx="10" fill="url(#emeraldGlow)" stroke="#10B981" stroke-width="1.5"/>
+  <text x="440" y="182" fill="#34D399" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="14" font-weight="700">BrandOS™ M4: Creative &amp; Whitelisting Engine</text>
+  <text x="440" y="201" fill="#A1A1AA" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11">Feed Andromeda liquid signals + borrow creator PSI trust</text>
+
+  <rect x="440" y="218" width="142" height="58" rx="6" fill="#09090B" stroke="#10B981" stroke-opacity="0.7"/>
+  <text x="452" y="242" fill="#34D399" font-family="monospace" font-size="18" font-weight="800">-45%</text>
+  <text x="452" y="262" fill="#CBD5E1" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="10.2">Cost / Incremental Buy</text>
+
+  <rect x="594" y="218" width="142" height="58" rx="6" fill="#09090B" stroke="#10B981" stroke-opacity="0.7"/>
+  <text x="606" y="242" fill="#34D399" font-family="monospace" font-size="18" font-weight="800">+35%</text>
+  <text x="606" y="262" fill="#CBD5E1" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="10.2">Median iROAS (EMEA)</text>
+
+  <rect x="440" y="286" width="142" height="58" rx="6" fill="#09090B" stroke="#334155"/>
+  <text x="452" y="310" fill="#FBBF24" font-family="monospace" font-size="18" font-weight="800">1B+/s</text>
+  <text x="452" y="330" fill="#CBD5E1" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="10.2">Andromeda Retrieval/Node</text>
+
+  <rect x="594" y="286" width="142" height="58" rx="6" fill="#09090B" stroke="#334155"/>
+  <text x="606" y="310" fill="#FBBF24" font-family="monospace" font-size="17" font-weight="800">Freq 6–8</text>
+  <text x="606" y="330" fill="#CBD5E1" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="10.2">2x Creative Fatigue Defense</text>
+
+  <rect x="440" y="354" width="296" height="48" rx="6" fill="#064E3B" fill-opacity="0.45" stroke="#10B981"/>
+  <text x="452" y="374" fill="#6EE7B7" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11.2" font-weight="700">Rule: Broad 1-CBO + 1:3:6 Grid + 30% Meme Allocation</text>
+  <text x="452" y="392" fill="#E2E8F0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="10.2">Scale Proof: HexClad ($1B) · True Classic · Ridge ($300M+)</text>
+
+  <text x="44" y="454" fill="#52525B" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11">BRANDOS LAB™ // Sources: Meta Engineering (Andromeda) · EMEA Conversion Lift</text>
+  <text x="756" y="454" text-anchor="end" fill="#52525B" font-family="monospace" font-size="11">FIG. M4-COVER</text>
+</svg>

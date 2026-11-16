@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#18181B" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="emeraldGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10B981" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#10B981" stop-opacity="0.02"/>
+    </linearGradient>
+    <linearGradient id="amberGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#EF4444" stop-opacity="0.04"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="#09090B"/>
+  <rect width="800" height="500" fill="url(#grid)"/>
+  <rect x="24" y="24" width="752" height="452" rx="12" fill="none" stroke="#27272A" stroke-width="1.5"/>
+
+  <rect x="44" y="42" width="194" height="24" rx="4" fill="#064E3B" stroke="#10B981" stroke-width="1"/>
+  <text x="141" y="58" text-anchor="middle" fill="#34D399" font-family="monospace" font-size="11" font-weight="700" letter-spacing="0.8">BRANDOS™ // M3 PRICING ENGINE</text>
+  <text x="756" y="58" text-anchor="end" fill="#71717A" font-family="monospace" font-size="11">MCKINSEY × SIMON-KUCHER × GBB</text>
+
+  <text x="44" y="102" fill="#F8FAFC" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="22" font-weight="800">Strategic Value Pricing &amp; Pocket Margin Engineering</text>
+  <text x="44" y="128" fill="#94A3B8" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="13">Plug McKinsey’s leaky Price Waterfall and lock in a 65%+ DTC pocket gross margin moat</text>
+
+  <!-- Left Panel -->
+  <rect x="44" y="154" width="336" height="260" rx="10" fill="url(#amberGlow)" stroke="#7F1D1D" stroke-width="1.5"/>
+  <text x="64" y="182" fill="#FCA5A5" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="14" font-weight="700">The Commodity Trap: The Leaky Pipe</text>
+  <text x="64" y="201" fill="#A1A1AA" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11">70% list-price illusion bleeds down to ≤12% pocket margin</text>
+
+  <rect x="64" y="218" width="296" height="30" rx="4" fill="#18181B" stroke="#3F3F46"/>
+  <text x="76" y="237" fill="#E4E4E7" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="12" font-weight="600">Headline List Price (MSRP)</text>
+  <text x="348" y="237" text-anchor="end" fill="#FBBF24" font-family="monospace" font-size="12" font-weight="700">100%</text>
+
+  <rect x="64" y="256" width="296" height="30" rx="4" fill="#18181B" stroke="#7F1D1D"/>
+  <text x="76" y="275" fill="#FCA5A5" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11.5">Promo Coupons &amp; Channel Fees (~43% realization)</text>
+  <text x="348" y="275" text-anchor="end" fill="#EF4444" font-family="monospace" font-size="12" font-weight="700">-33%</text>
+
+  <rect x="64" y="294" width="296" height="30" rx="4" fill="#18181B" stroke="#7F1D1D"/>
+  <text x="76" y="313" fill="#FCA5A5" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11.5">Tariffs / End of $800 De Minimis &amp; Free Shipping</text>
+  <text x="348" y="313" text-anchor="end" fill="#EF4444" font-family="monospace" font-size="12" font-weight="700">-28%</text>
+
+  <rect x="64" y="332" width="296" height="30" rx="4" fill="#18181B" stroke="#7F1D1D"/>
+  <text x="76" y="351" fill="#FCA5A5" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11.5">Unaudited Ad Burn Ignoring True Net PPM</text>
+  <text x="348" y="351" text-anchor="end" fill="#EF4444" font-family="monospace" font-size="12" font-weight="700">-27%</text>
+
+  <rect x="64" y="374" width="296" height="28" rx="4" fill="#450A0A" stroke="#EF4444" stroke-width="1"/>
+  <text x="212" y="392" text-anchor="middle" fill="#FECACA" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="12" font-weight="700">Remaining Pocket Profit ≤ 12% (Wiped Out by Duties)</text>
+
+  <path d="M 390 284 L 410 284" stroke="#10B981" stroke-width="2.5"/>
+  <polygon points="408,278 418,284 408,290" fill="#10B981"/>
+
+  <!-- Right Panel -->
+  <rect x="422" y="154" width="334" height="260" rx="10" fill="url(#emeraldGlow)" stroke="#10B981" stroke-width="1.5"/>
+  <text x="442" y="182" fill="#34D399" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="14" font-weight="700">BrandOS™ M3: 65%+ Margin Fortress</text>
+  <text x="442" y="201" fill="#A1A1AA" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11">+1% Price Improvement → +11.1% Operating Profit (HBR)</text>
+
+  <rect x="442" y="220" width="90" height="106" rx="6" fill="#0F172A" stroke="#334155"/>
+  <text x="487" y="242" text-anchor="middle" fill="#94A3B8" font-family="monospace" font-size="11" font-weight="700">GOOD</text>
+  <text x="487" y="262" text-anchor="middle" fill="#E2E8F0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="12" font-weight="700">Entry Anchor</text>
+  <text x="487" y="284" text-anchor="middle" fill="#64748B" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="10">Compare Shield</text>
+  <text x="487" y="302" text-anchor="middle" fill="#64748B" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="10">Capped Specs</text>
+
+  <rect x="544" y="212" width="94" height="114" rx="6" fill="#064E3B" stroke="#10B981" stroke-width="1.8"/>
+  <text x="591" y="234" text-anchor="middle" fill="#6EE7B7" font-family="monospace" font-size="11" font-weight="800">BETTER ★</text>
+  <text x="591" y="254" text-anchor="middle" fill="#FFFFFF" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="12.5" font-weight="800">Hero Cash Cow</text>
+  <text x="591" y="276" text-anchor="middle" fill="#34D399" font-family="monospace" font-size="14" font-weight="800">65%+ GM</text>
+  <text x="591" y="298" text-anchor="middle" fill="#A7F3D0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="10">Core Surplus</text>
+  <text x="591" y="314" text-anchor="middle" fill="#A7F3D0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="10">Best Value Cue</text>
+
+  <rect x="650" y="220" width="88" height="106" rx="6" fill="#0F172A" stroke="#F59E0B" stroke-width="1.2"/>
+  <text x="694" y="242" text-anchor="middle" fill="#FBBF24" font-family="monospace" font-size="11" font-weight="700">BEST</text>
+  <text x="694" y="262" text-anchor="middle" fill="#FEF3C7" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="12" font-weight="700">Halo Ceiling</text>
+  <text x="694" y="284" text-anchor="middle" fill="#94A3B8" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="10">Pulls Up ASP</text>
+  <text x="694" y="302" text-anchor="middle" fill="#94A3B8" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="10">Top WTP Tier</text>
+
+  <rect x="442" y="338" width="296" height="64" rx="6" fill="#09090B" stroke="#1E293B"/>
+  <text x="454" y="359" fill="#34D399" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11.5" font-weight="700">4 Price Fences + Quantitative WTP Calibration</text>
+  <text x="454" y="378" fill="#CBD5E1" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11">Identity × Time × Volume/Bundle × Feature Capping</text>
+  <text x="454" y="394" fill="#94A3B8" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="10.5">Proof: YETI SEC 10-K FY24 58.1% → FY25 57.4% GAAP GM</text>
+
+  <text x="44" y="454" fill="#52525B" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11">BRANDOS LAB™ // Verified Evidence: Marn &amp; Rosiello (HBR) · Simon-Kucher · YETI SEC 10-K</text>
+  <text x="756" y="454" text-anchor="end" fill="#52525B" font-family="monospace" font-size="11">FIG. M3-COVER</text>
+</svg>

@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#18181B" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="500" fill="#09090B"/>
+  <rect width="800" height="500" fill="url(#grid)"/>
+  <rect x="24" y="24" width="752" height="452" rx="12" fill="none" stroke="#27272A" stroke-width="1.5"/>
+
+  <text x="44" y="56" fill="#34D399" font-family="monospace" font-size="12" font-weight="700">PLAYBOOK // BROAD 1-CBO ARCHITECTURE × 1:3:6 PORTFOLIO &amp; SEEDING-TO-WHITELISTING</text>
+  <text x="756" y="56" text-anchor="end" fill="#71717A" font-family="monospace" font-size="11">CREATIVE PORTFOLIO</text>
+
+  <text x="44" y="88" fill="#F8FAFC" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="20" font-weight="800">Stop Treating Gifting as the Finish Line: 1:3:6 Grid + 30% Meme Slot</text>
+
+  <rect x="44" y="114" width="336" height="316" rx="10" fill="#111827" stroke="#1E293B"/>
+  <text x="64" y="142" fill="#34D399" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="13.5" font-weight="700">Seeding-to-Whitelisting Qualification Pipeline</text>
+
+  <rect x="64" y="160" width="296" height="54" rx="6" fill="#09090B" stroke="#334155"/>
+  <text x="76" y="180" fill="#FBBF24" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11.5" font-weight="700">Stage 1: Gifting as Cheap R&amp;D Radar</text>
+  <text x="76" y="199" fill="#94A3B8" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="10.2">Filter natural winners across 10%-20% organic post rates</text>
+
+  <rect x="64" y="226" width="296" height="54" rx="6" fill="#09090B" stroke="#10B981" stroke-opacity="0.7"/>
+  <text x="76" y="246" fill="#34D399" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11.5" font-weight="700">Stage 2: Buy Whitelisting on Top 10%</text>
+  <text x="76" y="265" fill="#CBD5E1" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="10.2">Beat the 48h 85% decay cliff with 90-day paid usage rights</text>
+
+  <rect x="64" y="292" width="296" height="54" rx="6" fill="#064E3B" fill-opacity="0.4" stroke="#10B981"/>
+  <text x="76" y="312" fill="#FFFFFF" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11.5" font-weight="700">Stage 3: Scale Inside Broad 1-CBO / ASC</text>
+  <text x="76" y="331" fill="#A7F3D0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="10.2">Allocate ≥30% to Partnership Ads → -45% incremental CPA</text>
+
+  <rect x="64" y="358" width="296" height="56" rx="6" fill="#18181B" stroke="#334155"/>
+  <text x="76" y="378" fill="#E2E8F0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11" font-weight="700">High-Arousal Hook Playbook (Russell + STEPPS):</text>
+  <text x="76" y="397" fill="#94A3B8" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="10.2">Pattern-Break Paradox × Extreme Torture Test × 30% Meme</text>
+
+  <rect x="398" y="114" width="358" height="316" rx="10" fill="#111827" stroke="#1E293B"/>
+  <text x="418" y="142" fill="#E2E8F0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="13.5" font-weight="700">1:3:6 Test Matrix × Unicorn Scale Proof</text>
+
+  <rect x="418" y="160" width="96" height="90" rx="6" fill="#09090B" stroke="#334155"/>
+  <text x="466" y="196" text-anchor="middle" fill="#34D399" font-family="monospace" font-size="24" font-weight="800">1</text>
+  <text x="466" y="220" text-anchor="middle" fill="#E2E8F0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11" font-weight="700">Core CEP Angle</text>
+  <text x="466" y="236" text-anchor="middle" fill="#64748B" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="10">From M1 Grid</text>
+
+  <rect x="528" y="160" width="96" height="90" rx="6" fill="#09090B" stroke="#334155"/>
+  <text x="576" y="196" text-anchor="middle" fill="#34D399" font-family="monospace" font-size="24" font-weight="800">3</text>
+  <text x="576" y="220" text-anchor="middle" fill="#E2E8F0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11" font-weight="700">Distinct Creators</text>
+  <text x="576" y="236" text-anchor="middle" fill="#64748B" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="10">Pro / Peer / Fan</text>
+
+  <rect x="638" y="160" width="98" height="90" rx="6" fill="#064E3B" fill-opacity="0.4" stroke="#10B981"/>
+  <text x="687" y="196" text-anchor="middle" fill="#FBBF24" font-family="monospace" font-size="24" font-weight="800">6</text>
+  <text x="687" y="220" text-anchor="middle" fill="#FFFFFF" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11" font-weight="700">3s Visual Hooks</text>
+  <text x="687" y="236" text-anchor="middle" fill="#A7F3D0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="10">Feed Andromeda</text>
+
+  <rect x="418" y="268" width="318" height="146" rx="6" fill="#09090B" stroke="#334155"/>
+  <text x="432" y="290" fill="#FBBF24" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="12" font-weight="700">Verified Scale Case Benchmarks</text>
+  <text x="432" y="314" fill="#E2E8F0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11.2" font-weight="700">· HexClad: $550M+ rev run-rate / $1B+ value</text>
+  <text x="440" y="331" fill="#94A3B8" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="9.5">Gordon Ramsay equity + Jul 2024 $100M Studio deal</text>
+  <text x="432" y="355" fill="#E2E8F0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11.2" font-weight="700">· True Classic: $250M–$300M+ rev scale</text>
+  <text x="440" y="372" fill="#94A3B8" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="9.5">Humor &amp; high-velocity 6-hook UGC in basic tees</text>
+  <text x="432" y="396" fill="#E2E8F0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11.2" font-weight="700">· Ridge Wallet: $300M+ cumulative sales</text>
+
+  <text x="44" y="458" fill="#52525B" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11">BRANDOS LAB™ // Sources: Jonah Berger STEPPS · Public Disclosures</text>
+  <text x="756" y="458" text-anchor="end" fill="#52525B" font-family="monospace" font-size="11">FIG. M4-02</text>
+</svg>

@@ -4,7 +4,7 @@ import AntithesisMatrix from '../AntithesisMatrix.astro';
 import BrandOSPipeline from '../BrandOSPipeline.astro';
 import EssayCard from '../EssayCard.astro';
 import { getCollection } from 'astro:content';
-import { getEssaySlug, getLocalizedPath, type Lang } from '../../utils/i18n';
+import { getEssaySlug, getLocalizedPath, sortEssaysByModule, type Lang } from '../../utils/i18n';
 
 interface Props {
   lang?: Lang;
@@ -107,11 +107,12 @@ const homeCustomSchema = {
       ]
 };
 
-const allEssays = (await getCollection('essays')).filter((e) => e.data.lang === lang);
-allEssays.sort((a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime());
+const allEssays = sortEssaysByModule(
+  (await getCollection('essays')).filter((e) => e.data.lang === lang)
+);
 
 const featuredEssay = allEssays.find((e) => e.data.featured) || allEssays[0];
-const otherEssays = allEssays.filter((e) => e.id !== featuredEssay?.id).slice(0, 3);
+const otherEssays = allEssays.filter((e) => e.id !== featuredEssay?.id);
 const featuredHref = featuredEssay ? getLocalizedPath(`/essays/${getEssaySlug(featuredEssay)}`, lang) : getLocalizedPath('/essays', lang);
 const essaysIndexHref = getLocalizedPath('/essays', lang);
 
@@ -455,7 +456,7 @@ const mailtoHref = isEn
     </div>
 
     {otherEssays.length > 0 && (
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mt-8">
+      <div class={`grid grid-cols-1 md:grid-cols-2 ${otherEssays.length === 2 || otherEssays.length === 4 ? 'lg:grid-cols-2' : 'lg:grid-cols-3'} gap-6 sm:gap-8 mt-8`}>
         {otherEssays.map((essay) => (
           <EssayCard essay={essay} lang={lang} />
         ))}

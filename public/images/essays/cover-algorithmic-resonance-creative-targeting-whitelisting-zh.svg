@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#18181B" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="emeraldGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10B981" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#10B981" stop-opacity="0.02"/>
+    </linearGradient>
+    <linearGradient id="redGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EF4444" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#F59E0B" stop-opacity="0.04"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="#09090B"/>
+  <rect width="800" height="500" fill="url(#grid)"/>
+  <rect x="24" y="24" width="752" height="452" rx="12" fill="none" stroke="#27272A" stroke-width="1.5"/>
+
+  <!-- Header Telemetry -->
+  <rect x="44" y="42" width="176" height="24" rx="4" fill="#064E3B" stroke="#10B981" stroke-width="1"/>
+  <text x="132" y="58" text-anchor="middle" fill="#34D399" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="11" font-weight="700" letter-spacing="1">BRANDOS™ // M4 算法共振</text>
+  <text x="756" y="58" text-anchor="end" fill="#71717A" font-family="monospace" font-size="11">ANDROMEDA × AL-CAT × PARTNERSHIP</text>
+
+  <!-- Title -->
+  <text x="44" y="102" fill="#F8FAFC" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="22.5" font-weight="800">算法共振：素材即定向探针与创作者信誉套利</text>
+  <text x="44" y="128" fill="#94A3B8" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="13">Meta Andromeda 每秒吞吐 10 亿+ 广告候选，杀死人工切组幻想与官方棚拍盲区</text>
+
+  <!-- Left Panel: Legacy Micro-Segmentation -->
+  <rect x="44" y="154" width="332" height="260" rx="10" fill="url(#redGlow)" stroke="#7F1D1D" stroke-width="1.5"/>
+  <text x="64" y="182" fill="#FCA5A5" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="14" font-weight="700">旧时代死路：人工切分 15 组 + 棚拍大片</text>
+  <text x="64" y="201" fill="#A1A1AA" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="11">预算碎裂 → 学习期卡死 + PKM 说服盾瞬间识别秒划走</text>
+
+  <rect x="64" y="218" width="292" height="44" rx="5" fill="#18181B" stroke="#7F1D1D"/>
+  <text x="76" y="236" fill="#FECACA" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="11.5" font-weight="700">1. 碎片化 Ad Set (&lt;50 周转化)</text>
+  <text x="76" y="253" fill="#A1A1AA" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="10.5">内部 Auction Overlap 自相残杀，模型永远喂不饱</text>
+
+  <rect x="64" y="270" width="292" height="44" rx="5" fill="#18181B" stroke="#7F1D1D"/>
+  <text x="76" y="288" fill="#FECACA" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="11.5" font-weight="700">2. 官方账号高精度棚拍 (Hi-Fi Ad)</text>
+  <text x="76" y="305" fill="#A1A1AA" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="10.5">触发 Friestad &amp; Wright PKM 防御，频次 3~4 必崩</text>
+
+  <rect x="64" y="322" width="292" height="44" rx="5" fill="#18181B" stroke="#7F1D1D"/>
+  <text x="76" y="340" fill="#FECACA" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="11.5" font-weight="700">3. 纯寄样无白标授权 (Unwhitelisted)</text>
+  <text x="76" y="357" fill="#A1A1AA" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="10.5">仅 10%~20% 发帖率，85% 流量 48 小时内衰减归零</text>
+
+  <rect x="64" y="376" width="292" height="26" rx="4" fill="#450A0A" stroke="#EF4444"/>
+  <text x="210" y="393" text-anchor="middle" fill="#FECACA" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="11.5" font-weight="700">结果：CPM 飙升 / 素材 3 天枯竭 / ROAS 失真</text>
+
+  <!-- Center Arrow -->
+  <path d="M 386 284 L 408 284" stroke="#10B981" stroke-width="2.5"/>
+  <polygon points="406,278 416,284 406,290" fill="#10B981"/>
+
+  <!-- Right Panel: BrandOS M4 Resonance Engine -->
+  <rect x="420" y="154" width="336" height="260" rx="10" fill="url(#emeraldGlow)" stroke="#10B981" stroke-width="1.5"/>
+  <text x="440" y="182" fill="#34D399" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="14" font-weight="700">BrandOS™ M4：算法共振与白标套利引擎</text>
+  <text x="440" y="201" fill="#A1A1AA" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="11">让素材成为算法探针 + 借壳创作者 PSI 绕开广告防御</text>
+
+  <!-- Stat Grid -->
+  <rect x="440" y="218" width="142" height="58" rx="6" fill="#09090B" stroke="#10B981" stroke-opacity="0.7"/>
+  <text x="452" y="242" fill="#34D399" font-family="monospace" font-size="18" font-weight="800">-45%</text>
+  <text x="452" y="262" fill="#CBD5E1" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="10.5">增量购买获客成本 (Meta)</text>
+
+  <rect x="594" y="218" width="142" height="58" rx="6" fill="#09090B" stroke="#10B981" stroke-opacity="0.7"/>
+  <text x="606" y="242" fill="#34D399" font-family="monospace" font-size="18" font-weight="800">+35%</text>
+  <text x="606" y="262" fill="#CBD5E1" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="10.5">中位数增量 iROAS</text>
+
+  <rect x="440" y="286" width="142" height="58" rx="6" fill="#09090B" stroke="#334155"/>
+  <text x="452" y="310" fill="#FBBF24" font-family="monospace" font-size="18" font-weight="800">1B+/s</text>
+  <text x="452" y="330" fill="#CBD5E1" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="10.5">Andromeda 单节点检索力</text>
+
+  <rect x="594" y="286" width="142" height="58" rx="6" fill="#09090B" stroke="#334155"/>
+  <text x="606" y="310" fill="#FBBF24" font-family="monospace" font-size="18" font-weight="800">2x 抗衰</text>
+  <text x="606" y="330" fill="#CBD5E1" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="10.5">白标耐受频次达 6~8 轮</text>
+
+  <rect x="440" y="354" width="296" height="48" rx="6" fill="#064E3B" fill-opacity="0.45" stroke="#10B981"/>
+  <text x="452" y="374" fill="#6EE7B7" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="11.5" font-weight="700">架构铁律：Broad 1-CBO + 1:3:6 矩阵 + 30% Meme 位</text>
+  <text x="452" y="392" fill="#E2E8F0" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="10.5">代表实战：HexClad ($1B 估值) · True Classic · Ridge Wallet</text>
+
+  <text x="44" y="454" fill="#52525B" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="11">BRANDOS LAB™ // 品牌科学实验室™ · 实证数据溯源 Meta Engineering · EMEA Conversion Lift</text>
+  <text x="756" y="454" text-anchor="end" fill="#52525B" font-family="monospace" font-size="11">FIG. M4-COVER</text>
+</svg>

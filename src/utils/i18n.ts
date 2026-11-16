@@ -1,5 +1,28 @@
 export type Lang = 'zh' | 'en';
 
+export const MODULE_ORDER: Record<string, number> = {
+  M1: 1,
+  M2: 2,
+  M3: 3,
+  M4: 4,
+  M5: 5,
+  M6: 6,
+};
+
+export function getModuleRank(mod: string): number {
+  return MODULE_ORDER[mod] ?? 99;
+}
+
+export function sortEssaysByModule<T extends { data: { module: string; pubDate: Date } }>(
+  essays: T[]
+): T[] {
+  return [...essays].sort((a, b) => {
+    const rankDiff = getModuleRank(a.data.module) - getModuleRank(b.data.module);
+    if (rankDiff !== 0) return rankDiff;
+    return new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime();
+  });
+}
+
 export function getEssaySlug(essay: { id: string }): string {
   return essay.id.replace(/^en\//, '');
 }

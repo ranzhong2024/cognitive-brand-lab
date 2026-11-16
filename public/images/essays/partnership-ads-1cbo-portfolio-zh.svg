@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#18181B" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="500" fill="#09090B"/>
+  <rect width="800" height="500" fill="url(#grid)"/>
+  <rect x="24" y="24" width="752" height="452" rx="12" fill="none" stroke="#27272A" stroke-width="1.5"/>
+
+  <text x="44" y="56" fill="#34D399" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="12" font-weight="700">PLAYBOOK // BROAD 1-CBO 账户极简架构 × 1:3:6 素材测试与白标转正闭环</text>
+  <text x="756" y="56" text-anchor="end" fill="#71717A" font-family="monospace" font-size="11">CREATIVE PORTFOLIO</text>
+
+  <text x="44" y="88" fill="#F8FAFC" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="20" font-weight="800">别再把寄样当终点：1:3:6 探针矩阵与 30% Meme 配额</text>
+
+  <!-- Left Column: Seeding to Whitelisting -->
+  <rect x="44" y="114" width="336" height="316" rx="10" fill="#111827" stroke="#1E293B"/>
+  <text x="64" y="142" fill="#34D399" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="13.5" font-weight="700">Seeding-to-Whitelisting 工业化筛选漏斗</text>
+
+  <rect x="64" y="160" width="296" height="54" rx="6" fill="#09090B" stroke="#334155"/>
+  <text x="76" y="180" fill="#FBBF24" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="11.5" font-weight="700">Stage 1: 寄样当低成本 R&amp;D 雷达</text>
+  <text x="76" y="199" fill="#94A3B8" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="10">只测发帖率 (10%-20%) 与完播梗，不奢望直接爆单</text>
+
+  <rect x="64" y="226" width="296" height="54" rx="6" fill="#09090B" stroke="#10B981" stroke-opacity="0.7"/>
+  <text x="76" y="246" fill="#34D399" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="11.5" font-weight="700">Stage 2: 锁定前 10% 赢家签白标授权</text>
+  <text x="76" y="265" fill="#CBD5E1" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="10.5">避开“48h 后 85% 衰减”，付费加签 90 天 Whitelisting/Spark Rights</text>
+
+  <rect x="64" y="292" width="296" height="54" rx="6" fill="#064E3B" fill-opacity="0.4" stroke="#10B981"/>
+  <text x="76" y="312" fill="#FFFFFF" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="11.5" font-weight="700">Stage 3: 灌入 Broad 1-CBO 池规模放大</text>
+  <text x="76" y="331" fill="#A7F3D0" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="10.5">Partnership 配比 ≥30% 预算，拿齐 -45% 增量获客成本红利</text>
+
+  <rect x="64" y="358" width="296" height="56" rx="6" fill="#18181B" stroke="#334155"/>
+  <text x="76" y="378" fill="#E2E8F0" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="11" font-weight="700">三大高唤醒 Hook 引擎 (Russell + STEPPS)：</text>
+  <text x="76" y="397" fill="#94A3B8" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="10.5">反常识认知冲突 × 极限酷刑实测 × 30% 低保真 Meme/评论截屏</text>
+
+  <!-- Right Column: 1:3:6 + Benchmarks -->
+  <rect x="398" y="114" width="358" height="316" rx="10" fill="#111827" stroke="#1E293B"/>
+  <text x="418" y="142" fill="#E2E8F0" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="13.5" font-weight="700">1:3:6 最小测试单元 × 十亿美元验证标杆</text>
+
+  <!-- 1:3:6 Diagram -->
+  <rect x="418" y="160" width="96" height="90" rx="6" fill="#09090B" stroke="#334155"/>
+  <text x="466" y="196" text-anchor="middle" fill="#34D399" font-family="monospace" font-size="24" font-weight="800">1</text>
+  <text x="466" y="220" text-anchor="middle" fill="#E2E8F0" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="11" font-weight="700">核心 CEP 痛点</text>
+  <text x="466" y="236" text-anchor="middle" fill="#64748B" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="10">联动 M1 场景</text>
+
+  <rect x="528" y="160" width="96" height="90" rx="6" fill="#09090B" stroke="#334155"/>
+  <text x="576" y="196" text-anchor="middle" fill="#34D399" font-family="monospace" font-size="24" font-weight="800">3</text>
+  <text x="576" y="220" text-anchor="middle" fill="#E2E8F0" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="11" font-weight="700">异构人设创作者</text>
+  <text x="576" y="236" text-anchor="middle" fill="#64748B" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="10">专家/素人/重度粉</text>
+
+  <rect x="638" y="160" width="98" height="90" rx="6" fill="#064E3B" fill-opacity="0.4" stroke="#10B981"/>
+  <text x="687" y="196" text-anchor="middle" fill="#FBBF24" font-family="monospace" font-size="24" font-weight="800">6</text>
+  <text x="687" y="220" text-anchor="middle" fill="#FFFFFF" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="11" font-weight="700">3 秒 Hook 变体</text>
+  <text x="687" y="236" text-anchor="middle" fill="#A7F3D0" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="10">喂饱 Andromeda</text>
+
+  <!-- Brand Cases -->
+  <rect x="418" y="268" width="318" height="146" rx="6" fill="#09090B" stroke="#334155"/>
+  <text x="432" y="290" fill="#FBBF24" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="12" font-weight="700">2024-2026 验证品牌增长标杆</text>
+  <text x="432" y="314" fill="#E2E8F0" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="11.2" font-weight="700">· HexClad：$5.5亿+ 年营收 / $10亿+ 估值</text>
+  <text x="440" y="331" fill="#94A3B8" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="9.5">Ramsay 股权合伙 + 2024.7 $1亿注资 + 酷刑实测</text>
+  <text x="432" y="355" fill="#E2E8F0" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="11.2" font-weight="700">· True Classic：$2.5亿~$3亿+ 年营收规模</text>
+  <text x="440" y="372" fill="#94A3B8" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="9.5">接地气搞笑痛点 + 高频 6 钩子 UGC 突破红海</text>
+  <text x="432" y="396" fill="#E2E8F0" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="11.2" font-weight="700">· Ridge Wallet：$3亿+ 累计销售额（跨圈对比）</text>
+
+  <text x="44" y="458" fill="#52525B" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="11">BRANDOS LAB™ // 品牌科学实验室™ · 数据源：Jonah Berger STEPPS · 公开商业披露</text>
+  <text x="756" y="458" text-anchor="end" fill="#52525B" font-family="monospace" font-size="11">FIG. M4-02</text>
+</svg>

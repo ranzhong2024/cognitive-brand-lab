@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#18181B" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="500" fill="#09090B"/>
+  <rect width="800" height="500" fill="url(#grid)"/>
+  <rect x="24" y="24" width="752" height="452" rx="12" fill="none" stroke="#27272A" stroke-width="1.5"/>
+
+  <text x="44" y="56" fill="#34D399" font-family="monospace" font-size="12" font-weight="700">DIAGNOSTIC // MCKINSEY POCKET PRICE WATERFALL × BRANDOS™ M3 SHIELD</text>
+  <text x="756" y="56" text-anchor="end" fill="#71717A" font-family="monospace" font-size="11">WATERFALL AUDIT</text>
+
+  <text x="44" y="88" fill="#F8FAFC" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="20" font-weight="800">Why 70% Headline Gross Margin Shrinks to 12% on the P&amp;L</text>
+  <text x="44" y="110" fill="#94A3B8" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="12">Simon-Kucher Global Pricing Study: average price realization dropped to ~43% due to off-invoice leakage</text>
+
+  <rect x="44" y="138" width="110" height="220" rx="6" fill="#1E293B" stroke="#475569"/>
+  <text x="99" y="164" text-anchor="middle" fill="#F8FAFC" font-family="monospace" font-size="16" font-weight="800">$100.0</text>
+  <text x="99" y="186" text-anchor="middle" fill="#CBD5E1" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="12" font-weight="700">List Price</text>
+  <text x="99" y="204" text-anchor="middle" fill="#94A3B8" font-family="monospace" font-size="10">MSRP Baseline</text>
+
+  <rect x="172" y="138" width="110" height="62" rx="4" fill="#450A0A" stroke="#EF4444"/>
+  <text x="227" y="166" text-anchor="middle" fill="#FCA5A5" font-family="monospace" font-size="14" font-weight="800">-$18.0</text>
+  <text x="227" y="184" text-anchor="middle" fill="#FECACA" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="10.5">Stacking Coupons</text>
+  <rect x="172" y="206" width="110" height="152" rx="6" fill="#0F172A" stroke="#334155"/>
+  <text x="227" y="232" text-anchor="middle" fill="#E2E8F0" font-family="monospace" font-size="14" font-weight="700">$82.0</text>
+  <text x="227" y="250" text-anchor="middle" fill="#94A3B8" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11">Invoice Price</text>
+
+  <rect x="300" y="206" width="110" height="58" rx="4" fill="#450A0A" stroke="#EF4444"/>
+  <text x="355" y="232" text-anchor="middle" fill="#FCA5A5" font-family="monospace" font-size="14" font-weight="800">-$22.0</text>
+  <text x="355" y="250" text-anchor="middle" fill="#FECACA" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="10.5">Fees / Free Ship / Ret</text>
+  <rect x="300" y="270" width="110" height="88" rx="6" fill="#0F172A" stroke="#334155"/>
+  <text x="355" y="294" text-anchor="middle" fill="#E2E8F0" font-family="monospace" font-size="14" font-weight="700">$60.0</text>
+  <text x="355" y="312" text-anchor="middle" fill="#94A3B8" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11">Pocket Price</text>
+
+  <rect x="428" y="270" width="110" height="60" rx="4" fill="#431407" stroke="#F59E0B"/>
+  <text x="483" y="296" text-anchor="middle" fill="#FDE68A" font-family="monospace" font-size="14" font-weight="800">-$48.0</text>
+  <text x="483" y="314" text-anchor="middle" fill="#FCD34D" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="10.5">COGS+Duty+TACOS</text>
+  <rect x="428" y="336" width="110" height="22" rx="4" fill="#7F1D1D" stroke="#EF4444"/>
+  <text x="483" y="351" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="11" font-weight="800">$12 Left (12%)</text>
+
+  <rect x="558" y="138" width="198" height="220" rx="8" fill="#064E3B" fill-opacity="0.35" stroke="#10B981" stroke-width="1.5"/>
+  <text x="657" y="166" text-anchor="middle" fill="#34D399" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="13.5" font-weight="800">BrandOS M3 Margin Fixes</text>
+
+  <rect x="572" y="182" width="170" height="46" rx="5" fill="#09090B" stroke="#10B981" stroke-opacity="0.5"/>
+  <text x="582" y="201" fill="#6EE7B7" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11" font-weight="700">1. Kill Blanket Coupons</text>
+  <text x="582" y="218" fill="#CBD5E1" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="10">Use high-margin bonus gifts instead</text>
+
+  <rect x="572" y="236" width="170" height="46" rx="5" fill="#09090B" stroke="#10B981" stroke-opacity="0.5"/>
+  <text x="582" y="255" fill="#6EE7B7" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11" font-weight="700">2. GBB Tier Up-Selling</text>
+  <text x="582" y="272" fill="#CBD5E1" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="10">Lift AOV to absorb fixed duties</text>
+
+  <rect x="572" y="290" width="170" height="54" rx="5" fill="#09090B" stroke="#10B981" stroke-opacity="0.5"/>
+  <text x="582" y="309" fill="#6EE7B7" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11" font-weight="700">3. Net PPM Pre-Flight Gate</text>
+  <text x="582" y="326" fill="#CBD5E1" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="10">Enforce 65%+ DTC pocket floor</text>
+
+  <rect x="44" y="378" width="712" height="58" rx="8" fill="#18181B" stroke="#27272A"/>
+  <text x="64" y="401" fill="#F8FAFC" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11.5" font-weight="700">Empirical Lessons:</text>
+  <text x="180" y="401" fill="#FCA5A5" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11">BB&amp;B 20% coupon → 2023 Ch.11 | JCPenney cold-turkey EDLP → -25.2% comp sales shock</text>
+  <text x="64" y="422" fill="#34D399" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11">Resilient Winners: Apple storage ladder (62%-68% incr. GM) · YETI 58.1%→57.4% GAAP GM</text>
+
+  <text x="44" y="458" fill="#52525B" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11">BRANDOS LAB™ // Illustrative Pocket Price Waterfall Breakdown Model</text>
+  <text x="756" y="458" text-anchor="end" fill="#52525B" font-family="monospace" font-size="11">FIG. M3-01</text>
+</svg>

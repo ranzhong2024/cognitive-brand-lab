@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#18181B" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="emeraldGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10B981" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#10B981" stop-opacity="0.02"/>
+    </linearGradient>
+    <linearGradient id="amberGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#EF4444" stop-opacity="0.04"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="#09090B"/>
+  <rect width="800" height="500" fill="url(#grid)"/>
+
+  <!-- Outer Frame -->
+  <rect x="24" y="24" width="752" height="452" rx="12" fill="none" stroke="#27272A" stroke-width="1.5"/>
+
+  <!-- Header Telemetry -->
+  <rect x="44" y="42" width="166" height="24" rx="4" fill="#064E3B" stroke="#10B981" stroke-width="1"/>
+  <text x="127" y="58" text-anchor="middle" fill="#34D399" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="11" font-weight="700" letter-spacing="1">BRANDOS™ // M3 定价引擎</text>
+  <text x="756" y="58" text-anchor="end" fill="#71717A" font-family="monospace" font-size="11">MCKINSEY × SIMON-KUCHER × GBB</text>
+
+  <!-- Title Block -->
+  <text x="44" y="102" fill="#F8FAFC" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="23" font-weight="800">价值定价与口袋毛利工程：告别挂牌自嗨</text>
+  <text x="44" y="128" fill="#94A3B8" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="13">堵死价格瀑布漏损 × 构建三碗面阶梯防线，锁死 DTC 65%+ 口袋毛利底线</text>
+
+  <!-- Left Panel: Leaky Pipe Trap -->
+  <rect x="44" y="154" width="336" height="260" rx="10" fill="url(#amberGlow)" stroke="#7F1D1D" stroke-width="1.5"/>
+  <text x="64" y="182" fill="#FCA5A5" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="14" font-weight="700">常规卖家死穴：漏水的自来水管道</text>
+  <text x="64" y="201" fill="#A1A1AA" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="11">挂牌 70% 毛利幻觉 → 到手跌穿 12% 甚至亏本</text>
+
+  <!-- Waterfall Leak Steps -->
+  <rect x="64" y="218" width="296" height="30" rx="4" fill="#18181B" stroke="#3F3F46"/>
+  <text x="76" y="237" fill="#E4E4E7" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="12" font-weight="600">名义挂牌价 (List Price)</text>
+  <text x="348" y="237" text-anchor="end" fill="#FBBF24" font-family="monospace" font-size="12" font-weight="700">100%</text>
+
+  <rect x="64" y="256" width="296" height="30" rx="4" fill="#18181B" stroke="#7F1D1D"/>
+  <text x="76" y="275" fill="#FCA5A5" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="12">叠券折扣 + 渠道佣金 (实现率仅 ~43%)</text>
+  <text x="348" y="275" text-anchor="end" fill="#EF4444" font-family="monospace" font-size="12" font-weight="700">-33%</text>
+
+  <rect x="64" y="294" width="296" height="30" rx="4" fill="#18181B" stroke="#7F1D1D"/>
+  <text x="76" y="313" fill="#FCA5A5" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="12">关税 / de minimis 取消 + 包邮逆向损耗</text>
+  <text x="348" y="313" text-anchor="end" fill="#EF4444" font-family="monospace" font-size="12" font-weight="700">-28%</text>
+
+  <rect x="64" y="332" width="296" height="30" rx="4" fill="#18181B" stroke="#7F1D1D"/>
+  <text x="76" y="351" fill="#FCA5A5" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="12">未核算 Net PPM 的盲目广告烧钱</text>
+  <text x="348" y="351" text-anchor="end" fill="#EF4444" font-family="monospace" font-size="12" font-weight="700">-27%</text>
+
+  <rect x="64" y="374" width="296" height="28" rx="4" fill="#450A0A" stroke="#EF4444" stroke-width="1"/>
+  <text x="212" y="392" text-anchor="middle" fill="#FECACA" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="12" font-weight="700">最终口袋净利残值 ≤ 12%（关税一击穿仓）</text>
+
+  <!-- Center Arrow -->
+  <path d="M 390 284 L 410 284" stroke="#10B981" stroke-width="2.5"/>
+  <polygon points="408,278 418,284 408,290" fill="#10B981"/>
+
+  <!-- Right Panel: BrandOS M3 Fortress -->
+  <rect x="422" y="154" width="334" height="260" rx="10" fill="url(#emeraldGlow)" stroke="#10B981" stroke-width="1.5"/>
+  <text x="442" y="182" fill="#34D399" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="14" font-weight="700">BrandOS™ M3：65%+ 毛利防御盾</text>
+  <text x="442" y="201" fill="#A1A1AA" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="11">涨价 1% → 营业利润暴增 +11.1%（HBR 实证）</text>
+
+  <!-- 3-Tier GBB Architecture -->
+  <rect x="442" y="220" width="90" height="106" rx="6" fill="#0F172A" stroke="#334155"/>
+  <text x="487" y="242" text-anchor="middle" fill="#94A3B8" font-family="monospace" font-size="11" font-weight="700">GOOD</text>
+  <text x="487" y="262" text-anchor="middle" fill="#E2E8F0" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="12" font-weight="700">破冰锚点</text>
+  <text x="487" y="284" text-anchor="middle" fill="#64748B" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="10">卡住价格对比</text>
+  <text x="487" y="302" text-anchor="middle" fill="#64748B" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="10">功能精准阉割</text>
+
+  <rect x="544" y="212" width="94" height="114" rx="6" fill="#064E3B" stroke="#10B981" stroke-width="1.8"/>
+  <text x="591" y="234" text-anchor="middle" fill="#6EE7B7" font-family="monospace" font-size="11" font-weight="800">BETTER ★</text>
+  <text x="591" y="254" text-anchor="middle" fill="#FFFFFF" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="13" font-weight="800">主力利润牛</text>
+  <text x="591" y="276" text-anchor="middle" fill="#34D399" font-family="monospace" font-size="14" font-weight="800">65%+ GM</text>
+  <text x="591" y="298" text-anchor="middle" fill="#A7F3D0" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="10">捕获核心人群</text>
+  <text x="591" y="314" text-anchor="middle" fill="#A7F3D0" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="10">最高性价比感</text>
+
+  <rect x="650" y="220" width="88" height="106" rx="6" fill="#0F172A" stroke="#F59E0B" stroke-width="1.2"/>
+  <text x="694" y="242" text-anchor="middle" fill="#FBBF24" font-family="monospace" font-size="11" font-weight="700">BEST</text>
+  <text x="694" y="262" text-anchor="middle" fill="#FEF3C7" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="12" font-weight="700">旗舰锚点</text>
+  <text x="694" y="284" text-anchor="middle" fill="#94A3B8" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="10">拉高心智上限</text>
+  <text x="694" y="302" text-anchor="middle" fill="#94A3B8" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="10">收割高溢价</text>
+
+  <!-- 4 Fences + YETI Evidence Strip -->
+  <rect x="442" y="338" width="296" height="64" rx="6" fill="#09090B" stroke="#1E293B"/>
+  <text x="454" y="359" fill="#34D399" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="11.5" font-weight="700">4 Price Fences 防套利 + WTP 实证量尺</text>
+  <text x="454" y="378" fill="#CBD5E1" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="11">人群资格 × 时效窗口 × 阶梯组装 × 产品微调</text>
+  <text x="454" y="394" fill="#94A3B8" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="10.5">标杆：YETI FY24 58.1%→FY25 57.4% GAAP 稳扛关税</text>
+
+  <!-- Footer Watermark -->
+  <text x="44" y="454" fill="#52525B" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="11">BRANDOS LAB™ // 品牌科学实验室™ · 实证数据溯源 Marn &amp; Rosiello (HBR) · Simon-Kucher · YETI SEC 10-K</text>
+  <text x="756" y="454" text-anchor="end" fill="#52525B" font-family="monospace" font-size="11">FIG. M3-COVER</text>
+</svg>

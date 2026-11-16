@@ -4,7 +4,7 @@ import ModuleSectionCard from '../ModuleSectionCard.astro';
 import EssayCard from '../EssayCard.astro';
 import { getCollection } from 'astro:content';
 import type { ModuleDefinition } from '../../data/modules';
-import { getLocalizedPath, type Lang } from '../../utils/i18n';
+import { getLocalizedPath, sortEssaysByModule, type Lang } from '../../utils/i18n';
 
 interface Props {
   module: ModuleDefinition;
@@ -15,7 +15,9 @@ const { module, lang = 'zh' } = Astro.props;
 const isEn = lang === 'en';
 const { id, title, description, systemContext, nextModule, prevModule, sections, slug } = module;
 
-const allEssays = (await getCollection('essays')).filter((e) => e.data.lang === lang);
+const allEssays = sortEssaysByModule(
+  (await getCollection('essays')).filter((e) => e.data.lang === lang)
+);
 const essays = allEssays.filter((e) => e.data.module === id);
 
 const homeUrl = `https://ranbrandos.com${getLocalizedPath('/', lang)}`;
