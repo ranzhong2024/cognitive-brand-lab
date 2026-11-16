@@ -3,7 +3,7 @@ title: "别再靠人口标签给品牌算命了：BrandOS™ M1 勘测心智，�
 description: "停止靠人口标签猜需求：BrandOS™ M1 勘测心智拆解 Romaniuk CEP 四维审计、奶昔 JTBD 与 Moesta 四力模型、SparkToro 58.5% 零点击 AI 拦截；复盘 Stanley/Owala、EcoFlow/Anker、Humane 与 Allbirds，附 14 天 MVT。"
 module: "M1"
 moduleName: "勘测心智"
-pubDate: 2026-11-16
+pubDate: 2026-09-07
 readingTime: "16 min read"
 tags:
   - "BrandOS"
