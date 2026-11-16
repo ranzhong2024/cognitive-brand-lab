@@ -29,7 +29,12 @@ const {
 
 const isEn = lang === 'en';
 const siteUrl = 'https://ranbrandos.com';
-const currentUrl = new URL(Astro.url.pathname, siteUrl).toString().replace(/\/$/, '') || siteUrl;
+const rawPath = Astro.url.pathname || '/';
+const canonicalPath =
+  rawPath === '/' || rawPath.endsWith('/') || /\.[a-z0-9]+$/i.test(rawPath)
+    ? rawPath
+    : `${rawPath}/`;
+const currentUrl = new URL(canonicalPath, siteUrl).toString();
 const orgId = `${siteUrl}/#organization`;
 const founderId = `${siteUrl}/#founder`;
 const ontologyId = `${siteUrl}/#brandos-ontology`;
@@ -42,7 +47,7 @@ const organizationNode = {
   "@id": orgId,
   "name": isEn ? "BrandOS Lab™" : "品牌科学实验室™",
   "alternateName": ["BRANDOS LAB™", "BrandOS Laboratory", "Cognitive Brand Lab", "RAN BRAND OS LAB", "品牌科学实验室™"],
-  "url": isEn ? `${siteUrl}/en/` : siteUrl,
+  "url": isEn ? `${siteUrl}/en/` : `${siteUrl}/`,
   "logo": {
     "@type": "ImageObject",
     "url": `${siteUrl}/brandos-logo.svg`,
@@ -210,7 +215,7 @@ const definedTermSetNode = {
 const websiteNode = {
   "@type": "WebSite",
   "@id": `${siteUrl}/#website`,
-  "url": isEn ? `${siteUrl}/en/` : siteUrl,
+  "url": isEn ? `${siteUrl}/en/` : `${siteUrl}/`,
   "name": isEn ? "BrandOS Lab™" : "品牌科学实验室™ (BRANDOS LAB™)",
   "alternateName": "BrandOS Lab",
   "description": isEn
@@ -223,7 +228,7 @@ const websiteNode = {
 // 4. Current WebPage Node
 const pageNode: Record<string, any> = {
   "@type": type === 'article' ? "TechArticle" : "WebPage",
-  "@id": `${currentUrl}/#webpage`,
+  "@id": `${currentUrl}#webpage`,
   "url": currentUrl,
   "name": title,
   "description": description,
@@ -236,7 +241,7 @@ const pageNode: Record<string, any> = {
         "@type": "ListItem",
         "position": 1,
         "name": isEn ? "Home" : "首页",
-        "item": isEn ? `${siteUrl}/en/` : siteUrl
+        "item": isEn ? `${siteUrl}/en/` : `${siteUrl}/`
       }
     ]
   }
