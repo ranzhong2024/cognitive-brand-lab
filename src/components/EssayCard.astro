@@ -29,6 +29,7 @@ const essayHref = getLocalizedPath(`/essays/${slug}`, lang);
 
 // Module Color Mapping
 const moduleColors: Record<string, { badge: string; border: string; accent: string; coverBg: string }> = {
+  BrandOS: { badge: 'text-sky-300 bg-sky-950/70 border-sky-500/50', border: 'hover:border-sky-400/60', accent: '#38BDF8', coverBg: 'from-sky-950/40 to-[#111622]' },
   M1: { badge: 'text-cyan-400 bg-cyan-950/60 border-cyan-800/60', border: 'hover:border-cyan-500/60', accent: '#00F2FE', coverBg: 'from-cyan-950/40 to-[#111622]' },
   M2: { badge: 'text-indigo-400 bg-indigo-950/60 border-indigo-800/60', border: 'hover:border-indigo-500/60', accent: '#818CF8', coverBg: 'from-indigo-950/40 to-[#111622]' },
   M3: { badge: 'text-emerald-400 bg-emerald-950/60 border-emerald-800/60', border: 'hover:border-emerald-500/60', accent: '#10B981', coverBg: 'from-emerald-950/40 to-[#111622]' },

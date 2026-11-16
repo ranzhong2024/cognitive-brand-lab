@@ -216,12 +216,14 @@
 
 .prose-custom table {
   width: 100%;
+  max-width: 100%;
   border-collapse: collapse;
   margin: 2.5rem 0;
   font-size: 0.95rem;
   line-height: 1.75;
   display: block;
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .prose-custom th {
