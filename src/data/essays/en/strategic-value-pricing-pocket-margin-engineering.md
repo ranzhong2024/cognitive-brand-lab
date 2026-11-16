@@ -4,7 +4,7 @@ description: "Why a 1% price gain drives 11.1% operating profit while average pr
 lang: "en"
 module: "M3"
 moduleName: "Strategic Value Pricing & Margin Engineering"
-pubDate: 2026-11-15
+pubDate: 2026-10-05
 readingTime: "15 min read"
 featured: false
 author: "Ran"
