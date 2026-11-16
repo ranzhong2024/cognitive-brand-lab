@@ -2,7 +2,6 @@
 import Layout from '../../layouts/Layout.astro';
 import AntithesisMatrix from '../AntithesisMatrix.astro';
 import BrandOSPipeline from '../BrandOSPipeline.astro';
-import EssayCard from '../EssayCard.astro';
 import { getCollection } from 'astro:content';
 import { getEssaySlug, getLocalizedPath, sortEssaysByModule, type Lang } from '../../utils/i18n';
 
@@ -113,12 +112,12 @@ const allEssays = sortEssaysByModule(
 
 const coreEssays = allEssays.filter((e) => e.data.module !== 'Dispatch');
 const dispatchEssays = allEssays.filter((e) => e.data.module === 'Dispatch');
+// Keep only the single newest weekly dispatch issue on the homepage (older issues remain in /essays/#Dispatch)
 const latestDispatch = dispatchEssays[0];
 const latestDispatchHref = latestDispatch ? getLocalizedPath(`/essays/${getEssaySlug(latestDispatch)}`, lang) : `${getLocalizedPath('/essays', lang)}#Dispatch`;
 const latestDispatchDate = latestDispatch?.data?.pubDate ? new Date(latestDispatch.data.pubDate).toISOString().slice(0, 10) : '';
 
 const featuredEssay = coreEssays.find((e) => e.data.featured) || coreEssays[0];
-const otherEssays = coreEssays.filter((e) => e.id !== featuredEssay?.id);
 const featuredHref = featuredEssay ? getLocalizedPath(`/essays/${getEssaySlug(featuredEssay)}`, lang) : getLocalizedPath('/essays', lang);
 const featuredDate = featuredEssay?.data?.pubDate ? new Date(featuredEssay.data.pubDate).toISOString().slice(0, 10) : '2026-08-24';
 const essaysIndexHref = getLocalizedPath('/essays', lang);
@@ -467,16 +466,8 @@ const mailtoHref = isEn
       )}
     </div>
 
-    {otherEssays.length > 0 && (
-      <div class={`grid grid-cols-1 md:grid-cols-2 ${otherEssays.length === 2 || otherEssays.length === 4 ? 'lg:grid-cols-2' : 'lg:grid-cols-3'} gap-6 sm:gap-8 mt-8`}>
-        {otherEssays.map((essay) => (
-          <EssayCard essay={essay} lang={lang} />
-        ))}
-      </div>
-    )}
-
     {latestDispatch && (
-      <div class="mt-10 bg-[#111622] border border-teal-500/40 hover:border-teal-400 rounded-2xl p-6 sm:p-8 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 transition-all duration-300 shadow-[0_0_30px_rgba(45,212,191,0.06)]">
+      <div class="mt-8 bg-[#111622] border border-teal-500/40 hover:border-teal-400 rounded-2xl p-6 sm:p-8 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 transition-all duration-300 shadow-[0_0_30px_rgba(45,212,191,0.06)]">
         <div class="max-w-3xl">
           <div class="flex flex-wrap items-center gap-3 mb-3">
             <span class="font-mono text-[11px] font-extrabold uppercase tracking-wider px-2.5 py-0.5 rounded border text-teal-300 bg-teal-950/60 border-teal-500/50">

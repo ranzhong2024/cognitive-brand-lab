@@ -15,13 +15,15 @@ export function getModuleRank(mod: string): number {
   return MODULE_ORDER[mod] ?? 99;
 }
 
-export function sortEssaysByModule<T extends { data: { module: string; pubDate: Date } }>(
+export function sortEssaysByModule<T extends { id?: string; data: { module: string; pubDate: Date } }>(
   essays: T[]
 ): T[] {
   return [...essays].sort((a, b) => {
     const rankDiff = getModuleRank(a.data.module) - getModuleRank(b.data.module);
     if (rankDiff !== 0) return rankDiff;
-    return new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime();
+    const dateDiff = new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime();
+    if (dateDiff !== 0) return dateDiff;
+    return String(b.id || '').localeCompare(String(a.id || ''));
   });
 }
 
