@@ -4,7 +4,7 @@ description: "Meta Andromeda (1B+ ads/sec), AL-CAT probes, PKM vs. PSI creator w
 lang: "en"
 module: "M4"
 moduleName: "Algorithmic Resonance & Creator Whitelisting"
-pubDate: 2026-11-15
+pubDate: 2026-10-12
 readingTime: "13 min read"
 featured: false
 author: "Ran"

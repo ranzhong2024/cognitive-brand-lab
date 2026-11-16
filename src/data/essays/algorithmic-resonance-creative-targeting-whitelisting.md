@@ -3,7 +3,7 @@ title: "别再切 20 个兴趣组当“精细化投手”了：Meta Andromeda �
 description: "养“投手天团”切 15 个兴趣标签、砸重金拍棚拍大片，结果 CPM 飙涨、素材 3 天枯竭。本文拆解 Meta Andromeda 每秒 10 亿广告打分、PKM 防御与 PSI 信任套利，将 Broad 1-CBO、1:3:6 矩阵、Partnership Ads（-45% 增量 CPA / +35% iROAS）与 POAS 铁闸落地为 14 天 MVT。"
 module: "M4"
 moduleName: "算法共振与创作者套利"
-pubDate: 2026-11-15
+pubDate: 2026-10-12
 readingTime: "13 分钟深度研读"
 tags:
   - "Meta Andromeda"
