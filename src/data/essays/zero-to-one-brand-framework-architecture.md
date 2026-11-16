@@ -1,7 +1,7 @@
 ---
 title: "从0到1搭建品牌框架的底层科学：别再把“做个好看的Logo”当成做品牌了"
 description: "很多出海创始人花几万美金找代理画一套VI就以为建了品牌，结果投流依然血亏。本文用大白话深度拆解凯勒CBBE模型、拜伦夏普双重可得性与诺奖昂贵信号理论，奉上从0到1构建全要素品牌框架的实战全景沙盘。"
-module: "M1"
+module: "BrandOS"
 moduleName: "品牌全景大纲"
 pubDate: 2026-08-24
 readingTime: "20 min read"

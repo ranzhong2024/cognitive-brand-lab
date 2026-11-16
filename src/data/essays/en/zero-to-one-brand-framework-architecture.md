@@ -2,8 +2,8 @@
 title: "The Science of Zero-to-One Brand Architecture: Why a Pretty Logo Is Not a Brand"
 description: "Too many DTC founders spend tens of thousands on a visual identity system and still burn cash on ads. This field guide breaks down Keller’s CBBE Pyramid, Byron Sharp’s Dual Availability, and Spence Costly Signaling into a five-layer operating blueprint."
 lang: "en"
-module: "M1"
-moduleName: "Brand Framework Blueprint"
+module: "BrandOS"
+moduleName: "Brand Architecture Overview"
 pubDate: 2026-08-24
 readingTime: "20 min read"
 tags: ["Brand Framework", "Keller CBBE", "Byron Sharp", "Mental Availability", "Spence Costly Signaling", "Liquid Death", "Patagonia", "Athletic Brewing", "Warby Parker", "BrandOS"]
