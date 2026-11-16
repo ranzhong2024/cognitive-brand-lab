@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#18181B" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="glowCyan" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#00F2FE" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#09090B" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="500" fill="#09090B"/>
+  <rect width="800" height="500" fill="url(#grid)"/>
+  <rect width="800" height="500" fill="url(#glowCyan)"/>
+  <rect x="28" y="28" width="744" height="444" rx="12" fill="none" stroke="#27272A" stroke-width="1.5"/>
+  <text x="48" y="58" fill="#00F2FE" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11.5" font-weight="700">EXECUTION // MOESTA JTBD 四力开关与 M1 勘测流水线</text>
+  <text x="752" y="58" text-anchor="end" fill="#64748B" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11">SWITCH FORCES</text>
+
+  <text x="48" y="90" fill="#F8FAFC" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="19.5" font-weight="800">换新不等式：如何用 1–3 星差评与 Switch 访谈击穿用户习惯锁死？</text>
+  <text x="48" y="112" fill="#94A3B8" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12">核心公式：现状推力 (Push) + 新方案拉力 (Pull) &gt; 旧习惯惯性 (Habit) + 未知焦虑 (Anxiety)</text>
+
+  <!-- Forces Top Row -->
+  <rect x="48" y="132" width="332" height="148" rx="8" fill="#083344" fill-opacity="0.45" stroke="#00F2FE" stroke-width="1.4"/>
+  <text x="66" y="157" fill="#00F2FE" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="13" font-weight="800">↑ 驱动换新正力 (Push + Pull)</text>
+  <rect x="64" y="170" width="300" height="44" rx="5" fill="#09090B" stroke="#0891B2"/>
+  <text x="76" y="189" fill="#67E8F9" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11.5" font-weight="700">1. Push 现状刺痛（1-3 星差评真相）</text>
+  <text x="76" y="205" fill="#CBD5E1" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="10.5">杯子放包里漏水 / 奶昔吃太快不够撑过 20 分钟通勤</text>
+  <rect x="64" y="222" width="300" height="44" rx="5" fill="#09090B" stroke="#0891B2"/>
+  <text x="76" y="241" fill="#67E8F9" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11.5" font-weight="700">2. Pull 方案吸引力（新体验画饼）</text>
+  <text x="76" y="257" fill="#CBD5E1" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="10.5">一键按压密封防漏 + 可吸可饮，直切未竟之功</text>
+
+  <text x="400" y="212" text-anchor="middle" fill="#00F2FE" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="22" font-weight="800">&gt;</text>
+
+  <rect x="420" y="132" width="332" height="148" rx="8" fill="#450A0A" fill-opacity="0.35" stroke="#EF4444" stroke-width="1.4"/>
+  <text x="438" y="157" fill="#FCA5A5" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="13" font-weight="800">↓ 阻断换新阻力 (Habit + Anxiety)</text>
+  <rect x="436" y="170" width="300" height="44" rx="5" fill="#09090B" stroke="#7F1D1D"/>
+  <text x="448" y="189" fill="#FECACA" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11.5" font-weight="700">3. Habit 旧习惯路径依赖</text>
+  <text x="448" y="205" fill="#CBD5E1" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="10.5">手机已经顺手 / 老品还能凑合用（90% 团队低估此处）</text>
+  <rect x="436" y="222" width="300" height="44" rx="5" fill="#09090B" stroke="#7F1D1D"/>
+  <text x="448" y="241" fill="#FECACA" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11.5" font-weight="700">4. Anxiety 新方案信任焦虑（成交杀手）</text>
+  <text x="448" y="257" fill="#CBD5E1" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="10.5">怕退货麻烦 / 怕配件不兼容 / 怕重演 AI Pin 停服风险</text>
+
+  <!-- 4-Step Pipeline Bottom -->
+  <text x="48" y="308" fill="#94A3B8" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11" font-weight="700">BRANDOS™ M1 FOUR-STAGE DEMAND EXTRACTION PIPELINE</text>
+
+  <rect x="48" y="322" width="164" height="106" rx="7" fill="#111622" stroke="#232B3E"/>
+  <text x="62" y="346" fill="#00F2FE" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11" font-weight="800">STEP 01</text>
+  <text x="62" y="366" fill="#F8FAFC" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12.5" font-weight="700">差评 NLP 矿脉</text>
+  <text x="62" y="386" fill="#94A3B8" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="10.5">抓取竞品 500+ 条</text>
+  <text x="62" y="402" fill="#94A3B8" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="10.5">1-3 星差评聚类高频挫败</text>
+
+  <rect x="228" y="322" width="164" height="106" rx="7" fill="#111622" stroke="#232B3E"/>
+  <text x="242" y="346" fill="#38BDF8" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11" font-weight="800">STEP 02</text>
+  <text x="242" y="366" fill="#F8FAFC" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12.5" font-weight="700">Switch 逆向访谈</text>
+  <text x="242" y="386" fill="#94A3B8" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="10.5">倒推 First Thought →</text>
+  <text x="242" y="402" fill="#94A3B8" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="10.5">Active → Decide 真实时间线</text>
+
+  <rect x="408" y="322" width="164" height="106" rx="7" fill="#111622" stroke="#00F2FE" stroke-opacity="0.5"/>
+  <text x="422" y="346" fill="#00F2FE" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11" font-weight="800">STEP 03</text>
+  <text x="422" y="366" fill="#F8FAFC" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12.5" font-weight="700">锁定 3 个 Tier-1</text>
+  <text x="422" y="386" fill="#CBD5E1" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="10.5">按高频×痛感×竞品真空</text>
+  <text x="422" y="402" fill="#CBD5E1" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="10.5">排定 3 个优先场景位</text>
+
+  <rect x="588" y="322" width="164" height="106" rx="7" fill="#064E3B" fill-opacity="0.35" stroke="#10B981" stroke-opacity="0.6"/>
+  <text x="602" y="346" fill="#34D399" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11" font-weight="800">STEP 04 → M2/M3</text>
+  <text x="602" y="366" fill="#F8FAFC" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12.5" font-weight="700">导流质押与定价</text>
+  <text x="602" y="386" fill="#6EE7B7" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="10.5">直连 M2 昂贵信号消杀焦虑</text>
+  <text x="602" y="402" fill="#6EE7B7" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="10.5">与 M3 65%+ 高毛利锚点</text>
+
+  <text x="48" y="458" fill="#52525B" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="10.5">BRANDOS LAB™ // 品牌科学实验室™ · Moesta 四力模型与 M1 勘测流水线</text>
+  <text x="752" y="458" text-anchor="end" fill="#52525B" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="10.5">FIG. M1-02</text>
+</svg>

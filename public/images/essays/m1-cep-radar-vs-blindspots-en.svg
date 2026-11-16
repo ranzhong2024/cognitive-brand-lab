@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#18181B" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="glowCyan" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#00F2FE" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#09090B" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="500" fill="#09090B"/>
+  <rect width="800" height="500" fill="url(#grid)"/>
+  <rect width="800" height="500" fill="url(#glowCyan)"/>
+  <rect x="28" y="28" width="744" height="444" rx="12" fill="none" stroke="#27272A" stroke-width="1.5"/>
+  <text x="48" y="58" fill="#00F2FE" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11.5" font-weight="700">DIAGNOSTIC // ROMANIUK CEP RADAR × SUPPLY-SIDE BLINDSPOTS</text>
+  <text x="752" y="58" text-anchor="end" fill="#64748B" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11">MENTAL AVAILABILITY AUDIT</text>
+
+  <text x="48" y="90" fill="#F8FAFC" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="19.5" font-weight="800">Why Better Specs Still Starve: 4 Mental Availability Metrics vs. Field Reality</text>
+  <text x="48" y="112" fill="#94A3B8" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="12">Grounded in Jenni Romaniuk ("Better Brand Health") &amp; SparkToro 58.5% Zero-Click Search Data</text>
+
+  <rect x="48" y="132" width="336" height="252" rx="8" fill="#111622" stroke="#00F2FE" stroke-opacity="0.45"/>
+  <text x="66" y="158" fill="#00F2FE" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="13" font-weight="800">LEFT: BINARY CEP ENGINEERING DASHBOARD</text>
+
+  <rect x="64" y="172" width="304" height="44" rx="5" fill="#09090B" stroke="#1E293B"/>
+  <text x="76" y="191" fill="#67E8F9" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11" font-weight="700">1. MMS (Mental Market Share)</text>
+  <text x="76" y="207" fill="#CBD5E1" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="10.5">Brand CEP links / Total category CEP links (flags channel gaps)</text>
+
+  <rect x="64" y="224" width="304" height="44" rx="5" fill="#09090B" stroke="#1E293B"/>
+  <text x="76" y="243" fill="#67E8F9" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11" font-weight="700">2. MPen (Mental Penetration)</text>
+  <text x="76" y="259" fill="#CBD5E1" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="10.5">% of buyers linking &gt;=1 CEP to you (primary growth engine)</text>
+
+  <rect x="64" y="276" width="304" height="44" rx="5" fill="#09090B" stroke="#1E293B"/>
+  <text x="76" y="295" fill="#67E8F9" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11" font-weight="700">3. Network Size (Memory Breadth)</text>
+  <text x="76" y="311" fill="#CBD5E1" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="10.5">Avg distinct CEPs linked per aware buyer (avoids single-niche trap)</text>
+
+  <rect x="64" y="328" width="304" height="44" rx="5" fill="#09090B" stroke="#1E293B"/>
+  <text x="76" y="347" fill="#67E8F9" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11" font-weight="700">4. Share of Mind (Slot Defense)</text>
+  <text x="76" y="363" fill="#CBD5E1" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="10.5">Competing rivals co-occupying your remembered buyers’ CEPs</text>
+
+  <rect x="402" y="132" width="350" height="120" rx="8" fill="#450A0A" fill-opacity="0.42" stroke="#EF4444" stroke-opacity="0.7"/>
+  <text x="420" y="158" fill="#FCA5A5" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="12.5" font-weight="800">× SUPPLY-SIDE FANTASY &amp; CEP DILUTION</text>
+  <text x="420" y="182" fill="#FECACA" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="11.5" font-weight="700">• Humane AI Pin (2024–25):</text>
+  <text x="430" y="199" fill="#CBD5E1" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="10.5">Zero switch Pull&gt;Habit; returns &gt; sales; $116M HP sunset</text>
+  <text x="420" y="222" fill="#FECACA" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="11.5" font-weight="700">• Allbirds (FY22→24 10-K):</text>
+  <text x="430" y="239" fill="#CBD5E1" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="10.5">Abandoned commuter wool CEP; fell $297.8M → $189.8M</text>
+
+  <rect x="402" y="264" width="350" height="120" rx="8" fill="#064E3B" fill-opacity="0.38" stroke="#10B981" stroke-opacity="0.7"/>
+  <text x="420" y="290" fill="#6EE7B7" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="12.5" font-weight="800">✓ CEP RECONSTRUCTION WINNERS</text>
+  <text x="420" y="314" fill="#A7F3D0" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="11.5" font-weight="700">• Stanley → Owala Sequel Warfare:</text>
+  <text x="430" y="331" fill="#E2E8F0" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="10.5">Stanley $70M→$750M; Owala +400% via leak-proof cap CEP</text>
+  <text x="420" y="354" fill="#A7F3D0" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="11.5" font-weight="700">• EcoFlow &amp; Anker Power Bifurcation:</text>
+  <text x="430" y="371" fill="#E2E8F0" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="10.5">Own "3-day blackout" &amp; "off-grid camping" in AI answers</text>
+
+  <rect x="48" y="398" width="704" height="36" rx="6" fill="#18181B" stroke="#27272A"/>
+  <text x="64" y="420" fill="#67E8F9" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="11.5" font-weight="700">SparkToro 2024 Reality: Only ~360 open-web clicks per 1,000 US Google searches — own the CEP inside zero-click &amp; AI prompts</text>
+
+  <text x="48" y="458" fill="#52525B" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="10.5">BRANDOS LAB™ // ROMANIUK MENTAL AVAILABILITY AUDIT</text>
+  <text x="752" y="458" text-anchor="end" fill="#52525B" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="10.5">FIG. M1-01</text>
+</svg>
