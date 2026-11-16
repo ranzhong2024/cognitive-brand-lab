@@ -18,6 +18,7 @@ const essays = sortEssaysByModule(
 const modulesList = isEn
   ? [
       { id: 'ALL', name: 'All Notes', count: essays.length },
+      { id: 'BrandOS', name: 'BrandOS Overview', count: essays.filter((e) => e.data.module === 'BrandOS').length },
       { id: 'M1', name: 'M1 Demand Radar', count: essays.filter((e) => e.data.module === 'M1').length },
       { id: 'M2', name: 'M2 Unfakeable Trust', count: essays.filter((e) => e.data.module === 'M2').length },
       { id: 'M3', name: 'M3 Value Pricing', count: essays.filter((e) => e.data.module === 'M3').length },
@@ -27,6 +28,7 @@ const modulesList = isEn
     ]
   : [
       { id: 'ALL', name: '全部观察', count: essays.length },
+      { id: 'BrandOS', name: '全景大纲 • BrandOS', count: essays.filter((e) => e.data.module === 'BrandOS').length },
       { id: 'M1', name: 'M1 勘测心智', count: essays.filter((e) => e.data.module === 'M1').length },
       { id: 'M2', name: 'M2 信任质押', count: essays.filter((e) => e.data.module === 'M2').length },
       { id: 'M3', name: 'M3 价值定价', count: essays.filter((e) => e.data.module === 'M3').length },
@@ -213,8 +215,8 @@ const mailtoHref = isEn
 
       if (window.location.hash) {
         const hashModule = window.location.hash.replace('#', '').toUpperCase();
-        if (['M1', 'M2', 'M3', 'M4', 'M5', 'M6'].includes(hashModule)) {
-          currentModule = hashModule;
+        if (['BRANDOS', 'M1', 'M2', 'M3', 'M4', 'M5', 'M6'].includes(hashModule)) {
+          currentModule = hashModule === 'BRANDOS' ? 'BrandOS' : hashModule;
         }
       }
 
