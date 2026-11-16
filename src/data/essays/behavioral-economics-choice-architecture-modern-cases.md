@@ -3,7 +3,7 @@ title: "别把行为经济学当“割韭菜外挂”：从暗黑淤泥（Sludge
 description: "拆解 Amazon 25 亿美元退订和解、Baymard 70.22% 弃购真相与 Anker eufy、Oura Ring 4、Airbnb 案例，将前景理论、塞勒助推与 Cugelman 情绪地图焊入 BrandOS™ M1–M6 选择架构与 2 周减阻 MVT。"
 module: "M5"
 moduleName: "行为经济学与选择架构"
-pubDate: 2026-11-15
+pubDate: 2026-11-02
 readingTime: "15 min read"
 tags:
   - "行为经济学"
