@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#18181B" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="glowPurple" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#A855F7" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#09090B" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="500" fill="#09090B"/>
+  <rect width="800" height="500" fill="url(#grid)"/>
+  <rect width="800" height="500" fill="url(#glowPurple)"/>
+  <rect x="28" y="28" width="744" height="444" rx="12" fill="none" stroke="#27272A" stroke-width="1.5"/>
+  <text x="48" y="60" fill="#C084FC" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11.5" font-weight="700">BRANDOS™ M6 // COMPOUNDING RETENTION &amp; CAUSAL LAB</text>
+  <text x="752" y="60" text-anchor="end" fill="#64748B" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11">REFORGE × BG/NBD × RUBIN</text>
+
+  <text x="48" y="96" fill="#F8FAFC" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="21" font-weight="800">Stop Worshipping Fake ROAS: BG/NBD &amp; Rubin Causal Retention Engineering</text>
+  <text x="48" y="120" fill="#94A3B8" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="12.5">Reforge Retention Loops × Wharton P(Alive) Scoring × GeoLift iROAS × 6 Adaptive Lifecycle Flows</text>
+
+  <rect x="48" y="144" width="336" height="238" rx="10" fill="#111622" stroke="#A855F7" stroke-opacity="0.55"/>
+  <text x="68" y="172" fill="#C084FC" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11.5" font-weight="800">CAUSAL LAB // COUNTERFACTUAL ARBITRAGE</text>
+  <text x="68" y="196" fill="#F8FAFC" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="15" font-weight="800">tau_i = Y_i(1) - Y_i(0)</text>
+  <text x="68" y="216" fill="#94A3B8" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="10.5">Attribution grades correlation; GeoLift tests true Y(0) counterfactuals</text>
+  <rect x="68" y="232" width="296" height="40" rx="5" fill="#450A0A" fill-opacity="0.45" stroke="#EF4444" stroke-opacity="0.6"/>
+  <text x="80" y="250" fill="#FCA5A5" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="10.5" font-weight="700">eBay T-Rex (Econometrica): -63% Causal Non-Brand ROI</text>
+  <text x="80" y="264" fill="#FECACA" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="9.5">vs. 4,000% naive ROI; 99.5% brand clicks shifted organic</text>
+  <rect x="68" y="282" width="296" height="40" rx="5" fill="#18181B" stroke="#334155"/>
+  <text x="80" y="300" fill="#E2E8F0" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="10.5" font-weight="700">Airbnb cut $600M+ spend → 95% traffic returned</text>
+  <text x="80" y="314" fill="#94A3B8" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="9.5">Uber shut off $100M–$120M (~2/3 spend) → 0% drop in installs</text>
+  <rect x="68" y="332" width="296" height="36" rx="5" fill="#2E1065" fill-opacity="0.65" stroke="#A855F7"/>
+  <text x="216" y="355" text-anchor="middle" fill="#E9D5FF" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11.5" font-weight="800">GATE: iROAS &gt;= 1.20 | MER 3.5–5.0</text>
+
+  <rect x="404" y="144" width="348" height="238" rx="10" fill="#111622" stroke="#232B3E"/>
+  <text x="424" y="172" fill="#34D399" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11.5" font-weight="800">RETENTION ENGINE // COMPOUNDING LOOPS</text>
+  <rect x="424" y="186" width="308" height="54" rx="6" fill="#09090B" stroke="#A855F7" stroke-opacity="0.45"/>
+  <text x="436" y="207" fill="#E9D5FF" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="11.5" font-weight="700">1. Wharton BG/NBD P(Alive) Scoring</text>
+  <text x="436" y="226" fill="#CBD5E1" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="10">Zero win-back discounts for active buyers → defend 65%+ GM</text>
+
+  <rect x="424" y="250" width="308" height="54" rx="6" fill="#09090B" stroke="#10B981" stroke-opacity="0.45"/>
+  <text x="436" y="271" fill="#6EE7B7" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="11.5" font-weight="700">2. 6 Adaptive Flows × DMARC Hygiene</text>
+  <text x="436" y="290" fill="#CBD5E1" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="10">&lt;0.3% spam ceiling (&lt;0.1% target) · Flows drive 50%–70% CRM profit</text>
+
+  <rect x="424" y="314" width="308" height="54" rx="6" fill="#064E3B" fill-opacity="0.35" stroke="#10B981"/>
+  <text x="436" y="335" fill="#A7F3D0" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="11.5" font-weight="700">3. Chewy 76.2% Autoship &amp; Peloton 67% Sub</text>
+  <text x="436" y="354" fill="#CBD5E1" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="10">Turning one-off hardware into predictable cash-flow moats</text>
+
+  <rect x="48" y="396" width="704" height="42" rx="8" fill="#0F172A" stroke="#1E293B"/>
+  <text x="66" y="421" fill="#E9D5FF" font-family="'Inter', 'Segoe UI', system-ui, sans-serif" font-size="11.5" font-weight="700">Bain &amp; Reichheld (HBR): A 5-pt reduction in defection rates lifts profits by 25%–85% (up to 95% in 2014 synthesis)</text>
+
+  <text x="48" y="458" fill="#52525B" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="10.5">BRANDOS LAB™ // M6 COMPOUNDING RETENTION &amp; CAUSAL LAB</text>
+  <text x="752" y="458" text-anchor="end" fill="#52525B" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="10.5">COVER M6 // EN</text>
+</svg>
