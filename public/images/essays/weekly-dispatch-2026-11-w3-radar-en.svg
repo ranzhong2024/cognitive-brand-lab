@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <pattern id="grid2" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#18181B" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="500" fill="#09090B"/>
+  <rect width="800" height="500" fill="url(#grid2)"/>
+  <rect x="28" y="28" width="744" height="444" rx="12" fill="none" stroke="#27272A" stroke-width="1.5"/>
+
+  <text x="48" y="60" fill="#2DD4BF" font-family="'JetBrains Mono', monospace" font-size="11.5" font-weight="700">WEEKLY SIGNAL CONVERGENCE // NOV W3 2026</text>
+  <text x="752" y="60" text-anchor="end" fill="#64748B" font-family="'JetBrains Mono', monospace" font-size="11">BRANDOS LAB™</text>
+  <text x="48" y="94" fill="#F8FAFC" font-family="'Inter', system-ui, sans-serif" font-size="20" font-weight="800">The Agentic Commerce Loop: Persuading Both Humans &amp; AI Buyers</text>
+
+  <!-- Flow Steps -->
+  <rect x="48" y="128" width="212" height="146" rx="10" fill="#111622" stroke="#2DD4BF" stroke-opacity="0.5"/>
+  <text x="64" y="154" fill="#2DD4BF" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="800">LAYER 1 // DISCOVERY</text>
+  <text x="64" y="182" fill="#F8FAFC" font-family="'Inter', system-ui, sans-serif" font-size="13.5" font-weight="700">ChatGPT Business</text>
+  <text x="64" y="202" fill="#94A3B8" font-family="'Inter', system-ui, sans-serif" font-size="11">Verified profile + Shopify feed</text>
+  <text x="64" y="226" fill="#F8FAFC" font-family="'Inter', system-ui, sans-serif" font-size="13.5" font-weight="700">Search × Hydrogen 4</text>
+  <text x="64" y="246" fill="#94A3B8" font-family="'Inter', system-ui, sans-serif" font-size="11">Complex queries + Query Fan-Out</text>
+
+  <path d="M 264 201 L 290 201" stroke="#2DD4BF" stroke-width="2" stroke-dasharray="3 3"/>
+  <polygon points="290,196 298,201 290,206" fill="#2DD4BF"/>
+
+  <rect x="300" y="128" width="204" height="146" rx="10" fill="#111622" stroke="#00F2FE" stroke-opacity="0.5"/>
+  <text x="316" y="154" fill="#00F2FE" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="800">LAYER 2 // VERIFICATION</text>
+  <text x="316" y="182" fill="#F8FAFC" font-family="'Inter', system-ui, sans-serif" font-size="13" font-weight="700">Alexa 365-Day History</text>
+  <text x="316" y="202" fill="#94A3B8" font-family="'Inter', system-ui, sans-serif" font-size="10.5">Fake deal flags + Q&amp;A audit</text>
+  <text x="316" y="226" fill="#F8FAFC" font-family="'Inter', system-ui, sans-serif" font-size="13" font-weight="700">Meta &amp; Google Controls</text>
+  <text x="316" y="246" fill="#94A3B8" font-family="'Inter', system-ui, sans-serif" font-size="10.5">New-buyer lock + AI Max split</text>
+
+  <path d="M 508 201 L 534 201" stroke="#00F2FE" stroke-width="2" stroke-dasharray="3 3"/>
+  <polygon points="534,196 542,201 534,206" fill="#00F2FE"/>
+
+  <rect x="544" y="128" width="208" height="146" rx="10" fill="#111622" stroke="#10B981" stroke-opacity="0.5"/>
+  <text x="560" y="154" fill="#10B981" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="800">LAYER 3 // CHECKOUT</text>
+  <text x="560" y="182" fill="#F8FAFC" font-family="'Inter', system-ui, sans-serif" font-size="13.5" font-weight="700">ChatGPT Wallet</text>
+  <text x="560" y="202" fill="#94A3B8" font-family="'Inter', system-ui, sans-serif" font-size="11">Biometric + tokenized dots payment</text>
+  <text x="560" y="226" fill="#F8FAFC" font-family="'Inter', system-ui, sans-serif" font-size="13.5" font-weight="700">GA4 Data Manager</text>
+  <text x="560" y="246" fill="#94A3B8" font-family="'Inter', system-ui, sans-serif" font-size="11">Clean first-party attribution hub</text>
+
+  <!-- Bottom 4 Brand Anchors -->
+  <rect x="48" y="298" width="704" height="136" rx="10" fill="#0F172A" stroke="#1E293B"/>
+  <text x="66" y="324" fill="#E2E8F0" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="800">Q3 2026 PROOF POINTS // WHY REAL PRODUCT UTILITY WINS THE AI ERA</text>
+  <text x="66" y="352" fill="#2DD4BF" font-family="'Inter', system-ui, sans-serif" font-size="12.5" font-weight="700">• Garmin: 63.3% Gross Margin / 30.8% Operating Margin (extreme-use hardware moat)</text>
+  <text x="66" y="376" fill="#38BDF8" font-family="'Inter', system-ui, sans-serif" font-size="12.5" font-weight="700">• SharkNinja: +21.2% Net Sales / +36.6% Cooking &amp; Beverage (friction-killing design)</text>
+  <text x="66" y="400" fill="#34D399" font-family="'Inter', system-ui, sans-serif" font-size="12.5" font-weight="700">• YETI (59.0% Adj. GM) + Anker &amp; Roborock: disciplined pricing &amp; omnichannel trust</text>
+
+  <text x="48" y="458" fill="#52525B" font-family="'Inter', system-ui, sans-serif" font-size="10.5">BRANDOS LAB™ // COGNITIVE BRAND LAB™</text>
+  <text x="752" y="458" text-anchor="end" fill="#52525B" font-family="'JetBrains Mono', monospace" font-size="10.5">SIGNAL MAP // EN</text>
+</svg>

@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#18181B" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="glowTeal" cx="50%" cy="42%" r="58%">
+      <stop offset="0%" stop-color="#2DD4BF" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#09090B" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="500" fill="#09090B"/>
+  <rect width="800" height="500" fill="url(#grid)"/>
+  <rect width="800" height="500" fill="url(#glowTeal)"/>
+  <rect x="28" y="28" width="744" height="444" rx="12" fill="none" stroke="#27272A" stroke-width="1.5"/>
+
+  <text x="48" y="60" fill="#2DD4BF" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11.5" font-weight="700">BRANDOS LAB™ WEEKLY // 品牌出海 AI 观察 · ISSUE #01</text>
+  <text x="752" y="60" text-anchor="end" fill="#64748B" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11">2026.11 W3</text>
+
+  <text x="48" y="98" fill="#F8FAFC" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="23" font-weight="800">AI 代理亮底牌时代：高毛利品牌的场景定价与平台新规则</text>
+  <text x="48" y="122" fill="#94A3B8" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12.5">高溢价品牌实战样本 × OpenAI / Google / Anthropic 大事件 × 四大跨境平台 AI 升级</text>
+
+  <!-- 3 Pillar Cards -->
+  <rect x="48" y="148" width="224" height="232" rx="10" fill="#111622" stroke="#2DD4BF" stroke-opacity="0.45"/>
+  <text x="64" y="176" fill="#2DD4BF" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="800">01 // 高溢价品牌样本</text>
+  <text x="64" y="204" fill="#F8FAFC" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="14" font-weight="700">Garmin 63.3% 毛利率</text>
+  <text x="64" y="224" fill="#94A3B8" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11.5">极端场景硬件背书 × 30.8% 营利</text>
+  <line x1="64" y1="240" x2="256" y2="240" stroke="#1E293B"/>
+  <text x="64" y="262" fill="#F8FAFC" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="14" font-weight="700">SharkNinja +21.2% 增长</text>
+  <text x="64" y="282" fill="#94A3B8" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11.5">Crispi 玻璃内胆消除洗锅痛点</text>
+  <line x1="64" y1="298" x2="256" y2="298" stroke="#1E293B"/>
+  <text x="64" y="320" fill="#F8FAFC" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="14" font-weight="700">YETI / 安克 / 石头</text>
+  <text x="64" y="340" fill="#6EE7B7" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11.5">59% 毛利纪律与线下实体拓维</text>
+  <text x="64" y="366" fill="#5EEAD4" font-family="'JetBrains Mono', monospace" font-size="10">SCENE · SIGNAL · MARGIN</text>
+
+  <rect x="288" y="148" width="224" height="232" rx="10" fill="#111622" stroke="#00F2FE" stroke-opacity="0.45"/>
+  <text x="304" y="176" fill="#00F2FE" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="800">02 // 前沿 AI 商业重构</text>
+  <text x="304" y="204" fill="#F8FAFC" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="14" font-weight="700">ChatGPT Business</text>
+  <text x="304" y="224" fill="#94A3B8" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11.5">官方认领名片 + Shopify 同步</text>
+  <line x1="304" y1="240" x2="496" y2="240" stroke="#1E293B"/>
+  <text x="304" y="262" fill="#F8FAFC" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="14" font-weight="700">ChatGPT Wallet 上线</text>
+  <text x="304" y="282" fill="#94A3B8" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11.5">dots 代理持卡组令牌代付结账</text>
+  <line x1="304" y1="298" x2="496" y2="298" stroke="#1E293B"/>
+  <text x="304" y="320" fill="#F8FAFC" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="14" font-weight="700">Search × Hydrogen 4</text>
+  <text x="304" y="340" fill="#67E8F9" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11.5">2.5x 提速与 Query Fan-Out 扩链</text>
+  <text x="304" y="366" fill="#38BDF8" font-family="'JetBrains Mono', monospace" font-size="10">AGENTIC COMMERCE</text>
+
+  <rect x="528" y="148" width="224" height="232" rx="10" fill="#111622" stroke="#10B981" stroke-opacity="0.45"/>
+  <text x="544" y="176" fill="#10B981" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="800">03 // 四大跨境平台更新</text>
+  <text x="544" y="204" fill="#F8FAFC" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="13.5" font-weight="700">Amazon Alexa 导购</text>
+  <text x="544" y="224" fill="#94A3B8" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11.5">365 天价格轨迹 + 索评广告公测</text>
+  <line x1="544" y1="240" x2="736" y2="240" stroke="#1E293B"/>
+  <text x="544" y="262" fill="#F8FAFC" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="13.5" font-weight="700">Meta 纯新客锁流</text>
+  <text x="544" y="282" fill="#94A3B8" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11.5">生命周期新客开关 + 静图转视频</text>
+  <line x1="544" y1="298" x2="736" y2="298" stroke="#1E293B"/>
+  <text x="544" y="320" fill="#F8FAFC" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="13.5" font-weight="700">Google Ads &amp; GA4</text>
+  <text x="544" y="340" fill="#6EE7B7" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11.5">AI Max 拆分归因 + Data Manager</text>
+  <text x="544" y="366" fill="#34D399" font-family="'JetBrains Mono', monospace" font-size="10">AMAZON · META · GOOGLE</text>
+
+  <!-- Bottom Action Strip -->
+  <rect x="48" y="396" width="704" height="42" rx="8" fill="#0F172A" stroke="#1E293B"/>
+  <text x="66" y="421" fill="#E2E8F0" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11.5" font-weight="700">本期主旨：当 AI 替买家比完 365 天价格、读穿评论与参数并直接代付，唯有“真实场景 + 高毛利产品力”能吃下确定性红利</text>
+
+  <text x="48" y="458" fill="#52525B" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="10.5">BRANDOS LAB™ // 品牌科学实验室™ · 品牌出海 AI 观察第 1 期</text>
+  <text x="752" y="458" text-anchor="end" fill="#52525B" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="10.5">DISPATCH #01 // ZH</text>
+</svg>

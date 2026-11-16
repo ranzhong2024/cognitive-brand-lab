@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <pattern id="grid2" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#18181B" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="500" fill="#09090B"/>
+  <rect width="800" height="500" fill="url(#grid2)"/>
+  <rect x="28" y="28" width="744" height="444" rx="12" fill="none" stroke="#27272A" stroke-width="1.5"/>
+
+  <text x="48" y="60" fill="#2DD4BF" font-family="'JetBrains Mono', monospace" font-size="11.5" font-weight="700">WEEKLY SIGNAL CONVERGENCE // 2026.11 W3</text>
+  <text x="752" y="60" text-anchor="end" fill="#64748B" font-family="'JetBrains Mono', monospace" font-size="11">BRANDOS LAB™</text>
+  <text x="48" y="94" fill="#F8FAFC" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="20" font-weight="800">AI 代理交易闭环：品牌信号如何同时说服“人脑”与“机器”</text>
+
+  <!-- Flow Steps -->
+  <rect x="48" y="128" width="212" height="146" rx="10" fill="#111622" stroke="#2DD4BF" stroke-opacity="0.5"/>
+  <text x="64" y="154" fill="#2DD4BF" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="800">LAYER 1 // 意图上游</text>
+  <text x="64" y="182" fill="#F8FAFC" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="13.5" font-weight="700">ChatGPT 企业主页</text>
+  <text x="64" y="202" fill="#94A3B8" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11">蓝标认领 + Shopify 同步</text>
+  <text x="64" y="226" fill="#F8FAFC" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="13.5" font-weight="700">Google Hydrogen 4</text>
+  <text x="64" y="246" fill="#94A3B8" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11">复杂长尾推理 + Fan-Out</text>
+
+  <path d="M 264 201 L 290 201" stroke="#2DD4BF" stroke-width="2" stroke-dasharray="3 3"/>
+  <polygon points="290,196 298,201 290,206" fill="#2DD4BF"/>
+
+  <rect x="300" y="128" width="204" height="146" rx="10" fill="#111622" stroke="#00F2FE" stroke-opacity="0.5"/>
+  <text x="316" y="154" fill="#00F2FE" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="800">LAYER 2 // 平台过滤</text>
+  <text x="316" y="182" fill="#F8FAFC" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="13.5" font-weight="700">Alexa 365 天价格线</text>
+  <text x="316" y="202" fill="#94A3B8" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11">识破伪折扣 + 评论交叉验证</text>
+  <text x="316" y="226" fill="#F8FAFC" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="13.5" font-weight="700">Meta &amp; Google 锁流</text>
+  <text x="316" y="246" fill="#94A3B8" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11">纯新客隔离 + AI Max 拆分</text>
+
+  <path d="M 508 201 L 534 201" stroke="#00F2FE" stroke-width="2" stroke-dasharray="3 3"/>
+  <polygon points="534,196 542,201 534,206" fill="#00F2FE"/>
+
+  <rect x="544" y="128" width="208" height="146" rx="10" fill="#111622" stroke="#10B981" stroke-opacity="0.5"/>
+  <text x="560" y="154" fill="#10B981" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="800">LAYER 3 // 代理成交</text>
+  <text x="560" y="182" fill="#F8FAFC" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="13.5" font-weight="700">ChatGPT Wallet</text>
+  <text x="560" y="202" fill="#94A3B8" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11">生物确认 + 令牌代付结账</text>
+  <text x="560" y="226" fill="#F8FAFC" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="13.5" font-weight="700">GA4 Data Manager</text>
+  <text x="560" y="246" fill="#94A3B8" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11">第一方数据统一监测归因</text>
+
+  <!-- Bottom 4 Brand Anchors -->
+  <rect x="48" y="298" width="704" height="136" rx="10" fill="#0F172A" stroke="#1E293B"/>
+  <text x="66" y="324" fill="#E2E8F0" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="800">2026 Q3 高溢价品牌验证样本 // 为什么实体产品力才是 AI 时代终极护城河</text>
+  <text x="66" y="352" fill="#2DD4BF" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12.5" font-weight="700">• Garmin：毛利 63.3% / 营利 30.8%（极限场景硬核冗余筑牢溢价围栏）</text>
+  <text x="66" y="376" fill="#38BDF8" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12.5" font-weight="700">• SharkNinja：净销 +21.2% / 厨电 +36.6%（微创新直接消灭日常使用阻力）</text>
+  <text x="66" y="400" fill="#34D399" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12.5" font-weight="700">• YETI 59.0% 调整后毛利 &amp; 安克/石头稳健增长：拒绝廉价促销，深耕全球本土场景与线下信任</text>
+
+  <text x="48" y="458" fill="#52525B" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="10.5">BRANDOS LAB™ // 品牌科学实验室™</text>
+  <text x="752" y="458" text-anchor="end" fill="#52525B" font-family="'JetBrains Mono', monospace" font-size="10.5">SIGNAL MAP // ZH</text>
+</svg>

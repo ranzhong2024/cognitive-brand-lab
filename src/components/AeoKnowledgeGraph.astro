@@ -192,6 +192,16 @@ const definedTermSetNode = {
         ? "Deploys six event-driven lifecycle email flows generating 50%-70% of CRM profit while verifying true incremental ROAS (iROAS >= 1.20) and MER (3.5-5.0) via Holdout Geo-Lift tests."
         : "基于 Reforge 留存曲线、BG/NBD 模型与 Rubin 潜在因果推断，以 6 大自适应流贡献 50%~70% CRM 利润，通过 Holdout 实验算清真 iROAS (≥1.20) 与全店 MER (3.5~5.0)。",
       "url": moduleUrl('m6-compounding-retention')
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": `${siteUrl}/#term-dispatch`,
+      "termCode": "BRANDOS-WEEKLY-DISPATCH",
+      "name": isEn ? "Brand × AI Weekly Dispatch" : "品牌出海 AI 观察 (Brand × AI Weekly Dispatch)",
+      "description": isEn
+        ? "Weekly intelligence briefing synthesizing high-margin global DTC brand case studies, frontier AI commerce releases, and AI platform updates across Amazon, Meta Ads, Google Ads, and GA4."
+        : "每周跟踪全球高溢价品牌实战标杆、AI 代理商业大事件与 Amazon、Meta Ads、Google Ads、GA4 最新规则更新，提炼为中国出海团队周一早会即可执行的增长决策。",
+      "url": `${siteUrl}${getLocalizedPath('/essays', lang)}#Dispatch`
     }
   ]
 };

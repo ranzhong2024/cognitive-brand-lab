@@ -8,6 +8,7 @@ export const MODULE_ORDER: Record<string, number> = {
   M4: 4,
   M5: 5,
   M6: 6,
+  Dispatch: 7,
 };
 
 export function getModuleRank(mod: string): number {

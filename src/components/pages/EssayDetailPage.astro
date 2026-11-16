@@ -31,9 +31,13 @@ const moduleColors: Record<string, { badge: string; border: string; accent: stri
   M4: { badge: 'text-amber-400 bg-amber-950/60 border-amber-800/60', border: 'border-amber-500/40', accent: '#F59E0B' },
   M5: { badge: 'text-rose-400 bg-rose-950/60 border-rose-800/60', border: 'border-rose-500/40', accent: '#F43F5E' },
   M6: { badge: 'text-purple-400 bg-purple-950/60 border-purple-800/60', border: 'border-purple-500/40', accent: '#A855F7' },
+  Dispatch: { badge: 'text-teal-300 bg-teal-950/60 border-teal-500/50', border: 'border-teal-500/40', accent: '#2DD4BF' },
 };
 
 const style = moduleColors[essay.data.module] || moduleColors.M1;
+const isDispatch = essay.data.module === 'Dispatch';
+const moduleBadgeLabel = isDispatch ? essay.data.moduleName : `${essay.data.module} • ${essay.data.moduleName}`;
+const breadcrumbLabel = isDispatch ? (isEn ? 'WEEKLY DISPATCH' : '每周观察') : essay.data.module;
 const publishDateIso = essay.data.pubDate ? new Date(essay.data.pubDate).toISOString() : new Date().toISOString();
 
 const essayUrl = `https://ranbrandos.com${essayPath}`;
@@ -100,7 +104,7 @@ const articleSchema: Record<string, any> = {
         {
           "@type": "ListItem",
           "position": 3,
-          "name": `${essay.data.module}: ${essay.data.title}`,
+          "name": isDispatch ? `${essay.data.moduleName}: ${essay.data.title}` : `${essay.data.module}: ${essay.data.title}`,
           "item": essayUrl
         }
       ]
@@ -143,14 +147,14 @@ if (essay.data.faqs && essay.data.faqs.length > 0) {
       <span>/</span>
       <a href={essaysHomePath} class="hover:text-cyan-400 transition-colors">{isEn ? 'BRAND NOTES' : '品牌笔记'}</a>
       <span>/</span>
-      <span class="text-cyan-400">{essay.data.module}</span>
+      <span class="text-cyan-400">{breadcrumbLabel}</span>
     </nav>
 
     <!-- Article Header -->
     <header class="border-b border-[#232B3E] pb-12 mb-14">
       <div class="flex flex-wrap items-center gap-3 mb-5">
         <span class={`font-mono text-xs font-extrabold px-3 py-1 rounded uppercase tracking-wider border ${style.badge}`}>
-          {essay.data.module} • {essay.data.moduleName}
+          {moduleBadgeLabel}
         </span>
         <span class="font-mono text-xs text-slate-400">
           ⏱ {isEn ? 'Read Time:' : '预计阅读：'}{essay.data.readingTime}
@@ -266,7 +270,7 @@ if (essay.data.faqs && essay.data.faqs.length > 0) {
                   class="bg-[#111622] border border-[#232B3E] hover:border-cyan-400 p-5 rounded-xl transition-all group block"
                 >
                   <div class="font-mono text-xs text-cyan-400 font-bold uppercase mb-1">
-                    {rel.data.module} • {rel.data.moduleName}
+                    {rel.data.module === 'Dispatch' ? rel.data.moduleName : `${rel.data.module} • ${rel.data.moduleName}`}
                   </div>
                   <div class="font-sans font-bold text-sm text-slate-200 group-hover:text-cyan-400 transition-colors line-clamp-2 leading-snug">
                     {rel.data.title}

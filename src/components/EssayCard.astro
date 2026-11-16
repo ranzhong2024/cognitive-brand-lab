@@ -36,9 +36,11 @@ const moduleColors: Record<string, { badge: string; border: string; accent: stri
   M4: { badge: 'text-amber-400 bg-amber-950/60 border-amber-800/60', border: 'hover:border-amber-500/60', accent: '#F59E0B', coverBg: 'from-amber-950/40 to-[#111622]' },
   M5: { badge: 'text-rose-400 bg-rose-950/60 border-rose-800/60', border: 'hover:border-rose-500/60', accent: '#F43F5E', coverBg: 'from-rose-950/40 to-[#111622]' },
   M6: { badge: 'text-purple-400 bg-purple-950/60 border-purple-800/60', border: 'hover:border-purple-500/60', accent: '#A855F7', coverBg: 'from-purple-950/40 to-[#111622]' },
+  Dispatch: { badge: 'text-teal-300 bg-teal-950/60 border-teal-500/50', border: 'hover:border-teal-400/60', accent: '#2DD4BF', coverBg: 'from-teal-950/40 to-[#111622]' },
 };
 
 const style = moduleColors[essay.data.module] || moduleColors.M1;
+const badgeLabel = essay.data.module === 'Dispatch' ? essay.data.moduleName : `${essay.data.module} • ${essay.data.moduleName}`;
 const formattedDate = essay.data.pubDate ? new Date(essay.data.pubDate).toISOString().slice(0, 10) : '2026-08';
 const coverSrc = essay.data.coverImage;
 ---
@@ -48,6 +50,7 @@ const coverSrc = essay.data.coverImage;
   data-module={essay.data.module}
   data-title={essay.data.title.toLowerCase()}
   data-desc={essay.data.description.toLowerCase()}
+  data-tags={(essay.data.tags || []).join(' ').toLowerCase()}
 >
   {coverSrc ? (
     <div>
@@ -61,12 +64,16 @@ const coverSrc = essay.data.coverImage;
       </a>
       <div class="px-5 pt-4 flex items-center justify-between gap-2">
         <span class={`font-mono text-[11px] font-extrabold uppercase tracking-wider px-2.5 py-0.5 rounded border ${style.badge}`}>
-          {essay.data.module} • {essay.data.moduleName}
+          {badgeLabel}
         </span>
-        <span class="font-mono text-[11px] text-slate-400 flex items-center gap-1">
-          <span>⏱</span>
-          <span>{essay.data.readingTime}</span>
-        </span>
+        <div class="font-mono text-[11px] text-slate-400 flex items-center gap-1.5">
+          <span>{formattedDate}</span>
+          <span class="text-slate-600">•</span>
+          <span class="flex items-center gap-1">
+            <span>⏱</span>
+            <span>{essay.data.readingTime}</span>
+          </span>
+        </div>
       </div>
     </div>
   ) : (
@@ -78,7 +85,7 @@ const coverSrc = essay.data.coverImage;
       <!-- Top Badge Row -->
       <div class="flex items-center justify-between z-10">
         <span class={`font-mono text-[11px] font-extrabold uppercase tracking-wider px-2.5 py-0.5 rounded border ${style.badge}`}>
-          {essay.data.module} • {essay.data.moduleName}
+          {badgeLabel}
         </span>
         <span class="font-mono text-[11px] text-slate-400 flex items-center gap-1">
           <span>⏱</span>

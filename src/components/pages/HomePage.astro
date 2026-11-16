@@ -111,10 +111,18 @@ const allEssays = sortEssaysByModule(
   (await getCollection('essays')).filter((e) => e.data.lang === lang)
 );
 
-const featuredEssay = allEssays.find((e) => e.data.featured) || allEssays[0];
-const otherEssays = allEssays.filter((e) => e.id !== featuredEssay?.id);
+const coreEssays = allEssays.filter((e) => e.data.module !== 'Dispatch');
+const dispatchEssays = allEssays.filter((e) => e.data.module === 'Dispatch');
+const latestDispatch = dispatchEssays[0];
+const latestDispatchHref = latestDispatch ? getLocalizedPath(`/essays/${getEssaySlug(latestDispatch)}`, lang) : `${getLocalizedPath('/essays', lang)}#Dispatch`;
+const latestDispatchDate = latestDispatch?.data?.pubDate ? new Date(latestDispatch.data.pubDate).toISOString().slice(0, 10) : '';
+
+const featuredEssay = coreEssays.find((e) => e.data.featured) || coreEssays[0];
+const otherEssays = coreEssays.filter((e) => e.id !== featuredEssay?.id);
 const featuredHref = featuredEssay ? getLocalizedPath(`/essays/${getEssaySlug(featuredEssay)}`, lang) : getLocalizedPath('/essays', lang);
+const featuredDate = featuredEssay?.data?.pubDate ? new Date(featuredEssay.data.pubDate).toISOString().slice(0, 10) : '2026-08-24';
 const essaysIndexHref = getLocalizedPath('/essays', lang);
+const dispatchIndexHref = `${essaysIndexHref}#Dispatch`;
 
 const mailtoHref = isEn
   ? 'mailto:ranzhongus@icloud.com?subject=BrandOS%20Architecture%20Inquiry&body=Hi%20Ran%2C%20I%27m%20building%20a%20global%20DTC%20brand%20and%20would%20like%20to%20discuss%20implementing%20BrandOS.'
@@ -425,6 +433,10 @@ const mailtoHref = isEn
                   {featuredEssay.data.module} • {featuredEssay.data.moduleName}
                 </span>
                 <span class="font-mono text-[11px] text-slate-400">
+                  {featuredDate}
+                </span>
+                <span class="font-mono text-[11px] text-slate-600">•</span>
+                <span class="font-mono text-[11px] text-slate-400">
                   ⏱ {featuredEssay.data.readingTime}
                 </span>
                 <span class="font-mono text-[11px] text-slate-500">
@@ -460,6 +472,44 @@ const mailtoHref = isEn
         {otherEssays.map((essay) => (
           <EssayCard essay={essay} lang={lang} />
         ))}
+      </div>
+    )}
+
+    {latestDispatch && (
+      <div class="mt-10 bg-[#111622] border border-teal-500/40 hover:border-teal-400 rounded-2xl p-6 sm:p-8 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 transition-all duration-300 shadow-[0_0_30px_rgba(45,212,191,0.06)]">
+        <div class="max-w-3xl">
+          <div class="flex flex-wrap items-center gap-3 mb-3">
+            <span class="font-mono text-[11px] font-extrabold uppercase tracking-wider px-2.5 py-0.5 rounded border text-teal-300 bg-teal-950/60 border-teal-500/50">
+              {isEn ? 'WEEKLY DISPATCH' : '每周周刊'} • {latestDispatch.data.moduleName}
+            </span>
+            <span class="font-mono text-[11px] text-slate-400">
+              {latestDispatchDate} • ⏱ {latestDispatch.data.readingTime}
+            </span>
+          </div>
+          <h3 class="font-sans font-bold text-[19px] sm:text-[23px] text-slate-100 mb-2 leading-snug">
+            <a href={latestDispatchHref} class="hover:text-teal-300 transition-colors">
+              {latestDispatch.data.title}
+            </a>
+          </h3>
+          <p class="font-sans text-[13.5px] sm:text-[14.5px] text-slate-400 leading-relaxed line-clamp-2">
+            {latestDispatch.data.description}
+          </p>
+        </div>
+
+        <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 shrink-0 w-full lg:w-auto">
+          <a
+            href={latestDispatchHref}
+            class="px-5 py-3 rounded-xl bg-teal-400 hover:bg-teal-300 text-[#09090B] font-mono text-[12px] font-extrabold uppercase tracking-wider transition-colors text-center whitespace-nowrap"
+          >
+            {isEn ? 'Read Latest Issue →' : '阅读最新一期 →'}
+          </a>
+          <a
+            href={dispatchIndexHref}
+            class="px-5 py-3 rounded-xl bg-[#09090B] border border-[#232B3E] hover:border-teal-400 text-slate-300 hover:text-white font-mono text-[12px] font-bold uppercase tracking-wider transition-colors text-center whitespace-nowrap"
+          >
+            {isEn ? `All Issues (${dispatchEssays.length})` : `全部周刊 (${dispatchEssays.length} 期)`}
+          </a>
+        </div>
       </div>
     )}
   </section>

@@ -6,7 +6,7 @@ const essays = defineCollection({
   schema: z.object({
     title: z.string(),
     description: z.string(),
-    module: z.enum(['BrandOS', 'M1', 'M2', 'M3', 'M4', 'M5', 'M6']),
+    module: z.enum(['BrandOS', 'M1', 'M2', 'M3', 'M4', 'M5', 'M6', 'Dispatch']),
     moduleName: z.string(),
     pubDate: z.coerce.date(),
     readingTime: z.string().default('12 min read'),
