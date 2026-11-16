@@ -4,7 +4,7 @@ description: "Using 2024–2026 Jaguar, Duolingo, Bambu Lab, Poppi, and Anker ca
 lang: "en"
 module: "M2"
 moduleName: "Unfakeable Trust & Brand Velocity"
-pubDate: 2026-09-14
+pubDate: 2026-09-21
 readingTime: "12 min read"
 featured: false
 author: "Ran"
