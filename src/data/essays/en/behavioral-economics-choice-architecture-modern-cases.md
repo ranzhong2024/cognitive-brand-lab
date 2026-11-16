@@ -4,7 +4,7 @@ description: "Deconstructing Kahneman’s Prospect Theory, Thaler’s Nudge, and
 lang: "en"
 module: "M5"
 moduleName: "Behavioral Economics & Choice Architecture"
-pubDate: 2026-11-15
+pubDate: 2026-11-02
 readingTime: "14 min read"
 featured: false
 author: "Ran"
