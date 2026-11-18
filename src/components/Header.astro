@@ -75,6 +75,7 @@ const isAboutActive = cleanPath === '/about' || cleanPath === '/en/about';
         <a
           href={zhHref}
           hreflang="zh-CN"
+          data-set-lang="zh"
           aria-current={lang === 'zh' ? 'page' : undefined}
           class={`px-2 py-1 rounded transition-colors whitespace-nowrap ${lang === 'zh' ? 'bg-cyan-400 text-[#09090B]' : 'text-slate-400 hover:text-slate-100'}`}
         >
@@ -83,6 +84,7 @@ const isAboutActive = cleanPath === '/about' || cleanPath === '/en/about';
         <a
           href={enHref}
           hreflang="en"
+          data-set-lang="en"
           aria-current={lang === 'en' ? 'page' : undefined}
           class={`px-2 py-1 rounded transition-colors whitespace-nowrap ${lang === 'en' ? 'bg-cyan-400 text-[#09090B]' : 'text-slate-400 hover:text-slate-100'}`}
         >

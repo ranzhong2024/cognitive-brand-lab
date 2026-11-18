@@ -151,5 +151,24 @@ const enableClarity = Boolean(import.meta.env.PROD && clarityProjectId);
         }
       });
     </script>
+
+    <!-- Persist manual language choice before navigating so Geo-IP does not override user intent -->
+    <script is:inline>
+      (function () {
+        function persistLangChoice(e) {
+          var target = e.target;
+          var link = target && target.closest ? target.closest('a[data-set-lang]') : null;
+          if (!link) return;
+          if (e.type === 'auxclick' && e.button !== 1) return;
+          var lang = link.getAttribute('data-set-lang');
+          if (lang === 'zh' || lang === 'en') {
+            var secure = window.location.protocol === 'https:' ? '; Secure' : '';
+            document.cookie = 'ranbrandos_lang=' + lang + '; Path=/; Max-Age=31536000; SameSite=Lax' + secure;
+          }
+        }
+        document.addEventListener('click', persistLangChoice);
+        document.addEventListener('auxclick', persistLangChoice);
+      })();
+    </script>
   </body>
 </html>
