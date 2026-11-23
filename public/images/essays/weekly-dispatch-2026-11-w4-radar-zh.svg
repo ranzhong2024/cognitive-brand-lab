@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <pattern id="grid2" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#18181B" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="500" fill="#09090B"/>
+  <rect width="800" height="500" fill="url(#grid2)"/>
+  <rect x="28" y="28" width="744" height="444" rx="12" fill="none" stroke="#27272A" stroke-width="1.5"/>
+
+  <text x="48" y="60" fill="#2DD4BF" font-family="'JetBrains Mono', monospace" font-size="11.5" font-weight="700">DOUBLE-GATE ARCHITECTURE // 2026.11.23</text>
+  <text x="752" y="60" text-anchor="end" fill="#64748B" font-family="'JetBrains Mono', monospace" font-size="11">BRANDOS LAB™</text>
+  <text x="48" y="94" fill="#F8FAFC" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="20" font-weight="800">双门禁倒挂修正模型：人类全价铁门 vs. AI 代理无摩擦通道</text>
+
+  <!-- Left: Trap vs Right: Winning Model -->
+  <rect x="48" y="122" width="338" height="176" rx="10" fill="#181116" stroke="#F43F5E" stroke-opacity="0.55"/>
+  <text x="64" y="148" fill="#FB7185" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="800">TRAP // 倒挂双门禁（典型亏损独立站）</text>
+  <text x="64" y="176" fill="#F8FAFC" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="13.5" font-weight="700">1. 对人放水：首页弹窗八折与满减优惠券</text>
+  <text x="64" y="196" fill="#FDA4AF" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11.5">价格瀑布失血 + PMax Promo 无节制推低毛利</text>
+  <text x="64" y="226" fill="#F8FAFC" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="13.5" font-weight="700">2. 对 AI 关门：WAF 误杀 + 61.7% 幽灵引用</text>
+  <text x="64" y="246" fill="#FDA4AF" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11.5">泛白牌百科无名垫背 + 库存不同步踢飞买手代理</text>
+  <text x="64" y="278" fill="#F43F5E" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="700">结果：利润越卖越薄 · 真实高意向订单挡在门外</text>
+
+  <path d="M 390 210 L 408 210" stroke="#2DD4BF" stroke-width="2" stroke-dasharray="3 3"/>
+  <polygon points="408,205 416,210 408,215" fill="#2DD4BF"/>
+
+  <rect x="418" y="122" width="334" height="176" rx="10" fill="#111622" stroke="#10B981" stroke-opacity="0.6"/>
+  <text x="434" y="148" fill="#34D399" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="800">WIN // 正向双门禁（BrandOS 盈利工程）</text>
+  <text x="434" y="176" fill="#F8FAFC" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="13.5" font-weight="700">1. 对人守铁门：Full-Price 全价与硬核实证</text>
+  <text x="434" y="196" fill="#A7F3D0" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11.5">Amer Sports 59.3% 毛利 · WSM 9.755 亿现金流</text>
+  <text x="434" y="226" fill="#F8FAFC" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="13.5" font-weight="700">2. 对 AI 拆壁垒：WebMCP + 搜索点名短名单</text>
+  <text x="434" y="246" fill="#A7F3D0" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11.5">Token -42% · Google 45% 搜索重塑 × 放行代理</text>
+  <text x="434" y="278" fill="#10B981" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="700">结果：高毛利反哺研发 × 零摩擦承接代理下单</text>
+
+  <!-- Bottom Action Telemetry Strip -->
+  <rect x="48" y="316" width="704" height="118" rx="10" fill="#0F172A" stroke="#1E293B"/>
+  <text x="66" y="342" fill="#E2E8F0" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="800">14 天双门禁实操标尺 // 从虚荣指标切向真实增量与结构化成交</text>
+  <text x="66" y="370" fill="#2DD4BF" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12" font-weight="700">• 搜索与点名：Google 排位重塑 45% Gemini 推荐 · ChatGPT 明确点名 7 天访问较基线 +2.07pp</text>
+  <text x="66" y="394" fill="#38BDF8" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12" font-weight="700">• 代理接入核验：核查 WAF 放行 Google-Agent × 同步库存 × 试点 WebMCP（留 consequentialHint 确认）</text>
+  <text x="66" y="418" fill="#34D399" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12" font-weight="700">• 广告口径净水：Amazon 2027 年起挤掉 63% 不可见曝光 → 提前切向 vCTR 与 PMax 3 图视觉锁</text>
+
+  <text x="48" y="458" fill="#52525B" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="10.5">BRANDOS LAB™ // 品牌科学实验室™</text>
+  <text x="752" y="458" text-anchor="end" fill="#52525B" font-family="'JetBrains Mono', monospace" font-size="10.5">DOUBLE-GATE MODEL // ZH</text>
+</svg>

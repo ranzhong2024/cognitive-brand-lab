@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#18181B" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="glowTeal" cx="50%" cy="42%" r="58%">
+      <stop offset="0%" stop-color="#2DD4BF" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#09090B" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="500" fill="#09090B"/>
+  <rect width="800" height="500" fill="url(#grid)"/>
+  <rect width="800" height="500" fill="url(#glowTeal)"/>
+  <rect x="28" y="28" width="744" height="444" rx="12" fill="none" stroke="#27272A" stroke-width="1.5"/>
+
+  <text x="48" y="60" fill="#2DD4BF" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11.5" font-weight="700">BRANDOS LAB™ WEEKLY // 品牌出海 AI 观察 · ISSUE #02</text>
+  <text x="752" y="60" text-anchor="end" fill="#64748B" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11">2026.11.23</text>
+
+  <text x="48" y="98" fill="#F8FAFC" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="22.5" font-weight="800">双门禁倒挂破局：全价守人 × AI 代理拆墙</text>
+  <text x="48" y="122" fill="#94A3B8" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12.5">全价高毛利样本 × Chrome WebMCP &amp; 幽灵引用突围 × Amazon / Google / Microsoft 新规</text>
+
+  <!-- 3 Pillar Cards -->
+  <rect x="48" y="148" width="224" height="232" rx="10" fill="#111622" stroke="#2DD4BF" stroke-opacity="0.45"/>
+  <text x="64" y="176" fill="#2DD4BF" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="800">01 // 对人守全价铁门</text>
+  <text x="64" y="204" fill="#F8FAFC" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="14" font-weight="700">Amer Sports 59.3% 毛利</text>
+  <text x="64" y="224" fill="#94A3B8" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11.5">始祖鸟直营 +16% 反哺研发</text>
+  <line x1="64" y1="240" x2="256" y2="240" stroke="#1E293B"/>
+  <text x="64" y="262" fill="#F8FAFC" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="14" font-weight="700">WSM 46.2% 裸毛利率</text>
+  <text x="64" y="282" fill="#94A3B8" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11.5">全价纪律支撑 9.755 亿现金流</text>
+  <line x1="64" y1="298" x2="256" y2="298" stroke="#1E293B"/>
+  <text x="64" y="320" fill="#F8FAFC" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="14" font-weight="700">Celsius &amp; 小鹏出海 +166%</text>
+  <text x="64" y="340" fill="#6EE7B7" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11.5">运动场景锁死 × 巴黎智驾公测</text>
+  <text x="64" y="366" fill="#5EEAD4" font-family="'JetBrains Mono', monospace" font-size="10">FULL-PRICE DISCIPLINE</text>
+
+  <rect x="288" y="148" width="224" height="232" rx="10" fill="#111622" stroke="#00F2FE" stroke-opacity="0.45"/>
+  <text x="304" y="176" fill="#00F2FE" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="800">02 // 对 AI 代理拆技术墙</text>
+  <text x="304" y="204" fill="#F8FAFC" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="14" font-weight="700">Stripe WebMCP 实测</text>
+  <text x="304" y="224" fill="#94A3B8" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11.5">省 42% Token · 降 38% 开销</text>
+  <line x1="304" y1="240" x2="496" y2="240" stroke="#1E293B"/>
+  <text x="304" y="262" fill="#F8FAFC" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="14" font-weight="700">警惕 WAF 拦单困局</text>
+  <text x="304" y="282" fill="#FCA5A5" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11.5">连续 3 家大牌独立站误杀买手</text>
+  <line x1="304" y1="298" x2="496" y2="298" stroke="#1E293B"/>
+  <text x="304" y="320" fill="#F8FAFC" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="14" font-weight="700">破局 61.7% 幽灵引用</text>
+  <text x="304" y="340" fill="#67E8F9" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11.5">Google 搜索重塑 45% 推荐名单</text>
+  <text x="304" y="366" fill="#38BDF8" font-family="'JetBrains Mono', monospace" font-size="10">WEBMCP &amp; AEO SHORTLIST</text>
+
+  <rect x="528" y="148" width="224" height="232" rx="10" fill="#111622" stroke="#10B981" stroke-opacity="0.45"/>
+  <text x="544" y="176" fill="#10B981" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="800">03 // 平台新规与放水闸</text>
+  <text x="544" y="204" fill="#F8FAFC" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="13.5" font-weight="700">Amazon 63% 曝光清洗</text>
+  <text x="544" y="224" fill="#94A3B8" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11.5">可见渲染计费 + Twitch 导购</text>
+  <line x1="544" y1="240" x2="736" y2="240" stroke="#1E293B"/>
+  <text x="544" y="262" fill="#F8FAFC" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="13.5" font-weight="700">Google PMax 双刃剑</text>
+  <text x="544" y="282" fill="#94A3B8" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11.5">限控 Promo × 3 图视觉锁</text>
+  <line x1="544" y1="298" x2="736" y2="298" stroke="#1E293B"/>
+  <text x="544" y="320" fill="#F8FAFC" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="13.5" font-weight="700">问答框商业化卡位</text>
+  <text x="544" y="340" fill="#6EE7B7" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="10.8">Copilot +21% × Connected Apps</text>
+  <text x="544" y="366" fill="#34D399" font-family="'JetBrains Mono', monospace" font-size="10">AMAZON · GOOGLE · MICROSOFT</text>
+
+  <!-- Bottom Action Strip -->
+  <rect x="48" y="396" width="704" height="42" rx="8" fill="#0F172A" stroke="#1E293B"/>
+  <text x="66" y="421" fill="#E2E8F0" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11.5" font-weight="700">核心策略：对人类用全价与不可伪造实证守住毛利飞轮，对 AI 代理放行防火墙并暴露 WebMCP 与实时库存</text>
+
+  <text x="48" y="458" fill="#52525B" font-family="'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="10.5">BRANDOS LAB™ // 品牌科学实验室™ · 品牌出海 AI 观察第 2 期</text>
+  <text x="752" y="458" text-anchor="end" fill="#52525B" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="10.5">DISPATCH #02 // ZH</text>
+</svg>
