@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <pattern id="gridEp2En" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#18181B" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="glowEp2En" cx="50%" cy="40%" r="58%">
+      <stop offset="0%" stop-color="#FB923C" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#09090B" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="500" fill="#09090B"/>
+  <rect width="800" height="500" fill="url(#gridEp2En)"/>
+  <rect width="800" height="500" fill="url(#glowEp2En)"/>
+  <rect x="28" y="28" width="744" height="444" rx="12" fill="none" stroke="#27272A" stroke-width="1.5"/>
+
+  <text x="48" y="60" fill="#FB923C" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11.5" font-weight="700">MARKETING &amp; GROWTH // FUNDAMENTALS SERIES · PART 02</text>
+  <text x="752" y="60" text-anchor="end" fill="#64748B" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11">2026.11.25</text>
+
+  <text x="48" y="98" fill="#F8FAFC" font-family="'Inter', system-ui, sans-serif" font-size="21.5" font-weight="800">Same Sneakers, 24-Point Margin Gap: Nike vs. On vs. LEGO</text>
+  <text x="48" y="122" fill="#94A3B8" font-family="'Inter', system-ui, sans-serif" font-size="12.5">When to expand reach, how to pair DTC with wholesale, and how to add products cleanly</text>
+
+  <!-- 3 Case Cards -->
+  <rect x="48" y="148" width="224" height="236" rx="10" fill="#111622" stroke="#F43F5E" stroke-opacity="0.45"/>
+  <text x="64" y="176" fill="#FDA4AF" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="800">01 // NIKE · SHELF COST</text>
+  <text x="64" y="212" fill="#F8FAFC" font-family="'Inter', system-ui, sans-serif" font-size="28" font-weight="800">42.8%</text>
+  <text x="64" y="232" fill="#94A3B8" font-family="'Inter', system-ui, sans-serif" font-size="11">Q1 FY27 operating gross margin</text>
+  <line x1="64" y1="248" x2="256" y2="248" stroke="#1E293B"/>
+  <text x="64" y="272" fill="#E2E8F0" font-family="'Inter', system-ui, sans-serif" font-size="12" font-weight="700">Cut ~50% of retail accounts</text>
+  <text x="64" y="294" fill="#94A3B8" font-family="'Inter', system-ui, sans-serif" font-size="11">Handed prime walls to rivals</text>
+  <text x="64" y="316" fill="#94A3B8" font-family="'Inter', system-ui, sans-serif" font-size="11">Now cutting classic supply ~20%</text>
+  <text x="64" y="366" fill="#FCA5A5" font-family="'JetBrains Mono', monospace" font-size="10">LOST SHELF VISIBILITY</text>
+
+  <rect x="288" y="148" width="224" height="236" rx="10" fill="#111622" stroke="#2DD4BF" stroke-opacity="0.55"/>
+  <text x="304" y="176" fill="#5EEAD4" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="800">02 // ON · HELD BACK</text>
+  <text x="304" y="212" fill="#5EEAD4" font-family="'Inter', system-ui, sans-serif" font-size="28" font-weight="800">66.9%</text>
+  <text x="304" y="232" fill="#94A3B8" font-family="'Inter', system-ui, sans-serif" font-size="11">Q3 2026 underlying gross margin</text>
+  <line x1="304" y1="248" x2="496" y2="248" stroke="#1E293B"/>
+  <text x="304" y="272" fill="#E2E8F0" font-family="'Inter', system-ui, sans-serif" font-size="12" font-weight="700">Slowed Q2 wholesale sell-in</text>
+  <text x="304" y="294" fill="#94A3B8" font-family="'Inter', system-ui, sans-serif" font-size="11">11,000+ curated doors · DTC +25%</text>
+  <text x="304" y="316" fill="#94A3B8" font-family="'Inter', system-ui, sans-serif" font-size="11">Record Q3 sales CHF 931.4M</text>
+  <text x="304" y="366" fill="#2DD4BF" font-family="'JetBrains Mono', monospace" font-size="10">FULL-PRICE DISCIPLINE</text>
+
+  <rect x="528" y="148" width="224" height="236" rx="10" fill="#111622" stroke="#F59E0B" stroke-opacity="0.45"/>
+  <text x="544" y="176" fill="#FCD34D" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="800">03 // LEGO · DISCIPLINE</text>
+  <text x="544" y="212" fill="#F8FAFC" font-family="'Inter', system-ui, sans-serif" font-size="28" font-weight="800">+21%</text>
+  <text x="544" y="232" fill="#94A3B8" font-family="'Inter', system-ui, sans-serif" font-size="11">H1 2026 revenue DKK 41.9B</text>
+  <line x1="544" y1="248" x2="736" y2="248" stroke="#1E293B"/>
+  <text x="544" y="272" fill="#E2E8F0" font-family="'Inter', system-ui, sans-serif" font-size="12" font-weight="700">330+ new sets, zero dilution</text>
+  <text x="544" y="294" fill="#94A3B8" font-family="'Inter', system-ui, sans-serif" font-size="11">2003 sprawl lost ~$1M/day</text>
+  <text x="544" y="316" fill="#94A3B8" font-family="'Inter', system-ui, sans-serif" font-size="11">2026: same brick, adult occasions</text>
+  <text x="544" y="366" fill="#FBBF24" font-family="'JetBrains Mono', monospace" font-size="10">EXPAND SCENES, GUARD DNA</text>
+
+  <!-- Bottom Strip -->
+  <rect x="48" y="400" width="704" height="38" rx="8" fill="#0F172A" stroke="#1E293B"/>
+  <text x="400" y="424" text-anchor="middle" fill="#E2E8F0" font-family="'Inter', system-ui, sans-serif" font-size="12" font-weight="700">Go wide on curated visibility, stay strict on pricing gates and core product identity</text>
+
+  <text x="48" y="458" fill="#52525B" font-family="'Inter', system-ui, sans-serif" font-size="10.5">RANBRANDOS.COM // MARKETING &amp; GROWTH SERIES · PART 02</text>
+  <text x="752" y="458" text-anchor="end" fill="#52525B" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="10.5">SERIES 02/06 // EN</text>
+</svg>

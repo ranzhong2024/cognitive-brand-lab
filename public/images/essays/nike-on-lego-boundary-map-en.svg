@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <pattern id="gridBoundEn" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#18181B" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="500" fill="#0B0F17"/>
+  <rect width="800" height="500" fill="url(#gridBoundEn)"/>
+  <rect x="28" y="28" width="744" height="444" rx="12" fill="none" stroke="#1E293B" stroke-width="1.5"/>
+
+  <text x="48" y="58" fill="#FB923C" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">GROWTH BOUNDARY MAP // EXPAND VS. HOLD THE LINE</text>
+  <text x="752" y="58" text-anchor="end" fill="#64748B" font-family="'JetBrains Mono', monospace" font-size="10.5">2026 EARNINGS PROOF</text>
+  <text x="48" y="86" fill="#F8FAFC" font-family="'Inter', system-ui, sans-serif" font-size="18.5" font-weight="800">Two Gates of Brand Scaling: Where to Expand vs. Hold the Line</text>
+
+  <!-- Left Column: Expand -->
+  <rect x="48" y="108" width="340" height="320" rx="10" fill="#0C2122" stroke="#2DD4BF" stroke-opacity="0.45"/>
+  <rect x="64" y="124" width="308" height="30" rx="6" fill="#0F3536"/>
+  <text x="218" y="143" text-anchor="middle" fill="#5EEAD4" font-family="'Inter', system-ui, sans-serif" font-size="11.5" font-weight="800">EXPAND BOLDLY (BE EASY TO FIND &amp; BUY)</text>
+
+  <rect x="64" y="168" width="308" height="72" rx="8" fill="#111827" stroke="#1F2937"/>
+  <text x="78" y="191" fill="#2DD4BF" font-family="'Inter', system-ui, sans-serif" font-size="12" font-weight="700">1. Curated Physical Retail &amp; Try-On</text>
+  <text x="78" y="211" fill="#CBD5E1" font-family="'Inter', system-ui, sans-serif" font-size="10.8">On: 11,000+ selective doors + Dick's House of Sport</text>
+  <text x="78" y="229" fill="#94A3B8" font-family="'Inter', system-ui, sans-serif" font-size="10">Great shelves are zero-CPC discovery billboards</text>
+
+  <rect x="64" y="252" width="308" height="72" rx="8" fill="#111827" stroke="#1F2937"/>
+  <text x="78" y="275" fill="#2DD4BF" font-family="'Inter', system-ui, sans-serif" font-size="12" font-weight="700">2. New Buying Occasions &amp; Reasons</text>
+  <text x="78" y="295" fill="#CBD5E1" font-family="'Inter', system-ui, sans-serif" font-size="10.8">LEGO H1 2026: 330+ sets, revenue +21% (DKK 41.9B)</text>
+  <text x="78" y="313" fill="#94A3B8" font-family="'Inter', system-ui, sans-serif" font-size="10">From kids' toys to adult decor, bouquets &amp; F1 gifts</text>
+
+  <rect x="64" y="336" width="308" height="76" rx="8" fill="#111827" stroke="#1F2937"/>
+  <text x="78" y="359" fill="#2DD4BF" font-family="'Inter', system-ui, sans-serif" font-size="12" font-weight="700">3. Hard-to-Copy Product Proof</text>
+  <text x="78" y="379" fill="#CBD5E1" font-family="'Inter', system-ui, sans-serif" font-size="10.8">On's CloudTec sole &amp; Zurich LightSpray uppers</text>
+  <text x="78" y="397" fill="#94A3B8" font-family="'Inter', system-ui, sans-serif" font-size="10">Tangible engineering backs 66.9% underlying margin</text>
+
+  <!-- Right Column: Hold the Line -->
+  <rect x="412" y="108" width="340" height="320" rx="10" fill="#241016" stroke="#F43F5E" stroke-opacity="0.45"/>
+  <rect x="428" y="124" width="308" height="30" rx="6" fill="#3B1219"/>
+  <text x="582" y="143" text-anchor="middle" fill="#FDA4AF" font-family="'Inter', system-ui, sans-serif" font-size="11.5" font-weight="800">HOLD THE LINE (PROTECT PRICING &amp; DNA)</text>
+
+  <rect x="428" y="168" width="308" height="72" rx="8" fill="#111827" stroke="#1F2937"/>
+  <text x="442" y="191" fill="#FCA5A5" font-family="'Inter', system-ui, sans-serif" font-size="12" font-weight="700">1. Channel Stuffing &amp; Discount Racks</text>
+  <text x="442" y="211" fill="#CBD5E1" font-family="'Inter', system-ui, sans-serif" font-size="10.8">On intentionally slowed Q2 wholesale to +4.8%</text>
+  <text x="442" y="229" fill="#94A3B8" font-family="'Inter', system-ui, sans-serif" font-size="10">Sacrificed one quarter's sell-in to stop markdowns</text>
+
+  <rect x="428" y="252" width="308" height="72" rx="8" fill="#111827" stroke="#1F2937"/>
+  <text x="442" y="275" fill="#FCA5A5" font-family="'Inter', system-ui, sans-serif" font-size="12" font-weight="700">2. Over-Milking Classic Icons</text>
+  <text x="442" y="295" fill="#CBD5E1" font-family="'Inter', system-ui, sans-serif" font-size="10.8">Nike forced to slash classic shoe supply ~20%</text>
+  <text x="442" y="313" fill="#94A3B8" font-family="'Inter', system-ui, sans-serif" font-size="10">Flooding icons turns heat into clearance clutter</text>
+
+  <rect x="428" y="336" width="308" height="76" rx="8" fill="#111827" stroke="#1F2937"/>
+  <text x="442" y="359" fill="#FCA5A5" font-family="'Inter', system-ui, sans-serif" font-size="12" font-weight="700">3. Off-Core Brand Extensions</text>
+  <text x="442" y="379" fill="#CBD5E1" font-family="'Inter', system-ui, sans-serif" font-size="10.8">LEGO 2003: watches, jewelry &amp; non-fitting toys</text>
+  <text x="442" y="397" fill="#94A3B8" font-family="'Inter', system-ui, sans-serif" font-size="10">Elements exploded to ~14,000; lost ~$1M/day</text>
+
+  <text x="48" y="458" fill="#52525B" font-family="'Inter', system-ui, sans-serif" font-size="10">Source: Nike FY26 10-K / Q1 FY27, On Holding Q2–Q3 2026, LEGO Group H1 2026 filings &amp; HBS case data</text>
+  <text x="752" y="458" text-anchor="end" fill="#52525B" font-family="'JetBrains Mono', monospace" font-size="10">FIG 01 // EN</text>
+</svg>

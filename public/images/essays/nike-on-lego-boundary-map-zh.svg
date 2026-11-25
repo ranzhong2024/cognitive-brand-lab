@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <pattern id="gridBoundZh" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#18181B" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="500" fill="#0B0F17"/>
+  <rect width="800" height="500" fill="url(#gridBoundZh)"/>
+  <rect x="28" y="28" width="744" height="444" rx="12" fill="none" stroke="#1E293B" stroke-width="1.5"/>
+
+  <text x="48" y="58" fill="#FB923C" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">GROWTH BOUNDARY MAP // EXPAND VS. HOLD THE LINE</text>
+  <text x="752" y="58" text-anchor="end" fill="#64748B" font-family="'JetBrains Mono', monospace" font-size="10.5">2026 EARNINGS PROOF</text>
+  <text x="48" y="86" fill="#F8FAFC" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="19" font-weight="800">品牌长大时的两道闸门：什么该放开做大，什么必须死守收紧？</text>
+
+  <!-- Left Column: Expand -->
+  <rect x="48" y="108" width="340" height="320" rx="10" fill="#0C2122" stroke="#2DD4BF" stroke-opacity="0.45"/>
+  <rect x="64" y="124" width="308" height="30" rx="6" fill="#0F3536"/>
+  <text x="218" y="143" text-anchor="middle" fill="#5EEAD4" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12.5" font-weight="800">该放开做大的（让顾客顺手想起、顺手买到）</text>
+
+  <rect x="64" y="168" width="308" height="72" rx="8" fill="#111827" stroke="#1F2937"/>
+  <text x="78" y="191" fill="#2DD4BF" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12.5" font-weight="700">1. 优质线下露出与体验点</text>
+  <text x="78" y="211" fill="#CBD5E1" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11">On 精选 11,000+ 门店，进驻 Dick's 体验大店</text>
+  <text x="78" y="229" fill="#94A3B8" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="10.5">线下货架是免点击费的试穿信任场</text>
+
+  <rect x="64" y="252" width="308" height="72" rx="8" fill="#111827" stroke="#1F2937"/>
+  <text x="78" y="275" fill="#2DD4BF" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12.5" font-weight="700">2. 新的生活场景与购买理由</text>
+  <text x="78" y="295" fill="#CBD5E1" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11">乐高 2026 H1 发 330+ 新品，营收大涨 21%</text>
+  <text x="78" y="313" fill="#94A3B8" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="10.5">从儿童玩具扩到成人花束、送礼与 F1 摆件</text>
+
+  <rect x="64" y="336" width="308" height="76" rx="8" fill="#111827" stroke="#1F2937"/>
+  <text x="78" y="359" fill="#2DD4BF" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12.5" font-weight="700">3. 抄不起的产品硬研发</text>
+  <text x="78" y="379" fill="#CBD5E1" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11">On 镂空鞋底与苏黎世 LightSpray 喷织鞋面</text>
+  <text x="78" y="397" fill="#94A3B8" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="10.5">用实打实的技术门槛撑起 66.9% 真实毛利</text>
+
+  <!-- Right Column: Hold the Line -->
+  <rect x="412" y="108" width="340" height="320" rx="10" fill="#241016" stroke="#F43F5E" stroke-opacity="0.45"/>
+  <rect x="428" y="124" width="308" height="30" rx="6" fill="#3B1219"/>
+  <text x="582" y="143" text-anchor="middle" fill="#FDA4AF" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12.5" font-weight="800">必须死守收紧的（绝不为快钱毁掉招牌）</text>
+
+  <rect x="428" y="168" width="308" height="72" rx="8" fill="#111827" stroke="#1F2937"/>
+  <text x="442" y="191" fill="#FCA5A5" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12.5" font-weight="700">1. 乱价渠道与过度压货</text>
+  <text x="442" y="211" fill="#CBD5E1" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11">On Q2 主动压慢美洲批发增速至 4.8%</text>
+  <text x="442" y="229" fill="#94A3B8" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="10.5">宁可少赚一季快钱，绝不放纵渠道甩货打折</text>
+
+  <rect x="428" y="252" width="308" height="72" rx="8" fill="#111827" stroke="#1F2937"/>
+  <text x="442" y="275" fill="#FCA5A5" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12.5" font-weight="700">2. 透支老爆款与盲目清仓</text>
+  <text x="442" y="295" fill="#CBD5E1" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11">Nike 被迫砍约 20% 经典复古鞋供应量</text>
+  <text x="442" y="313" fill="#94A3B8" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="10.5">过度铺货打折会让经典款彻底沦为大路货</text>
+
+  <rect x="428" y="336" width="308" height="76" rx="8" fill="#111827" stroke="#1F2937"/>
+  <text x="442" y="359" fill="#FCA5A5" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12.5" font-weight="700">3. 脱离老本行的跨界贴牌</text>
+  <text x="442" y="379" fill="#CBD5E1" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11">2003 乐高乱做手表/首饰/异形人偶日亏百万</text>
+  <text x="442" y="397" fill="#94A3B8" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="10.5">零件暴涨至 1.4 万种，差点把品牌彻底做死</text>
+
+  <text x="48" y="458" fill="#52525B" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="10">数据来源：Nike FY26 10-K / Q1 FY27、On Holding Q2–Q3 2026、LEGO Group H1 2026 官方财报与 HBS 案例</text>
+  <text x="752" y="458" text-anchor="end" fill="#52525B" font-family="'JetBrains Mono', monospace" font-size="10">FIG 01 // ZH</text>
+</svg>
