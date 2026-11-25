@@ -35,13 +35,13 @@ const categoriesList = isEn
   ? [
       { id: 'ALL', name: 'All', count: essays.length, dot: 'bg-slate-200' },
       { id: 'BrandOS', name: 'BrandOS', count: countByCategory('BrandOS'), dot: 'bg-sky-400' },
-      { id: 'Dispatch', name: 'Weekly', count: countByCategory('Dispatch'), dot: 'bg-teal-400' },
+      { id: 'Dispatch', name: 'Global AI Weekly', count: countByCategory('Dispatch'), dot: 'bg-teal-400' },
       { id: 'Growth', name: 'Marketing & Growth', count: countByCategory('Growth'), dot: 'bg-orange-400' },
     ]
   : [
       { id: 'ALL', name: '全部', count: essays.length, dot: 'bg-slate-200' },
       { id: 'BrandOS', name: 'BrandOS', count: countByCategory('BrandOS'), dot: 'bg-sky-400' },
-      { id: 'Dispatch', name: '周刊', count: countByCategory('Dispatch'), dot: 'bg-teal-400' },
+      { id: 'Dispatch', name: '出海 AI 周报', count: countByCategory('Dispatch'), dot: 'bg-teal-400' },
       { id: 'Growth', name: '营销增长', count: countByCategory('Growth'), dot: 'bg-orange-400' },
     ];
 
@@ -53,8 +53,8 @@ const categoryMeta: Record<EssayCategory, { labelZh: string; labelEn: string; ba
     hoverBorder: 'hover:border-sky-400/50',
   },
   Dispatch: {
-    labelZh: '周刊',
-    labelEn: 'Weekly',
+    labelZh: '出海 AI 周报',
+    labelEn: 'Global AI Weekly',
     badge: 'text-teal-300 bg-teal-950/70 border-teal-500/40',
     hoverBorder: 'hover:border-teal-400/50',
   },
@@ -81,7 +81,7 @@ const archiveSchema = {
       "name": isEn ? "Brand Notes & Case Studies | BrandOS Lab™" : "品牌笔记与实例观察 | 品牌科学实验室™",
       "description": isEn
         ? "Field notes, empirical case studies, pricing playbooks, and marketing growth breakdowns authored by Ran."
-        : "收录 Ran (然) 的 BrandOS 深度专栏、周刊观察与营销增长实证案例。置顶必读导论，最新文章按时间倒序排列。",
+        : "收录 Ran (然) 的 BrandOS 深度专栏、出海 AI 周报与营销增长实证案例。置顶必读导论，最新文章按时间倒序排列。",
       "url": archiveUrl,
       "author": { "@type": "Person", "@id": "https://ranbrandos.com/#founder" },
       "publisher": { "@type": "Organization", "@id": "https://ranbrandos.com/#organization" },
@@ -121,7 +121,7 @@ const mailtoHref = isEn
   title={isEn ? 'Brand Notes & Case Studies | BrandOS Lab™' : '品牌笔记与实例观察 | 品牌科学实验室™ • BRANDOS LAB™'}
   description={isEn
     ? 'Field notes, empirical case studies, pricing playbooks, and marketing growth breakdowns authored by Ran.'
-    : '收录 Ran (然) 的 BrandOS 深度专栏、周刊观察与营销增长实证案例。拒绝营销玄学，输出一线可验证的商业洞察。'}
+    : '收录 Ran (然) 的 BrandOS 深度专栏、出海 AI 周报与营销增长实证案例。拒绝营销玄学，输出一线可验证的商业洞察。'}
   customSchema={archiveSchema}
 >
   <div class="max-w-5xl mx-auto px-5 md:px-8 pt-14 sm:pt-20 pb-20 relative z-10">
@@ -142,8 +142,8 @@ const mailtoHref = isEn
       </h1>
       <p class="font-sans text-[15px] sm:text-[16.5px] text-slate-400 leading-relaxed max-w-2xl">
         {isEn
-          ? 'Field-tested essays on BrandOS systems, weekly industry dispatches, and marketing growth—grounded in real earnings and first-principles logic.'
-          : '聚焦 BrandOS 品牌体系、每周前沿观察与营销增长实战案例。拒绝空洞口号，只写经得起财报与一线市场检验的硬核笔记。'}
+          ? 'Field-tested essays on BrandOS systems, Global AI Weekly briefings, and marketing growth—grounded in real earnings and first-principles logic.'
+          : '聚焦 BrandOS 品牌体系、出海 AI 周报与营销增长实战案例。拒绝空洞口号，只写经得起财报与一线市场检验的硬核笔记。'}
       </p>
     </header>
 

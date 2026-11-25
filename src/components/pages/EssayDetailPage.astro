@@ -40,7 +40,7 @@ const isDispatch = essay.data.module === 'Dispatch';
 const isGrowth = essay.data.module === 'Growth';
 const isStandaloneCategory = isDispatch || isGrowth;
 const moduleBadgeLabel = isStandaloneCategory ? essay.data.moduleName : `${essay.data.module} • ${essay.data.moduleName}`;
-const breadcrumbLabel = isDispatch ? (isEn ? 'WEEKLY DISPATCH' : '每周观察') : isGrowth ? (isEn ? 'MARKETING & GROWTH' : '营销增长') : essay.data.module;
+const breadcrumbLabel = isDispatch ? (isEn ? 'GLOBAL AI WEEKLY' : '出海 AI 周报') : isGrowth ? (isEn ? 'MARKETING & GROWTH' : '营销增长') : essay.data.module;
 const publishDateIso = essay.data.pubDate ? new Date(essay.data.pubDate).toISOString() : new Date().toISOString();
 
 const essayUrl = `https://ranbrandos.com${essayPath}`;
