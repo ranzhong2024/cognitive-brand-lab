@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <pattern id="gridEp3En" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#18181B" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="glowEp3En" cx="50%" cy="38%" r="58%">
+      <stop offset="0%" stop-color="#FB923C" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#09090B" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="500" fill="#09090B"/>
+  <rect width="800" height="500" fill="url(#gridEp3En)"/>
+  <rect width="800" height="500" fill="url(#glowEp3En)"/>
+  <rect x="28" y="28" width="744" height="444" rx="12" fill="none" stroke="#27272A" stroke-width="1.5"/>
+
+  <text x="48" y="60" fill="#FB923C" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11.5" font-weight="700">MARKETING &amp; GROWTH // SERIES · PART 03</text>
+  <text x="752" y="60" text-anchor="end" fill="#64748B" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11">2026.11.25</text>
+
+  <text x="48" y="98" fill="#F8FAFC" font-family="'Inter', -apple-system, BlinkMacSystemFont, sans-serif" font-size="20.5" font-weight="800">Stop Treating Every Customer the Same: How Profit Leaders Price</text>
+  <text x="48" y="122" fill="#94A3B8" font-family="'Inter', -apple-system, BlinkMacSystemFont, sans-serif" font-size="12.5">2026 filings from Costco, Duolingo &amp; Apple: core buyers, smart tiers &amp; list-price discipline</text>
+
+  <!-- Card 1: Costco -->
+  <rect x="48" y="148" width="224" height="236" rx="10" fill="#111622" stroke="#2DD4BF" stroke-opacity="0.5"/>
+  <text x="64" y="176" fill="#5EEAD4" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="800">01 // COSTCO · CORE BASE</text>
+  <text x="64" y="212" fill="#5EEAD4" font-family="'Inter', sans-serif" font-size="28" font-weight="800">75.2%</text>
+  <text x="64" y="232" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="11">Sales from 50.3% Executive tier</text>
+  <line x1="64" y1="248" x2="256" y2="248" stroke="#1E293B"/>
+  <text x="64" y="272" fill="#E2E8F0" font-family="'Inter', sans-serif" font-size="12" font-weight="700">11.09% Product Margin</text>
+  <text x="64" y="294" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="11">$5.91B fees = 64% of Net Income</text>
+  <text x="64" y="316" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="11">92.3% US/CA renewal · ~3x spend</text>
+  <text x="64" y="366" fill="#2DD4BF" font-family="'JetBrains Mono', monospace" font-size="10">FILTER CORE BUYERS</text>
+
+  <!-- Card 2: Duolingo -->
+  <rect x="288" y="148" width="224" height="236" rx="10" fill="#111622" stroke="#38BDF8" stroke-opacity="0.5"/>
+  <text x="304" y="176" fill="#7DD3FC" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="800">02 // DUOLINGO · TIERS</text>
+  <text x="304" y="212" fill="#7DD3FC" font-family="'Inter', sans-serif" font-size="28" font-weight="800">72.9%</text>
+  <text x="304" y="232" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="11">Q3 margin with 91%+ free users</text>
+  <line x1="304" y1="248" x2="496" y2="248" stroke="#1E293B"/>
+  <text x="304" y="272" fill="#E2E8F0" font-family="'Inter', sans-serif" font-size="12" font-weight="700">153.1M MAU · Only 8.6% Paid</text>
+  <text x="304" y="294" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="11">AI call cost cut over 96%</text>
+  <text x="304" y="316" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="11">Max folded into Super (~10x reach)</text>
+  <text x="304" y="366" fill="#38BDF8" font-family="'JetBrains Mono', monospace" font-size="10">DYNAMIC VALUE TIERS</text>
+
+  <!-- Card 3: Apple -->
+  <rect x="528" y="148" width="224" height="236" rx="10" fill="#111622" stroke="#F59E0B" stroke-opacity="0.5"/>
+  <text x="544" y="176" fill="#FCD34D" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="800">03 // APPLE · ANCHOR</text>
+  <text x="544" y="212" fill="#FCD34D" font-family="'Inter', sans-serif" font-size="28" font-weight="800">40.2%</text>
+  <text x="544" y="232" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="11">Gross profit from 25.8% Services</text>
+  <line x1="544" y1="248" x2="736" y2="248" stroke="#1E293B"/>
+  <text x="544" y="272" fill="#E2E8F0" font-family="'Inter', sans-serif" font-size="12" font-weight="700">76.2% Services vs 39.3% Goods</text>
+  <text x="544" y="294" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="11">Storage ladder: $1,199 to $2,399</text>
+  <text x="544" y="316" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="11">No MSRP cuts · 2.5B+ devices</text>
+  <text x="544" y="366" fill="#FBBF24" font-family="'JetBrains Mono', monospace" font-size="10">GUARD LIST-PRICE ANCHOR</text>
+
+  <!-- Bottom Strip -->
+  <rect x="48" y="400" width="704" height="38" rx="8" fill="#0F172A" stroke="#1E293B"/>
+  <text x="400" y="424" text-anchor="middle" fill="#E2E8F0" font-family="'Inter', -apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700">Identify your core buyers · Tier for every budget · Protect list price without slashing MSRP</text>
+
+  <text x="48" y="458" fill="#52525B" font-family="'Inter', sans-serif" font-size="10.5">RANBRANDOS.COM // MARKETING &amp; GROWTH · PART 03</text>
+  <text x="752" y="458" text-anchor="end" fill="#52525B" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="10.5">SERIES 03/06 // EN</text>
+</svg>

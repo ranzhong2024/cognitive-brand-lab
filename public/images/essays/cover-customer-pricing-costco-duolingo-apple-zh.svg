@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <pattern id="gridEp3Zh" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#18181B" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="glowEp3Zh" cx="50%" cy="38%" r="58%">
+      <stop offset="0%" stop-color="#FB923C" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#09090B" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="500" fill="#09090B"/>
+  <rect width="800" height="500" fill="url(#gridEp3Zh)"/>
+  <rect width="800" height="500" fill="url(#glowEp3Zh)"/>
+  <rect x="28" y="28" width="744" height="444" rx="12" fill="none" stroke="#27272A" stroke-width="1.5"/>
+
+  <text x="48" y="60" fill="#FB923C" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11.5" font-weight="700">MARKETING &amp; GROWTH // 营销增长系列 · PART 03</text>
+  <text x="752" y="60" text-anchor="end" fill="#64748B" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11">2026.11.25</text>
+
+  <text x="48" y="98" fill="#F8FAFC" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="21" font-weight="800">别再对所有顾客一视同仁：真正会赚钱的品牌怎么算老客账？</text>
+  <text x="48" y="122" fill="#94A3B8" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12.5">Costco、Duolingo 与 Apple 2026 财报拆解：筛选核心老客、阶梯分层与守住正价标尺</text>
+
+  <!-- Card 1: Costco -->
+  <rect x="48" y="148" width="224" height="236" rx="10" fill="#111622" stroke="#2DD4BF" stroke-opacity="0.5"/>
+  <text x="64" y="176" fill="#5EEAD4" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="800">01 // COSTCO · 筛选老客</text>
+  <text x="64" y="212" fill="#5EEAD4" font-family="'Inter', sans-serif" font-size="28" font-weight="800">75.2%</text>
+  <text x="64" y="232" fill="#94A3B8" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11">50.3% 黑钻会员买走全球销售额</text>
+  <line x1="64" y1="248" x2="256" y2="248" stroke="#1E293B"/>
+  <text x="64" y="272" fill="#E2E8F0" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12" font-weight="700">商品毛利仅 11.09%</text>
+  <text x="64" y="294" fill="#94A3B8" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11">会员费 $5.91B ≈ 64% 净利</text>
+  <text x="64" y="316" fill="#94A3B8" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11">美加续费 92.3% · 人均花近 3 倍</text>
+  <text x="64" y="366" fill="#2DD4BF" font-family="'JetBrains Mono', monospace" font-size="10">FILTER CORE BUYERS</text>
+
+  <!-- Card 2: Duolingo -->
+  <rect x="288" y="148" width="224" height="236" rx="10" fill="#111622" stroke="#38BDF8" stroke-opacity="0.5"/>
+  <text x="304" y="176" fill="#7DD3FC" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="800">02 // DUOLINGO · 动态分档</text>
+  <text x="304" y="212" fill="#7DD3FC" font-family="'Inter', sans-serif" font-size="28" font-weight="800">72.9%</text>
+  <text x="304" y="232" fill="#94A3B8" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11">超 91% 免费用户下的 Q3 毛利率</text>
+  <line x1="304" y1="248" x2="496" y2="248" stroke="#1E293B"/>
+  <text x="304" y="272" fill="#E2E8F0" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12" font-weight="700">1.531 亿月活 · 仅 8.6% 付费</text>
+  <text x="304" y="294" fill="#94A3B8" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11">AI 对练算力降本超 96%</text>
+  <text x="304" y="316" fill="#94A3B8" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11">下线 Max 并入主力档扩约 10 倍</text>
+  <text x="304" y="366" fill="#38BDF8" font-family="'JetBrains Mono', monospace" font-size="10">DYNAMIC VALUE TIERS</text>
+
+  <!-- Card 3: Apple -->
+  <rect x="528" y="148" width="224" height="236" rx="10" fill="#111622" stroke="#F59E0B" stroke-opacity="0.5"/>
+  <text x="544" y="176" fill="#FCD34D" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="800">03 // APPLE · 守住标尺</text>
+  <text x="544" y="212" fill="#FCD34D" font-family="'Inter', sans-serif" font-size="28" font-weight="800">40.2%</text>
+  <text x="544" y="232" fill="#94A3B8" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11">25.8% 服务营收扛走全年总毛利</text>
+  <line x1="544" y1="248" x2="736" y2="248" stroke="#1E293B"/>
+  <text x="544" y="272" fill="#E2E8F0" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12" font-weight="700">服务毛利 76.2% vs 硬件 39.3%</text>
+  <text x="544" y="294" fill="#94A3B8" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11">存储四档 $1,199 至 $2,399</text>
+  <text x="544" y="316" fill="#94A3B8" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11">官网不打折 · 25 亿设备锁生态</text>
+  <text x="544" y="366" fill="#FBBF24" font-family="'JetBrains Mono', monospace" font-size="10">GUARD LIST-PRICE ANCHOR</text>
+
+  <!-- Bottom Strip -->
+  <rect x="48" y="400" width="704" height="38" rx="8" fill="#0F172A" stroke="#1E293B"/>
+  <text x="400" y="424" text-anchor="middle" fill="#E2E8F0" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12" font-weight="700">看清谁在养活自己（筛选老客）· 分好档位接住不同预算（动态阶梯）· 死守正价标尺（绝不亲手打折）</text>
+
+  <text x="48" y="458" fill="#52525B" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="10.5">RANBRANDOS.COM // 营销增长系列 · 第 3 篇</text>
+  <text x="752" y="458" text-anchor="end" fill="#52525B" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="10.5">SERIES 03/06 // ZH</text>
+</svg>
