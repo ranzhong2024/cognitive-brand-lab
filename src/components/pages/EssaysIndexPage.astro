@@ -5,6 +5,7 @@ import {
   getEssayCategory,
   getEssaySlug,
   getLocalizedPath,
+  getModuleRank,
   PINNED_ESSAY_SLUG,
   sortEssaysForIndex,
   type EssayCategory,
@@ -260,7 +261,7 @@ const mailtoHref = isEn
     })()}
 
     <!-- EDITORIAL STREAM HEADER -->
-    <div id="stream-header" class="flex items-center justify-between mb-5 pb-3 border-b border-[#1E2638]">
+    <div id="stream-header" class="flex items-center justify-between mb-5 pb-3 border-b border-[#1E2638]" data-is-en={isEn ? 'true' : 'false'}>
       <div class="flex items-center gap-2.5">
         <span class="font-mono text-[11px] font-bold uppercase tracking-[0.18em] text-slate-300" id="stream-section-title">
           {isEn ? 'LATEST ESSAYS' : '最新发布'}
@@ -269,7 +270,7 @@ const mailtoHref = isEn
           ({streamEssays.length})
         </span>
       </div>
-      <div class="font-mono text-[11px] text-slate-500">
+      <div class="font-mono text-[11px] text-slate-500" id="stream-sort-label">
         {isEn ? 'Sorted by newest' : '按发布时间倒序'}
       </div>
     </div>
@@ -289,6 +290,8 @@ const mailtoHref = isEn
           <article
             class={`essay-item group bg-[#101521]/85 hover:bg-[#141B2B] border border-[#1E2638] ${meta.hoverBorder} rounded-2xl p-5 sm:p-6 transition-all duration-300 hover:shadow-[0_10px_30px_rgba(0,0,0,0.3)]`}
             data-pinned="false"
+            data-order-latest={idx}
+            data-order-module={getModuleRank(essay.data.module)}
             data-category={cat}
             data-module={essay.data.module.toLowerCase()}
             data-title={essay.data.title.toLowerCase()}
@@ -423,10 +426,14 @@ const mailtoHref = isEn
       const filterBtns = document.querySelectorAll('.filter-btn');
       const items = document.querySelectorAll('.essay-item');
       const pinnedSection = document.getElementById('pinned-section');
+      const streamContainer = document.getElementById('essays-stream');
       const streamHeader = document.getElementById('stream-header');
+      const streamSectionTitle = document.getElementById('stream-section-title');
+      const streamSortLabel = document.getElementById('stream-sort-label');
       const streamVisibleCount = document.getElementById('stream-visible-count');
       const noResults = document.getElementById('no-results');
       const resetBtn = document.getElementById('reset-search-btn');
+      const isEnPage = streamHeader?.getAttribute('data-is-en') === 'true';
 
       if (!items.length) return;
 
@@ -461,6 +468,33 @@ const mailtoHref = isEn
             if (countBadge) countBadge.className = 'font-mono text-[11px] text-slate-500';
           }
         });
+
+        if (streamContainer) {
+          const streamCards = Array.from(streamContainer.querySelectorAll('.essay-item')) as HTMLElement[];
+          streamCards.sort((a, b) => {
+            if (currentCategory === 'BrandOS') {
+              const modDiff =
+                Number(a.getAttribute('data-order-module') || 99) -
+                Number(b.getAttribute('data-order-module') || 99);
+              if (modDiff !== 0) return modDiff;
+            }
+            return (
+              Number(a.getAttribute('data-order-latest') || 0) -
+              Number(b.getAttribute('data-order-latest') || 0)
+            );
+          });
+          streamCards.forEach((card) => streamContainer.appendChild(card));
+        }
+
+        if (streamSectionTitle && streamSortLabel) {
+          if (currentCategory === 'BrandOS') {
+            streamSectionTitle.textContent = isEnPage ? 'M1–M6 CORE SYSTEM' : 'M1–M6 核心体系';
+            streamSortLabel.textContent = isEnPage ? 'Ordered M1 → M6' : '按 M1 → M6 体系顺序';
+          } else {
+            streamSectionTitle.textContent = isEnPage ? 'LATEST ESSAYS' : '最新发布';
+            streamSortLabel.textContent = isEnPage ? 'Sorted by newest' : '按发布时间倒序';
+          }
+        }
 
         let totalVisible = 0;
         let streamVisible = 0;
