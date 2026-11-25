@@ -1,8 +1,15 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import EssayCard from '../EssayCard.astro';
 import { getCollection } from 'astro:content';
-import { getEssaySlug, getLocalizedPath, sortEssaysByModule, type Lang } from '../../utils/i18n';
+import {
+  getEssayCategory,
+  getEssaySlug,
+  getLocalizedPath,
+  PINNED_ESSAY_SLUG,
+  sortEssaysForIndex,
+  type EssayCategory,
+  type Lang,
+} from '../../utils/i18n';
 
 interface Props {
   lang?: Lang;
@@ -11,35 +18,54 @@ interface Props {
 const { lang = 'zh' } = Astro.props;
 const isEn = lang === 'en';
 
-const essays = sortEssaysByModule(
+const essays = sortEssaysForIndex(
   (await getCollection('essays')).filter((e) => e.data.lang === lang)
 );
 
-const modulesList = isEn
+const pinnedEssay = essays.find((e) => getEssaySlug(e) === PINNED_ESSAY_SLUG) || null;
+const streamEssays = pinnedEssay
+  ? essays.filter((e) => getEssaySlug(e) !== PINNED_ESSAY_SLUG)
+  : essays;
+
+const countByCategory = (cat: EssayCategory) =>
+  essays.filter((e) => getEssayCategory(e.data.module) === cat).length;
+
+const categoriesList = isEn
   ? [
-      { id: 'ALL', name: 'All Notes', count: essays.length },
-      { id: 'BrandOS', name: 'BrandOS Overview', count: essays.filter((e) => e.data.module === 'BrandOS').length },
-      { id: 'Dispatch', name: 'Brand × AI Weekly', count: essays.filter((e) => e.data.module === 'Dispatch').length },
-      { id: 'Growth', name: 'Marketing & Growth', count: essays.filter((e) => e.data.module === 'Growth').length },
-      { id: 'M1', name: 'M1 Demand Radar', count: essays.filter((e) => e.data.module === 'M1').length },
-      { id: 'M2', name: 'M2 Unfakeable Trust', count: essays.filter((e) => e.data.module === 'M2').length },
-      { id: 'M3', name: 'M3 Value Pricing', count: essays.filter((e) => e.data.module === 'M3').length },
-      { id: 'M4', name: 'M4 Algo Resonance', count: essays.filter((e) => e.data.module === 'M4').length },
-      { id: 'M5', name: 'M5 Rapid Convert', count: essays.filter((e) => e.data.module === 'M5').length },
-      { id: 'M6', name: 'M6 Retention', count: essays.filter((e) => e.data.module === 'M6').length },
+      { id: 'ALL', name: 'All', count: essays.length, dot: 'bg-slate-200' },
+      { id: 'BrandOS', name: 'BrandOS', count: countByCategory('BrandOS'), dot: 'bg-sky-400' },
+      { id: 'Dispatch', name: 'Weekly', count: countByCategory('Dispatch'), dot: 'bg-teal-400' },
+      { id: 'Growth', name: 'Marketing & Growth', count: countByCategory('Growth'), dot: 'bg-orange-400' },
     ]
   : [
-      { id: 'ALL', name: '全部观察', count: essays.length },
-      { id: 'BrandOS', name: '全景大纲 • BrandOS', count: essays.filter((e) => e.data.module === 'BrandOS').length },
-      { id: 'Dispatch', name: '周刊 • 品牌出海 AI 观察', count: essays.filter((e) => e.data.module === 'Dispatch').length },
-      { id: 'Growth', name: '营销增长', count: essays.filter((e) => e.data.module === 'Growth').length },
-      { id: 'M1', name: 'M1 勘测心智', count: essays.filter((e) => e.data.module === 'M1').length },
-      { id: 'M2', name: 'M2 信任质押', count: essays.filter((e) => e.data.module === 'M2').length },
-      { id: 'M3', name: 'M3 价值定价', count: essays.filter((e) => e.data.module === 'M3').length },
-      { id: 'M4', name: 'M4 算法共振', count: essays.filter((e) => e.data.module === 'M4').length },
-      { id: 'M5', name: 'M5 极速转化', count: essays.filter((e) => e.data.module === 'M5').length },
-      { id: 'M6', name: 'M6 复利留存', count: essays.filter((e) => e.data.module === 'M6').length },
+      { id: 'ALL', name: '全部', count: essays.length, dot: 'bg-slate-200' },
+      { id: 'BrandOS', name: 'BrandOS', count: countByCategory('BrandOS'), dot: 'bg-sky-400' },
+      { id: 'Dispatch', name: '周刊', count: countByCategory('Dispatch'), dot: 'bg-teal-400' },
+      { id: 'Growth', name: '营销增长', count: countByCategory('Growth'), dot: 'bg-orange-400' },
     ];
+
+const categoryMeta: Record<EssayCategory, { labelZh: string; labelEn: string; badge: string; hoverBorder: string }> = {
+  BrandOS: {
+    labelZh: 'BrandOS',
+    labelEn: 'BrandOS',
+    badge: 'text-sky-300 bg-sky-950/70 border-sky-500/40',
+    hoverBorder: 'hover:border-sky-400/50',
+  },
+  Dispatch: {
+    labelZh: '周刊',
+    labelEn: 'Weekly',
+    badge: 'text-teal-300 bg-teal-950/70 border-teal-500/40',
+    hoverBorder: 'hover:border-teal-400/50',
+  },
+  Growth: {
+    labelZh: '营销增长',
+    labelEn: 'Marketing & Growth',
+    badge: 'text-orange-300 bg-orange-950/70 border-orange-500/40',
+    hoverBorder: 'hover:border-orange-400/50',
+  },
+};
+
+const formatDate = (d?: Date) => (d ? new Date(d).toISOString().slice(0, 10) : '2026-08-24');
 
 const archiveUrl = `https://ranbrandos.com${getLocalizedPath('/essays', lang)}`;
 const homeUrl = `https://ranbrandos.com${getLocalizedPath('/', lang)}`;
@@ -53,20 +79,24 @@ const archiveSchema = {
       "inLanguage": isEn ? "en" : "zh-CN",
       "name": isEn ? "Brand Notes & Case Studies | BrandOS Lab™" : "品牌笔记与实例观察 | 品牌科学实验室™",
       "description": isEn
-        ? "Field notes, empirical case studies, pricing playbooks, and peer-reviewed brand science breakdowns authored by Ran."
-        : "收录 Ran (然) 的品牌战略实证手记、出海课程深度拆解、诺奖理论还原与一线商业实例观察。拒绝营销玄学，输出最高认知密度的品牌科学指南。",
+        ? "Field notes, empirical case studies, pricing playbooks, and marketing growth breakdowns authored by Ran."
+        : "收录 Ran (然) 的 BrandOS 深度专栏、周刊观察与营销增长实证案例。置顶必读导论，最新文章按时间倒序排列。",
       "url": archiveUrl,
       "author": { "@type": "Person", "@id": "https://ranbrandos.com/#founder" },
       "publisher": { "@type": "Organization", "@id": "https://ranbrandos.com/#organization" },
       "mainEntity": {
         "@type": "ItemList",
         "numberOfItems": essays.length,
-        "itemListElement": essays.map((essay, idx) => ({
-          "@type": "ListItem",
-          "position": idx + 1,
-          "name": (essay.data.module === 'Dispatch' || essay.data.module === 'Growth') ? `${essay.data.moduleName}: ${essay.data.title}` : `${essay.data.module}: ${essay.data.title}`,
-          "url": `https://ranbrandos.com${getLocalizedPath(`/essays/${getEssaySlug(essay)}`, lang)}`
-        }))
+        "itemListElement": essays.map((essay, idx) => {
+          const cat = getEssayCategory(essay.data.module);
+          const catLabel = isEn ? categoryMeta[cat].labelEn : categoryMeta[cat].labelZh;
+          return {
+            "@type": "ListItem",
+            "position": idx + 1,
+            "name": `${catLabel}: ${essay.data.title}`,
+            "url": `https://ranbrandos.com${getLocalizedPath(`/essays/${getEssaySlug(essay)}`, lang)}`
+          };
+        })
       }
     },
     {
@@ -89,112 +119,295 @@ const mailtoHref = isEn
   lang={lang}
   title={isEn ? 'Brand Notes & Case Studies | BrandOS Lab™' : '品牌笔记与实例观察 | 品牌科学实验室™ • BRANDOS LAB™'}
   description={isEn
-    ? 'Field notes, empirical case studies, pricing playbooks, and peer-reviewed brand science breakdowns authored by Ran.'
-    : '收录 Ran (然) 的品牌战略实证手记、出海课程深度拆解、诺奖理论还原与一线商业实例观察。拒绝营销玄学，输出最高认知密度的品牌科学指南。'}
+    ? 'Field notes, empirical case studies, pricing playbooks, and marketing growth breakdowns authored by Ran.'
+    : '收录 Ran (然) 的 BrandOS 深度专栏、周刊观察与营销增长实证案例。拒绝营销玄学，输出一线可验证的商业洞察。'}
   customSchema={archiveSchema}
 >
-  <div class="max-w-6xl mx-auto px-5 md:px-8 py-16 sm:py-24 relative z-10">
-    <!-- Hero Banner Card -->
-    <div class="bg-[#111622] border border-[#232B3E] rounded-3xl p-6 sm:p-10 mb-12 relative overflow-hidden shadow-2xl">
-      <div class="absolute -top-32 -right-32 w-80 h-80 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
-
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-        <div class="lg:col-span-7">
-          <div class="inline-flex items-center gap-2 px-3.5 py-1 bg-cyan-950/60 border border-cyan-800/60 rounded-full font-mono text-[11px] font-bold text-cyan-400 uppercase tracking-[0.2em] mb-4">
-            <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse"></span>
-            {isEn ? 'KNOWLEDGE BASE // BRAND NOTES & CASE STUDIES' : 'KNOWLEDGE BASE // 品牌笔记与实例观察'}
-          </div>
-          <h1 class="font-sans font-black text-[32px] sm:text-[46px] text-slate-100 mb-4 leading-tight">
-            {isEn ? 'Brand Notes & Case Studies' : '品牌笔记与实例观察'}
-          </h1>
-          <p class="font-sans text-[15px] sm:text-[17px] text-slate-300 leading-relaxed max-w-2xl">
-            {isEn
-              ? 'Research notes by Ran deconstructing Nobel-backed brand science, GBB pricing matrices, creator algorithms, and frontline DTC case studies—built to compound durable mental equity.'
-              : '收录 Ran (然) 的出海品牌战略手记、诺贝尔奖理论还原、价格沙盘与一线商业实例观察。持续更新原创内容，为中国出海企业构建带得走、抢不走的永久心智资产。'}
-          </p>
+  <div class="max-w-5xl mx-auto px-5 md:px-8 pt-14 sm:pt-20 pb-20 relative z-10">
+    <!-- Minimal Editorial Masthead -->
+    <header class="mb-10 sm:mb-12">
+      <div class="flex flex-wrap items-center justify-between gap-4 mb-4">
+        <div class="inline-flex items-center gap-2 font-mono text-[11px] font-bold text-cyan-400 uppercase tracking-[0.22em]">
+          <span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>
+          <span>{isEn ? 'EDITORIAL ARCHIVE // BRAND NOTES' : 'EDITORIAL ARCHIVE // 品牌笔记与实例观察'}</span>
         </div>
-
-        <div class="lg:col-span-5 aspect-[16/9] rounded-2xl overflow-hidden border border-[#232B3E] bg-[#09090B] shadow-inner">
-          <img
-            src={isEn ? '/images/brand-notes-banner-en.svg' : '/images/brand-notes-banner.svg'}
-            alt={isEn ? 'BrandOS Lab Knowledge Base & Field Notes Banner' : 'BrandOS Lab 品牌笔记与商业实例观察知识库封面'}
-            class="w-full h-full object-contain pointer-events-none select-none"
-          />
+        <div class="font-mono text-[11px] text-slate-500 uppercase tracking-wider">
+          {isEn ? `${essays.length} Essays · Newest First` : `共 ${essays.length} 篇深度观察 · 最新优先`}
         </div>
       </div>
-    </div>
 
-    <!-- Search & Dynamic Filter Controls -->
-    <div class="bg-[#111622]/90 border border-[#232B3E] p-4 sm:p-5 rounded-2xl mb-12 backdrop-blur-md flex flex-col md:flex-row items-center justify-between gap-4">
-      <div class="relative w-full md:w-80">
-        <span class="absolute inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none text-slate-400 font-mono text-[13px]">
-          🔍
+      <h1 class="font-sans font-black text-[34px] sm:text-[46px] text-slate-50 tracking-[-0.03em] leading-[1.12] mb-3.5">
+        {isEn ? 'Brand Notes & Case Studies' : '品牌笔记与实例观察'}
+      </h1>
+      <p class="font-sans text-[15px] sm:text-[16.5px] text-slate-400 leading-relaxed max-w-2xl">
+        {isEn
+          ? 'Field-tested essays on BrandOS systems, weekly industry dispatches, and marketing growth—grounded in real earnings and first-principles logic.'
+          : '聚焦 BrandOS 品牌体系、每周前沿观察与营销增长实战案例。拒绝空洞口号，只写经得起财报与一线市场检验的硬核笔记。'}
+      </p>
+    </header>
+
+    <!-- Sleek Filter Tabs & Compact Search -->
+    <div class="sticky top-[68px] z-30 -mx-2 px-2 py-3 mb-10 bg-[#09090B]/90 backdrop-blur-xl border-y border-[#1E2638] flex flex-col md:flex-row md:items-center justify-between gap-3.5">
+      <div class="flex flex-wrap items-center gap-1.5" id="category-filter-bar" role="tablist" aria-label={isEn ? 'Filter notes by category' : '按分类筛选笔记'}>
+        {categoriesList.map((cat) => (
+          <button
+            type="button"
+            role="tab"
+            aria-selected={cat.id === 'ALL' ? 'true' : 'false'}
+            data-filter={cat.id}
+            class={`filter-btn inline-flex items-center gap-2 px-3.5 py-2 rounded-lg font-sans text-[13px] font-semibold transition-all duration-200 ${
+              cat.id === 'ALL'
+                ? 'bg-slate-100 text-[#09090B] shadow-sm'
+                : 'bg-transparent text-slate-400 hover:text-slate-100 hover:bg-[#141B2B]'
+            }`}
+          >
+            {cat.id !== 'ALL' && <span class={`w-1.5 h-1.5 rounded-full ${cat.dot}`}></span>}
+            <span>{cat.name}</span>
+            <span class={`font-mono text-[11px] ${cat.id === 'ALL' ? 'text-slate-600' : 'text-slate-500'}`}>
+              {cat.count}
+            </span>
+          </button>
+        ))}
+      </div>
+
+      <div class="relative w-full md:w-64 shrink-0">
+        <span class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none text-slate-500 text-[13px]">
+          ⌕
         </span>
         <input
           type="text"
           id="essay-search-input"
-          placeholder={isEn ? 'Search keywords: pricing, AI, Meta, Amazon, LTV...' : '搜索关键词：定价、AI、Meta、Amazon、LTV...'}
-          class="w-full bg-[#09090B] border border-[#232B3E] focus:border-cyan-400 text-slate-100 placeholder-slate-500 text-[13px] rounded-xl pl-9 pr-4 py-2.5 font-sans transition-colors outline-none"
+          placeholder={isEn ? 'Search titles, topics, cases...' : '搜索标题、案例、关键词...'}
+          class="w-full bg-[#101521] border border-[#232B3E] focus:border-slate-400 text-slate-100 placeholder-slate-500 text-[13px] rounded-lg pl-8 pr-3.5 py-2 font-sans transition-colors outline-none"
         />
-      </div>
-
-      <div class="flex flex-wrap items-center gap-2 w-full md:w-auto overflow-x-auto" id="module-filter-bar">
-        {modulesList.map((m) => (
-          <button
-            type="button"
-            data-filter={m.id}
-            class={`filter-btn px-3.5 py-2 rounded-xl font-mono text-[12px] font-bold transition-all ${m.id === 'ALL' ? 'bg-cyan-400 text-[#09090B] shadow-[0_0_15px_rgba(0,242,254,0.3)]' : 'bg-[#09090B] border border-[#232B3E] hover:border-slate-500 text-slate-300 hover:text-white'}`}
-          >
-            <span>{m.name}</span>
-            <span class="ml-1 text-[10px] opacity-70">({m.count})</span>
-          </button>
-        ))}
       </div>
     </div>
 
-    <!-- Notes Grid Container -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8" id="essays-grid">
-      {essays.map((essay) => (
-        <EssayCard essay={essay} lang={lang} />
-      ))}
+    <!-- PINNED #1 FLAGSHIP ESSAY (Full-Width Horizontal Editorial Feature) -->
+    {pinnedEssay && (() => {
+      const pSlug = getEssaySlug(pinnedEssay);
+      const pHref = getLocalizedPath(`/essays/${pSlug}`, lang);
+      const pCat = getEssayCategory(pinnedEssay.data.module);
+      const pMeta = categoryMeta[pCat];
+      return (
+        <section id="pinned-section" class="mb-12">
+          <article
+            class="essay-item group relative bg-gradient-to-br from-[#131A2B] via-[#101522] to-[#0C101A] border border-sky-500/35 hover:border-sky-400/70 rounded-2xl p-5 sm:p-7 transition-all duration-300 shadow-[0_12px_40px_rgba(0,0,0,0.35)] hover:shadow-[0_16px_48px_rgba(56,189,248,0.1)]"
+            data-pinned="true"
+            data-category={pCat}
+            data-module={pinnedEssay.data.module.toLowerCase()}
+            data-title={pinnedEssay.data.title.toLowerCase()}
+            data-desc={pinnedEssay.data.description.toLowerCase()}
+            data-tags={(pinnedEssay.data.tags || []).join(' ').toLowerCase()}
+          >
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center">
+              <a
+                href={pHref}
+                class="lg:col-span-5 block aspect-[16/10] w-full rounded-xl overflow-hidden border border-[#253047] bg-[#09090B] relative"
+              >
+                <img
+                  src={pinnedEssay.data.coverImage}
+                  alt={pinnedEssay.data.coverAlt || pinnedEssay.data.title}
+                  class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500"
+                />
+              </a>
+
+              <div class="lg:col-span-7 flex flex-col justify-between">
+                <div>
+                  <div class="flex flex-wrap items-center gap-2.5 mb-3.5">
+                    <span class="inline-flex items-center gap-1.5 font-mono text-[10.5px] font-extrabold uppercase tracking-wider px-2.5 py-0.5 rounded bg-amber-400/15 text-amber-300 border border-amber-400/35">
+                      <span>★</span>
+                      <span>{isEn ? 'PINNED · START HERE' : '置顶必读'}</span>
+                    </span>
+                    <span class={`font-mono text-[11px] font-bold px-2.5 py-0.5 rounded border ${pMeta.badge}`}>
+                      {isEn ? pMeta.labelEn : pMeta.labelZh}
+                    </span>
+                    <span class="font-mono text-[11.5px] text-slate-400">
+                      {formatDate(pinnedEssay.data.pubDate)}
+                    </span>
+                    <span class="text-slate-600 text-xs">·</span>
+                    <span class="font-mono text-[11.5px] text-slate-400">
+                      {pinnedEssay.data.readingTime}
+                    </span>
+                  </div>
+
+                  <h2 class="font-sans font-black text-[22px] sm:text-[27px] text-slate-50 group-hover:text-cyan-300 transition-colors leading-[1.3] tracking-tight mb-3">
+                    <a href={pHref}>{pinnedEssay.data.title}</a>
+                  </h2>
+
+                  <p class="font-sans text-[14.5px] sm:text-[15.5px] text-slate-300 leading-[1.7] mb-5 line-clamp-3">
+                    {pinnedEssay.data.description}
+                  </p>
+                </div>
+
+                <div class="pt-4 border-t border-[#1E293B] flex items-center justify-between">
+                  <div class="font-mono text-[11.5px] text-slate-400">
+                    {isEn ? 'Foundational Reading' : '系统入门 · 第一篇'}
+                  </div>
+                  <a
+                    href={pHref}
+                    class="inline-flex items-center gap-2 font-mono text-[12.5px] font-bold text-cyan-300 group-hover:text-cyan-200 transition-colors"
+                  >
+                    <span>{isEn ? 'Read Pinned Guide' : '阅读置顶全文'}</span>
+                    <span class="group-hover:translate-x-1 transition-transform">→</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+      );
+    })()}
+
+    <!-- EDITORIAL STREAM HEADER -->
+    <div id="stream-header" class="flex items-center justify-between mb-5 pb-3 border-b border-[#1E2638]">
+      <div class="flex items-center gap-2.5">
+        <span class="font-mono text-[11px] font-bold uppercase tracking-[0.18em] text-slate-300" id="stream-section-title">
+          {isEn ? 'LATEST ESSAYS' : '最新发布'}
+        </span>
+        <span class="font-mono text-[11px] text-slate-500" id="stream-visible-count">
+          ({streamEssays.length})
+        </span>
+      </div>
+      <div class="font-mono text-[11px] text-slate-500">
+        {isEn ? 'Sorted by newest' : '按发布时间倒序'}
+      </div>
+    </div>
+
+    <!-- SINGLE-COLUMN HORIZONTAL EDITORIAL STREAM (Scannable, High-Taste Magazine Layout) -->
+    <div class="flex flex-col gap-5" id="essays-stream">
+      {streamEssays.map((essay, idx) => {
+        const slug = getEssaySlug(essay);
+        const href = getLocalizedPath(`/essays/${slug}`, lang);
+        const cat = getEssayCategory(essay.data.module);
+        const meta = categoryMeta[cat];
+        const isBrandOsSubModule = cat === 'BrandOS' && essay.data.module !== 'BrandOS';
+        const isLatest = idx === 0;
+        const displayTags = (essay.data.tags || []).slice(0, 3);
+
+        return (
+          <article
+            class={`essay-item group bg-[#101521]/85 hover:bg-[#141B2B] border border-[#1E2638] ${meta.hoverBorder} rounded-2xl p-5 sm:p-6 transition-all duration-300 hover:shadow-[0_10px_30px_rgba(0,0,0,0.3)]`}
+            data-pinned="false"
+            data-category={cat}
+            data-module={essay.data.module.toLowerCase()}
+            data-title={essay.data.title.toLowerCase()}
+            data-desc={essay.data.description.toLowerCase()}
+            data-tags={(essay.data.tags || []).join(' ').toLowerCase()}
+          >
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-5 md:gap-7 items-center">
+              <!-- Left Editorial Column (Aligned Vertical Scan Rail) -->
+              <div class="md:col-span-8 flex flex-col justify-between min-w-0">
+                <div>
+                  <div class="flex flex-wrap items-center gap-2.5 mb-3">
+                    {isLatest && (
+                      <span class="inline-flex items-center gap-1.5 font-mono text-[10px] font-extrabold uppercase tracking-wider px-2 py-0.5 rounded bg-emerald-500/15 text-emerald-300 border border-emerald-400/35">
+                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                        <span>{isEn ? 'NEW' : '最新'}</span>
+                      </span>
+                    )}
+                    <span class={`font-mono text-[11px] font-bold px-2.5 py-0.5 rounded border ${meta.badge}`}>
+                      {isEn ? meta.labelEn : meta.labelZh}
+                    </span>
+                    {isBrandOsSubModule && (
+                      <span class="font-mono text-[11px] text-slate-400 bg-[#09090B] border border-[#232B3E] px-2 py-0.5 rounded">
+                        {essay.data.module}
+                      </span>
+                    )}
+                    <span class="font-mono text-[12px] text-slate-300 font-medium">
+                      {formatDate(essay.data.pubDate)}
+                    </span>
+                    <span class="text-slate-600 text-xs">·</span>
+                    <span class="font-mono text-[11.5px] text-slate-500">
+                      {essay.data.readingTime}
+                    </span>
+                  </div>
+
+                  <h3 class="font-sans font-bold text-[19px] sm:text-[22px] text-slate-100 group-hover:text-cyan-300 transition-colors leading-[1.35] mb-2.5">
+                    <a href={href}>{essay.data.title}</a>
+                  </h3>
+
+                  <p class="font-sans text-[14px] sm:text-[14.5px] text-slate-400 leading-[1.7] line-clamp-2 mb-4">
+                    {essay.data.description}
+                  </p>
+                </div>
+
+                <div class="flex flex-wrap items-center justify-between gap-3 pt-3 border-t border-[#1B2233]">
+                  <div class="hidden sm:flex flex-wrap items-center gap-1.5">
+                    {displayTags.map((tag) => (
+                      <span class="font-mono text-[10.5px] text-slate-500 bg-[#0B0F17] border border-[#1E2638] px-2 py-0.5 rounded">
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                  <a
+                    href={href}
+                    class="inline-flex items-center gap-1.5 font-mono text-[12px] font-bold text-slate-300 group-hover:text-cyan-300 transition-colors ml-auto"
+                  >
+                    <span>{isEn ? 'Read essay' : '阅读全文'}</span>
+                    <span class="group-hover:translate-x-1 transition-transform">→</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Right Visual Thumbnail -->
+              {essay.data.coverImage && (
+                <a
+                  href={href}
+                  class="md:col-span-4 order-first md:order-last block aspect-[16/10] w-full rounded-xl overflow-hidden border border-[#232B3E] bg-[#09090B] relative shrink-0"
+                >
+                  <img
+                    src={essay.data.coverImage}
+                    alt={essay.data.coverAlt || essay.data.title}
+                    class="w-full h-full object-cover group-hover:scale-[1.04] transition-transform duration-500"
+                    loading="lazy"
+                  />
+                </a>
+              )}
+            </div>
+          </article>
+        );
+      })}
     </div>
 
     <!-- Empty Search Fallback State -->
-    <div id="no-results" class="hidden text-center py-20 bg-[#111622] border border-[#232B3E] rounded-2xl p-8">
-      <div class="text-[32px] mb-3">🔍</div>
-      <h3 class="font-sans font-bold text-[20px] text-slate-200 mb-2">
-        {isEn ? 'No Matching Brand Notes Found' : '未找到匹配的品牌笔记'}
+    <div id="no-results" class="hidden text-center py-20 bg-[#101521] border border-[#1E2638] rounded-2xl p-8 mt-6">
+      <div class="text-[28px] mb-3 text-slate-500">⌕</div>
+      <h3 class="font-sans font-bold text-[19px] text-slate-200 mb-2">
+        {isEn ? 'No Matching Notes Found' : '未找到匹配的笔记'}
       </h3>
       <p class="text-slate-400 text-[14px] max-w-md mx-auto mb-6">
         {isEn
-          ? 'Try another keyword or click a module filter above to view all available case studies.'
-          : '请尝试更换搜索关键词，或点击上方模块分类查看全部实例观察。'}
+          ? 'Try another keyword or switch category tabs above.'
+          : '请尝试更换关键词，或切换上方分类标签查看全部文章。'}
       </p>
       <button
         type="button"
         id="reset-search-btn"
-        class="px-5 py-2.5 rounded-xl bg-cyan-400 text-[#09090B] font-mono text-[12px] font-bold uppercase tracking-wider hover:bg-cyan-300 transition-colors"
+        class="px-5 py-2.5 rounded-lg bg-slate-100 text-[#09090B] font-mono text-[12px] font-bold uppercase tracking-wider hover:bg-cyan-300 transition-colors"
       >
-        {isEn ? 'Reset Filters & Search' : '重置搜索与筛选'}
+        {isEn ? 'Reset Filters' : '重置筛选与搜索'}
       </button>
     </div>
 
-    <!-- Bottom Consultation CTA -->
-    <section class="mt-24 border-t border-[#232B3E] pt-16">
-      <div class="bg-gradient-to-b from-[#111622] to-[#0A0D14] border-2 border-cyan-500/50 rounded-3xl p-8 sm:p-12 text-center relative overflow-hidden shadow-[0_0_40px_rgba(0,242,254,0.1)]">
-        <h2 class="font-sans font-black text-[24px] sm:text-[34px] text-slate-100 mb-4 tracking-tight">
-          {isEn
-            ? 'Stop competing on price—start building durable brand equity today.'
-            : '与其在价格战里继续内卷，不如从今天开启你的品牌之路。'}
-        </h2>
-        <p class="font-sans text-slate-300 text-[15px] sm:text-[16px] max-w-xl mx-auto mb-8 leading-relaxed">
-          {isEn
-            ? 'Have questions on global brand architecture, business analysis, or causal measurement after reading these notes? Reach out directly.'
-            : '阅读完实例观察如有出海品牌战略、商业分析或数据归因咨询需求，欢迎直接来信。'}
-        </p>
+    <!-- Compact Editorial Footer CTA -->
+    <section class="mt-20 border-t border-[#1E2638] pt-14">
+      <div class="bg-[#101521] border border-[#232B3E] rounded-2xl p-8 sm:p-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+        <div class="max-w-xl">
+          <h2 class="font-sans font-black text-[22px] sm:text-[26px] text-slate-100 mb-2 tracking-tight">
+            {isEn
+              ? 'Want to apply these frameworks to your own brand?'
+              : '希望把这套方法论落地到你自己的业务与品牌？'}
+          </h2>
+          <p class="font-sans text-slate-400 text-[14.5px] leading-relaxed">
+            {isEn
+              ? 'Reach out directly to discuss brand architecture, U.S. channel strategy, or growth diagnostics.'
+              : '如有出海品牌体系搭建、美国渠道与营销增长咨询需求，欢迎直接来信探讨。'}
+          </p>
+        </div>
         <a
           href={mailtoHref}
-          class="inline-flex items-center gap-3 bg-slate-100 hover:bg-cyan-400 text-[#09090B] px-8 py-4 rounded-xl font-mono text-[14px] font-extrabold uppercase tracking-wider transition-all duration-200 hover:shadow-[0_0_30px_rgba(0,242,254,0.4)] group"
+          class="inline-flex items-center gap-2.5 bg-slate-100 hover:bg-cyan-400 text-[#09090B] px-6 py-3.5 rounded-xl font-mono text-[13px] font-extrabold uppercase tracking-wider transition-all duration-200 shrink-0 group"
         >
           <span>{isEn ? 'Consult Founder' : '马上咨询'}</span>
           <span class="group-hover:translate-x-1 transition-transform">→</span>
@@ -203,58 +416,97 @@ const mailtoHref = isEn
     </section>
   </div>
 
-  <!-- Client-Side Reactive Search & Filter Engine -->
+  <!-- Client-Side Reactive Category & Search Engine -->
   <script>
     function setupEssayFilters() {
       const searchInput = document.getElementById('essay-search-input') as HTMLInputElement | null;
       const filterBtns = document.querySelectorAll('.filter-btn');
-      const cards = document.querySelectorAll('.essay-card');
+      const items = document.querySelectorAll('.essay-item');
+      const pinnedSection = document.getElementById('pinned-section');
+      const streamHeader = document.getElementById('stream-header');
+      const streamVisibleCount = document.getElementById('stream-visible-count');
       const noResults = document.getElementById('no-results');
       const resetBtn = document.getElementById('reset-search-btn');
 
-      if (!cards.length) return;
+      if (!items.length) return;
 
-      let currentModule = 'ALL';
+      let currentCategory = 'ALL';
       let currentQuery = '';
 
       if (window.location.hash) {
-        const hashModule = window.location.hash.replace('#', '').toUpperCase();
-        if (['BRANDOS', 'DISPATCH', 'WEEKLY', 'GROWTH', 'MARKETING', 'M1', 'M2', 'M3', 'M4', 'M5', 'M6'].includes(hashModule)) {
-          currentModule = hashModule === 'BRANDOS' ? 'BrandOS' : (hashModule === 'DISPATCH' || hashModule === 'WEEKLY') ? 'Dispatch' : (hashModule === 'GROWTH' || hashModule === 'MARKETING') ? 'Growth' : hashModule;
+        const hashRaw = window.location.hash.replace('#', '').toUpperCase();
+        if (['BRANDOS', 'M1', 'M2', 'M3', 'M4', 'M5', 'M6'].includes(hashRaw)) {
+          currentCategory = 'BrandOS';
+        } else if (['DISPATCH', 'WEEKLY'].includes(hashRaw)) {
+          currentCategory = 'Dispatch';
+        } else if (['GROWTH', 'MARKETING'].includes(hashRaw)) {
+          currentCategory = 'Growth';
         }
       }
 
       function updateUI() {
-        filterBtns.forEach(btn => {
-          const mod = btn.getAttribute('data-filter');
-          if (mod === currentModule) {
-            btn.className = 'filter-btn px-3.5 py-2 rounded-xl font-mono text-[12px] font-bold transition-all bg-cyan-400 text-[#09090B] shadow-[0_0_15px_rgba(0,242,254,0.3)]';
+        filterBtns.forEach((btn) => {
+          const cat = btn.getAttribute('data-filter');
+          const isActive = cat === currentCategory;
+          btn.setAttribute('aria-selected', isActive ? 'true' : 'false');
+          const countBadge = btn.querySelector('span:last-child');
+
+          if (isActive) {
+            btn.className =
+              'filter-btn inline-flex items-center gap-2 px-3.5 py-2 rounded-lg font-sans text-[13px] font-semibold transition-all duration-200 bg-slate-100 text-[#09090B] shadow-sm';
+            if (countBadge) countBadge.className = 'font-mono text-[11px] text-slate-600';
           } else {
-            btn.className = 'filter-btn px-3.5 py-2 rounded-xl font-mono text-[12px] font-bold transition-all bg-[#09090B] border border-[#232B3E] hover:border-slate-500 text-slate-300 hover:text-white';
+            btn.className =
+              'filter-btn inline-flex items-center gap-2 px-3.5 py-2 rounded-lg font-sans text-[13px] font-semibold transition-all duration-200 bg-transparent text-slate-400 hover:text-slate-100 hover:bg-[#141B2B]';
+            if (countBadge) countBadge.className = 'font-mono text-[11px] text-slate-500';
           }
         });
 
-        let visibleCount = 0;
-        cards.forEach(card => {
-          const cardEl = card as HTMLElement;
-          const cardModule = cardEl.getAttribute('data-module') || '';
-          const cardTitle = cardEl.getAttribute('data-title') || '';
-          const cardDesc = cardEl.getAttribute('data-desc') || '';
-          const cardTags = cardEl.getAttribute('data-tags') || '';
+        let totalVisible = 0;
+        let streamVisible = 0;
+        let pinnedVisible = false;
 
-          const matchesModule = currentModule === 'ALL' || cardModule === currentModule;
-          const matchesQuery = !currentQuery || cardTitle.includes(currentQuery) || cardDesc.includes(currentQuery) || cardTags.includes(currentQuery);
+        items.forEach((item) => {
+          const el = item as HTMLElement;
+          const isPinned = el.getAttribute('data-pinned') === 'true';
+          const cardCat = el.getAttribute('data-category') || '';
+          const cardMod = el.getAttribute('data-module') || '';
+          const cardTitle = el.getAttribute('data-title') || '';
+          const cardDesc = el.getAttribute('data-desc') || '';
+          const cardTags = el.getAttribute('data-tags') || '';
 
-          if (matchesModule && matchesQuery) {
-            cardEl.style.display = 'flex';
-            visibleCount++;
+          const matchesCat = currentCategory === 'ALL' || cardCat === currentCategory;
+          const matchesQuery =
+            !currentQuery ||
+            cardTitle.includes(currentQuery) ||
+            cardDesc.includes(currentQuery) ||
+            cardTags.includes(currentQuery) ||
+            cardMod.includes(currentQuery);
+
+          if (matchesCat && matchesQuery) {
+            el.style.display = 'block';
+            totalVisible++;
+            if (isPinned) {
+              pinnedVisible = true;
+            } else {
+              streamVisible++;
+            }
           } else {
-            cardEl.style.display = 'none';
+            el.style.display = 'none';
           }
         });
 
+        if (pinnedSection) {
+          pinnedSection.style.display = pinnedVisible ? 'block' : 'none';
+        }
+        if (streamHeader) {
+          streamHeader.style.display = streamVisible > 0 ? 'flex' : 'none';
+        }
+        if (streamVisibleCount) {
+          streamVisibleCount.textContent = `(${streamVisible})`;
+        }
         if (noResults) {
-          if (visibleCount === 0) {
+          if (totalVisible === 0) {
             noResults.classList.remove('hidden');
           } else {
             noResults.classList.add('hidden');
@@ -262,11 +514,11 @@ const mailtoHref = isEn
         }
       }
 
-      filterBtns.forEach(btn => {
+      filterBtns.forEach((btn) => {
         btn.addEventListener('click', () => {
-          currentModule = btn.getAttribute('data-filter') || 'ALL';
-          if (currentModule !== 'ALL') {
-            window.location.hash = currentModule;
+          currentCategory = btn.getAttribute('data-filter') || 'ALL';
+          if (currentCategory !== 'ALL') {
+            window.location.hash = currentCategory;
           } else {
             history.replaceState(null, '', window.location.pathname);
           }
@@ -283,7 +535,7 @@ const mailtoHref = isEn
 
       if (resetBtn && searchInput) {
         resetBtn.addEventListener('click', () => {
-          currentModule = 'ALL';
+          currentCategory = 'ALL';
           currentQuery = '';
           searchInput.value = '';
           history.replaceState(null, '', window.location.pathname);

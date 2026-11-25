@@ -32,6 +32,29 @@ export function getEssaySlug(essay: { id: string }): string {
   return essay.id.replace(/^en\//, '');
 }
 
+export type EssayCategory = 'BrandOS' | 'Dispatch' | 'Growth';
+
+export function getEssayCategory(mod: string): EssayCategory {
+  if (mod === 'Dispatch') return 'Dispatch';
+  if (mod === 'Growth') return 'Growth';
+  return 'BrandOS';
+}
+
+export const PINNED_ESSAY_SLUG = 'zero-to-one-brand-framework-architecture';
+
+export function sortEssaysForIndex<T extends { id: string; data: { module: string; pubDate: Date } }>(
+  essays: T[]
+): T[] {
+  return [...essays].sort((a, b) => {
+    const aPinned = getEssaySlug(a) === PINNED_ESSAY_SLUG ? 1 : 0;
+    const bPinned = getEssaySlug(b) === PINNED_ESSAY_SLUG ? 1 : 0;
+    if (aPinned !== bPinned) return bPinned - aPinned;
+    const dateDiff = new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime();
+    if (dateDiff !== 0) return dateDiff;
+    return String(b.id || '').localeCompare(String(a.id || ''));
+  });
+}
+
 /**
  * Strip trailing slash except root '/' for uniform comparison.
  */
