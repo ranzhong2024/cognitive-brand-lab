@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <pattern id="gridMapEn" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#18181B" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="500" fill="#0B0F17"/>
+  <rect width="800" height="500" fill="url(#gridMapEn)"/>
+  <rect x="28" y="28" width="744" height="444" rx="12" fill="none" stroke="#1E293B" stroke-width="1.5"/>
+
+  <text x="48" y="58" fill="#2DD4BF" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">FIVE-GEAR REALITY CHECK // 2026 U.S. EARNINGS PROOF</text>
+  <text x="752" y="58" text-anchor="end" fill="#64748B" font-family="'JetBrains Mono', monospace" font-size="10.5">MYTH VS. REALITY</text>
+  <text x="48" y="86" fill="#F8FAFC" font-family="'Inter', system-ui, sans-serif" font-size="18.5" font-weight="800">5 Common Brand Traps vs. 2026 U.S. Earnings Realities</text>
+
+  <!-- Column Headers -->
+  <rect x="48" y="102" width="128" height="28" rx="6" fill="#1E293B"/>
+  <text x="112" y="120" text-anchor="middle" fill="#E2E8F0" font-family="'Inter', system-ui, sans-serif" font-size="11" font-weight="700">BUSINESS GEAR</text>
+
+  <rect x="184" y="102" width="246" height="28" rx="6" fill="#3B1219" stroke="#F43F5E" stroke-opacity="0.4"/>
+  <text x="307" y="120" text-anchor="middle" fill="#FDA4AF" font-family="'Inter', system-ui, sans-serif" font-size="11" font-weight="700">COMMON OPERATOR TRAP</text>
+
+  <rect x="438" y="102" width="314" height="28" rx="6" fill="#0D2C2B" stroke="#2DD4BF" stroke-opacity="0.4"/>
+  <text x="595" y="120" text-anchor="middle" fill="#5EEAD4" font-family="'Inter', system-ui, sans-serif" font-size="11" font-weight="700">2026 EARNINGS REALITY</text>
+
+  <!-- Row 1 -->
+  <rect x="48" y="140" width="704" height="54" rx="8" fill="#111827" stroke="#1F2937"/>
+  <text x="60" y="172" fill="#2DD4BF" font-family="'Inter', system-ui, sans-serif" font-size="11.5" font-weight="700">01 Demand</text>
+  <text x="192" y="164" fill="#FCA5A5" font-family="'Inter', system-ui, sans-serif" font-size="11.5">DTC is always better than wholesale</text>
+  <text x="192" y="182" fill="#94A3B8" font-family="'Inter', system-ui, sans-serif" font-size="10">Cutting retail partners kills shelf reach</text>
+  <text x="448" y="164" fill="#F8FAFC" font-family="'Inter', system-ui, sans-serif" font-size="11.5" font-weight="700">Nike Direct -6% vs. On Q3 DTC +25%</text>
+  <text x="448" y="182" fill="#6EE7B7" font-family="'Inter', system-ui, sans-serif" font-size="10">Balance easy buying with full-price discipline</text>
+
+  <!-- Row 2 -->
+  <rect x="48" y="202" width="704" height="54" rx="8" fill="#111827" stroke="#1F2937"/>
+  <text x="60" y="234" fill="#00F2FE" font-family="'Inter', system-ui, sans-serif" font-size="11.5" font-weight="700">02 Pricing</text>
+  <text x="192" y="226" fill="#FCA5A5" font-family="'Inter', system-ui, sans-serif" font-size="11.5">High markup &amp; treat all buyers alike</text>
+  <text x="192" y="244" fill="#94A3B8" font-family="'Inter', system-ui, sans-serif" font-size="10">Overspending on one-time deal hunters</text>
+  <text x="448" y="226" fill="#F8FAFC" font-family="'Inter', system-ui, sans-serif" font-size="11.5" font-weight="700">Costco Fees $5.91B = 64% Net Income</text>
+  <text x="448" y="244" fill="#6EE7B7" font-family="'Inter', system-ui, sans-serif" font-size="10">Use pricing to lock in repeat loyal buyers</text>
+
+  <!-- Row 3 -->
+  <rect x="48" y="264" width="704" height="54" rx="8" fill="#111827" stroke="#1F2937"/>
+  <text x="60" y="296" fill="#10B981" font-family="'Inter', system-ui, sans-serif" font-size="11.5" font-weight="700">03 Delivery</text>
+  <text x="192" y="288" fill="#FCA5A5" font-family="'Inter', system-ui, sans-serif" font-size="11.5">Fresh ads can fix falling repeat sales</text>
+  <text x="192" y="306" fill="#94A3B8" font-family="'Inter', system-ui, sans-serif" font-size="10">More ad spend speeds up 1-star reviews</text>
+  <text x="448" y="288" fill="#F8FAFC" font-family="'Inter', system-ui, sans-serif" font-size="11.5" font-weight="700">Starbucks 1,700+ Uplifts · Q4 US +7.7%</text>
+  <text x="448" y="306" fill="#6EE7B7" font-family="'Inter', system-ui, sans-serif" font-size="10">Closed ~250 weak stores; fixed experience first</text>
+
+  <!-- Row 4 -->
+  <rect x="48" y="326" width="704" height="54" rx="8" fill="#111827" stroke="#1F2937"/>
+  <text x="60" y="358" fill="#F59E0B" font-family="'Inter', system-ui, sans-serif" font-size="11.5" font-weight="700">04 Cash Flow</text>
+  <text x="192" y="350" fill="#FCA5A5" font-family="'Inter', system-ui, sans-serif" font-size="11.5">Paper profit means the business is safe</text>
+  <text x="192" y="368" fill="#94A3B8" font-family="'Inter', system-ui, sans-serif" font-size="10">Inventory &amp; slow payback drain real cash</text>
+  <text x="448" y="350" fill="#F8FAFC" font-family="'Inter', system-ui, sans-serif" font-size="11.5" font-weight="700">Amazon $28.1B OpInc · -$42.4B FCF</text>
+  <text x="448" y="368" fill="#6EE7B7" font-family="'Inter', system-ui, sans-serif" font-size="10">Profits and cash diverge; watch cash timing</text>
+
+  <!-- Row 5 -->
+  <rect x="48" y="388" width="704" height="54" rx="8" fill="#111827" stroke="#1F2937"/>
+  <text x="60" y="420" fill="#A78BFA" font-family="'Inter', system-ui, sans-serif" font-size="11.5" font-weight="700">05 Team</text>
+  <text x="192" y="412" fill="#FCA5A5" font-family="'Inter', system-ui, sans-serif" font-size="11.5">One do-it-all head chasing monthly ROAS</text>
+  <text x="192" y="430" fill="#94A3B8" font-family="'Inter', system-ui, sans-serif" font-size="10">Short-term bonuses starve brand building</text>
+  <text x="448" y="412" fill="#F8FAFC" font-family="'Inter', system-ui, sans-serif" font-size="11.5" font-weight="700">SharkNinja 14 Quarters 10%+ · 23.3%</text>
+  <text x="448" y="430" fill="#6EE7B7" font-family="'Inter', system-ui, sans-serif" font-size="10">Specialized, aligned teams win modern retail</text>
+
+  <text x="48" y="460" fill="#52525B" font-family="'Inter', system-ui, sans-serif" font-size="10">Source: Official FY2026 Form 10-K filings and 2026 Q3 / FY27 Q1-Q3 earnings releases</text>
+  <text x="752" y="460" text-anchor="end" fill="#52525B" font-family="'JetBrains Mono', monospace" font-size="10">FIG 01 // EN</text>
+</svg>

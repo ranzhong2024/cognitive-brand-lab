@@ -110,7 +110,7 @@ const allEssays = sortEssaysByModule(
   (await getCollection('essays')).filter((e) => e.data.lang === lang)
 );
 
-const coreEssays = allEssays.filter((e) => e.data.module !== 'Dispatch');
+const coreEssays = allEssays.filter((e) => e.data.module !== 'Dispatch' && e.data.module !== 'Growth');
 const dispatchEssays = allEssays.filter((e) => e.data.module === 'Dispatch');
 // Keep only the single newest weekly dispatch issue on the homepage (older issues remain in /essays/#Dispatch)
 const latestDispatch = dispatchEssays[0];

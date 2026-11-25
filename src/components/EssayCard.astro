@@ -37,10 +37,11 @@ const moduleColors: Record<string, { badge: string; border: string; accent: stri
   M5: { badge: 'text-rose-400 bg-rose-950/60 border-rose-800/60', border: 'hover:border-rose-500/60', accent: '#F43F5E', coverBg: 'from-rose-950/40 to-[#111622]' },
   M6: { badge: 'text-purple-400 bg-purple-950/60 border-purple-800/60', border: 'hover:border-purple-500/60', accent: '#A855F7', coverBg: 'from-purple-950/40 to-[#111622]' },
   Dispatch: { badge: 'text-teal-300 bg-teal-950/60 border-teal-500/50', border: 'hover:border-teal-400/60', accent: '#2DD4BF', coverBg: 'from-teal-950/40 to-[#111622]' },
+  Growth: { badge: 'text-orange-300 bg-orange-950/60 border-orange-500/50', border: 'hover:border-orange-400/60', accent: '#FB923C', coverBg: 'from-orange-950/40 to-[#111622]' },
 };
 
 const style = moduleColors[essay.data.module] || moduleColors.M1;
-const badgeLabel = essay.data.module === 'Dispatch' ? essay.data.moduleName : `${essay.data.module} • ${essay.data.moduleName}`;
+const badgeLabel = (essay.data.module === 'Dispatch' || essay.data.module === 'Growth') ? essay.data.moduleName : `${essay.data.module} • ${essay.data.moduleName}`;
 const formattedDate = essay.data.pubDate ? new Date(essay.data.pubDate).toISOString().slice(0, 10) : '2026-08';
 const coverSrc = essay.data.coverImage;
 ---

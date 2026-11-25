@@ -20,6 +20,7 @@ const modulesList = isEn
       { id: 'ALL', name: 'All Notes', count: essays.length },
       { id: 'BrandOS', name: 'BrandOS Overview', count: essays.filter((e) => e.data.module === 'BrandOS').length },
       { id: 'Dispatch', name: 'Brand × AI Weekly', count: essays.filter((e) => e.data.module === 'Dispatch').length },
+      { id: 'Growth', name: 'Marketing & Growth', count: essays.filter((e) => e.data.module === 'Growth').length },
       { id: 'M1', name: 'M1 Demand Radar', count: essays.filter((e) => e.data.module === 'M1').length },
       { id: 'M2', name: 'M2 Unfakeable Trust', count: essays.filter((e) => e.data.module === 'M2').length },
       { id: 'M3', name: 'M3 Value Pricing', count: essays.filter((e) => e.data.module === 'M3').length },
@@ -31,6 +32,7 @@ const modulesList = isEn
       { id: 'ALL', name: '全部观察', count: essays.length },
       { id: 'BrandOS', name: '全景大纲 • BrandOS', count: essays.filter((e) => e.data.module === 'BrandOS').length },
       { id: 'Dispatch', name: '周刊 • 品牌出海 AI 观察', count: essays.filter((e) => e.data.module === 'Dispatch').length },
+      { id: 'Growth', name: '营销增长', count: essays.filter((e) => e.data.module === 'Growth').length },
       { id: 'M1', name: 'M1 勘测心智', count: essays.filter((e) => e.data.module === 'M1').length },
       { id: 'M2', name: 'M2 信任质押', count: essays.filter((e) => e.data.module === 'M2').length },
       { id: 'M3', name: 'M3 价值定价', count: essays.filter((e) => e.data.module === 'M3').length },
@@ -62,7 +64,7 @@ const archiveSchema = {
         "itemListElement": essays.map((essay, idx) => ({
           "@type": "ListItem",
           "position": idx + 1,
-          "name": essay.data.module === 'Dispatch' ? `${essay.data.moduleName}: ${essay.data.title}` : `${essay.data.module}: ${essay.data.title}`,
+          "name": (essay.data.module === 'Dispatch' || essay.data.module === 'Growth') ? `${essay.data.moduleName}: ${essay.data.title}` : `${essay.data.module}: ${essay.data.title}`,
           "url": `https://ranbrandos.com${getLocalizedPath(`/essays/${getEssaySlug(essay)}`, lang)}`
         }))
       }
@@ -217,8 +219,8 @@ const mailtoHref = isEn
 
       if (window.location.hash) {
         const hashModule = window.location.hash.replace('#', '').toUpperCase();
-        if (['BRANDOS', 'DISPATCH', 'WEEKLY', 'M1', 'M2', 'M3', 'M4', 'M5', 'M6'].includes(hashModule)) {
-          currentModule = hashModule === 'BRANDOS' ? 'BrandOS' : (hashModule === 'DISPATCH' || hashModule === 'WEEKLY') ? 'Dispatch' : hashModule;
+        if (['BRANDOS', 'DISPATCH', 'WEEKLY', 'GROWTH', 'MARKETING', 'M1', 'M2', 'M3', 'M4', 'M5', 'M6'].includes(hashModule)) {
+          currentModule = hashModule === 'BRANDOS' ? 'BrandOS' : (hashModule === 'DISPATCH' || hashModule === 'WEEKLY') ? 'Dispatch' : (hashModule === 'GROWTH' || hashModule === 'MARKETING') ? 'Growth' : hashModule;
         }
       }
 

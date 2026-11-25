@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <pattern id="gridEn" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#18181B" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="glowCyanEn" cx="50%" cy="40%" r="58%">
+      <stop offset="0%" stop-color="#00F2FE" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#09090B" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="500" fill="#09090B"/>
+  <rect width="800" height="500" fill="url(#gridEn)"/>
+  <rect width="800" height="500" fill="url(#glowCyanEn)"/>
+  <rect x="28" y="28" width="744" height="444" rx="12" fill="none" stroke="#27272A" stroke-width="1.5"/>
+
+  <text x="48" y="60" fill="#FB923C" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11.5" font-weight="700">MARKETING &amp; GROWTH // FUNDAMENTALS SERIES · PART 01</text>
+  <text x="752" y="60" text-anchor="end" fill="#64748B" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11">2026.11.24</text>
+
+  <text x="48" y="98" fill="#F8FAFC" font-family="'Inter', system-ui, sans-serif" font-size="22.5" font-weight="800">The 5 Interlocking Gears Behind Real Brand Growth</text>
+  <text x="48" y="122" fill="#94A3B8" font-family="'Inter', system-ui, sans-serif" font-size="12.5">Why ad dashboards look great while cash shrinks — decoded via 2026 U.S. earnings</text>
+
+  <!-- Top Row: 3 Gear Cards -->
+  <rect x="48" y="148" width="224" height="118" rx="10" fill="#111622" stroke="#2DD4BF" stroke-opacity="0.45"/>
+  <text x="64" y="174" fill="#2DD4BF" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="800">GEAR 01 // DEMAND &amp; CHANNELS</text>
+  <text x="64" y="200" fill="#F8FAFC" font-family="'Inter', system-ui, sans-serif" font-size="14" font-weight="700">Nike vs. On Running</text>
+  <text x="64" y="222" fill="#94A3B8" font-family="'Inter', system-ui, sans-serif" font-size="11.5">DTC is not a religion. Win shelf</text>
+  <text x="64" y="240" fill="#94A3B8" font-family="'Inter', system-ui, sans-serif" font-size="11.5">access without breaking pricing.</text>
+
+  <rect x="288" y="148" width="224" height="118" rx="10" fill="#111622" stroke="#00F2FE" stroke-opacity="0.45"/>
+  <text x="304" y="174" fill="#00F2FE" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="800">GEAR 02 // CUSTOMERS &amp; PRICING</text>
+  <text x="304" y="200" fill="#F8FAFC" font-family="'Inter', system-ui, sans-serif" font-size="14" font-weight="700">Costco's 64% Profit Engine</text>
+  <text x="304" y="222" fill="#94A3B8" font-family="'Inter', system-ui, sans-serif" font-size="11.5">Use pricing to filter for loyal</text>
+  <text x="304" y="240" fill="#94A3B8" font-family="'Inter', system-ui, sans-serif" font-size="11.5">repeat buyers, not deal hunters.</text>
+
+  <rect x="528" y="148" width="224" height="118" rx="10" fill="#111622" stroke="#10B981" stroke-opacity="0.45"/>
+  <text x="544" y="174" fill="#10B981" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="800">GEAR 03 // EXPERIENCE &amp; DELIVERY</text>
+  <text x="544" y="200" fill="#F8FAFC" font-family="'Inter', system-ui, sans-serif" font-size="14" font-weight="700">Starbucks 1,700+ Uplifts</text>
+  <text x="544" y="222" fill="#94A3B8" font-family="'Inter', system-ui, sans-serif" font-size="11.5">Ads cannot fix broken delivery.</text>
+  <text x="544" y="240" fill="#94A3B8" font-family="'Inter', system-ui, sans-serif" font-size="11.5">Fix bottlenecks before scaling.</text>
+
+  <!-- Bottom Row: 2 Wide Gear Cards -->
+  <rect x="48" y="282" width="344" height="106" rx="10" fill="#111622" stroke="#F59E0B" stroke-opacity="0.45"/>
+  <text x="64" y="308" fill="#F59E0B" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="800">GEAR 04 // PROFIT &amp; CASH FLOW</text>
+  <text x="64" y="334" fill="#F8FAFC" font-family="'Inter', system-ui, sans-serif" font-size="14" font-weight="700">Amazon $28.1B OpInc vs. -$42.4B FCF</text>
+  <text x="64" y="358" fill="#94A3B8" font-family="'Inter', system-ui, sans-serif" font-size="11.5">Paper profit is not cash in the bank. Track inventory &amp; timing.</text>
+
+  <rect x="408" y="282" width="344" height="106" rx="10" fill="#111622" stroke="#A78BFA" stroke-opacity="0.45"/>
+  <text x="424" y="308" fill="#A78BFA" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="800">GEAR 05 // TEAM &amp; INCENTIVES</text>
+  <text x="424" y="334" fill="#F8FAFC" font-family="'Inter', system-ui, sans-serif" font-size="14" font-weight="700">SharkNinja's 14-Quarter Streak</text>
+  <text x="424" y="358" fill="#94A3B8" font-family="'Inter', system-ui, sans-serif" font-size="11.5">Short-term ROAS bonuses drain brand equity. Align teams right.</text>
+
+  <!-- Bottom Strip -->
+  <rect x="48" y="404" width="704" height="36" rx="8" fill="#0F172A" stroke="#1E293B"/>
+  <text x="400" y="427" text-anchor="middle" fill="#E2E8F0" font-family="'Inter', system-ui, sans-serif" font-size="12" font-weight="700">Durable brands never win on ads alone — they win when all 5 gears turn together</text>
+
+  <text x="48" y="460" fill="#52525B" font-family="'Inter', system-ui, sans-serif" font-size="10.5">RANBRANDOS.COM // BUSINESS FUNDAMENTALS SERIES · PART 01</text>
+  <text x="752" y="460" text-anchor="end" fill="#52525B" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="10.5">SERIES 01/06 // EN</text>
+</svg>

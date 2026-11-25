@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <pattern id="gridMap" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#18181B" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="500" fill="#0B0F17"/>
+  <rect width="800" height="500" fill="url(#gridMap)"/>
+  <rect x="28" y="28" width="744" height="444" rx="12" fill="none" stroke="#1E293B" stroke-width="1.5"/>
+
+  <text x="48" y="58" fill="#2DD4BF" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">FIVE-GEAR REALITY CHECK // 2026 U.S. EARNINGS PROOF</text>
+  <text x="752" y="58" text-anchor="end" fill="#64748B" font-family="'JetBrains Mono', monospace" font-size="10.5">MYTH VS. REALITY</text>
+  <text x="48" y="86" fill="#F8FAFC" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="19" font-weight="800">5 个常见经营误区 vs 2026 年美国一线财报真相</text>
+
+  <!-- Column Headers -->
+  <rect x="48" y="102" width="118" height="28" rx="6" fill="#1E293B"/>
+  <text x="107" y="120" text-anchor="middle" fill="#E2E8F0" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11.5" font-weight="700">生意齿轮</text>
+
+  <rect x="174" y="102" width="250" height="28" rx="6" fill="#3B1219" stroke="#F43F5E" stroke-opacity="0.4"/>
+  <text x="299" y="120" text-anchor="middle" fill="#FDA4AF" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11.5" font-weight="700">常见误区（为什么越做越累）</text>
+
+  <rect x="432" y="102" width="320" height="28" rx="6" fill="#0D2C2B" stroke="#2DD4BF" stroke-opacity="0.4"/>
+  <text x="592" y="120" text-anchor="middle" fill="#5EEAD4" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11.5" font-weight="700">2026 一手财报真相</text>
+
+  <!-- Row 1 -->
+  <rect x="48" y="140" width="704" height="54" rx="8" fill="#111827" stroke="#1F2937"/>
+  <text x="62" y="172" fill="#2DD4BF" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12.5" font-weight="700">01 需求与渠道</text>
+  <text x="182" y="164" fill="#FCA5A5" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11.5">独立站直营一定比进批发高级</text>
+  <text x="182" y="182" fill="#94A3B8" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="10.5">盲目砍批发导致自然货架触达流失</text>
+  <text x="442" y="164" fill="#F8FAFC" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11.5" font-weight="700">Nike 直营 -6% vs On Q3 直营 +25%</text>
+  <text x="442" y="182" fill="#6EE7B7" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="10.5">关键不在渠道名称，在方便购买与守住正价</text>
+
+  <!-- Row 2 -->
+  <rect x="48" y="202" width="704" height="54" rx="8" fill="#111827" stroke="#1F2937"/>
+  <text x="62" y="234" fill="#00F2FE" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12.5" font-weight="700">02 客户与定价</text>
+  <text x="182" y="226" fill="#FCA5A5" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11.5">品牌=高加价，对所有顾客一样好</text>
+  <text x="182" y="244" fill="#94A3B8" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="10.5">把精力浪费在买完就走的比价过路客</text>
+  <text x="442" y="226" fill="#F8FAFC" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11.5" font-weight="700">Costco 会员费 $5.91B = 净利 64%</text>
+  <text x="442" y="244" fill="#6EE7B7" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="10.5">用定价筛选老客，把复购变成核心利润源</text>
+
+  <!-- Row 3 -->
+  <rect x="48" y="264" width="704" height="54" rx="8" fill="#111827" stroke="#1F2937"/>
+  <text x="62" y="296" fill="#10B981" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12.5" font-weight="700">03 体验与交付</text>
+  <text x="182" y="288" fill="#FCA5A5" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11.5">复购下滑了，换广告拍大片就能救</text>
+  <text x="182" y="306" fill="#94A3B8" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="10.5">后端排队或退货高，投流加速差评传播</text>
+  <text x="442" y="288" fill="#F8FAFC" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11.5" font-weight="700">Starbucks 改 1,700+ 店 · Q4 美同店 +7.7%</text>
+  <text x="442" y="306" fill="#6EE7B7" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="10.5">关停约 250 家低效店，先修交付再谈增长</text>
+
+  <!-- Row 4 -->
+  <rect x="48" y="326" width="704" height="54" rx="8" fill="#111827" stroke="#1F2937"/>
+  <text x="62" y="358" fill="#F59E0B" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12.5" font-weight="700">04 利润与现金</text>
+  <text x="182" y="350" fill="#FCA5A5" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11.5">只要账面在盈利，公司就高枕无忧</text>
+  <text x="182" y="368" fill="#94A3B8" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="10.5">忽略备货周期与库存占款，越卖越缺钱</text>
+  <text x="442" y="350" fill="#F8FAFC" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11.5" font-weight="700">Amazon 利润 $28.1B · FCF -$42.4B</text>
+  <text x="442" y="368" fill="#6EE7B7" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="10.5">利润表与现金流常背离，算清回款时间账</text>
+
+  <!-- Row 5 -->
+  <rect x="48" y="388" width="704" height="54" rx="8" fill="#111827" stroke="#1F2937"/>
+  <text x="62" y="420" fill="#A78BFA" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12.5" font-weight="700">05 团队与考核</text>
+  <text x="182" y="412" fill="#FCA5A5" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11.5">招全能总监盯紧当月 ROAS 就行</text>
+  <text x="182" y="430" fill="#94A3B8" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="10.5">单一短期考核逼团队狂吃老客、掏空品牌</text>
+  <text x="442" y="412" fill="#F8FAFC" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11.5" font-weight="700">SharkNinja 14 季双位数增长 · 23.3% 利润</text>
+  <text x="442" y="430" fill="#6EE7B7" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="10.5">专业分工对齐目标，应对新零售生态战</text>
+
+  <text x="48" y="460" fill="#52525B" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="10">数据来源：各公司 2026 财年 10-K 及 2026 Q3 / FY27 Q1-Q3 官方财报披露</text>
+  <text x="752" y="460" text-anchor="end" fill="#52525B" font-family="'JetBrains Mono', monospace" font-size="10">FIG 01 // ZH</text>
+</svg>
