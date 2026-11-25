@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <pattern id="gridEp4En" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#18181B" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="glowEp4En" cx="50%" cy="38%" r="58%">
+      <stop offset="0%" stop-color="#FB923C" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#09090B" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="500" fill="#09090B"/>
+  <rect width="800" height="500" fill="url(#gridEp4En)"/>
+  <rect width="800" height="500" fill="url(#glowEp4En)"/>
+  <rect x="28" y="28" width="744" height="444" rx="12" fill="none" stroke="#27272A" stroke-width="1.5"/>
+
+  <text x="48" y="60" fill="#FB923C" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11.5" font-weight="700">MARKETING &amp; GROWTH // SERIES · PART 04</text>
+  <text x="752" y="60" text-anchor="end" fill="#64748B" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11">2026.11.25</text>
+
+  <text x="48" y="98" fill="#F8FAFC" font-family="'Inter', -apple-system, BlinkMacSystemFont, sans-serif" font-size="20.5" font-weight="800">Your Ad ROAS Doubled, Yet Bank Cash Stayed Flat</text>
+  <text x="48" y="122" fill="#94A3B8" font-family="'Inter', -apple-system, BlinkMacSystemFont, sans-serif" font-size="12.5">Exposing attribution mirages &amp; 2026's $71B US retail media boom across Amazon, Walmart &amp; Best Buy</text>
+
+  <!-- Card 1: Ad-Cut Proofs -->
+  <rect x="48" y="148" width="224" height="236" rx="10" fill="#111622" stroke="#F43F5E" stroke-opacity="0.5"/>
+  <text x="64" y="176" fill="#FDA4AF" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="800">01 // AD-CUT REALITY</text>
+  <text x="64" y="212" fill="#FDA4AF" font-family="'Inter', sans-serif" font-size="28" font-weight="800">99.5%</text>
+  <text x="64" y="232" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="11">eBay brand clicks went organic</text>
+  <line x1="64" y1="248" x2="256" y2="248" stroke="#1E293B"/>
+  <text x="64" y="272" fill="#E2E8F0" font-family="'Inter', sans-serif" font-size="12" font-weight="700">-63% True Non-Brand Return</text>
+  <text x="64" y="294" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="11">Uber cut $100M, installs held flat</text>
+  <text x="64" y="316" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="11">Airbnb cut $600M+, 95% traffic back</text>
+  <text x="64" y="366" fill="#F43F5E" font-family="'JetBrains Mono', monospace" font-size="10">ATTRIBUTION MIRAGE</text>
+
+  <!-- Card 2: Retail Media -->
+  <rect x="288" y="148" width="224" height="236" rx="10" fill="#111622" stroke="#F59E0B" stroke-opacity="0.5"/>
+  <text x="304" y="176" fill="#FCD34D" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="800">02 // 2026 RETAIL MEDIA</text>
+  <text x="304" y="212" fill="#FCD34D" font-family="'Inter', sans-serif" font-size="28" font-weight="800">$71B</text>
+  <text x="304" y="232" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="11">US onsite ads (+18% · 70%+ GM)</text>
+  <line x1="304" y1="248" x2="496" y2="248" stroke="#1E293B"/>
+  <text x="304" y="272" fill="#E2E8F0" font-family="'Inter', sans-serif" font-size="12" font-weight="700">Amazon: $56.7B in 9M 2026</text>
+  <text x="304" y="294" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="11">Walmart Connect surged +36%</text>
+  <text x="304" y="316" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="11">Best Buy Ads offset goods margin</text>
+  <text x="304" y="366" fill="#FBBF24" font-family="'JetBrains Mono', monospace" font-size="10">HIGH-MARGIN SHELF RENT</text>
+
+  <!-- Card 3: Operator Truth -->
+  <rect x="528" y="148" width="224" height="236" rx="10" fill="#111622" stroke="#2DD4BF" stroke-opacity="0.5"/>
+  <text x="544" y="176" fill="#5EEAD4" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="800">03 // 14-DAY LIFT TEST</text>
+  <text x="544" y="212" fill="#5EEAD4" font-family="'Inter', sans-serif" font-size="28" font-weight="800">14 Days</text>
+  <text x="544" y="232" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="11">Pause test to verify real new orders</text>
+  <line x1="544" y1="248" x2="736" y2="248" stroke="#1E293B"/>
+  <text x="544" y="272" fill="#E2E8F0" font-family="'Inter', sans-serif" font-size="12" font-weight="700">Split Brand vs. Cold-Buyer P&amp;L</text>
+  <text x="544" y="294" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="11">Track all-in ad ratio &amp; post-ad cash</text>
+  <text x="544" y="316" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="11">Cap brand defense; fund real demand</text>
+  <text x="544" y="366" fill="#2DD4BF" font-family="'JetBrains Mono', monospace" font-size="10">VERIFY REAL SALES LIFT</text>
+
+  <!-- Bottom Strip -->
+  <rect x="48" y="400" width="704" height="38" rx="8" fill="#0F172A" stroke="#1E293B"/>
+  <text x="400" y="424" text-anchor="middle" fill="#E2E8F0" font-family="'Inter', -apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700">Dashboards claim buyers already walking to checkout—only net profit and 14-day pause tests prove real lift</text>
+
+  <text x="48" y="458" fill="#52525B" font-family="'Inter', sans-serif" font-size="10.5">RANBRANDOS.COM // MARKETING &amp; GROWTH · PART 04</text>
+  <text x="752" y="458" text-anchor="end" fill="#52525B" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="10.5">SERIES 04/06 // EN</text>
+</svg>

@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <pattern id="gridEp4Zh" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#18181B" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="glowEp4Zh" cx="50%" cy="38%" r="58%">
+      <stop offset="0%" stop-color="#FB923C" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#09090B" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="500" fill="#09090B"/>
+  <rect width="800" height="500" fill="url(#gridEp4Zh)"/>
+  <rect width="800" height="500" fill="url(#glowEp4Zh)"/>
+  <rect x="28" y="28" width="744" height="444" rx="12" fill="none" stroke="#27272A" stroke-width="1.5"/>
+
+  <text x="48" y="60" fill="#FB923C" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11.5" font-weight="700">MARKETING &amp; GROWTH // 营销增长系列 · PART 04</text>
+  <text x="752" y="60" text-anchor="end" fill="#64748B" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11">2026.11.25</text>
+
+  <text x="48" y="98" fill="#F8FAFC" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="21.5" font-weight="800">广告后台 ROAS 翻倍，为什么公司账上没多一分钱？</text>
+  <text x="48" y="122" fill="#94A3B8" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12.5">拆穿平台抢功劳与扩量暗墙：从 eBay、Uber 停投实证到 2026 美国 710 亿美元零售媒体真相</text>
+
+  <!-- Card 1: Ad-Cut Proofs -->
+  <rect x="48" y="148" width="224" height="236" rx="10" fill="#111622" stroke="#F43F5E" stroke-opacity="0.5"/>
+  <text x="64" y="176" fill="#FDA4AF" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="800">01 // 停投大考 · 抢功劳</text>
+  <text x="64" y="212" fill="#FDA4AF" font-family="'Inter', sans-serif" font-size="28" font-weight="800">99.5%</text>
+  <text x="64" y="232" fill="#94A3B8" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11">eBay 停投品牌词照走免费链接</text>
+  <line x1="64" y1="248" x2="256" y2="248" stroke="#1E293B"/>
+  <text x="64" y="272" fill="#E2E8F0" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12" font-weight="700">非品牌搜索真实回报 -63%</text>
+  <text x="64" y="294" fill="#94A3B8" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11">Uber 砍 $1 亿安装量纹丝不动</text>
+  <text x="64" y="316" fill="#94A3B8" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11">Airbnb 砍超 $6 亿流量回 95%</text>
+  <text x="64" y="366" fill="#F43F5E" font-family="'JetBrains Mono', monospace" font-size="10">ATTRIBUTION MIRAGE</text>
+
+  <!-- Card 2: Retail Media -->
+  <rect x="288" y="148" width="224" height="236" rx="10" fill="#111622" stroke="#F59E0B" stroke-opacity="0.5"/>
+  <text x="304" y="176" fill="#FCD34D" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="800">02 // 2026 零售媒体税</text>
+  <text x="304" y="212" fill="#FCD34D" font-family="'Inter', sans-serif" font-size="28" font-weight="800">$71B</text>
+  <text x="304" y="232" fill="#94A3B8" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11">全美站内广告 (+18% · 毛利 70%+)</text>
+  <line x1="304" y1="248" x2="496" y2="248" stroke="#1E293B"/>
+  <text x="304" y="272" fill="#E2E8F0" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12" font-weight="700">Amazon 前 9 月收 $56.7B</text>
+  <text x="304" y="294" fill="#94A3B8" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11">Walmart Connect 暴涨 +36%</text>
+  <text x="304" y="316" fill="#94A3B8" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11">Best Buy 用广告补硬件毛利</text>
+  <text x="304" y="366" fill="#FBBF24" font-family="'JetBrains Mono', monospace" font-size="10">HIGH-MARGIN SHELF RENT</text>
+
+  <!-- Card 3: Operator Truth -->
+  <rect x="528" y="148" width="224" height="236" rx="10" fill="#111622" stroke="#2DD4BF" stroke-opacity="0.5"/>
+  <text x="544" y="176" fill="#5EEAD4" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="800">03 // 14 天挤水分实操</text>
+  <text x="544" y="212" fill="#5EEAD4" font-family="'Inter', sans-serif" font-size="28" font-weight="800">14 天</text>
+  <text x="544" y="232" fill="#94A3B8" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11">小范围减半停投验出真新单</text>
+  <line x1="544" y1="248" x2="736" y2="248" stroke="#1E293B"/>
+  <text x="544" y="272" fill="#E2E8F0" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12" font-weight="700">劈开品牌防御词与真拉新表</text>
+  <text x="544" y="294" fill="#94A3B8" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11">盯全盘广告占比与广告后净毛利</text>
+  <text x="544" y="316" fill="#94A3B8" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11">给防御费设硬上限防两头失血</text>
+  <text x="544" y="366" fill="#2DD4BF" font-family="'JetBrains Mono', monospace" font-size="10">VERIFY REAL SALES LIFT</text>
+
+  <!-- Bottom Strip -->
+  <rect x="48" y="400" width="704" height="38" rx="8" fill="#0F172A" stroke="#1E293B"/>
+  <text x="400" y="424" text-anchor="middle" fill="#E2E8F0" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12" font-weight="700">后台 ROAS 偏爱把熟客算成自己功劳；盯死全盘净毛利与 14 天停投对照，才算真正看懂广告账</text>
+
+  <text x="48" y="458" fill="#52525B" font-family="'Inter', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="10.5">RANBRANDOS.COM // 营销增长系列 · 第 4 篇</text>
+  <text x="752" y="458" text-anchor="end" fill="#52525B" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="10.5">SERIES 04/06 // ZH</text>
+</svg>
