@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <pattern id="gridEp5En" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#18181B" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="glowEp5En" cx="50%" cy="38%" r="58%">
+      <stop offset="0%" stop-color="#2DD4BF" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#09090B" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="500" fill="#09090B"/>
+  <rect width="800" height="500" fill="url(#gridEp5En)"/>
+  <rect width="800" height="500" fill="url(#glowEp5En)"/>
+  <rect x="28" y="28" width="744" height="444" rx="12" fill="none" stroke="#27272A" stroke-width="1.5"/>
+
+  <text x="48" y="60" fill="#2DD4BF" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11.5" font-weight="700">MARKETING &amp; GROWTH // SERIES · PART 05</text>
+  <text x="752" y="60" text-anchor="end" fill="#64748B" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11">2026.11.25</text>
+
+  <text x="48" y="98" fill="#F8FAFC" font-family="'Inter', -apple-system, BlinkMacSystemFont, sans-serif" font-size="18.5" font-weight="800">Ads Can't Fix a Broken Experience, and Surging Orders Drain Cash</text>
+  <text x="48" y="122" fill="#94A3B8" font-family="'Inter', -apple-system, BlinkMacSystemFont, sans-serif" font-size="12">The back-end truth across 2026 Starbucks, Amazon, and Walmart filings plus 19.3% US online returns</text>
+
+  <!-- Card 1: Starbucks Experience Bottleneck -->
+  <rect x="48" y="148" width="224" height="236" rx="10" fill="#111622" stroke="#2DD4BF" stroke-opacity="0.5"/>
+  <text x="64" y="176" fill="#5EEAD4" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="800">01 // FIX THE BOTTLENECK</text>
+  <text x="64" y="212" fill="#5EEAD4" font-family="'Inter', sans-serif" font-size="28" font-weight="800">+7.7%</text>
+  <text x="64" y="232" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="11">Starbucks Q4 FY26 US comps</text>
+  <line x1="64" y1="248" x2="256" y2="248" stroke="#1E293B"/>
+  <text x="64" y="272" fill="#E2E8F0" font-family="'Inter', sans-serif" font-size="11.5" font-weight="700">&lt;4-Min Service + Smart Queue</text>
+  <text x="64" y="294" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="10.5">1,700+ uplifts · ~250 store closures</text>
+  <text x="64" y="316" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="10.5">Q4 non-GAAP op margin at 14.0%</text>
+  <text x="64" y="366" fill="#2DD4BF" font-family="'JetBrains Mono', monospace" font-size="10">EXPERIENCE DRIVES REPEAT</text>
+
+  <!-- Card 2: Amazon Profit vs Cash -->
+  <rect x="288" y="148" width="224" height="236" rx="10" fill="#111622" stroke="#F43F5E" stroke-opacity="0.5"/>
+  <text x="304" y="176" fill="#FDA4AF" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="800">02 // PROFIT ≠ BANK CASH</text>
+  <text x="304" y="212" fill="#FDA4AF" font-family="'Inter', sans-serif" font-size="28" font-weight="800">-$42.4B</text>
+  <text x="304" y="232" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="11">Amazon TTM free cash flow</text>
+  <line x1="304" y1="248" x2="496" y2="248" stroke="#1E293B"/>
+  <text x="304" y="272" fill="#E2E8F0" font-family="'Inter', sans-serif" font-size="11.5" font-weight="700">$28.1B Q3 Op Income (+61%)</text>
+  <text x="304" y="294" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="10.5">$210.7B TTM CapEx cash outflow</text>
+  <text x="304" y="316" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="10.5">Surging orders strain upfront cash</text>
+  <text x="304" y="366" fill="#F43F5E" font-family="'JetBrains Mono', monospace" font-size="10">PROFIT VS. CASH TIMING</text>
+
+  <!-- Card 3: Walmart Velocity & Returns -->
+  <rect x="528" y="148" width="224" height="236" rx="10" fill="#111622" stroke="#38BDF8" stroke-opacity="0.5"/>
+  <text x="544" y="176" fill="#7DD3FC" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="800">03 // VELOCITY &amp; RETURNS</text>
+  <text x="544" y="212" fill="#7DD3FC" font-family="'Inter', sans-serif" font-size="28" font-weight="800">19.3%</text>
+  <text x="544" y="232" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="11">US online return rate (~1 in 5)</text>
+  <line x1="544" y1="248" x2="736" y2="248" stroke="#1E293B"/>
+  <text x="544" y="272" fill="#E2E8F0" font-family="'Inter', sans-serif" font-size="11.5" font-weight="700">Walmart: &gt;80% Store-Fulfilled</text>
+  <text x="544" y="294" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="10.5">&lt;3h delivery +50%+ · E-comm +23%</text>
+  <text x="544" y="316" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="10.5">Slice returns by SKU, lot &amp; carrier</text>
+  <text x="544" y="366" fill="#38BDF8" font-family="'JetBrains Mono', monospace" font-size="10">SPEED &amp; LEAKAGE CONTROL</text>
+
+  <!-- Bottom Strip -->
+  <rect x="48" y="400" width="704" height="38" rx="8" fill="#0F172A" stroke="#1E293B"/>
+  <text x="400" y="424" text-anchor="middle" fill="#E2E8F0" font-family="'Inter', -apple-system, BlinkMacSystemFont, sans-serif" font-size="11.5" font-weight="700">Ads pump traffic in, but delivery bottlenecks, stock velocity, and cash timing decide what you keep</text>
+
+  <text x="48" y="458" fill="#52525B" font-family="'Inter', sans-serif" font-size="10.5">RANBRANDOS.COM // MARKETING &amp; GROWTH · PART 05</text>
+  <text x="752" y="458" text-anchor="end" fill="#52525B" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="10.5">SERIES 05/06 // EN</text>
+</svg>
