@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <pattern id="gridMap6En" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#18181B" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="500" fill="#09090B"/>
+  <rect width="800" height="500" fill="url(#gridMap6En)"/>
+  <rect x="28" y="28" width="744" height="444" rx="12" fill="none" stroke="#27272A" stroke-width="1.5"/>
+
+  <!-- Header -->
+  <text x="48" y="58" fill="#C4B5FD" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">TEAM ROLES, INCENTIVES &amp; AI BOUNDARIES // 2026 EVIDENCE</text>
+  <text x="752" y="58" text-anchor="end" fill="#64748B" font-family="'JetBrains Mono', monospace" font-size="10.5">FIGURE 01 · EN</text>
+  <text x="48" y="88" fill="#F8FAFC" font-family="'Inter', -apple-system, BlinkMacSystemFont, sans-serif" font-size="18" font-weight="800">2026 Org Design, Incentive Guardrails &amp; Practical AI Boundaries</text>
+  <text x="48" y="109" fill="#94A3B8" font-family="'Inter', -apple-system, BlinkMacSystemFont, sans-serif" font-size="11.5">AI only multiplies existing order—fix ownership and profit incentives first, then hand routine execution to AI</text>
+
+  <!-- Top Left: Enterprise AI ROI Gap -->
+  <rect x="48" y="126" width="342" height="140" rx="10" fill="#111622" stroke="#F59E0B" stroke-opacity="0.45"/>
+  <text x="64" y="150" fill="#FCD34D" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="800">A // ENTERPRISE AI ROI GAP (MCKINSEY &amp; BCG)</text>
+
+  <text x="64" y="174" fill="#CBD5E1" font-family="'Inter', sans-serif" font-size="10.5">Organizations using AI in at least one function</text>
+  <rect x="64" y="180" width="248" height="10" rx="4" fill="#1E293B"/>
+  <rect x="64" y="180" width="218" height="10" rx="4" fill="#38BDF8"/>
+  <text x="322" y="189" fill="#7DD3FC" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="800">88%</text>
+
+  <text x="64" y="211" fill="#CBD5E1" font-family="'Inter', sans-serif" font-size="10.5">High performers seeing real bottom-line profit lift</text>
+  <rect x="64" y="217" width="248" height="10" rx="4" fill="#1E293B"/>
+  <rect x="64" y="217" width="18" height="10" rx="4" fill="#F43F5E"/>
+  <text x="322" y="226" fill="#FDA4AF" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="800">~6%</text>
+
+  <text x="64" y="252" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="10">Up to <tspan fill="#FDA4AF" font-weight="700">95%</tspan> of pilots miss P&amp;L · Winners redesign roles <tspan fill="#5EEAD4" font-weight="700">~3x</tspan> more</text>
+
+  <!-- Top Right: AI vs Human Boundary -->
+  <rect x="410" y="126" width="342" height="140" rx="10" fill="#111622" stroke="#A78BFA" stroke-opacity="0.45"/>
+  <text x="426" y="150" fill="#C4B5FD" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="800">B // AI EXECUTION VS. HUMAN RED LINES (KLARNA)</text>
+
+  <rect x="426" y="162" width="148" height="68" rx="7" fill="#0F172A" stroke="#2DD4BF" stroke-opacity="0.45"/>
+  <text x="436" y="179" fill="#5EEAD4" font-family="'Inter', sans-serif" font-size="10" font-weight="800">Hand to AI (Routine)</text>
+  <text x="436" y="197" fill="#CBD5E1" font-family="'Inter', sans-serif" font-size="9.5">· Ad drafts &amp; review mining</text>
+  <text x="436" y="215" fill="#CBD5E1" font-family="'Inter', sans-serif" font-size="9.5">· Order FAQs &amp; test sims</text>
+
+  <rect x="588" y="162" width="148" height="68" rx="7" fill="#0F172A" stroke="#F43F5E" stroke-opacity="0.5"/>
+  <text x="598" y="179" fill="#FDA4AF" font-family="'Inter', sans-serif" font-size="10" font-weight="800">Keep Human (Trust)</text>
+  <text x="598" y="197" fill="#CBD5E1" font-family="'Inter', sans-serif" font-size="9.5">· Trade-offs &amp; price floors</text>
+  <text x="598" y="215" fill="#CBD5E1" font-family="'Inter', sans-serif" font-size="9.5">· QA sign-off &amp; tense cases</text>
+
+  <text x="426" y="252" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="10">Klarna: AI did <tspan fill="#FCD34D" font-weight="700">700</tspan> roles, quality slipped → rehired hybrid team</text>
+
+  <!-- Bottom Row: 3 Org & KPI Proofs -->
+  <text x="48" y="292" fill="#5EEAD4" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="800">C // THREE ORG &amp; INCENTIVE BENCHMARKS (2025–2026 FILINGS &amp; DOJ / SEC DISCLOSURES)</text>
+
+  <!-- SharkNinja -->
+  <rect x="48" y="304" width="224" height="110" rx="10" fill="#111622" stroke="#2DD4BF" stroke-opacity="0.45"/>
+  <text x="64" y="328" fill="#5EEAD4" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="800">SHARKNINJA · PODS</text>
+  <text x="64" y="356" fill="#5EEAD4" font-family="'Inter', sans-serif" font-size="20" font-weight="800">+21.2%</text>
+  <text x="256" y="355" text-anchor="end" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="9.5">Q3 2026 ($1.976B)</text>
+  <text x="64" y="378" fill="#CBD5E1" font-family="'Inter', sans-serif" font-size="10">14 straight 2-digit qtrs · ~25/yr</text>
+  <text x="64" y="398" fill="#FCD34D" font-family="'Inter', sans-serif" font-size="10">1,000+ engineers &amp; ads co-build</text>
+
+  <!-- Starbucks -->
+  <rect x="288" y="304" width="224" height="110" rx="10" fill="#111622" stroke="#38BDF8" stroke-opacity="0.45"/>
+  <text x="304" y="328" fill="#7DD3FC" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="800">STARBUCKS · FRONTLINE</text>
+  <text x="304" y="356" fill="#7DD3FC" font-family="'Inter', sans-serif" font-size="20" font-weight="800">$500M</text>
+  <text x="496" y="355" text-anchor="end" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="9.5">Into store labor hours</text>
+  <text x="304" y="378" fill="#CBD5E1" font-family="'Inter', sans-serif" font-size="10">Cut ~2,000 non-retail HQ roles</text>
+  <text x="304" y="398" fill="#5EEAD4" font-family="'Inter', sans-serif" font-size="10">Q4 US comps +7.7% · 14.0% OM</text>
+
+  <!-- Wells Fargo -->
+  <rect x="528" y="304" width="224" height="110" rx="10" fill="#111622" stroke="#F43F5E" stroke-opacity="0.45"/>
+  <text x="544" y="328" fill="#FDA4AF" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="800">WELLS FARGO · QUOTA TRAP</text>
+  <text x="544" y="356" fill="#FDA4AF" font-family="'Inter', sans-serif" font-size="20" font-weight="800">$3.0B</text>
+  <text x="736" y="355" text-anchor="end" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="9.5">DOJ/SEC settlement</text>
+  <text x="544" y="378" fill="#CBD5E1" font-family="'Inter', sans-serif" font-size="10">3.5M+ fake accounts (1 metric)</text>
+  <text x="544" y="398" fill="#FCD34D" font-family="'Inter', sans-serif" font-size="10">Rule: Pair KPIs with trust floors</text>
+
+  <!-- Footer -->
+  <rect x="48" y="428" width="704" height="30" rx="6" fill="#0F172A" stroke="#1E293B"/>
+  <text x="400" y="447" text-anchor="middle" fill="#E2E8F0" font-family="'Inter', -apple-system, BlinkMacSystemFont, sans-serif" font-size="10.5" font-weight="700">Gear 5 Rule: Organize around buyers, pair KPIs with trust floors, and let AI speed routine work while humans own judgment</text>
+</svg>
